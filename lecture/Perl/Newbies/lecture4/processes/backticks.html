@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="system.html"/><link rel="next" href="opens.html"/><title>Trapping Command Output with `...`</title></head><body><main><header><h1>4.2. Trapping Command Output with `...`</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="system.html" class="nav" accesskey="p">Prev</a></td><td><a href="opens.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 4</a> → <a href="./">Executing Other Processes</a> → <a href="backticks.html">Trapping Command Output with `...`</a></div></nav><p>The backticks (or more generally <code>qx{ ... }</code>), can be used to trap the output of a shell command. It executes the command and returns all of its output. Interpolation is used.</p><p>If assigned to a scalar, it returns the output as a complete string. If the output is assigned to an array, the array will contain the lines of the output.</p><p>Here is an example for a program that counts the number of directories in a directory that is given as an argument:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$dir</span> = <span class="Statement">shift</span>;
+<span class="Comment"># Prepare $dir for placement inside a '...' argument</span>
+<span class="Comment"># A safer way would be to use String::ShellQuote</span>
+<span class="Identifier">$dir</span> =~ <span class="Statement">s!</span><span class="Constant">'</span><span class="Statement">!</span><span class="Constant">'</span><span class="Special">\\</span><span class="Constant">''</span><span class="Statement">!g</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$count</span> = <span class="Statement">`</span><span class="Constant">ls -l '</span><span class="Identifier">$dir</span><span class="Constant">' | grep ^d | wc -l</span><span class="Statement">`</span>;
+
+<span class="Statement">if</span> (<span class="Identifier">$?</span>)
+&#x7B;
+    <span class="Statement">die</span> <span class="Constant">&quot;Error returned by ls -l command is </span><span class="Identifier">$@</span><span class="Constant">.&quot;</span>;
+&#x7D;
+
+<span class="Statement">if</span> (<span class="Identifier">$count</span> !~ <span class="Statement">/</span><span class="Special">(\d+)</span><span class="Statement">/</span>)
+&#x7B;
+    <span class="Comment"># Retrieve the number via the special regex variable $1</span>
+    <span class="Identifier">$count</span> = <span class="Identifier">$1</span>;
+    <span class="Statement">print</span> <span class="Constant">&quot;There are </span><span class="Identifier">$count</span><span class="Constant"> directories</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+<span class="Statement">else</span>
+&#x7B;
+    <span class="Statement">die</span> <span class="Constant">&quot;Wrong output.&quot;</span>
+&#x7D;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="system.html" class="nav">Prev</a></td><td><a href="opens.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

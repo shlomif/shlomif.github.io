@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<db:article xmlns:db="http://docbook.org/ns/docbook" xmlns:vrd="http://www.shlomifish.org/open-source/projects/XML-Grammar/Vered/" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="index" xml:lang="en-GB" version="5.0">
+  <db:info>
+    <db:title>C and C++ Elements to Avoid</db:title>
+  </db:info>
+  <db:section role="introduction" xml:id="intro">
+    <db:info>
+      <db:title>Introduction</db:title>
+    </db:info>
+    <db:para>
+Often when people ask for help with C or C++ code, they show code that
+suffers from many bad or outdated elements. This is expected, as there
+are many bad tutorials out there, and lots of bad code that people
+have learned from, but it is still not desirable. To encourage best
+practices, here is a document of some of the common bad elements that
+people tend to use and some better practices that should be used instead.
+</db:para>
+    <db:para>
+A book I read said, that as opposed to most previous idea systems, they
+were trying to <db:emphasis role="bold">liquidate negatives</db:emphasis> instead of to instil positives
+in people. So in the spirit of liquidating negatives, this tutorial-in-reverse
+aims to show you what <db:emphasis role="bold">not to do</db:emphasis>.
+</db:para>
+    <db:para>
+<db:emphasis role="bold">Note:</db:emphasis> Please don't think this advice is meant as gospel.
+There are some instances where one can expect to deviate from it, and a lot
+of it can be considered only the opinion of its originators. I tried to filter
+the various pieces of advice I found in the <db:link xlink:href="#sources_of_advice">sources</db:link>
+and get rid of things that are either a matter of taste, or not so critical,
+or that have arguments for and against (so-called
+<db:link xlink:href="http://bikeshed.com/">colour of the bike shed arguments</db:link>),
+but some of the advice here may still be controversial.
+</db:para>
+  </db:section>
+  <db:section xml:id="bad-elements">
+    <db:info>
+      <db:title>The List of Bad Elements</db:title>
+    </db:info>
+    <db:section role="item" xml:id="no-indentation">
+      <db:info>
+        <db:title>No Indentation</db:title>
+      </db:info>
+      <db:para>
+<db:link xlink:href="http://en.wikipedia.org/wiki/Indent_style">Indentation</db:link> means
+that the contents of every block are promoted from their containing environment
+by using a shift of some space. This makes the code easier to read and follow.
+</db:para>
+      <db:para>
+Code without indentation is harder to read and so should be avoided.
+<db:link xlink:href="http://en.wikipedia.org/wiki/Indent_style">The Wikipedia article</db:link>
+lists several styles - pick one and follow it.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="no-compiler-warning-flags">
+      <db:info>
+        <db:title>Compiling without warnings flags</db:title>
+      </db:info>
+      <db:para>
+C and C++ Compilers have flags to toggle on warnings such as
+<db:code>-Wall</db:code>, <db:code>-Wextra</db:code>, or <db:code>-Weverything</db:code>.
+It is a good idea to specify as many of them as possible when compiling the
+code and to fix the warnings where appropriate.
+</db:para>
+      <db:para>
+Someone gave me this GCC warnings’ theme:
+</db:para>
+      <db:programlisting language="bash">
+#!/bin/bash
+gcc -std=c99 -Wall -W -Wformat-nonliteral -Wcast-align -Wpointer-arith -Wbad-function-cast -Wmissing-prototypes -Wstrict-prototypes -Wmissing-declarations -Winline -Wundef -Wnested-externs -Wcast-qual -Wshadow -Wwrite-strings -Wunused -Wfloat-equal -pedantic -ansi -Wbad-function-cast  -Wmissing-declarations -Wmissing-prototypes  -Wnested-externs  -Wold-style-definition -Wstrict-prototypes -Wdeclaration-after-statement
+</db:programlisting>
+    </db:section>
+    <db:section role="item" xml:id="calling-variables-file">
+      <db:info>
+        <db:title>Calling variables "file"</db:title>
+      </db:info>
+      <db:para>
+Some people call their variables "file". However, file can mean either
+<db:link xlink:href="http://en.wikipedia.org/wiki/File_descriptor">file handles</db:link>,
+file names, or the contents of the file. As a result, this should be avoided
+and one can use the abbreviations "fh" for file handle, or "fn" for filenames
+instead.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="identifiers-without-underscores">
+      <db:info>
+        <db:title>Identifiers without underscores</db:title>
+      </db:info>
+      <db:para>
+Some people name their identifiers as several words all in lowercase and
+not separated by underscores ("_"). As a result, this makes the code harder
+to read. So instead of:
+</db:para>
+      <db:programlisting language="perl">
+char * namesofpresidents[NUM_PRESIDENTS];
+</db:programlisting>
+      <db:para>
+Say:
+</db:para>
+      <db:programlisting language="perl">
+char * names_of_presidents[NUM_PRESIDENTS];
+</db:programlisting>
+      <db:para>
+Or maybe:
+</db:para>
+      <db:programlisting language="perl">
+char * presidents_names[NUM_PRESIDENTS];
+</db:programlisting>
+    </db:section>
+    <db:section role="item" xml:id="paragraphs">
+      <db:info>
+        <db:title>Write code in Paragraphs using Empty Lines</db:title>
+      </db:info>
+      <db:para>
+If one of your blocks is long, split it into "code paragraphs", with empty
+lines between them and with each paragraph doing one thing. Then, it may be a
+good idea to precede each paragraph with a comment explaining what it does, or
+to extract it into its own function or method.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="lowercase_modules_and_pkgs">
+      <db:info>
+        <db:title>Don't start Classes with a Lowercase Letter</db:title>
+      </db:info>
+      <db:para>
+In C++, classes should start with an uppercase letter (see
+<db:link xlink:href="http://en.wikipedia.org/wiki/Letter_case">the Wikipedia
+article about letter case</db:link>) and starting them with a lowercase letter
+is not recommended.
+</db:para>
+      <db:programlisting role="bad_code" language="cpp"># Bad code
+
+
+class my_class
+{
+    .
+    .
+    .
+};
+</db:programlisting>
+      <db:programlisting language="cpp">
+class MyClass
+{
+    .
+    .
+    .
+};
+</db:programlisting>
+    </db:section>
+    <db:section role="item" xml:id="non-intrusive-commenting">
+      <db:info>
+        <db:title>Avoid Intrusive Commenting</db:title>
+      </db:info>
+      <db:para>
+Some commenting is too intrusive and interrupts the flow of reading the code.
+Examples for that are the <db:code>/////////////</db:code> or
+<db:code>/*****************/</db:code> hard-rules that
+some people put in their code, the comments using multiple slashes
+like <db:code>///</db:code>, or excessively long comment block. Please avoid all those.
+</db:para>
+      <db:para>
+Some schools of software engineering argue that if the code's author feels
+that a comment is needed, it usually indicates that the code is not clear
+and should be factored better (like extracting a method or a subroutine with
+a meaningful name.). It probably does not mean that you should avoid writing
+comments altogether, but excessive commenting could prove as a red flag.
+</db:para>
+      <db:para>
+If you're interested in documenting the public interface of your modules and
+command-line programs, refer to tools such as
+<db:link xlink:href="http://en.wikipedia.org/wiki/Doxygen">Doxygen</db:link>, which may
+prove of use.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="accessing_object_slots_directly">
+      <db:info>
+        <db:title>Accessing Object Slots Directly</db:title>
+      </db:info>
+      <db:para>
+It is a bad idea to access the slots/properties/members of an object or
+a pointer to it directly. E.g:
+</db:para>
+      <db:programlisting role="bad_code" language="cpp"># Bad code
+
+
+obj-&gt;my_slot = 5;
+.
+.
+.
+if (my_obj.my_boolean_slot)
+{
+}
+</db:programlisting>
+      <db:para>
+Instead, create accessors, readers and writers - see
+<db:link xlink:href="http://en.wikipedia.org/wiki/Mutator_method">mutator method</db:link>
+on the Wikipedia and
+<db:link xlink:href="http://perl-begin.org/tutorials/perl-for-newbies/part5/#page--accessors--DIR">the class Accessors</db:link> section of the Perl for Newbies tutorial.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="caret_and_dollar_sign_in_regexes">
+      <db:info>
+        <db:title>'^' and '$' in Regular Expressions</db:title>
+      </db:info>
+      <db:para>
+Some people use "^" and "$" in regular expressions to mean
+beginning-of-the-string or end-of-the-string. However, they can mean
+beginning-of-a-line and end-of-a-line respectively using the <db:code>/m</db:code> flag
+which is confusing. It's a good idea to use <db:code>\A</db:code> for start-of-string
+and <db:code>\z</db:code> for end-of-string always (assuming they are supported
+by the regex syntax), and to specify the <db:code>/m</db:code> flag
+if one needs to use "^" and "$" for start/end of a line.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="magic_numbers">
+      <db:info>
+        <db:title>Magic Numbers</db:title>
+      </db:info>
+      <db:para>
+Your code should not include <db:link xlink:href="http://en.wikipedia.org/wiki/Magic_number_%28programming%29#Unnamed_numerical_constants">unnamed
+numerical constants also known as "magic numbers" or "magic constants"</db:link>.
+For example, there is one in this code to shuffle a deck of cards:
+</db:para>
+      <db:programlisting role="bad_code" language="c"># Bad code
+
+
+for (int i = 0; i &lt; 52; i++)
+{
+    const int j = i + rand() % (52-i);
+    swap(cards[i], cards[j]);
+}
+</db:programlisting>
+      <db:para>
+This code is bad because the meaning of 52 is not explained and it is
+arbitrary. A better code would be:
+</db:para>
+      <db:programlisting language="c">
+const int deck_size = 52;
+
+for (int i = 0; i &lt; deck_size; i++)
+{
+    int j = i + rand() % (deck_size - i);
+    swap(cards[i], cards[j]);
+}
+</db:programlisting>
+    </db:section>
+    <db:section role="item" xml:id="mixing_tabs_and_spaces">
+      <db:info>
+        <db:title>Mixing Tabs and Spaces</db:title>
+      </db:info>
+      <db:para>
+Some improperly configured text editors may be used to write code that, while
+indented well at a certain tab size looks terrible on other tab sizes, due
+to a mixture of tabs and spaces. So either use tabs for indentation or make
+sure your tab key expands to a constant number of spaces. You may also wish
+to make use of auto-formatters like <db:link xlink:href="http://en.wikipedia.org/wiki/Indent_%28Unix%29">GNU indent</db:link> to properly format your code.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="several_synchronised_arrays">
+      <db:info>
+        <db:title>Several synchronised arrays.</db:title>
+      </db:info>
+      <db:para>
+Related to “varvarname” is the desire of some beginners to use several
+different arrays with synchronised content, so the same index at every array
+will contain a different piece of data for the same record:
+</db:para>
+      <db:programlisting role="bad_code" language="c"># Bad code
+
+
+char * names[ITEMS_COUNT];
+char * addresses[ITEMS_COUNT];
+int ages[ITEMS_COUNT];
+char * phone_numbers[ITEMS_COUNT];
+
+.
+.
+.
+
+names[num] = strdup("Isaac Newton");
+addresses[num] = strdup("10 Downing St.");
+ages[num] = 25;
+phone_numbers[num] = strdup("123456789");
+</db:programlisting>
+      <db:para>
+These arrays will become hard to synchronise, and this is error prone. A
+better idea would be to use an array (or a different data structure) of
+structs, classes, or pointers to them:
+</db:para>
+      <db:programlisting language="c">
+
+Person * people[ITEMS_COUNT];
+
+num = 0;
+people[num++] = create_person(
+    "Isaac Newton",
+    "10 Downing St.",
+    25,
+    "123456789"
+);
+</db:programlisting>
+    </db:section>
+    <db:section role="item" xml:id="modifying_iterated_data_structures">
+      <db:info>
+        <db:title>Modifying data structures while iterating through them.</db:title>
+      </db:info>
+      <db:para>
+Some people ask about how to add or remove elements to an existing array or
+a different container when iterating over them using loops. The
+answer to that is that it likely won't be handled too well, and it expects
+that during loops the keys of a data structure will remain constant.
+</db:para>
+      <db:para>
+The best way to achieve something similar is to populate a new container
+during the loop. So do that instead.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="code_in_foreign_lang">
+      <db:info>
+        <db:title>Comments and Identifiers in a Foreign Language</db:title>
+      </db:info>
+      <db:para>
+Apparently, many non-native English speakers write code with comments and
+even identifiers in their native language. The problem with this is that
+programmers who do not speak that language will have a hard time understanding
+what is going on here, especially after the writers of the foreign language
+code post it in to an Internet forum in order to get help with it.
+</db:para>
+      <db:para>
+Consider what Eric Raymond wrote in
+<db:link xlink:href="http://www.catb.org/~esr/faqs/hacker-howto.html#skills4">his
+"How to Become a Hacker" document</db:link> (where hacker is a software enthusiast
+and not a computer intruder):
+</db:para>
+      <db:blockquote>
+<db:para>
+4. If you don't have functional English, learn it.
+</db:para>
+<db:para>
+As an American and native English-speaker myself, I have previously been
+reluctant to suggest this, lest it be taken as a sort of cultural imperialism.
+But several native speakers of other languages have urged me to point out that
+English is the working language of the hacker culture and the Internet, and
+that you will need to know it to function in the hacker community.
+</db:para>
+<db:para>
+Back around 1991 I learned that many hackers who have English as a second
+language use it in technical discussions even when they share a birth tongue;
+it was reported to me at the time that English has a richer technical
+vocabulary than any other language and is therefore simply a better tool for
+the job. For similar reasons, translations of technical books written in
+English are often unsatisfactory (when they get done at all).
+</db:para>
+<db:para>
+Linus Torvalds, a Finn, comments his code in English (it apparently never
+occurred to him to do otherwise). His fluency in English has been an important
+factor in his ability to recruit a worldwide community of developers for Linux.
+It's an example worth following.
+</db:para>
+<db:para>
+Being a native English-speaker does not guarantee that you have language skills
+good enough to function as a hacker. If your writing is semi-literate,
+ungrammatical, and riddled with misspellings, many hackers (including myself)
+will tend to ignore you. While sloppy writing does not invariably mean sloppy
+thinking, we've generally found the correlation to be strong — and we have no
+use for sloppy thinkers. If you can't yet write competently, learn to.
+</db:para>
+</db:blockquote>
+      <db:para>
+So if you're posting code for public scrutiny, make sure it is written with
+English identifiers and comments.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="using-namespace-std">
+      <db:info>
+        <db:title>“using namespace std;”</db:title>
+      </db:info>
+      <db:para>
+One can often see C++ code with <db:code>using namespace std;</db:code> on top, but that is
+a bad idea. The C++ standard requires that the “std” namespace contain certain
+symbols, but it doesn't prevent it from containing <db:emphasis role="bold">other</db:emphasis> symbols
+(presumably, implementation details of the standard library). If you use
+<db:code>using namespace std;</db:code>, you never know what else you might also be
+bringing into the global namespace.
+</db:para>
+      <db:para>
+One possible alternative is to selectively do
+<db:code>using std::cout;</db:code>, <db:code>using std::string;</db:code> and so forth,
+for each symbol that you wish to use.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="law_of_demeter">
+      <db:info>
+        <db:title>The Law of Demeter</db:title>
+      </db:info>
+      <db:para>
+See the <db:link xlink:href="http://en.wikipedia.org/wiki/Law_of_Demeter">Wikipedia article
+about “The Law of Demeter”</db:link> for more information. Namely, doing many nested
+method calls like
+<db:code>obj-&gt;get_employee('sophie')-&gt;get_address()-&gt;get_street()</db:code>
+is not advisable, and should be avoided.
+</db:para>
+      <db:para>
+A better option would be to provide methods in the containing objects to
+access those methods of their contained objects. And an even better way would
+be to structure the code so that each object handles its own domain.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="delegating_parameter_passing">
+      <db:info>
+        <db:title>Passing parameters in delegation</db:title>
+      </db:info>
+      <db:para>
+Sometimes we encounter a case where subroutines each pass the same parameter
+to one another in delegation, just because the innermost subroutines in the
+call-stack need it.
+</db:para>
+      <db:para>
+To avoid it, create a class, and declare methods that operate on the
+fields of the class, where you can assign the delegated arguments.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="duplicate_code">
+      <db:info>
+        <db:title>Duplicate Code</db:title>
+      </db:info>
+      <db:para>
+As noted in
+<db:link xlink:href="http://www.shlomifish.org/philosophy/books-recommends/#refactoring">Martin
+Fowler's "Refactoring"</db:link> book (but held as a fact for a long time
+beforehand),
+<db:link xlink:href="http://en.wikipedia.org/wiki/Duplicate_code">duplicate code</db:link> is a
+code smell, and should be avoided. The solution is to extract duplicate
+functionality into subroutines, methods and classes.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="long_functions">
+      <db:info>
+        <db:title>Long Functions and Methods</db:title>
+      </db:info>
+      <db:para>
+Another common code smell is
+<db:link xlink:href="http://c2.com/cgi/wiki?LongMethodSmell">long
+subroutines and methods</db:link>. The solution to these is to extract several
+shorter methods out, with meaningful names.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="ternary_operator_instead_of_if_else">
+      <db:info>
+        <db:title>Using the ternary operator for side-effects instead of if/else</db:title>
+      </db:info>
+      <db:para>
+People who wish to use the ternary
+inline- conditional operator (<db:code>? :</db:code>) for choosing to execute between
+two different statements with side-effects
+instead of using <db:code>if</db:code> and <db:code>else</db:code>. For example:
+</db:para>
+      <db:programlisting role="bad_code" language="cpp"># Bad code
+
+
+cond_var ? (hash["if_true"] += "Cond var is true")
+          : (hash["if_false"] += "Cond var is false")
+</db:programlisting>
+      <db:para>
+(This is assuming the ternary operator was indeed written correctly, which
+is not always the case).
+</db:para>
+      <db:para>
+However, the ternary operator is meant to be an expression that is a choice
+between two values and should not be used for its side-effects. To do the
+latter, just use <db:code>if</db:code> and <db:code>else</db:code>:
+</db:para>
+      <db:programlisting language="cpp">
+if (cond_var)
+{
+    hash["if_true"] += "Cond var is true";
+}
+else
+{
+    hash["if_false"] += "Cond var is false";
+}
+</db:programlisting>
+      <db:para>
+This is safer, and better conveys one’s intentions.
+</db:para>
+      <db:para>
+For more information, refer to
+<db:link xlink:href="http://www.nntp.perl.org/group/perl.beginners/2012/04/msg120480.html">a
+relevant thread on the Perl beginners mailing list</db:link> (just make sure you read
+it in its entirety).
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="global_vars_iface">
+      <db:info>
+        <db:title>Using Global Variables as an Interface to the Module</db:title>
+      </db:info>
+      <db:para>
+While it is possible to a large extent, one should generally not use global
+variables as an interface to a module, and should prefer having a procedural
+or an object oriented interface instead.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="global_or_function_static_vars">
+      <db:info>
+        <db:title>Using Global Variables or Function-"static" Variables</db:title>
+      </db:info>
+      <db:para>
+It is a good idea to avoid global variables or static variables inside
+functions; at least those that are not constant. This is because using such
+variables interferes with
+<db:link xlink:href="http://en.wikipedia.org/wiki/Thread_%28computing%29#Multithreading">multithreading</db:link>,
+re-entrancy and prohibits instantiation. If you need to use several common
+variables, then define an environment struct or class and pass a pointer to
+it to each of the functions.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="declaring_all_vars_at_top">
+      <db:info>
+        <db:title>Declaring all variables at the top (Pre-declarations)</db:title>
+      </db:info>
+      <db:para>
+If you are writing C++ or C starting from the C99 standard onwards (which
+isn’t supported by some non-standard-compliant compilers such as Microsoft’s
+Visual C++), then you should avoid declaring all the variables at the top
+of the program or the subroutine (a practice that is referred to as
+“pre-declaration”) and instead declare them when they are needed
+and with an immediate initialisation/definition using the
+<db:code>=</db:code> operator.
+</db:para>
+      <db:para>
+E.g:
+</db:para>
+      <db:programlisting role="bad_code" language="c"># Bad code
+
+
+int main(int argc, char * argv[])
+{
+    const char * name;
+    int i;
+
+    name = "Rupert";
+    for (i=1 ; i&lt;=10 ; i++)
+    {
+        printf ("Hello %s - No. %d!\n", name, i);
+    }
+
+    return 0;
+}
+</db:programlisting>
+      <db:para>
+Should be replaced with:
+</db:para>
+      <db:programlisting language="c">
+int main(int argc, char * argv[])
+{
+    const char * const name = "Rupert";
+    for (int i=1 ; i&lt;=10 ; i++)
+    {
+        printf ("Hello %s - No. %d!\n", name, i);
+    }
+
+    return 0;
+}
+</db:programlisting>
+    </db:section>
+    <db:section role="item" xml:id="trailing-whitespace">
+      <db:info>
+        <db:title>Trailing Whitespace</db:title>
+      </db:info>
+      <db:para>
+With many editors, it can be common to write new code or modify existing
+one, so that some lines will contain trailing whitespace, such as
+spaces (ASCII 32 or 0x20) or tabs characters. These trailing spaces normally
+do not cause much harm, but they are not needed, harm the code’s consistency,
+may undermine analysis by patching/diffing and version control tools.
+Furthermore, they usually can be eliminated easily without harm.
+</db:para>
+      <db:para>
+Here is an example of having trailing whitespace demonstrated using the
+<db:code>--show-ends</db:code> flag of the GNU <db:link xlink:href="https://en.wikipedia.org/wiki/Cat_%28Unix%29">cat command</db:link>:
+</db:para>
+      <db:programlisting language="text">
+&gt; cat --show-ends toss-coins.pl
+#!/usr/bin/perl$
+$
+use strict;$
+use warnings;$
+$
+my @sides = (0,0);$
+$
+my ($seed, $num_coins) = @ARGV;$
+$
+srand($seed);  $
+$
+for my $idx (1 .. $num_coins)$
+{$
+    $sides[int(rand(2))]++;$
+    $
+    print "Coin No. $idx\n";$
+}$
+$
+print "You flipped $sides[0] heads and $sides[1] tails.\n";$
+&gt;
+</db:programlisting>
+      <db:para>
+While you should not feel bad about having trailing space, it is a good idea
+to sometimes search for them using a command such as <db:code>ack '[ \t]+$'</db:code>
+(in version 1.x it should be <db:code>ack -a '[ \t]+$'</db:code>, see
+<db:link xlink:href="http://beyondgrep.com/">ack</db:link>), and get rid of them.
+</db:para>
+      <db:para>
+Some editors also allow you to highlight trailing whitespace when present. See
+for example:
+</db:para>
+      <db:itemizedlist>
+<db:listitem>
+<db:para>
+<db:link xlink:href="http://vim.wikia.com/wiki/Highlight_unwanted_spaces">Highlight
+unwanted spaces in Vim</db:link>. Also see <db:link xlink:href="http://vim.wikia.com/wiki/Highlight_unwanted_spaces">this post</db:link>.
+</db:para>
+</db:listitem>
+<db:listitem>
+<db:para>
+<db:link xlink:href="http://emacswiki.org/emacs/ShowWhiteSpace">EmacsWiki:
+Show White Space</db:link>.
+</db:para>
+</db:listitem>
+</db:itemizedlist>
+      <db:para>
+Finally, one can check and report trailing whitespace using the following
+CPAN modules:
+</db:para>
+      <db:itemizedlist>
+<db:listitem>
+<db:para>
+<db:link role="cpan_module" xlink:href="http://metacpan.org/module/Test::EOL">Test::EOL</db:link>.
+</db:para>
+</db:listitem>
+<db:listitem>
+<db:para>
+<db:link role="cpan_module" xlink:href="http://metacpan.org/module/Test::TrailingSpace">Test::TrailingSpace</db:link>.
+</db:para>
+</db:listitem>
+</db:itemizedlist>
+    </db:section>
+    <db:section role="item" xml:id="code_and_markup_injection">
+      <db:info>
+        <db:title>Code and Markup Injection</db:title>
+      </db:info>
+      <db:para>
+Care must be taken when constructing statements that are passed to an
+interpreter, when putting arbitrary strings inside (using substring expansion
+or other methods). This is because if the strings are subject to input from
+the outside world (including the users), then one can use specially crafted
+strings for executing arbitrary commands and exploiting the system.
+</db:para>
+      <db:para>
+An example of this is outputting HTML using
+<db:code>fprintf(file_handle, "&lt;p&gt;%s&lt;/p&gt;\n", paragraph_text);</db:code>
+or <db:code>my_file_fh &lt;&lt; "&lt;p&gt;" &lt;&lt; paragraph_text &lt;&lt; "&lt;/p&gt;" &lt;&lt; std::endl;</db:code>
+which may allow
+inserting arbitrary, malicious, markup inside <db:code>paragraph_text</db:code>,
+which may include malicious JavaScript, that can steal passwords or alter
+the page’s contents.
+</db:para>
+      <db:para>
+For more information, see:
+</db:para>
+      <db:orderedlist>
+<db:listitem>
+<db:para>
+<db:link xlink:href="http://perl-begin.org/topics/security/code-markup-injection/">“Code/Markup
+Injection and Its Prevention”</db:link> resource on the Perl beginners site.
+</db:para>
+</db:listitem>
+<db:listitem>
+<db:para>
+Wikipedia articles about
+<db:link xlink:href="http://en.wikipedia.org/wiki/SQL_injection">SQL injection</db:link>
+and
+<db:link xlink:href="http://en.wikipedia.org/wiki/Cross-site_scripting">Cross-site
+scripting</db:link>.
+</db:para>
+</db:listitem>
+<db:listitem>
+<db:para>
+The site <db:link xlink:href="http://bobby-tables.com/">Bobby Tables</db:link> about SQL
+injections.
+</db:para>
+</db:listitem>
+</db:orderedlist>
+    </db:section>
+    <db:section role="item" xml:id="using_undeclared_symbols">
+      <db:info>
+        <db:title>Using Undeclared Symbols</db:title>
+      </db:info>
+      <db:para>
+Some C or C++ compilers allow one to use functions or variables that have not
+been declared, while automatically inferring their types to be “int” or
+whatever. However, for good measure, all variables and functions should be
+declared with a proper type because they are often not the same as
+the compiler's guess. One can configure GCC and similar compilers to emit
+an error on such cases using the
+<db:code>-Werror=implicit-function-declaration</db:code> flag, which is recommended
+to add to one's build system.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="decls_not_in_common_headers">
+      <db:info>
+        <db:title>Declarations not in common headers</db:title>
+      </db:info>
+      <db:para>
+When declaring external functions, variables, classes, etc. make sure to
+put them in a common header file, which will also be included by the .c or
+.cpp file actually defining the common resource. This way if their type
+is changed, you will get a compiler error in the module that defines it,
+and there will be more certainty that there isn’t a type mismatch.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="headers_without_include_guards">
+      <db:info>
+        <db:title>Headers without #include guards or #pragma once</db:title>
+      </db:info>
+      <db:para>
+You should add <db:link xlink:href="http://en.wikipedia.org/wiki/Include_guard">#include
+guards</db:link>, or the less standard but widely supported
+<db:link xlink:href="http://en.wikipedia.org/wiki/Pragma_once">#pragma once</db:link> into
+header files (“*.h” or “*.hpp” or whatever) to prevent them from being included
+times and again by other “#include” directives. Otherwise, it may result in
+compiler warnings or errors.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="long_lines">
+      <db:info>
+        <db:title>Overly Long Lines in the Source Code</db:title>
+      </db:info>
+      <db:para>
+It is a good idea to avoid overly long lines in the source code, because
+they need to be scrolled to read, and may not fit within the margins of your
+co-developers’ text editors. If the lines are too long, you should break
+them or reformat them (for example, by adding a newline before or after an
+operator), and by breaking long string constants into several lines using
+the string concatenation operator - <db:code>.</db:code>.
+</db:para>
+      <db:para>
+Many coding standards require lines to fit within 80 characters or
+78 characters or so, and you should standardise on a similar limit for your
+own code.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="dot_asterisk">
+      <db:info>
+        <db:title>Regular Expressions starting or ending with “.*”</db:title>
+      </db:info>
+      <db:para>
+It is not necessary to put <db:code>.*</db:code> or <db:code>.*?</db:code> into the
+beginning or end of regular expressions to match something anywhere inside the
+string. So for example <db:code>regcomp(&amp;regex, ".*ab+c")</db:code> can be
+replaced with the simpler: <db:code>regcomp(&amp;regex, "ab+c")</db:code>. If you
+wish to match and extract the prefix, you should say <db:code>(.*?)</db:code> or
+<db:code>(.*)</db:code>.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="populating_array_with_same_reference">
+      <db:info>
+        <db:title>Populating a Data Structure with Multiple Copies of the Same Pointer or Reference</db:title>
+      </db:info>
+      <db:para>
+You can sometimes see code like that:
+</db:para>
+      <db:programlisting role="bad_code" language="c"># Bad code
+
+
+int * my_array[NUM];
+
+int * sub_array = malloc(sizeof(sub_array[0]) * SUB_NUM);
+if (! sub_array)
+{
+    /* Handle out-of-memory */
+}
+for (int i = 0 ; i &lt; NUM ; i++)
+{
+    populate_sub_array(i, sub_array);
+    my_array[i] = sub_array;
+}
+</db:programlisting>
+      <db:para>
+The problem with code like this is that the same physical memory location
+is being used in all places in the array, and so they will
+always be synchronised to the same contents.
+</db:para>
+      <db:para>
+As a result, the code excerpts should be written as such instead:
+</db:para>
+      <db:programlisting language="perl">
+int * my_array[NUM];
+
+for (int i = 0 ; i &lt; NUM ; i++)
+{
+    int * sub_array = malloc(sizeof(sub_array[0]) * SUB_NUM);
+    if (! sub_array)
+    {
+        /* Handle out-of-memory */
+    }
+    populate_sub_array(i, sub_array);
+    my_array[i] = sub_array;
+}
+my @array_of_arrays = map { [] } (1 .. $num_rows);
+</db:programlisting>
+    </db:section>
+    <db:section role="item" xml:id="one_var_for_two_purposes">
+      <db:info>
+        <db:title>Using One Variable for Two (or More) Different Purposes</db:title>
+      </db:info>
+      <db:para>
+Within the scope of its declaration, a variable should serve one purpose, and
+serve it well. One should not re-use a variable for a completely different
+purpose later on in the scope.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="premature_optimization">
+      <db:info>
+        <db:title>Premature Optimisation</db:title>
+      </db:info>
+      <db:para>
+On various online forums, we are often getting asked questions like:
+“What is the speediest way to do task X?” or “Which of these pieces of code
+will run faster?”. The answer is that in this day and age of extremely fast
+computers, you should optimise for clarity and modularity first, and worry
+about speed when and if you find it becomes a problem. Professor
+Don Knuth had this to say about it:
+</db:para>
+      <db:blockquote>
+<db:para>
+The improvement in speed from Example 2 to Example 2a is only about 12%, and
+many people would pronounce that insignificant. The conventional wisdom shared
+by many of today's software engineers calls for ignoring efficiency in the
+small; but I believe this is simply an overreaction to the abuses they see
+being practiced by penny-wise-and-pound-foolish programmers, who can't debug or
+maintain their "optimized" programs. In established engineering disciplines a
+12% improvement, easily obtained, is never considered marginal; and I believe
+the same viewpoint should prevail in software engineering. Of course I wouldn't
+bother making such optimizations on a one-shot job, but when it's a question of
+preparing quality programs, I don't want to restrict myself to tools that deny
+me such efficiencies.
+</db:para>
+
+<db:para>
+There is no doubt that the grail of efficiency leads to abuse. Programmers
+waste enormous amounts of time thinking about, or worrying about, the speed of
+noncritical parts of their programs, and these attempts at efficiency actually
+have a strong negative impact when debugging and maintenance are considered. We
+should forget about small efficiencies, say about 97% of the time: premature
+optimization is the root of all evil.
+</db:para>
+</db:blockquote>
+      <db:para>
+(Knuth reportedly attributed the exact quote it to C.A.R. Hoare).
+</db:para>
+      <db:para>
+While you should be conscious of efficiency, and the performance sanity of
+your code and algorithms when you write programs, excessive and premature
+micro-optimisations are probably not going to yield a major performance
+difference.
+</db:para>
+      <db:para>
+If you do find that your program runs too slowly, refer to our
+<db:link xlink:href="http://c-begin.wikia.com/wiki/Profiling_and_Optimizing">resources
+about Optimising and Profiling code</db:link>.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="version_control">
+      <db:info>
+        <db:title>Not Using Version Control</db:title>
+      </db:info>
+      <db:para>
+For everything except for short throwaway scripts, or otherwise incredibly
+short programs, there is no good excuse, not to use a version control system
+(a.k.a: "revision control systems", "source control systems", or more in
+general as part of "software configuration management"). This is especially
+true nowadays given the availability of several powerful, easy to use,
+open-source (and as a result free-of-charge), and cross-platform, version
+control systems, that you should have not a lot of problems to deploy, learn
+and use.
+</db:para>
+      <db:para>
+For more information and the motivation behind using version control systems,
+see
+<db:link xlink:href="http://perl-begin.org/tutorials/perl-for-newbies/part5/#page--version-control--DIR">the
+relevant section out of the fifth part of “Perl for Perl Newbies”</db:link>
+for more discussion about the motivation behind that, some links and a
+demonstration.
+</db:para>
+      <db:para>
+Some links for further discussion:
+</db:para>
+      <db:itemizedlist>
+<db:listitem>
+<db:para>
+<db:link xlink:href="http://better-scm.shlomifish.org/">The Better SCM Site</db:link>
+</db:para>
+</db:listitem>
+<db:listitem>
+<db:para>
+<db:link xlink:href="http://producingoss.com/en/vc-systems.html">The Free Version Control
+Systems Appendix of <db:emphasis>Producing Open Source Software</db:emphasis></db:link>.
+</db:para>
+</db:listitem>
+<db:listitem>
+<db:para>
+The Wikipedia
+<db:link xlink:href="http://en.wikipedia.org/wiki/List_of_revision_control_software">List
+of revision control software</db:link>.
+</db:para>
+</db:listitem>
+<db:listitem>
+<db:para>
+<db:link xlink:href="http://perlhacks.com/2012/03/you-must-hate-version-control-systems/">“You
+Must Hate Version Control Systems”</db:link> - a discussion on Dave Cross’ blog
+about best practices in the software development industry.
+</db:para>
+</db:listitem>
+</db:itemizedlist>
+    </db:section>
+    <db:section role="item" xml:id="automated_tests">
+      <db:info>
+        <db:title>Writing Automated Tests</db:title>
+      </db:info>
+      <db:para>
+Automated tests help verify that the code is working correctly, that bugs
+are not introduced due to refactoring or the addition of new feature, and also
+provide specifications and interface documentation to the code. As a result,
+automated tests have been considered a good practise for a long time.
+</db:para>
+      <db:para>
+For more information about how to write automated tests, see
+<db:link xlink:href="http://c-begin.wikia.com/wiki/Testing_Tools">our page</db:link> about
+quality assurance in C.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="parsing_using_regex">
+      <db:info>
+        <db:title>Parsing XML/HTML/JSON/CSV/etc. without a tried-and-tested parser</db:title>
+      </db:info>
+      <db:para>
+You should not try to parse HTML, XML, JSON, CSV, and other complex grammars
+using regular expressions, or worse - using manual character/string
+tokenisation. Instead, use a tried and tested parsing library, which you should
+be able to find using a web search.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="generating_non_valid_markup">
+      <db:info>
+        <db:title>Generating invalid Markup (of HTML/etc.)</db:title>
+      </db:info>
+      <db:para>
+You should make sure that the HTML markup you generate is
+<db:link xlink:href="http://en.wikipedia.org/wiki/XHTML#Valid_XHTML_documents">valid
+HTML</db:link> and that it validates as XHTML 1.0, HTML 4.01, HTML 5.0, or a
+different modern standard. For more information, see
+<db:link xlink:href="http://www.shlomifish.org/lecture/LAMP/slides/compatibility/">the
+“Designing for Compatibility” section</db:link> in a previous talk.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="capturing_instead_of_clustering_in_regexes">
+      <db:info>
+        <db:title>Capturing Instead of Clustering in Regular Expressions</db:title>
+      </db:info>
+      <db:para>
+If you want to group a certain sub-expression in a
+<db:link xlink:href="http://perl-begin.org/topics/regular-expressions/">regular expression</db:link>,
+without the need to capture it (into the <db:code>$1</db:code>, <db:code>$2</db:code>,
+<db:code>$3</db:code>, etc. variables and related capture variables), then
+you should cluster them using <db:code>(?: … )</db:code> instead of capturing
+them using a plain <db:code>( … )</db:code>, or alternatively not grouping them
+at all if it's needed. That is because using a cluster is faster and cleaner
+and better conveys your intentions than using a capture.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="buffer_overflows">
+      <db:info>
+        <db:title>Buffer Overflows</db:title>
+      </db:info>
+      <db:para>
+Buffer overflows involve reading or writing after one end of the buffer
+and can lead to exploitation, or crashes. More information can be found in
+<db:link xlink:href="http://en.wikipedia.org/wiki/Buffer_overflow">the Wikipedia
+article</db:link>.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="format_string_vulnerabilities">
+      <db:info>
+        <db:title>Format String Vulnerabilities (printf/etc.)</db:title>
+      </db:info>
+      <db:para>
+When passing a non-literal-constant string as the first parameter to
+“printf()”/sprintf()” and friends, one runs the risk of
+<db:link xlink:href="http://en.wikipedia.org/wiki/Uncontrolled_format_string">format
+string vulnerabilities</db:link> (more information in the link). As a result, it
+is important to always use a literal constant string to format the string. E.g:
+</db:para>
+      <db:programlisting role="bad_code" language="c"># Bad code
+
+
+fgets(str,sizeof(str), stdin);
+str[sizeof(str)-1] = '\0';
+printf(str);
+</db:programlisting>
+      <db:para>
+should be replaced with:
+</db:para>
+      <db:programlisting language="c">
+fgets(str,sizeof(str), stdin);
+str[sizeof(str)-1] = '\0';
+printf("%s", str);
+</db:programlisting>
+      <db:para>
+One can also use the
+<db:link xlink:href="http://stackoverflow.com/questions/9707569/c-array-warning-format-not-a-string-literal">relevant
+warning flags</db:link> of GCC and compatible compilers to warn and possibly generate an error for that.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="callbacks_that_dont_accept_a_context_variable">
+      <db:info>
+        <db:title>Callbacks that do not accept a “void *” context variable</db:title>
+      </db:info>
+      <db:para>
+When writing C (and sometimes C++) code, make sure that whenever you accept
+a function pointer as a callback, that it also accepts a
+<db:code>void *</db:code> context variable, which would be passed to the function
+as well. These variables are sometimes called “batons” because they are
+passed around. Without this convention, it will be harder to instantiate
+routines based on this interface, and multi-threading will be harder without
+the use of thread-local-storage.
+</db:para>
+      <db:para>
+So don't do that:
+</db:para>
+      <db:programlisting role="bad_code" language="c"># Bad code
+
+
+void my_sort(my_type * const array, const size_t count,
+    int (*compare)(my_type *, my_type *));
+</db:programlisting>
+      <db:para>
+And instead do that:
+</db:para>
+      <db:programlisting language="c">
+void my_sort(my_type * const array, const size_t count,
+    int (*compare)(my_type *, my_type *, void *), void * const context);
+</db:programlisting>
+    </db:section>
+    <db:section role="item" xml:id="not_using_a_proper_build_system">
+      <db:info>
+        <db:title>Not Using a Proper Build System</db:title>
+      </db:info>
+      <db:para>
+It is a very good idea for C and C++ code to use a good build and configuration
+system. There’s
+<db:link xlink:href="http://www.shlomifish.org/open-source/resources/software-tools/">a page listing some prominent alternatives</db:link>. For simple setups, a make file
+may be suitable, but more complex tasks require a configuration and build
+system such as <db:link xlink:href="http://en.wikipedia.org/wiki/CMake">CMake</db:link>.
+</db:para>
+    </db:section>
+    <db:section role="item" xml:id="not_using_a_bug_tracker">
+      <db:info>
+        <db:title>Not Using a Bug Tracker/Issue Tracker</db:title>
+      </db:info>
+      <db:para>
+It is important to use a <db:link xlink:href="http://en.wikipedia.org/wiki/Bug_tracking_system">bug tracking</db:link>
+system to maintain a list of bugs and issues that need to be fixed in your
+code, and of features that you'd like to work on. Sometimes, a simple file kept
+inside the version control system would be enough, but at other times, you
+should opt for a web-based bug tracker.
+</db:para>
+      <db:para>
+For more information, see:
+</db:para>
+      <db:itemizedlist>
+
+<db:listitem>
+<db:para>
+<db:link xlink:href="http://www.joelonsoftware.com/articles/fog0000000029.html">Joel
+on Software article about “Painless Bug Tracking”</db:link>
+</db:para>
+</db:listitem>
+
+<db:listitem>
+<db:para>
+<db:link xlink:href="http://www.shlomifish.org/open-source/resources/software-tools/#bug_tracking">“Bug
+Trackers” list</db:link> on Shlomi Fish’s “Software Construction and Management
+Tools” page.
+</db:para>
+</db:listitem>
+
+<db:listitem>
+<db:para>
+<db:link xlink:href="http://www.thegeekstuff.com/2010/08/bug-tracking-system/">“Top
+10 Open Source Bug Tracking Systems”</db:link>
+</db:para>
+</db:listitem>
+
+</db:itemizedlist>
+    </db:section>
+  </db:section>
+  <db:section xml:id="sources_of_advice">
+    <db:info>
+      <db:title>Sources of This Advice</db:title>
+    </db:info>
+    <db:para>
+This is a short list of the sources from which this advice was taken which
+also contains material for further reading:
+</db:para>
+    <db:orderedlist>
+
+<db:listitem>
+<db:para>
+A large part of this document is derived from
+<db:link xlink:href="http://perl-begin.org/tutorials/bad-elements/">a similar
+document</db:link> written earlier for the Perl programming language.
+</db:para>
+</db:listitem>
+
+<db:listitem>
+<db:para>
+    <db:link xlink:href="http://perl-begin.org/books/advanced/#pbp">The
+Book "Perl Best Practices"</db:link> by Damian Conway - contains a lot of good
+advice and food for thought, but sometimes should be deviated from.
+Also see the
+<db:link xlink:href="https://www.socialtext.net/perl5/index.cgi?pbp_module_recommendation_commentary">"PBP
+Module Recommendation Commentary"</db:link> on the Perl 5 Wiki.
+</db:para>
+</db:listitem>
+
+<db:listitem>
+<db:para>
+<db:link xlink:href="https://www.socialtext.net/perl5/index.cgi?ancient_perl">"Ancient
+Perl"</db:link> on the Perl 5 Wiki.
+</db:para>
+</db:listitem>
+
+<db:listitem>
+<db:para>
+<db:link xlink:href="http://modernperlbooks.com/">chromatic's "Modern Perl" Book and
+Blog</db:link>
+</db:para>
+</db:listitem>
+
+<db:listitem>
+<db:para>
+The book <db:link xlink:href="http://www.refactoring.com/"><db:emphasis>Refactoring</db:emphasis> by Martin
+Fowler</db:link> - not particularly about Perl, but still useful.
+</db:para>
+</db:listitem>
+
+<db:listitem>
+<db:para>
+The book
+<db:link xlink:href="http://pragprog.com/book/tpp/the-pragmatic-programmer"><db:emphasis>The Pragmatic
+Programmer: From Journeyman to Master</db:emphasis></db:link> - also not particularly about
+Perl, and I found it somewhat disappointing, but it is an informative book.
+</db:para>
+</db:listitem>
+
+<db:listitem>
+<db:para>
+The list <db:link xlink:href="https://www.theopensourceway.org/wiki/How_to_tell_if_a_FLOSS_project_is_doomed_to_FAIL">“How
+to tell if a FLOSS project is doomed to FAIL”</db:link>.
+</db:para>
+</db:listitem>
+
+<db:listitem>
+<db:para>
+Advice given by people on
+<db:link xlink:href="http://perl-begin.org/irc/#freenode">Freenode's #perl
+channel</db:link>, on the Perl Beginners mailing list, and on other Perl forums.
+</db:para>
+</db:listitem>
+
+<db:listitem>
+<db:para>
+Advice given by people on Freenode’s ##programming channel and on other forums.
+</db:para>
+</db:listitem>
+
+</db:orderedlist>
+  </db:section>
+</db:article>

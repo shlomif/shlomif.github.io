@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="multimap.html"/><title>Examples</title></head><body><main><header><h1>4.1. Examples</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="multimap.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">Haskell for Perl Programmers</a> → <a href="./">List and String Manipulation Routines</a> → <a href="examples.html">Examples</a></div></nav><h2>Greatest Common Prefix of a List of Strings</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+prefix_2 <span class="Statement">::</span> Eq a <span class="Statement">=&gt;</span> [a] <span class="Statement">-&gt;</span> [a] <span class="Statement">-&gt;</span> [a]
+
+prefix_2 xs [] <span class="Statement">=</span> []
+prefix_2 [] xs <span class="Statement">=</span> []
+prefix_2 (a<span class="Statement">:</span>as) (b<span class="Statement">:</span>bs) <span class="Statement">=</span> <span class="Statement">if</span> a <span class="Statement">==</span> b
+                         <span class="Statement">then</span> a<span class="Statement">:</span>(prefix_2 as bs)
+                         <span class="Statement">else</span> []
+
+<span class="Comment">-- Can also be expressed as:</span>
+prefix_2_other xs ys <span class="Statement">=</span> map fst <span class="Statement">.</span> takeWhile (uncurry (<span class="Statement">==</span>)) <span class="Statement">$</span> (zip xs ys)
+
+gc_prefix <span class="Statement">::</span> Eq a <span class="Statement">=&gt;</span> [[a]] <span class="Statement">-&gt;</span> [a]
+
+gc_prefix [] <span class="Statement">=</span> []
+gc_prefix (a<span class="Statement">:</span>as) <span class="Statement">=</span> foldl prefix_2 a as
+</pre></td></tr></table><h2>Split</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+<span class="PreProc">import</span> List
+
+mysplit <span class="Statement">::</span> Eq a <span class="Statement">=&gt;</span> [a] <span class="Statement">-&gt;</span> [a] <span class="Statement">-&gt;</span> [[a]]
+
+mysplit separator base <span class="Statement">=</span> helper base <span class="Type">where</span>
+    len <span class="Statement">=</span> (length separator)
+    helper [] <span class="Statement">=</span> [[]]
+    helper base <span class="Statement">=</span>
+        (<span class="Statement">if</span> (isPrefixOf separator base)
+         <span class="Statement">then</span> []<span class="Statement">:</span>(helper (drop len base))
+         <span class="Statement">else</span> <span class="Statement">let</span> ret <span class="Statement">=</span> (helper (tail base))
+              <span class="Statement">in</span> (head(base)<span class="Statement">:</span>head(ret)) <span class="Statement">:</span> tail(ret)
+        )
+</pre></td></tr></table><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="multimap.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

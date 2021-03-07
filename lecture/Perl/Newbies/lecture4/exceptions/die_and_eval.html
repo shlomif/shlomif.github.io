@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="carp.html"/><title>die and eval</title></head><body><main><header><h1>6.1. die and eval</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="carp.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 4</a> → <a href="./">Exceptions</a> → <a href="die_and_eval.html">die and eval</a></div></nav><p>The statement <code>die</code> throws an exception which can be any Perl scalar. The statement <code>eval { ... }</code> catches an excpetion that was given inside it, and after it sets the special variable <code>$@</code> to be the value of the exception or undef if none was caught.</p><p>Here's an example:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+
+<span class="Statement">sub </span><span class="Identifier">read_text</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$filename</span> = <span class="Constant">&quot;../hello/there.txt&quot;</span> ;
+    <span class="Statement">open</span> <span class="Identifier">I</span>, <span class="Constant">&quot;&lt;</span><span class="Identifier">$filename</span><span class="Constant">&quot;</span>
+        <span class="Statement">or</span> <span class="Statement">die</span> <span class="Constant">&quot;Could not open </span><span class="Identifier">$filename</span><span class="Constant">&quot;</span>;
+    <span class="Statement">my</span> <span class="Identifier">$text</span> = <span class="Statement">join</span>(<span class="Constant">&quot;&quot;</span>,<span class="Identifier">&lt;I&gt;</span>);
+    <span class="Statement">close</span>(<span class="Identifier">I</span>);
+
+    <span class="Statement">return</span> <span class="Identifier">$text</span>;
+&#x7D;
+
+<span class="Statement">sub </span><span class="Identifier">write_text</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$text</span> = <span class="Statement">shift</span>;
+    <span class="Statement">my</span> <span class="Identifier">$filename</span> = <span class="Constant">&quot;../there/hello.txt&quot;</span>;
+    <span class="Statement">open</span> <span class="Identifier">O</span>, <span class="Constant">&quot;&gt;</span><span class="Identifier">$filename</span><span class="Constant">&quot;</span>
+        <span class="Statement">or</span> <span class="Statement">die</span> <span class="Constant">&quot;Could not open </span><span class="Identifier">$filename</span><span class="Constant"> for writing&quot;</span>;
+    <span class="Statement">print</span> <span class="Identifier">O</span> <span class="Identifier">$text</span>;
+    <span class="Statement">close</span>(<span class="Identifier">O</span>);
+&#x7D;
+
+<span class="Statement">sub </span><span class="Identifier">read_and_write</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$text</span> = read_text();
+
+    write_text(<span class="Identifier">$text</span>);
+&#x7D;
+
+<span class="Statement">sub </span><span class="Identifier">perform_transaction</span>
+&#x7B;
+    <span class="Statement">eval</span> &#x7B;
+    read_and_write();
+    &#x7D;;
+    <span class="Statement">if</span> (<span class="Identifier">$@</span>)
+    &#x7B;
+        <span class="Statement">print</span> <span class="Constant">&quot;Could not perform the transaction. Reason is:</span><span class="Special">\n</span><span class="Identifier">$@</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+    &#x7D;
+&#x7D;
+
+perform_transaction();
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="carp.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

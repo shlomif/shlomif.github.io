@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>PostgreSQL - Installation</title>
+<link rel="stylesheet" href="style.css" media=
+"screen" title="Normal" />
+</head>
+<body>
+<h1>Installation</h1>
+<h3>1. Install the packages:<br />
+<br />
+<code>root:/mnt/cdrom/Red-Hat/RPMS# rpm -Uvh
+postgresql-6.5.2-1.i386.rpm<br />
+root:/mnt/cdrom/Red-Hat/RPMS# rpm -Uvh
+postgresql-server-6.5.2-1.i386.rpm<br />
+root:/mnt/cdrom/Red-Hat/RPMS# rpm -Uvh
+postgresql-devel-6.5.2-1.i386.rpm<br />
+root:/mnt/cdrom/Red-Hat/RPMS# rpm -Uvh
+postgresql-perl-6.5.2-1.i386.rpm<br />
+root:/mnt/cdrom/Red-Hat/RPMS# rpm -Uvh
+postgresql-tcl-6.5.2-1.i386.rpm<br /></code><br />
+2. Su into the user postgres and run "initdb" to initialize the
+database server. For example:<br />
+<br />
+<code>bash$ initdb --pglib=/usr/lib/pgsql
+--pgdata=/var/lib/pgsql</code><br />
+<br />
+3. As root, Run the database server:<br />
+<br />
+<code>root:~# /etc/rc.d/init.d/postgresql start</code><br />
+<br />
+4. Using the postgres user, create a database user for every user
+who wishes to use the database. Using the "createuser"
+utility:<br />
+<br />
+<code>bash$ createuser shlomi<br />
+Enter user's postgres ID or RETURN to use unix user ID: 500
+-&gt;<br />
+Is user "shlomi" allowed to create databases (y/n) y<br />
+Is user "shlomi" a superuser? (y/n) n<br />
+createuser: shlomi was successfully added<br /></code><br />
+5. Login as a regular user, and create a database using
+createdb:<br />
+<br />
+<code>shlomi:~# createdb test</code><br />
+<br /></h3>
+</body>
+</html>

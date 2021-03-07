@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="../processes/string-shellquote.html"/><link rel="next" href="sort.html"/><title>More about || and &amp;&amp;</title></head><body><main><header><h1>5. More about || and &amp;&amp;</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="../" class="nav" accesskey="u">Up</a></td><td><a href="../processes/string-shellquote.html" class="nav" accesskey="p">Prev</a></td><td><a href="sort.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 4</a> → <a href="./">More about || and &amp;&amp;</a></div></nav><p><code>||</code> and <code>&amp;&amp;</code> return the last argument that was evaluated. Thus, <code>||</code> is useful for assigning default values, like this:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+
+<span class="Comment"># shift by default shifts from @ARGV in the main program</span>
+<span class="Statement">my</span> <span class="Identifier">$start</span> = <span class="Statement">shift</span> || <span class="Constant">1</span>;
+<span class="Statement">my</span> <span class="Identifier">$end</span> = <span class="Statement">shift</span> || (<span class="Identifier">$start</span>+<span class="Constant">9</span>);
+
+<span class="Statement">for</span> <span class="Statement">my</span> <span class="Identifier">$i</span> (<span class="Identifier">$start</span> .. <span class="Identifier">$end</span>)
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Identifier">$i</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+</pre></div><ul class="contentsmain"><li><a href="sort.html" class="contents">5.1. For sort()</a></li><li><a href="english_and_or.html" class="contents">5.2. The "and" and "or" Operators</a></li></ul><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="../" class="nav">Up</a></td><td><a href="../processes/string-shellquote.html" class="nav">Prev</a></td><td><a href="sort.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

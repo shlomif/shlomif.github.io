@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="backslash.html"/><title>Example: The Towers of Hanoi</title></head><body><main><header><h1>10.1. Example: The Towers of Hanoi</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="backslash.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">References</a> → <a href="hanoi.html">Example: The Towers of Hanoi</a></div></nav><p>In this example, which is intended to give a taste of the capabilities of references, we will solve the well-known <a href="http://www.cut-the-knot.org/recurrence/hanoi.shtml">Towers of Hanoi</a> problem. (Refer to the link to learn more about the problem.) The number of disks can be input from the command-line. The towers themselves will be represented as an array of three elements, each of which is a reference to an array.</p><p>We will use the recursive solution in which in order to move a column of $N disks, we first move the upper column with $N-1 disks and then move the bottom most disk, and then move the $N-1 disks-long column on top of it.</p><p>Here goes:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$num_disks</span> = <span class="Statement">shift</span> || <span class="Constant">9</span>;
+
+<span class="Statement">my</span> <span class="Identifier">@towers</span> = (
+    [ <span class="Statement">reverse</span>(<span class="Constant">1</span> .. <span class="Identifier">$num_disks</span>) ],  <span class="Comment"># A [ ... ] is a dynamic reference to</span>
+    [ ],                           <span class="Comment"># an array</span>
+    [ ]
+    );
+
+<span class="Statement">sub </span><span class="Identifier">print_towers</span>
+&#x7B;
+    <span class="Statement">for</span>(<span class="Statement">my</span> <span class="Identifier">$i</span>=<span class="Constant">0</span> ; <span class="Identifier">$i</span> &lt; <span class="Constant">3</span> ; <span class="Identifier">$i</span>++)
+    &#x7B;
+        <span class="Statement">print</span> <span class="Constant">&quot;: &quot;</span>;
+        <span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot; &quot;</span>, <span class="Identifier">@&#x7B;$towers[$i]&#x7D;</span>); <span class="Comment"># We de-reference the tower</span>
+        <span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+    &#x7D;
+    <span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Special">\n\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+
+<span class="Statement">sub </span><span class="Identifier">move_column</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$source</span> = <span class="Statement">shift</span>;
+    <span class="Statement">my</span> <span class="Identifier">$dest</span> = <span class="Statement">shift</span>;
+    <span class="Statement">my</span> <span class="Identifier">$how_many</span> = <span class="Statement">shift</span>;
+
+    <span class="Statement">if</span> (<span class="Identifier">$how_many</span> == <span class="Constant">0</span>)
+    &#x7B;
+        <span class="Statement">return</span>;
+    &#x7D;
+    <span class="Comment"># Find the third column</span>
+    <span class="Statement">my</span> <span class="Identifier">$intermediate</span> = <span class="Constant">0</span>+<span class="Constant">1</span>+<span class="Constant">2</span>-<span class="Identifier">$source</span>-<span class="Identifier">$dest</span>;
+    move_column(<span class="Identifier">$source</span>, <span class="Identifier">$intermediate</span>, <span class="Identifier">$how_many</span>-<span class="Constant">1</span>);
+    <span class="Comment"># Print the current state</span>
+    print_towers();
+    <span class="Comment"># Move one disk. Notice the dereferencing of the arrays</span>
+    <span class="Comment"># using @&#x7B;$ref&#x7D;.</span>
+    <span class="Statement">push</span> <span class="Identifier">@&#x7B;$towers[$dest]&#x7D;</span>, <span class="Statement">pop</span>(<span class="Identifier">@&#x7B;$towers[$source]&#x7D;</span>);
+    move_column(<span class="Identifier">$intermediate</span>, <span class="Identifier">$dest</span>, <span class="Identifier">$how_many</span>-<span class="Constant">1</span>);
+&#x7D;
+
+<span class="Comment"># Move the entire column</span>
+move_column(<span class="Constant">0</span>,<span class="Constant">1</span>,<span class="Identifier">$num_disks</span>);
+print_towers();
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="backslash.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

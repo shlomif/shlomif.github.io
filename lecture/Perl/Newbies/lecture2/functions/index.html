@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="../my/use_warnings.html"/><link rel="next" href="recursion.html"/><title>Functions</title></head><body><main><header><h1>4. Functions</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="../" class="nav" accesskey="u">Up</a></td><td><a href="../my/use_warnings.html" class="nav" accesskey="p">Prev</a></td><td><a href="recursion.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">Functions</a></div></nav><p>We already encountered some of Perl's built-in functions. Perl enables us to define our own functions using Perl code. Whenever you use a piece of code more than once in a program, it is a good idea to make it into a function. That way, you won't have to change it in more than one place.</p><p>In Perl, every function accepts an array of arguments and returns an array of return values. The arguments (also known as "parameters") can be found in the <code>@_</code> variable. This variable is magical and need not and should not be declared with <code>my</code>. In order to return values from a function, one can use the <code>return</code> keyword.</p><p>To declare a function use type <code>sub function_name {</code> at the beginning and a <code>}</code> at the end. Everything in between, is the function body.</p><p>Here's an example, for a function that returns the maximum and the minimum of an array of numbers.</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">sub </span><span class="Identifier">min_and_max</span>
+&#x7B;
+    <span class="Statement">my</span> (<span class="Identifier">@numbers</span>);
+
+    <span class="Identifier">@numbers</span> = <span class="Identifier">@_</span>;
+
+    <span class="Statement">my</span> (<span class="Identifier">$min</span>, <span class="Identifier">$max</span>);
+
+    <span class="Identifier">$min</span> = <span class="Identifier">$numbers[</span><span class="Constant">0</span><span class="Identifier">]</span>;
+    <span class="Identifier">$max</span> = <span class="Identifier">$numbers[</span><span class="Constant">0</span><span class="Identifier">]</span>;
+
+    <span class="Statement">foreach</span> <span class="Statement">my</span> <span class="Identifier">$i</span> (<span class="Identifier">@numbers</span>)
+    &#x7B;
+        <span class="Statement">if</span> (<span class="Identifier">$i</span> &gt; <span class="Identifier">$max</span>)
+        &#x7B;
+            <span class="Identifier">$max</span> = <span class="Identifier">$i</span>;
+        &#x7D;
+        <span class="Statement">elsif</span> (<span class="Identifier">$i</span> &lt; <span class="Identifier">$min</span>)
+        &#x7B;
+            <span class="Identifier">$min</span> = <span class="Identifier">$i</span>;
+        &#x7D;
+    &#x7D;
+
+    <span class="Statement">return</span> (<span class="Identifier">$min</span>, <span class="Identifier">$max</span>);
+&#x7D;
+
+<span class="Statement">my</span> (<span class="Identifier">@test_array</span>, <span class="Identifier">@ret</span>);
+<span class="Identifier">@test_array</span> = (<span class="Constant">123</span>, <span class="Constant">23</span> , -<span class="Constant">6</span>, <span class="Constant">7</span> , <span class="Constant">80</span>, <span class="Constant">300</span>, <span class="Constant">45</span>, <span class="Constant">2</span>, <span class="Constant">9</span>, <span class="Constant">1000</span>, -<span class="Constant">90</span>, <span class="Constant">3</span>);
+
+<span class="Identifier">@ret</span> = min_and_max(<span class="Identifier">@test_array</span>);
+
+<span class="Statement">print</span> <span class="Constant">&quot;The minimum is &quot;</span>, <span class="Identifier">$ret[</span><span class="Constant">0</span><span class="Identifier">]</span>, <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Statement">print</span> <span class="Constant">&quot;The maximum is &quot;</span>, <span class="Identifier">$ret[</span><span class="Constant">1</span><span class="Identifier">]</span>, <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>And here's another one for a function that calculates the hypotenuse of a right triangle according to its other sides:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">sub </span><span class="Identifier">pythagoras</span>
+&#x7B;
+    <span class="Statement">my</span> (<span class="Identifier">$x</span>, <span class="Identifier">$y</span>);
+
+    (<span class="Identifier">$x</span>, <span class="Identifier">$y</span>) = <span class="Identifier">@_</span>;
+
+    <span class="Statement">return</span> <span class="Statement">sqrt</span>(<span class="Identifier">$x</span>**<span class="Constant">2</span>+<span class="Identifier">$y</span>**<span class="Constant">2</span>);
+&#x7D;
+
+<span class="Statement">print</span> <span class="Constant">&quot;The hypotenuse of a right triangle with sides 3 and 4 is &quot;</span>,
+    pythagoras(<span class="Constant">3</span>,<span class="Constant">4</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="../" class="nav">Up</a></td><td><a href="../my/use_warnings.html" class="nav">Prev</a></td><td><a href="recursion.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../style.css" type="text/css"/><link rel="prev" href="../map.html"/><link rel="next" href="cmp.html"/><title>sort</title></head><body><main><header><h1>9.3. sort</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../" class="nav" accesskey="c">Contents</a></td><td><a href="../" class="nav" accesskey="u">Up</a></td><td><a href="../map.html" class="nav" accesskey="p">Prev</a></td><td><a href="cmp.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../">"Perl for Perl Newbies" - Part 2</a> → <a href="../">Useful Functions</a> → <a href="./">sort</a></div></nav><p>The <code>sort</code> function can sort an array based on a comparison expression. As with the <code>map</code> function, this expression can be as complex as you'd like and may actually include a call to a dedicated function.</p><p>Within the comparison block, the variables <code>$a</code> and <code>$b</code> indicate the two elements to be compared. If the expression returns a negative value it means that <code>$a</code> should precede <code>$b</code>. If it is positive, it means that <code>$b</code> should come before <code>$a</code>. If it is zero, it indicates that it does not matter which one will come first.</p><p>The following example sorts an array of integers numerically:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">@array</span> = (<span class="Constant">100</span>,<span class="Constant">5</span>,<span class="Constant">8</span>,<span class="Constant">92</span>,-<span class="Constant">7</span>,<span class="Constant">34</span>,<span class="Constant">29</span>,<span class="Constant">58</span>,<span class="Constant">8</span>,<span class="Constant">10</span>,<span class="Constant">24</span>);
+
+<span class="Statement">my</span> <span class="Identifier">@sorted_array</span> =
+    (<span class="Statement">sort</span>
+        &#x7B;
+            <span class="Statement">if</span> (<span class="Identifier">$a</span> &lt; <span class="Identifier">$b</span>)
+            &#x7B;
+                <span class="Statement">return</span> -<span class="Constant">1</span>;
+            &#x7D;
+            <span class="Statement">elsif</span> (<span class="Identifier">$a</span> &gt; <span class="Identifier">$b</span>)
+            &#x7B;
+                <span class="Statement">return</span> <span class="Constant">1</span>;
+            &#x7D;
+            <span class="Statement">else</span>
+            &#x7B;
+                <span class="Statement">return</span> <span class="Constant">0</span>;
+            &#x7D;
+        &#x7D;
+        <span class="Identifier">@array</span>
+    );
+
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;,&quot;</span>, <span class="Identifier">@sorted_array</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../" class="nav">Contents</a></td><td><a href="../" class="nav">Up</a></td><td><a href="../map.html" class="nav">Prev</a></td><td><a href="cmp.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

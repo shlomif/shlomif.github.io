@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="map.html"/><title>split</title></head><body><main><header><h1>9.1. split</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="map.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">Useful Functions</a> → <a href="split.html">split</a></div></nav><p>The <code>split</code> function can be used to split a string according to a regular expression. The syntax of the split function is as follows:</p><p><code>@components = split(/$regexp/, $string);</code></p><p>Here's a simple example that retrieves the user-id of a given username:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> (<span class="Identifier">$line</span>, <span class="Identifier">@parts</span>);
+
+<span class="Statement">my</span> <span class="Identifier">$user_name</span> = <span class="Statement">shift</span>;
+
+<span class="Statement">open</span> <span class="Statement">my</span> <span class="Identifier">$in</span>, <span class="Constant">&quot;&lt;&quot;</span>, <span class="Constant">&quot;/etc/passwd&quot;</span>;
+<span class="Statement">while</span> (<span class="Identifier">$line</span> = &lt;<span class="Identifier">$in</span>&gt;)
+&#x7B;
+    <span class="Identifier">@parts</span> = <span class="Statement">split</span>(<span class="Statement">/</span><span class="Constant">:</span><span class="Statement">/</span>, <span class="Identifier">$line</span>);
+    <span class="Statement">if</span> (<span class="Identifier">$parts[</span><span class="Constant">0</span><span class="Identifier">]</span> <span class="Statement">eq</span> <span class="Identifier">$user_name</span>)
+    &#x7B;
+        <span class="Statement">print</span> <span class="Identifier">$user_name</span> . <span class="Constant">&quot;'s user ID is &quot;</span> . <span class="Identifier">$parts[</span><span class="Constant">2</span><span class="Identifier">]</span> . <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+        <span class="Statement">exit</span>(<span class="Constant">0</span>);
+    &#x7D;
+&#x7D;
+<span class="Statement">close</span>(<span class="Identifier">$in</span>);
+
+<span class="Statement">print</span> <span class="Identifier">$user_name</span> . <span class="Constant">&quot;'s user ID was not found!</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Statement">exit</span>(-<span class="Constant">1</span>);
+</pre></div><p>The following code splits a sentence into words and prints them:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$sentence</span> = <span class="Statement">shift</span>;
+
+<span class="Statement">my</span> <span class="Identifier">@words</span> = <span class="Statement">split</span>(<span class="Statement">/</span><span class="Special">\s+</span><span class="Statement">/</span>, <span class="Identifier">$sentence</span>);
+
+<span class="Statement">my</span> <span class="Identifier">$i</span>;
+<span class="Statement">for</span>(<span class="Identifier">$i</span>=<span class="Constant">0</span>;<span class="Identifier">$i</span>&lt;<span class="Statement">scalar</span>(<span class="Identifier">@words</span>);<span class="Identifier">$i</span>++)
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Identifier">$i</span><span class="Constant">: &quot;</span> . <span class="Identifier">$words[$i]</span> . <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="map.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

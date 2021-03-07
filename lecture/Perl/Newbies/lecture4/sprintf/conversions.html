@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="flags.html"/><title>Supported Conversions</title></head><body><main><header><h1>2.1. Supported Conversions</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="flags.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 4</a> → <a href="./">The sprintf function</a> → <a href="conversions.html">Supported Conversions</a></div></nav><p>Here are some of the supported conversions:</p><table><tr><td><code>%%</code></td><td>An actual percent sign</td></tr><tr><td><code>%c</code></td><td>A character with the given ASCII number</td></tr><tr><td><code>%s</code></td><td>A string</td></tr><tr><td><code>%d</code></td><td>A signed integer, in decimal (also <code>%i</code>)</td></tr><tr><td><code>%o</code></td><td>An integer in octal</td></tr><tr><td><code>%x</code></td><td>An integer in hexadecimal. (use <code>%X</code> for uppercase hex)</td></tr><tr><td><code>%e</code></td><td>A floating point number, in scientific notation.</td></tr><tr><td><code>%f</code></td><td>A float in fixed decimal notation.</td></tr><tr><td><code>%b</code></td><td>An integer in binary</td></tr></table><p>Here are some examples:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">print</span> <span class="Statement">sprintf</span>(<span class="Constant">&quot;There is %i%% of alcohol in this beverage</span><span class="Special">\n</span><span class="Constant">&quot;</span>, <span class="Constant">27</span>);
+<span class="Statement">print</span> <span class="Statement">sprintf</span>(<span class="Constant">&quot;%s%s</span><span class="Special">\n</span><span class="Constant">&quot;</span>, <span class="Constant">&quot;This string&quot;</span>, <span class="Constant">&quot; ends here.&quot;</span>);
+<span class="Statement">print</span> <span class="Statement">sprintf</span>(<span class="Constant">&quot;650 in hex is 0x%x</span><span class="Special">\n</span><span class="Constant">&quot;</span>, <span class="Constant">650</span>);
+<span class="Statement">print</span> <span class="Statement">sprintf</span>(<span class="Constant">&quot;650 in binary is 0b%b</span><span class="Special">\n</span><span class="Constant">&quot;</span>, <span class="Constant">650</span>);
+<span class="Statement">print</span> <span class="Statement">sprintf</span>(<span class="Constant">&quot;3.2 + 1.6 == %f</span><span class="Special">\n</span><span class="Constant">&quot;</span>, <span class="Constant">3.2</span>+<span class="Constant">1.6</span>);
+</pre></div><p>And their output is:</p><div class="code_block"><pre>
+There is 27% of alcohol in this beverage
+This string ends here.
+650 in hex is 0x28a
+650 in binary is 0b1010001010
+3.2 + 1.6 == 4.800000
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="flags.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

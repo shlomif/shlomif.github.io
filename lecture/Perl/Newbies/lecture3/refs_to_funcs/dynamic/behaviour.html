@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="dispatch.html"/><title>Behaviour of Functions inside Functions</title></head><body><main><header><h1>2.3.1. Behaviour of Functions inside Functions</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="dispatch.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../">Perl for Newbies - Part 3 - Modules and Objects</a> → <a href="../">References to Functions</a> → <a href="./">Dynamic References to Functions</a> → <a href="behaviour.html">Behaviour of Functions inside Functions</a></div></nav><p>One can define such a reference to a function within another function. It is possible that this reference will be made accessible to the outside world after the outer function has terminated. In that case, the the inner function (which is called a <b>closure</b>) will remember all the relevant variables of the outer function.</p><p>Note that if two calls were made to the outer function, then the two resulting closures are by no mean related. Thus, changes in the variables of one closure will not affect the other. (unless, of course, they are global to both).</p><p>Here's an example to illustrate this:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">sub </span><span class="Identifier">create_counter</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$counter</span> = <span class="Constant">0</span>;
+
+    <span class="Statement">my</span> <span class="Identifier">$counter_func</span> = <span class="Statement">sub </span>&#x7B;
+        <span class="Statement">return</span> (<span class="Identifier">$counter</span>++);
+    &#x7D;;
+
+    <span class="Statement">return</span> <span class="Identifier">$counter_func</span>;
+&#x7D;
+
+<span class="Statement">my</span> <span class="Identifier">@counters</span> = (create_counter(), create_counter());
+
+<span class="Comment"># Initialize the random number generator to a constant value;</span>
+<span class="Statement">srand</span>(<span class="Constant">24</span>);
+
+<span class="Statement">for</span> <span class="Statement">my</span> <span class="Identifier">$i</span> (<span class="Constant">1</span> .. <span class="Constant">100</span>)
+&#x7B;
+    <span class="Comment"># This call generates a random number that is either 0 or 1</span>
+    <span class="Statement">my</span> <span class="Identifier">$which_counter</span> = <span class="Statement">int</span>(<span class="Statement">rand</span>(<span class="Constant">2</span>));
+
+    <span class="Statement">my</span> <span class="Identifier">$value</span> = <span class="Identifier">$counters[$which_counter]</span>-&gt;();
+
+    <span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Identifier">$which_counter</span><span class="Constant"> = </span><span class="Identifier">$value</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="dispatch.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

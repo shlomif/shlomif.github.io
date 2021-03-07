@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="variables.html"/><title>Makefile Basics</title></head><body><main><header><h1>3.1. Makefile Basics</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="variables.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">Software Development under Linux</a> → <a href="./">Writing Makefiles</a> → <a href="basics.html">Makefile Basics</a></div></nav><ul class="point"><li>A makefile is built out of a set of targets which we want to build and intermediate targets used in the build process.</li><li>In a makefile, the target is followed by a colon (:), which is then followed by a list of its dependent targets or files (commonly referred to as dependencies). Afterwards in a new line, there should be a tab character (and not any other whitespace before or afterwards), followed by the command used to generate the target from the dependencies.</li></ul><h2>Example</h2><div class="mycode"><pre>
+<span class="c31">foo</span>: foo.o helper.o
+    gcc -Wall foo.o helper.o -o foo
+
+<span class="c31">bar</span>: bar.o helper.o
+    gcc -Wall bar.o helper.o -o bar
+
+<span class="c31">bar.o</span>: bar.c
+    gcc bar.c -c -o bar
+
+<span class="c31">foo.o</span>: foo.c foo.h
+    gcc -ansi -Wall -c foo.c -o foo.o
+</pre></div><ul class="point"><li>To run make one types: <code>make [target_name]</code></li><li>If no target is specified the first target in the makefile is used.</li></ul><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="variables.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

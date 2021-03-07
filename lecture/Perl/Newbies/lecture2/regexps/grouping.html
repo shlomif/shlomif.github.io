@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="asterisk.html"/><link rel="next" href="alternation.html"/><title>Grouping</title></head><body><main><header><h1>7.4. Grouping</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="asterisk.html" class="nav" accesskey="p">Prev</a></td><td><a href="alternation.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">Regular Expressions</a> → <a href="grouping.html">Grouping</a></div></nav><p>One can use the cluster grouping notation (<code>(?: ... )</code>) or the capture grouping notation (<code>( ... )</code>) to group several characters so the entire group can be repeated with <code>+</code>, <code>*</code> or <code>?</code>.</p><p>The difference between clustering and capturing, is that with capturing the Perl interpreter also keeps track of the text matched by the captures in the <code>$1</code>, <code>$2</code>, <code>$3</code>, etc. variables. Clustering as a result is faster and less intrusive.</p><p>For example, the following perl program accepts a string as an argument, and checks if it is an entire sentence that starts with "the" and ends with "there":</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$string</span> = <span class="Statement">lc</span>(<span class="Statement">shift</span>(<span class="Identifier">@ARGV</span>));
+
+<span class="Statement">if</span> (<span class="Identifier">$string</span> =~ <span class="Statement">/</span><span class="Constant">the</span><span class="Special">(?:</span><span class="Constant"> </span><span class="Special">+[a-z]+)*</span><span class="Constant"> </span><span class="Special">+</span><span class="Constant">there</span><span class="Statement">/</span>)
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;True</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+<span class="Statement">else</span>
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;False</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+</pre></div><p>It is possible to nest groupings, so for example the following matches a square brackets-enclosed semicolon separated list of curly braces-enclosed comma-separated lists of numbers:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$string</span> = <span class="Statement">lc</span>(<span class="Statement">shift</span>(<span class="Identifier">@ARGV</span>));
+
+<span class="Statement">if</span> (<span class="Identifier">$string</span> =~ <span class="Statement">/</span><span class="Special">\[\&#x7B;[0-9]+(?:</span><span class="Constant">,</span><span class="Special">[0-9]+)+\&#x7D;(?:</span><span class="Constant">;</span><span class="Special">\&#x7B;(?:[0-9]+(?:</span><span class="Constant">,</span><span class="Special">[0-9]+)+)\&#x7D;)+\]</span><span class="Statement">/</span>)
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;True</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+<span class="Statement">else</span>
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;False</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+</pre></div><p>So it matches strings like <code>[{54,129};{236,78}]</code> and <code>[{54,129};{236,78};{78,100,808};{72,1009,8}]</code></p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="asterisk.html" class="nav">Prev</a></td><td><a href="alternation.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

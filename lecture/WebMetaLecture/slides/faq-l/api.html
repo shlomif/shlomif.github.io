@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="questions.html"/><link rel="next" href="index_answers.html"/><title>api.wml - the code</title></head><body><main><header><h1>9.2. api.wml - the code</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="questions.html" class="nav" accesskey="p">Prev</a></td><td><a href="index_answers.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">WebMetaLecture - a lecture about Website Meta Language</a> → <a href="./">Example 5 : An FAQ List</a> → <a href="api.html">api.wml - the code</a></div></nav><div class="code_block"><pre>
+&lt;:&#x7B;
+<span class="Statement">use vars</span> <span class="Constant">qw(@question_number)</span>;
+
+<span class="Identifier">@question_number</span>=(<span class="Constant">0</span>);
+&#x7D;:&gt;
+
+;;; Perl code here:
+<span class="Identifier">&lt;</span><span class="Statement">define-tag</span><span class="Identifier"> next-question&gt;</span>&lt;:&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$temp</span> = <span class="Statement">pop</span>(<span class="Identifier">@question_number</span>)+<span class="Constant">1</span>;
+    <span class="Statement">push</span> <span class="Identifier">@question_number</span>, <span class="Identifier">$temp</span>;
+    <span class="Statement">my</span> <span class="Identifier">$qn_text</span> = <span class="Statement">join</span>(<span class="Constant">&quot;.&quot;</span>, <span class="Identifier">@question_number</span>);
+    <span class="Statement">print</span> <span class="Identifier">$qn_text</span>;
+&#x7D;:&gt;<span class="Identifier">&lt;/</span><span class="Statement">define-tag</span><span class="Identifier">&gt;</span>
+
+;;; Perl code here:
+<span class="Identifier">&lt;</span><span class="Statement">define-tag</span><span class="Identifier"> promote&gt;</span>&lt;:&#x7B;
+    <span class="Statement">push</span> <span class="Identifier">@question_number</span>, <span class="Constant">0</span>;
+&#x7D;:&gt;<span class="Identifier">&lt;/</span><span class="Statement">define-tag</span><span class="Identifier">&gt;</span>
+
+;;; Perl code here:
+<span class="Identifier">&lt;</span><span class="Statement">define-tag</span><span class="Identifier"> demote&gt;</span>&lt;:&#x7B;
+    <span class="Statement">pop</span>(<span class="Identifier">@question_number</span>);
+&#x7D;:&gt;<span class="Identifier">&lt;/</span><span class="Statement">define-tag</span><span class="Identifier">&gt;</span>
+
+
+
+<span class="Identifier">&lt;</span><span class="Statement">define-tag</span><span class="Identifier"> question endtag=</span><span class="Constant">&quot;required&quot;</span><span class="Identifier">&gt;</span>
+;;; Define anchor to be the first argument
+<span class="Identifier">&lt;</span>preserve<span class="Identifier"> anchor /&gt;</span>
+;;; Define title to be the second argument
+<span class="Identifier">&lt;</span>preserve<span class="Identifier"> </span><span class="Type">title</span><span class="Identifier"> /&gt;</span>
+
+;;; This statement is required to actually set
+;;; anchor and title to a proper value
+<span class="Identifier">&lt;</span>set-<span class="Statement">var</span><span class="Identifier"> %attributes /&gt;</span>
+
+;;; next-question is defined above
+<span class="Identifier">&lt;</span>set-<span class="Statement">var</span><span class="Identifier"> question-number=</span><span class="Constant">&quot;&lt;next-question /&gt;&quot;</span><span class="Identifier"> /&gt;</span>
+
+<span class="Identifier">&lt;</span>if<span class="Identifier"> </span><span class="Error">&lt;</span><span class="Identifier">get-var render-body /&gt;</span>
+;;; If the question should be rendered.
+        &quot;
+        <span class="Identifier">&lt;</span><span class="Statement">p</span><span class="Identifier"> </span><span class="Type">id</span><span class="Identifier">=</span><span class="Constant">&quot;&lt;get-var anchor /&gt;&quot;</span><span class="Identifier">&gt;&lt;</span><span class="Statement">b</span><span class="Identifier">&gt;&lt;</span>get-<span class="Statement">var</span><span class="Identifier"> question-number /&gt;</span>. <span class="Identifier">&lt;</span>get-<span class="Statement">var</span><span class="Identifier"> </span><span class="Type">title</span><span class="Identifier"> /&gt;&lt;/</span><span class="Statement">b</span><span class="Identifier">&gt;&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+        %body
+        &quot;
+;;; If not
+    &quot;<span class="Identifier">&lt;</span><span class="Statement">a</span><span class="Identifier"> </span><span class="Type">href</span><span class="Identifier">=</span><span class="Constant">&quot;answers.html#&lt;get-var anchor /&gt;&quot;</span><span class="Identifier">&gt;&lt;</span>get-<span class="Statement">var</span><span class="Identifier"> question-number /&gt;</span>. <span class="Identifier">&lt;</span>get-<span class="Statement">var</span><span class="Identifier"> </span><span class="Type">title</span><span class="Identifier"> /&gt;&lt;/</span><span class="Statement">a</span><span class="Identifier">&gt;&lt;</span><span class="Statement">br</span><span class="Identifier"> /&gt;</span>&quot;
+    /<span class="Error">&gt;</span>
+;;; Restore their previous values
+<span class="Identifier">&lt;</span><span class="Statement">restore</span><span class="Identifier"> </span><span class="Type">title</span><span class="Identifier"> /&gt;</span>
+<span class="Identifier">&lt;</span><span class="Statement">restore</span><span class="Identifier"> anchor /&gt;</span>
+<span class="Identifier">&lt;/</span><span class="Statement">define-tag</span><span class="Identifier">&gt;</span>
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="questions.html" class="nav">Prev</a></td><td><a href="index_answers.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

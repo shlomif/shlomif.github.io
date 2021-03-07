@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="goodies.html"/><link rel="next" href="common_cmds.html"/><title>Filesystem Basics</title></head><body><main><header><h1>2.5. Filesystem Basics</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="goodies.html" class="nav" accesskey="p">Prev</a></td><td><a href="common_cmds.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">Linux' Basic Use</a> → <a href="./">The Linux Console</a> → <a href="filesystem.html">Filesystem Basics</a></div></nav><ul class="point"><li>Linux organizes its file in <b>directories</b>, where each directory can contain files or other directories.</li><li>There is one topmost directory which is called the root directory, and is labelled as <code>/</code>.</li><li>The <code>.</code> meta directory designated the current directory. "<code>..</code>" is the directory above it. If a <code>/</code> is prefixed at the beginning than the path would be absolute.</li><li>The <code>cd</code> command changes the current working directory to a different directory. The <code>pwd</code> command prints the path of the current working directory.</li><li>Here's an example session at the command line:</li></ul><pre>
+shlomi:~$ cd /usr
+shlomi:/usr$ pwd
+/usr
+shlomi:/usr$ cd local/bin
+shlomi:/usr/local/bin$ pwd
+/usr/local/bin
+shlomi:/usr/local/bin$ cd ../../share
+shlomi:/usr/share$ pwd
+/usr/share
+shlomi:/usr/share$ cd /usr/share/doc/
+shlomi:/usr/share/doc$ pwd
+/usr/share/doc
+shlomi:/usr/share/doc$ cd ./vim-X11-6.1/
+shlomi:/usr/share/doc/vim-X11-6.1$ pwd
+/usr/share/doc/vim-X11-6.1
+shlomi:/usr/share/doc/vim-X11-6.1$ cd ..
+shlomi:/usr/share/doc$ cd rsync-2.5.6/
+shlomi:/usr/share/doc/rsync-2.5.6$ pwd
+/usr/share/doc/rsync-2.5.6
+shlomi:/usr/share/doc/rsync-2.5.6$
+</pre><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="goodies.html" class="nav">Prev</a></td><td><a href="common_cmds.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

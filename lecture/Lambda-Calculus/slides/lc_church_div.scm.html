@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><title>[untitled]</title><meta charset="utf-8"/><style>body{color:#000;background:#fff none}A:link{color:#00f;background:#fff none}A:visited{color:#909;background:#fff none}A:hover{color:red;background:#fff none}A:active{color:red;background:#fff none}.synComment{color:#00f}.synConstant{color:#f0f}.synIdentifier{color:#008b8b}.synStatement{color:brown;font-weight:700}.synPreProc{color:#a020f0}.synType{color:#2e8b57;font-weight:700}.synSpecial{color:#6a5acd}.synUnderlined{color:#000;text-decoration:underline}.synError{color:#fff;background:red none}.synTodo{color:#00f;background:#ff0 none}</style></head><body><pre><span class="synComment">; Reminder and Division in Church Numerals</span>
+<span class="synComment">; ----------------------------------------</span>
+
+<span class="synComment">; I promised that I will show how they were done so here goes:</span>
+
+(<span class="synStatement">define</span> greater-or-equal
+    (<span class="synStatement">lambda</span> (x)
+        (<span class="synStatement">lambda</span> (y)
+            ((less-or-equal y) x)
+        )
+    )
+)
+
+
+(<span class="synStatement">define</span> reminder
+    (<span class="synStatement">lambda</span> (div)
+        (<span class="synStatement">lambda</span> (div_by)
+            ((Y (<span class="synStatement">lambda</span> (f)
+                (<span class="synStatement">lambda</span> (x)
+                    (((((greater-or-equal x) div_by)  <span class="synComment">; We can still see div_by</span>
+                        (<span class="synStatement">lambda</span> (no_use)
+                            (f ((subtract x) div_by))
+                        ))
+                        (<span class="synStatement">lambda</span> (no_use)
+                            x
+                        )
+                    )
+                        zero)    <span class="synComment">; Pass zero as an argument to no_use</span>
+                )
+            ))
+                div)  <span class="synComment">; Pass div as the initial x</span>
+        )
+)
+
+(<span class="synIdentifier">display</span> (church-&gt;int ((reminder (int-&gt;church <span class="synConstant">100</span>)) (int-&gt;church <span class="synConstant">9</span>))))
+(<span class="synIdentifier">newline</span>)
+
+(<span class="synStatement">define</span> divide
+    (<span class="synStatement">lambda</span> (div)
+        (<span class="synStatement">lambda</span> (div_by)
+            ((Y (<span class="synStatement">lambda</span> (f)
+                (<span class="synStatement">lambda</span> (x)
+                    (((((greater-or-equal x) div_by)
+                        (<span class="synStatement">lambda</span> (no_use)
+                            <span class="synComment">; Add one to the result of (x-div_by)/div_by</span>
+                            (succ (f ((subtract x) div_by)))
+                        ))
+                        (<span class="synStatement">lambda</span> (no_use)
+                            zero
+                        )
+                    )
+                        zero)    <span class="synComment">; Pass zero as an argument to no_use</span>
+                )
+            ))
+                div)  <span class="synComment">; Pass div as the initial x</span>
+        )
+    )
+)
+
+(<span class="synIdentifier">display</span> <span class="synConstant">&quot;50/8=&quot;</span>)
+(<span class="synIdentifier">display</span> (church-&gt;int ((divide (int-&gt;church <span class="synConstant">50</span>)) (int-&gt;church <span class="synConstant">8</span>))))
+(<span class="synIdentifier">newline</span>)
+
+<span class="synComment">; Note that the version of divide does not use tail-recursion.</span>
+<span class="synComment">; Thus, it will consume a memory of O(div/div_by). Nevertheless,</span>
+<span class="synComment">; a tail recursion version can be written using a tuple of</span>
+<span class="synComment">; (div, accumulator).</span>
+</pre></body></html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="configure.in.html"/><title>The Makefile.am file</title></head><body><main><header><h1>3.1. The Makefile.am file</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="configure.in.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">GNU Autoconf, Automake and Libtool</a> → <a href="./">A Simple Project</a> → <a href="Makefile.am.html">The Makefile.am file</a></div></nav><div class="code_block"><pre>
+<span class="Comment"># Define sub-directories of the project</span>
+<span class="Statement">SUBDIRS </span>= man
+
+<span class="Comment"># noinst_PROGRAMS are programs that should be compiled but not installed</span>
+<span class="Statement">noinst_PROGRAMS </span>= test_rwlock
+<span class="Comment"># Source files for test_rwlock</span>
+<span class="Type">test_rwlock_SOURCES </span>= test_rwlock.c
+<span class="Comment"># Libraries to link against</span>
+<span class="Type">test_rwlock_LDADD </span>= libpthread_rwlock_fcfs.la
+
+<span class="Comment"># Libraries that are built using libtool</span>
+<span class="Statement">lib_LTLIBRARIES </span>= libpthread_rwlock_fcfs.la
+<span class="Comment"># Where to install the headers</span>
+<span class="Identifier">libpthread_rwlock_fcfsincludedir</span>=<span class="Identifier">$(includedir)</span>/pthread
+<span class="Comment"># The source files of the library</span>
+<span class="Type">libpthread_rwlock_fcfs_la_SOURCES </span>= rwlock.c queue.c
+<span class="Comment"># A libtool library version numbers</span>
+<span class="Type">libpthread_rwlock_fcfs_la_LDFLAGS </span>= -version-info 0:0:0
+<span class="Comment"># The headers of the library</span>
+<span class="Statement">libpthread_rwlock_fcfsinclude_HEADERS </span>= rwlock_fcfs.h rwlock_fcfs_queue.h
+
+<span class="Comment"># Extra files in the distribution</span>
+<span class="Special">EXTRA_DIST </span>+= Docs/FCFS_RWLock_Scheme.txt Docs/FCFS_RWLock_Scheme_RLE.txt
+<span class="Special">EXTRA_DIST </span>+= test_rwlock.c
+<span class="Special">EXTRA_DIST </span>+= test_queue.cpp
+
+<span class="Special">EXTRA_DIST </span>+= pthread/rwlock_fcfs.h pthread/rwlock_fcfs_queue.h
+
+<span class="Special">EXTRA_DIST </span>+= <span class="Todo">TODO</span>
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="configure.in.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

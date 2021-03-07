@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="Makefile-PL.html"/><link rel="next" href="pod.html"/><title>Getopt::Long</title></head><body><main><header><h1>2.2. Getopt::Long</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="Makefile-PL.html" class="nav" accesskey="p">Prev</a></td><td><a href="pod.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">LM-Solve - A Logic Mazes Solver</a> → <a href="./">Technologies used by LM-Solve</a> → <a href="Getopt.html">Getopt::Long</a></div></nav><ul class="point"><li>I needed a flexible command line processing, so I looked at Getopt::Long.</li><li>Here's my code snippet:</li></ul><table class="mycode"><tr class="mycode"><td class="mycode"><pre class="mycode">
+    <span class="Comment"># This is a flag that specifies whether to present the moves in Run-Length</span>
+    <span class="Comment"># Encoding.</span>
+    <span class="Statement">my</span> <span class="Identifier">$to_rle</span> = <span class="Constant">1</span>;
+    <span class="Statement">my</span> <span class="Identifier">$output_states</span> = <span class="Constant">0</span>;
+    <span class="Statement">my</span> <span class="Identifier">$scan</span> = <span class="Constant">&quot;</span><span class="Constant">brfs</span><span class="Constant">&quot;</span>;
+    <span class="Statement">my</span> <span class="Identifier">$run_time_states_display</span> = <span class="Constant">0</span>;
+
+    <span class="Comment">#my $p = Getopt::Long::Parser-&gt;new();</span>
+    <span class="Statement">if</span> (! GetOptions(<span class="Constant">'</span><span class="Constant">rle!</span><span class="Constant">'</span> =&gt; <span class="Identifier">\$to_rle</span>,
+        <span class="Constant">'</span><span class="Constant">output-states!</span><span class="Constant">'</span> =&gt; <span class="Identifier">\$output_states</span>,
+        <span class="Constant">'</span><span class="Constant">method=s</span><span class="Constant">'</span> =&gt; <span class="Identifier">\$scan</span>,
+        <span class="Constant">'</span><span class="Constant">rtd!</span><span class="Constant">'</span> =&gt; <span class="Identifier">\$run_time_states_display</span>,
+        ))
+    {
+        <span class="Statement">die</span> <span class="Constant">&quot;</span><span class="Constant">Incorrect options passed!</span><span class="Special">\n</span><span class="Constant">&quot;</span>
+    }
+</pre></td></tr></table><ul class="point"><li><code>!</code> options are boolean. (specified with <code>--rle</code> and <code>--norle</code>)</li><li><code>=s</code> options accept a string argument.</li><li><code>pass_through</code> configuration option - process the known arguments and leave the others alone - used for determining the game variant.</li></ul><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="Makefile-PL.html" class="nav">Prev</a></td><td><a href="pod.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

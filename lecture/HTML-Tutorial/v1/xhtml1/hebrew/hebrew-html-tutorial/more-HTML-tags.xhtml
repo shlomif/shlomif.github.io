@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" lang="he"><head><title>תגי HTML נוספים</title><link rel="stylesheet" type="text/css" href="docbook.css"/><link rel="stylesheet" type="text/css" href="style.css"/><meta name="generator" content="DocBook XSL Shlomif"/><link rel="prev" href="writing-complete-HTML-documents.xhtml" title="כתיבת מסמכי HTML מלאים."/><link rel="next" href="basic_html_conclusion.xhtml" title="סיכום הפרק"/></head><body><header><div class="center ads_top"/><div class="navheader"><table style="width:100%"><tr><th style="text-align:center" colspan="3">תגי HTML נוספים</th></tr><tr><td style="width:20%;text-align:right"><a accesskey="p" href="writing-complete-HTML-documents.xhtml">הקודם</a> </td><th style="width:60%;text-align:center">פרק 2. HTML בסיסי</th><td style="width:20%;text-align:left"> <a accesskey="n" href="basic_html_conclusion.xhtml">הבא</a></td></tr></table><hr/></div></header><section class="section"><div class="titlepage"><div><div><h2 id="more-HTML-tags" class="title">תגי HTML נוספים</h2></div></div></div><div class="toc"><ul class="toc"><li><span class="section"><a href="more-HTML-tags.xhtml#headings">כותרות - h1, h2, h3</a></span></li><li><span class="section"><a href="more-HTML-tags.xhtml#line-break-tag">תגית שבירת השורה - &lt;br /&gt;</a></span></li><li><span class="section"><a href="more-HTML-tags.xhtml#id-attribute">התכונה id="" ושימוש בסמנים</a></span></li><li><span class="section"><a href="more-HTML-tags.xhtml#head-element">השימוש בתגית head</a></span><ul><li><span class="section"><a href="more-HTML-tags.xhtml#head-title-element">כותרת גלובלית למסמך באמצעות התגית title</a></span></li><li><span class="section"><a href="more-HTML-tags.xhtml#head-link-element">קישורים ושיוכים גלובליים למסמך בעזרת התגית link</a></span></li></ul></li><li><span class="section"><a href="more-HTML-tags.xhtml#head-style-element">תגית ה-style</a></span></li></ul></div><p>בפרק זה נכיר תגי HTML נוספים ושימושיים.</p><section class="section"><div class="titlepage"><div><div><h3 id="headings" class="title">כותרות - h1, h2, h3</h3></div></div></div><p>ראינו כבר את הכותרת <code xml:lang="en" class="code">&lt;h1&gt;</code>, אבל יש גם את <code xml:lang="en" class="code">&lt;h2&gt;</code> וכן הלאה עד <code xml:lang="en" class="code">&lt;h6&gt;</code>. ככל שהמספר גדול יותר כך הכותרת פחותה יותר בערכה. רצוי לחלק את מסמך ה-HTML לכותרות באופן כזה. בו נראה דוגמה למסמך המחולק לחלקים בעזרת כותרותיו:</p><pre xml:lang="en" class="programlisting">
+
+&lt;!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"&gt;
+&lt;head&gt;
+&lt;title&gt;Mission Statement&lt;/title&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Mission Statement&lt;/h1&gt;
+
+    &lt;h2&gt;Introduction&lt;/h2&gt;
+
+    &lt;p&gt;
+    This is a mission statement for the Hebrew HTML tutorial.
+    &lt;/p&gt;
+
+    &lt;h2&gt;The Objective&lt;/h2&gt;
+
+    &lt;p&gt;
+    The objective is simple: teach whoever read the document - HTML.
+    &lt;/p&gt;
+
+    &lt;h2&gt;Constraints&lt;/h2&gt;
+
+    &lt;p&gt;
+    Here are some constraints:
+    &lt;/p&gt;
+
+    &lt;h3&gt;#1: Valid HTML&lt;/h3&gt;
+
+    &lt;p&gt;
+    Teach using Valid HTML.
+    &lt;/p&gt;
+
+    &lt;h3&gt;#2: In Hebrew&lt;/h3&gt;
+
+    &lt;p&gt;
+    Teach using
+    &lt;a href="http://en.wikipedia.org/wiki/Hebrew_language"&gt;Hebrew&lt;/a&gt;.
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</pre><p>וכך זה נראה:</p><div class="mediaobject"><img src="./images/h1-h2-example.png" alt="דוגמה עם תגיות h1 ו-h2"/></div><p>כפי שניתן לראות הכותרות בעלות המספר הגבוה יותר, קטנות יותר ובכך פחותות בחשיבותן.</p></section><section class="section"><div class="titlepage"><div><div><h3 id="line-break-tag" class="title">תגית שבירת השורה - &lt;br /&gt;</h3></div></div></div><p>ניתן להשתמש בתגית <code xml:lang="en" class="code">&lt;br /&gt;</code> )תגית העומדת בפני עצמה ואינה מקבלת פרמטרים( כדי לשבור את השורה, ולהתחיל שורה חדשה באמצע פיסקה. לא רצוי להשתמש בה פעמיים בשביל להפריד בין פסקאות, וכן רצוי להימנע משימוש מיותר בתגית זאת.</p></section><section class="section"><div class="titlepage"><div><div><h3 id="id-attribute" class="title">התכונה id="" ושימוש בסמנים</h3></div></div></div><p>ניתן להשתמש בתכונה "id" שקבילה כמעט לכל האלמנטים כדי להכניס סמן בטקסט, שמאפשר לקישורים פנימיים או חיצוניים להפנות לחלק מסוים של הדף. ההפניה לסמן מבוצעת על-ידי השימוש בתו "#" ובמזהה של הסמן. ראוי לציין שלא כל התווים קבילים במזהה ומומלץ להיזהר. הנה דוגמה:</p><pre xml:lang="en" class="programlisting">
+
+&lt;!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"&gt;
+&lt;head&gt;
+&lt;title&gt;Page with Table-of-Contents&lt;/title&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Page with Table-of-Contents&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#alice"&gt;Alice in Wonderland&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#gulliver"&gt;Gulliver's Travels&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#treasure"&gt;Treasure Island&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#musketeers"&gt;The Three Musketeers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#looking_glass"&gt;Through The Looking Glass&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="alice"&gt;Alice in Wonderland&lt;/h2&gt;
+
+&lt;p&gt;
+Alice in Wonderland is a book by &lt;a
+href="http://en.wikipedia.org/wiki/Lewis_Carroll"&gt;Lewis Carroll&lt;/a&gt;, which was
+the pen name of Charles Lutwidge Dodgson.
+&lt;/p&gt;
+
+&lt;h2 id="gulliver"&gt;Gulliver's Travels&lt;/h2&gt;
+
+&lt;p&gt;
+Gulliver's Travels is a novel by Jonathan Swift. While not intended as
+Children's literature, it became popular as such.
+&lt;/p&gt;
+
+&lt;h2 id="treasure"&gt;Treasure Island&lt;/h2&gt;
+
+&lt;p&gt;
+Treasure Island is a novel by Robert Louis Stevenenson about pirates.
+&lt;/p&gt;
+
+&lt;h2 id="musketeers"&gt;&lt;a href="http://en.wikipedia.org/wiki/The_Three_Musketeers"&gt;The
+Three Musketeers&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;
+This is a historical fiction novel by Alexandre Dumas, père.
+&lt;/p&gt;
+
+&lt;h2 id="looking_glass"&gt;Through The Looking Glass&lt;/h2&gt;
+
+&lt;p&gt;
+The follow-up to &lt;a href="#alice"&gt;Alice in Wonderland&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</pre></section><section class="section"><div class="titlepage"><div><div><h3 id="head-element" class="title">השימוש בתגית head</h3></div></div></div><div class="toc"><ul class="toc"><li><span class="section"><a href="more-HTML-tags.xhtml#head-title-element">כותרת גלובלית למסמך באמצעות התגית title</a></span></li><li><span class="section"><a href="more-HTML-tags.xhtml#head-link-element">קישורים ושיוכים גלובליים למסמך בעזרת התגית link</a></span></li></ul></div><p>מטרת התגית <code class="code">&lt;head&gt;...&lt;/head&gt;</code>, שכבר ראינו בדוגמאות קודמות היא לספק מטה-מידע (meta-data) עבור המסמך. ניתן בעזרתה לקבוע קישורים גלובליים למסמך (כמו גיליון-סגנון, המסמך הבא, המסמך הקודם, הזנות ווב של RSS או Atom, ) וכו לשייך סגנונות הייחודיים לדף. בו נעבור על מה שניתן לעשות.</p><section class="section"><div class="titlepage"><div><div><h4 id="head-title-element" class="title">כותרת גלובלית למסמך באמצעות התגית title</h4></div></div></div><p>התגית title הנמצאת בתוך האלמנט <code class="code">&lt;head&gt;...&lt;/head&gt;</code> (ורצוי שתבוא מוקדם ככל האפשר) מאפשרת לקבוע למסמך כותרת גלובלית. זאת בדומה לכותרת של ספר המופיעה בכריכה שלו, או כותרת של מאמר (בעיתון, מדעי וכו) הנמצאת גם בתוכן העניינים.</p><p>מומלץ מאוד לקבוע לכל מסמך תגית title משמעותית משום שמנועי חיפוש מציגים אותה בקישור, מה שמלמד על תוכנה, וכן היא מוצגת בכותרת של חלון הדפדפן. ראוי לציין שבתגית ניתן רק להכניס טקסט פשוט ולא תגיות נוספות של ׁHTML . ניתן להכניס בתוכה SGML entities במידת הצורך, אבל בכל מקרה עדיף להשתמש בתווים של UTF-8 במידת האפשר ולהגביל את השימוש ב-entities לתווים מיוחדים כמו <code class="code">&amp;amp;, &amp;lt; &amp;gt;</code> וכו.</p><p>הנה דוגמה קטנה:</p><pre xml:lang="en" class="programlisting">
+
+&lt;!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"&gt;
+&lt;head&gt;
+&lt;title&gt;This title was intentionally left blank.&lt;/title&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Excerpt from the Three Musketeers&lt;/h1&gt;
+
+    &lt;p&gt;
+A young man--we can sketch his portrait at a dash. Imagine
+to yourself a Don Quixote of eighteen; a Don Quixote without
+his corselet, without his coat of mail, without his cuisses;
+a Don Quixote clothed in a woolen doublet, the blue color of
+which had faded into a nameless shade between lees of wine
+and a heavenly azure; face long and brown; high cheek bones,
+a sign of sagacity; the maxillary muscles enormously
+developed, an infallible sign by which a Gascon may always
+be detected, even without his cap--and our young man wore a
+cap set off with a sort of feather; the eye open and
+intelligent; the nose hooked, but finely chiseled. Too big
+for a youth, too small for a grown man, an experienced eye
+might have taken him for a farmer's son upon a journey had
+it not been for the long sword which, dangling from a
+leather baldric, hit against the calves of its owner as he
+walked, and against the rough side of his steed when he was
+on horseback.
+    &lt;/p&gt;
+
+    &lt;p&gt;
+    Taken from &lt;a
+        href="http://www.gutenberg.org/etext/1257"&gt;the
+    Project Gutenberg page&lt;/a&gt;.
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</pre></section><section class="section"><div class="titlepage"><div><div><h4 id="head-link-element" class="title">קישורים ושיוכים גלובליים למסמך בעזרת התגית link</h4></div></div></div><p>אחד הדברים שניתן לשים ב-head הוא <span class="bold"><strong>קישורים גלובליים</strong></span> או מה שהם ליתר דיוק, בטרמינולוגיה שלי, שיוכים (associations). בניגוד לקישוריי ה-HTML הרגילים שמשויכים רק עם חלק מהמסמך וניתנים ללחיצה בתוך גוף המסמך, הרי שהקישורים הגלובליים משפיעים על כך המסמך או משייכים לו משאב אחר ברשת.</p><p>לדוגמה, אם נרצה לשייך גיליון סגנון (stylesheet) מסוג CSS (= Cascading Style Sheets) (אנו נלמד CSS מעט בהמשך) הרי שנוכל לעשות זאת על-ידי כתיבת הקוד הבא בתוך אלמנט ה-head:</p><p xml:lang="en"><code class="code">&lt;link rel="stylesheet" href="style.css" type="text/css" /&gt;</code></p></section></section><section class="section"><div class="titlepage"><div><div><h3 id="head-style-element" class="title">תגית ה-style</h3></div></div></div><p>ניתן גם לכלול הוראות CSS נפרדות באמצעות תגית ה-style שבאה בתוך תגית ה-head, לדוגמה באופן הבא:</p><pre xml:lang="en" class="programlisting">
+
+&lt;!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"&gt;
+&lt;head&gt;
+&lt;title&gt;This title was intentionally left blank.&lt;/title&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;style type="text/css"&gt;
+    body { color: green; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Excerpt from the Three Musketeers&lt;/h1&gt;
+
+    &lt;p&gt;
+A young man--we can sketch his portrait at a dash. Imagine
+to yourself a Don Quixote of eighteen; a Don Quixote without
+his corselet, without his coat of mail, without his cuisses;
+a Don Quixote clothed in a woolen doublet, the blue color of
+which had faded into a nameless shade between lees of wine
+and a heavenly azure; face long and brown; high cheek bones,
+a sign of sagacity; the maxillary muscles enormously
+developed, an infallible sign by which a Gascon may always
+be detected, even without his cap--and our young man wore a
+cap set off with a sort of feather; the eye open and
+intelligent; the nose hooked, but finely chiseled. Too big
+for a youth, too small for a grown man, an experienced eye
+might have taken him for a farmer's son upon a journey had
+it not been for the long sword which, dangling from a
+leather baldric, hit against the calves of its owner as he
+walked, and against the rough side of his steed when he was
+on horseback.
+    &lt;/p&gt;
+
+    &lt;p&gt;
+    Taken from &lt;a
+        href="http://www.gutenberg.org/etext/1257"&gt;the
+    Project Gutenberg page&lt;/a&gt;.
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</pre><p>כפי שניתן לראות מצילום המסך, הטקסט במסמך הוא ירוק:</p><div class="mediaobject"><img src="./images/with-head-style-tag.png" alt="דוגמה לשימוש בתגית style"/></div><p>ראוי לציין שבעוד ששימוש בתגית style טוב להתנסות, רצוי שלא לעשות בה שימוש בקוד הסופי. זאת מפני ששימוש בגיליון סגנון נפרד מאפשר יותר בקלות להחיל עיצוב אחיד לכל העמודים באתר, וכן חוסך בתעבורה וגורם לטעינת הדפים הבאים באתר להיות מהירה יותר.</p><p>בכל מקרה, אם ברצונכם עדיין להשתמש בתגית זאת, זכרו לכלול את התכונה <code xml:lang="en" class="code">type="text/css"</code>, או אחרת הדף לא יעבור אימות.</p></section></section><footer><div class="navfooter"><hr/><table style="width:100%"><tr><td style="width:40%;text-align:right"><a accesskey="p" href="writing-complete-HTML-documents.xhtml">הקודם</a> </td><td style="width:20%;text-align:center"><a accesskey="u" href="basic-html.xhtml">למעלה</a></td><td style="width:40%;text-align:left"> <a accesskey="n" href="basic_html_conclusion.xhtml">הבא</a></td></tr><tr><td style="width:40%;text-align:right;vertical-align:top">כתיבת מסמכי HTML מלאים. </td><td style="width:20%;text-align:center"><a accesskey="h" href="index.xhtml">ראשי</a></td><td style="width:40%;text-align:left;vertical-align:top"> סיכום הפרק</td></tr></table></div></footer></body></html>

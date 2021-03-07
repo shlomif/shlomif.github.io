@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="split.html"/><link rel="next" href="sort/"/><title>map</title></head><body><main><header><h1>9.2. map</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="split.html" class="nav" accesskey="p">Prev</a></td><td><a href="sort/" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">Useful Functions</a> → <a href="map.html">map</a></div></nav><p>The map function traverses an array and maps each element to one or more ( or zero) elements in a new array. It has a rather unorthodox syntax in that it is written as <code>@new_array = (map { &lt;Some Expression with $_&gt; } @array)</code> .</p><p>For each element of the array @array, the variable <code>$_</code> is assigned its value, and within the curly brackets one can put an expression that is dependant on it.</p><p>The following example multiplies each element of an array by two:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">@array</span> = (<span class="Constant">20</span>, <span class="Constant">3</span>, <span class="Constant">1</span>, <span class="Constant">9</span>, <span class="Constant">100</span>, <span class="Constant">88</span>, <span class="Constant">75</span>);
+
+<span class="Statement">my</span> <span class="Identifier">@new_array</span> = (<span class="Statement">map</span> <span class="Statement">&#x7B;</span> <span class="Identifier">$_</span>*<span class="Constant">2</span>; <span class="Statement">&#x7D;</span> <span class="Identifier">@array</span>);
+
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;,&quot;</span>, <span class="Identifier">@new_array</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>Using map is usually faster than using a <code>foreach $elem (@array) { ... push @new_array, $new_elem; }</code> loop, at least when the function performed is a relatively uncomplex one.</p><p>The following program decodes a run-length encoding compression, in which each element of the array is a number followed by its number of times:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$default_input_string</span> = <span class="Constant">&quot;2-5,3-9,1-2,8-1,4-7,5-9,20-3,16-9&quot;</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$input_string</span> = <span class="Statement">shift</span> || <span class="Identifier">$default_input_string</span>;
+
+<span class="Comment"># RLE stands for Run-Length Encoding</span>
+<span class="Statement">my</span> <span class="Identifier">@rle_components</span> = <span class="Statement">split</span>(<span class="Statement">/</span><span class="Constant">,</span><span class="Statement">/</span>, <span class="Identifier">$input_string</span>);
+<span class="Statement">my</span> <span class="Identifier">@expanded_sequence</span> = (<span class="Statement">map</span>
+    &#x7B;
+        <span class="Statement">my</span> (<span class="Identifier">$what</span>, <span class="Identifier">$times</span>) = <span class="Statement">split</span>(<span class="Statement">/</span><span class="Constant">-</span><span class="Statement">/</span>, <span class="Identifier">$_</span>);
+        ((<span class="Identifier">$what</span>) x <span class="Identifier">$times</span>);
+    &#x7D;
+    <span class="Identifier">@rle_components</span>
+    );
+
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;,&quot;</span>, <span class="Identifier">@expanded_sequence</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>As you can see, the expression at the end of the map iterator can be an array with more than one element. It can also be an empty array, which means that some elements can be filtered out.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="split.html" class="nav">Prev</a></td><td><a href="sort/" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

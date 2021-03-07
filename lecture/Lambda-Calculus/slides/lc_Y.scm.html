@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><title>[untitled]</title><meta charset="utf-8"/><style>body{color:#000;background:#fff none}A:link{color:#00f;background:#fff none}A:visited{color:#909;background:#fff none}A:hover{color:red;background:#fff none}A:active{color:red;background:#fff none}.synComment{color:#00f}.synConstant{color:#f0f}.synIdentifier{color:#008b8b}.synStatement{color:brown;font-weight:700}.synPreProc{color:#a020f0}.synType{color:#2e8b57;font-weight:700}.synSpecial{color:#6a5acd}.synUnderlined{color:#000;text-decoration:underline}.synError{color:#fff;background:red none}.synTodo{color:#00f;background:#ff0 none}</style></head><body><pre><span class="synComment">; The Y Combinator</span>
+<span class="synComment">; ----------------</span>
+
+<span class="synComment">; The Y combinator is defined as follows:</span>
+
+(<span class="synStatement">define</span> Y
+    (<span class="synStatement">lambda</span> (f)
+        (
+            (<span class="synStatement">lambda</span> (x)
+                    (f (<span class="synStatement">lambda</span> (y) ((x x) y)))
+            )
+            (<span class="synStatement">lambda</span> (x)
+                    (f (<span class="synStatement">lambda</span> (y) ((x x) y)))
+            )
+        )
+    )
+)
+
+<span class="synComment">; It has the property that (Y f) is equivalent to (f (Y f)) (and so to</span>
+<span class="synComment">; infinity. One can use the Y combinator to implement recursion in</span>
+<span class="synComment">; lambda calculus.</span>
+
+<span class="synComment">; Let's see an example in Scheme on how to use the Y combinator:</span>
+
+(<span class="synStatement">define</span> (top x) (<span class="synIdentifier">car</span> x))
+(<span class="synStatement">define</span> (var x) (<span class="synIdentifier">cadr</span> x))        <span class="synComment">; (cadr x) is equivalent to (car (cdr x))</span>
+(<span class="synStatement">define</span> (result x) (<span class="synIdentifier">caddr</span> x))
+
+<span class="synComment">; This function calculates the sum of integers from (var x) to (top x).</span>
+<span class="synComment">; Note that we can only pass one argument to the Y's function so a</span>
+<span class="synComment">; list is used to pass multiple arguments.</span>
+(<span class="synStatement">define</span> mysum
+    (Y (<span class="synStatement">lambda</span> (f)
+        (<span class="synStatement">lambda</span> (x)
+            (<span class="synStatement">if</span> (&lt;= (var x) (top x))
+                <span class="synComment">; If part</span>
+                    <span class="synComment">; The Y combinator enables us to use f to call</span>
+                    <span class="synComment">; itself recursively.</span>
+                (f (<span class="synIdentifier">list</span>
+                    (top x)
+                    (+ (var x) <span class="synConstant">1</span>)
+                    (+ (result x) (var x))
+                ))
+                <span class="synComment">; Else part</span>
+                x
+            )
+        )
+    ))
+)
+
+
+(<span class="synStatement">define</span> solution (mysum (<span class="synIdentifier">list</span> <span class="synConstant">10</span> <span class="synConstant">5</span> <span class="synConstant">0</span>)))
+(<span class="synIdentifier">display</span> <span class="synConstant">&quot;The solution is: &quot;</span>)
+(<span class="synIdentifier">display</span> (result solution))
+(<span class="synIdentifier">newline</span>)
+
+<span class="synComment">; Naturally, we can convert this entire thing to lambda calculus:</span>
+
+(<span class="synStatement">define</span> (top x) (lc_car x))
+(<span class="synStatement">define</span> (var x) (lc_car (lc_cdr x)))
+(<span class="synStatement">define</span> (result x) (lc_car (lc_cdr (lc_cdr x))))
+
+(<span class="synStatement">define</span> make-mysum-list
+(<span class="synStatement">lambda</span> (top)
+    (<span class="synStatement">lambda</span> (var)
+        (<span class="synStatement">lambda</span> (result)
+            ((lc_cons top) ((lc_cons var) ((lc_cons result) zero)))
+        )
+    )
+))
+
+<span class="synComment">; Notice that we wrap the inner if's in lambdas and pass zero as no_use.</span>
+<span class="synComment">; Otherwise, both conditional clauses will always be evaluated and it will</span>
+<span class="synComment">; run an infinite number of times.</span>
+(<span class="synStatement">define</span> mysum
+    (Y (<span class="synStatement">lambda</span> (f)
+        (<span class="synStatement">lambda</span> (x)
+            (((((less-or-equal (var x)) (top x)) <span class="synComment">; If var x &lt; top x</span>
+                <span class="synComment">; If part</span>
+                (<span class="synStatement">lambda</span> (no_use)
+                    (f
+                        (((make-mysum-list
+                            (top x))
+                            (succ (var x)))
+                            ((add (result x)) (var x))
+                        )
+                    )
+                ))
+                <span class="synComment">; Else part</span>
+                (<span class="synStatement">lambda</span> (no_use)
+                    x
+                ))
+                    zero <span class="synComment">;  Pass zero as argument to no_use</span>
+            )
+        )
+    ))
+)
+
+(<span class="synStatement">define</span> solution (mysum
+    (((make-mysum-list
+        (int-&gt;church <span class="synConstant">10</span>))
+        (int-&gt;church <span class="synConstant">5</span>))
+        (int-&gt;church <span class="synConstant">0</span>))
+        ))
+
+(<span class="synIdentifier">display</span> <span class="synConstant">&quot;The solution is: &quot;</span>)
+(<span class="synIdentifier">display</span> (church-&gt;int (result solution)))
+(<span class="synIdentifier">newline</span>)
+</pre></body></html>

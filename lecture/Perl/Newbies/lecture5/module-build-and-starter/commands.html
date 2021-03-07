@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="invocation.html"/><link rel="next" href="coding.html"/><title>Module-Build commands</title></head><body><main><header><h1>8.2. Module-Build commands</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="invocation.html" class="nav" accesskey="p">Prev</a></td><td><a href="coding.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 5 - Good Programming Practices</a> → <a href="./">Module-Build and Module-Starter</a> → <a href="commands.html">Module-Build commands</a></div></nav><p>The first thing we should do is change the directory to the directory that Module-Starter created and run <code>perl Build.PL</code>. We get some output like the following:</p><div class="code_block"><pre>
+shlomi[homepage]:$p4n/5/src/module-build-and-starter$ cd MyMath-Ops/
+shlomi[homepage]:$p4n/5/src/module-build-and-starter/MyMath-Ops$ perl Build.PL
+Checking whether your kit is complete...
+Looks good
+
+Checking prerequisites...
+Looks good
+
+Deleting Build
+Removed previous script 'Build'
+
+Creating new 'Build' script for 'MyMath-Ops' version '0.01'
+shlomi[homepage]:$p4n/5/src/module-build-and-starter/MyMath-Ops$
+</pre></div><p>What the <code>perl Build.PL</code> command does is generate the <code>Build</code> script in the current directory that can be used to perform such operations as building, testing, packaging, and installing of the distribution. Sometimes we need to re-run <code>perl Build.PL</code> if we modified the configuration.</p><p>Now let's run <code>./Build</code> and <code>./Build test</code>.</p><div class="code_block"><pre>
+shlomi[homepage]:$p4n/5/src/module-build-and-starter/MyMath-Ops$ ./Build
+Copying lib/MyMath/Ops/Subtract.pm -&gt; blib/lib/MyMath/Ops/Subtract.pm
+Copying lib/MyMath/Ops/Divide.pm -&gt; blib/lib/MyMath/Ops/Divide.pm
+Copying lib/MyMath/Ops/Multiply.pm -&gt; blib/lib/MyMath/Ops/Multiply.pm
+Copying lib/MyMath/Ops.pm -&gt; blib/lib/MyMath/Ops.pm
+Copying lib/MyMath/Ops/Add.pm -&gt; blib/lib/MyMath/Ops/Add.pm
+Manifying blib/lib/MyMath/Ops/Add.pm -&gt; blib/libdoc/MyMath::Ops::Add.3pm
+Manifying blib/lib/MyMath/Ops/Multiply.pm -&gt; blib/libdoc/MyMath::Ops::Multiply.3pm
+Manifying blib/lib/MyMath/Ops/Subtract.pm -&gt; blib/libdoc/MyMath::Ops::Subtract.3pm
+Manifying blib/lib/MyMath/Ops/Divide.pm -&gt; blib/libdoc/MyMath::Ops::Divide.3pm
+Manifying blib/lib/MyMath/Ops.pm -&gt; blib/libdoc/MyMath::Ops.3pm
+shlomi[homepage]:$p4n/5/src/module-build-and-starter/MyMath-Ops$ ./Build test
+t/00-load.t ....... 1/5 # Testing MyMath::Ops 0.01, Perl 5.010001, /usr/bin/perl5.10.1
+t/00-load.t ....... ok
+t/boilerplate.t ... ok
+t/pod-coverage.t .. ok
+t/pod.t ........... ok
+All tests successful.
+Files=4, Tests=22,  1 wallclock secs ( 0.10 usr  0.04 sys +  0.60 cusr  0.12 csys =  0.86 CPU)
+Result: PASS
+shlomi[homepage]:$p4n/5/src/module-build-and-starter/MyMath-Ops$
+</pre></div><p>What happens is that <code>./Build</code> copies the files under <code>blib/</code> , builds the documentation, and in case we had <a href="http://en.wikipedia.org/wiki/XS_%28Perl%29">XS (= "External Subroutine" - perl routines written in a low-level language)</a> it would also build the extensions. This allows us to run tests against the built code, either automated or manual by using the <a href="http://perldoc.perl.org/blib.html">blib module</a>.</p><p>After we had ran <code>./Build</code>, we ran <code>./Build test</code> to run the automated tests that Module-Starter generated for us. As you can see the line says that all tests successful. If they were not, we should fix either the code or the tests, depending on what is wrong.</p><p>Now let's move on.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="invocation.html" class="nav">Prev</a></td><td><a href="coding.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><title>New Additions to the language</title><link rel="stylesheet" type="text/css" href="docbook.css"/><link rel="stylesheet" type="text/css" href="style.css"/><meta name="generator" content="DocBook XSL Shlomif"/><link rel="prev" href="oop_features.xhtml" title="Object Oriented Programming Features"/><link rel="next" href="lisp_like_features.xhtml" title="LISP-like Features"/></head><body><header><div class="center ads_top"/><div class="navheader"><table style="width:100%"><tr><th style="text-align:center" colspan="3">New Additions to the language</th></tr><tr><td style="width:20%;text-align:left"><a accesskey="p" href="oop_features.xhtml">Prev</a> </td><th style="width:60%;text-align:center"> </th><td style="width:20%;text-align:right"> <a accesskey="n" href="lisp_like_features.xhtml">Next</a></td></tr></table><hr/></div></header><section class="section"><div class="titlepage"><div><div><h2 id="new_additions" class="title">New Additions to the language</h2></div></div></div><div class="toc"><ul class="toc"><li><span class="section"><a href="new_additions.xhtml#fundamental_io_subsystem">A Fundamental I/O Subsystem</a></span></li><li><span class="section"><a href="new_additions.xhtml#better_hash">A Better Hash Construct</a></span></li><li><span class="section"><a href="new_additions.xhtml#proper_tail_recursion">Proper Tail Recursion</a></span><ul><li><span class="section"><a href="new_additions.xhtml#proper_tail_recursion_example">Examples</a></span></li></ul></li><li><span class="section"><a href="new_additions.xhtml#regex_data_structure">Nested Variable to Hold the Regex Search Results</a></span></li></ul></div><section class="section"><div class="titlepage"><div><div><h3 id="fundamental_io_subsystem" class="title">A Fundamental I/O Subsystem</h3></div></div></div><p>perl 5 depends on typeglobs to initialize filehandles, and on <code class="literal">local</code> to localize them. However, this does not fall very nicely with Perl's lexical scoping, which makes it necessary to use such modules as <code class="literal">FileHandle</code> which behave more lexically, but may not be well-supported.</p><p>Rindolf will have a fundamental I/O subsystem which I dub <code class="literal">aFile_*</code> after its function names. Generally, this subsystem is not meant to be used directly (albeit it can be) and will be available for those writing low-level file manipulation APIs.</p><p>This filesystem will have support for most basic facilities (File I/O, sockets, pipes, ioctl's and fcntl's, asynchronous I/O, etc) and should be flexible enough. Typeglobs will use it, as will all other modules (directly or indirectly) and it will behave in a completely Perl 5-ish manner.</p></section><section class="section"><div class="titlepage"><div><div><h3 id="better_hash" class="title">A Better Hash Construct</h3></div></div></div><p>Rindolf will supply an internally coded hash that will support most of the hash extensions (such as <code class="literal">StrictHash</code>, <code class="literal">Tie::RefHash</code>). I believe Perl 5 already has a pragma that can auto-magically initialize any hash declared with <code class="literal">my</code> with a tie statement, so this hash can be made to be used by default.</p></section><section class="section"><div class="titlepage"><div><div><h3 id="proper_tail_recursion" class="title">Proper Tail Recursion</h3></div></div></div><div class="toc"><ul class="toc"><li><span class="section"><a href="new_additions.xhtml#proper_tail_recursion_example">Examples</a></span></li></ul></div><p>The new statement <code class="literal">pt_pt_return</code> (short for "point pt_return") will behave in a similar manner to <code class="literal">pt_return</code> only will be proper tail recursive if possible.</p><p>The new statement <code class="literal">line_pt_return</code> will always be non-proper tail recursive. A pragma <code class="literal">use Recursion</code> will exist that will enable to decide how a plain <code class="literal">pt_return</code> will behave, and should be very flexible in doing that.</p><p>I give a choice between both types of tail recursion because proper tail recursion is faster and consumes O(1) memory while non proper tail recursion is easier to debug.</p><section class="section"><div class="titlepage"><div><div><h4 id="proper_tail_recursion_example" class="title">Examples</h4></div></div></div><p>Here's an example using <code class="literal">pt_return</code>:</p><pre class="screen">
+sub gcd
+{
+    my ($a,$b) = @_;
+    if ($b &gt; $a)
+    {
+        pt_return gcd($b,$a);
+    }
+    if ($b == 0)
+    {
+        return $a;
+    }
+    else
+    {
+        pt_return gcd($b, $a % $b);
+    }
+}
+
+print gcd(@ARGV[0 .. 1]), "\n";
+                </pre><p>Here's the same example, using the <code class="literal">Recursion</code> module:</p><pre class="screen">
+#!/usr/bin/perl
+
+use Recursion;
+
+BEGIN
+{
+    Recursion::set_default('pt');
+}
+
+sub gcd
+{
+    my ($a,$b) = @_;
+    if ($b &gt; $a)
+    {
+        return gcd($b,$a);
+    }
+    if ($b == 0)
+    {
+        return $a;
+    }
+    else
+    {
+        return gcd($b, $a % $b);
+    }
+}
+
+print gcd(@ARGV[0 .. 1]), "\n";
+                </pre></section></section><section class="section"><div class="titlepage"><div><div><h3 id="regex_data_structure" class="title">Nested Variable to Hold the Regex Search Results</h3></div></div></div><p>At the moment, querying the results of a regular expression pattern match using the <code class="literal">$0, $1, $2</code> variables leaves a lot to be desired. As another way of doing things, Rindolf will provide a <code class="literal">$^RR</code> variable which would be a Perl 5 data-structure that is nested to a necessary depth to contain the results of the pattern and sub-pattern matches.</p><p>Here's an example:</p><pre class="screen">
+#!/usr/bin/perl
+
+use string;
+
+my $string = "[(5,6), (7,3), (8,9)], [(5,7), (2,10)], [(100,92),(14,8)]";
+
+# Define a pattern for (x,y)
+my $pt_pattern = "\s*\(\s*(\d+)\s*,\s*(\d+)\s*\)\s*";
+# Define a pattern for an array of points [pt1,pt2,pt3,pt4]
+my $array_pattern = "\[(?:${pt_pattern}\s*,)*${pt_pattern}\]";
+# Define a pattern for an array of arrays of points arr1,arr2,arr3
+my $whole_pattern = "(?:${array_pattern}\s*,)*${array_pattern}"
+$string =~ /$whole_pattern/;
+
+my $results = $^RR;
+
+print "a[0][2].x = ", $results-&gt;[0]-&gt;[2]-&gt;[0], "\n"; # prints 8
+print "a[1][1].y = ", $results-&gt;[1]-&gt;[1]-&gt;[1], "\n"; # prints 10
+            </pre></section></section><footer><div class="navfooter"><hr/><table style="width:100%"><tr><td style="width:40%;text-align:left"><a accesskey="p" href="oop_features.xhtml">Prev</a> </td><td style="width:20%;text-align:center"> </td><td style="width:40%;text-align:right"> <a accesskey="n" href="lisp_like_features.xhtml">Next</a></td></tr><tr><td style="width:40%;text-align:left;vertical-align:top">Object Oriented Programming Features </td><td style="width:20%;text-align:center"><a accesskey="h" href="index.xhtml">Home</a></td><td style="width:40%;text-align:right;vertical-align:top"> LISP-like Features</td></tr></table></div></footer></body></html>

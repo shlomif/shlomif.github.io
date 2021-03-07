@@ -1,0 +1,1810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Shlomi Fish's Fortune Feeds</title>
+  <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/" type="text/html"/>
+  <subtitle>Shlomi Fish's Fortune Feeds</subtitle>
+  <author>
+    <name>shlomif@cpan.org (Shlomi Fish)</name>
+  </author>
+  <link rel="self" href="http://www.shlomifish.org/humour/fortunes/fortunes-shlomif-all.atom" type="application/atom+xml"/>
+  <id>http://www.shlomifish.org/humour/fortunes/fortunes-shlomif-all.atom</id>
+  <entry>
+    <title>Joel on Software - "Software is neat like that" (“Rub a dub dub”)</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Joel on Software - "Software is neat like that" (“Rub a dub dub”)</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/joel-on-software.html#joel-rub-dub-dub--software-is-neat-like-that" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/joel-on-software.html#joel-rub-dub-dub--software-is-neat-like-that</id>
+    <published>2020-12-03T09:37:31Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="joel-rub-dub-dub--software-is-neat-like-that">Joel on Software - "Software is neat like that" (“Rub a dub dub”)</h3>
+      <blockquote>
+        <p> One reason people are tempted to rewrite their entire code
+                base from scratch is that the original code base wasn’t
+                designed for what it’s doing. It was designed as a prototype,
+                an experiment, a learning exercise, a way to go from zero to
+                IPO in nine months, or a one-off demo. And now it has grown
+                into a big mess that’s fragile and impossible to add code to,
+                and everybody’s whiny, and the old programmers quit in despair
+                and the new ones that are brought in can’t make head or tail of
+                the code so they somehow convince management to give up and
+                start over while Microsoft takes over their business. Today let
+                me tell you a story about what they could have done instead.
+                </p>
+        <p> FogBUGZ started out six years ago as an experiment to teach
+                myself ASP programming. Pretty soon it became an in-house bug
+                tracking system. It got embellished almost daily with features
+                that people needed until it was good enough that it no longer
+                justified any more work.  </p>
+        <p> Various friends asked me if they could use FogBUGZ at their
+                companies. The trouble was, it had too many hardcoded things
+                that made it a pain to run anywhere other than on the original
+                computer where it was deployed. I had used a bunch of SQL
+                Server stored procedures, which meant that you needed SQL
+                Server to run FogBUGZ, which was expensive and overkill for
+                some of the two person teams that wanted to run it. And so on.
+                So I would tell my friends, “gosh, for $5000 in consulting
+                fees, I’ll spend a couple of days and clean up the code so you
+                can run it on your server using Access instead of SQL Server.”
+                Generally, my friends thought this was too expensive.  </p>
+        <p> After this happened a few times I had a revelation — if I
+                could sell the same program to, say, three people, I could
+                charge $2000 and come out ahead. Or thirty people for $200.
+                Software is neat like that. So in late 2000, Michael sat down,
+                ported the code so that it worked on Access or SQL Server,
+                pulled all the site-specific stuff out into a header file, and
+                we started selling the thing. I didn’t really expect much to
+                come of it.  </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Joel Spolsky</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="http://www.joelonsoftware.com/articles/fog0000000348.html">Rub a dub dub</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Copyright Cannibalism</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Copyright Cannibalism</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-cinema--copyright-cannibalism" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-cinema--copyright-cannibalism</id>
+    <published>2020-12-09T20:21:26Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="sharp-cinema--copyright-cannibalism">Copyright Cannibalism</h3>
+      <table class="irc-conversation">
+        <tbody>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Hi all! I noticed many Hollywood marriages and other relationships have been stable ever since https://en.wikipedia.org/wiki/Sarah_Michelle_Gellar (♥!) was interviewed on "why my hollywood marriage works?". I'm not against divorces / breakups, but I want couples to be happy even if I'm attracted to their female partner (and frankly I'm attracted to a metric ton of celebs, friends, and fictional characters - 😊)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Also someone here wondered why https://en.wikipedia.org/wiki/Madonna hasn't starred in a film for years now and wondered if "she forgot how to act". Well, I doubt that you can forget that (if that's a thing: https://www.youtube.com/watch?v=ERy-99vXxnM ; https://en.wikiquote.org/wiki/Jennifer_Lawrence never took acting lessons and won the oscar at age 22), I just think hollywood producers are scared shitless of her: https://www.shlomifish.org/philosophy/culture/my-real-person-fan-fiction/ .</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">there is https://www.peppercarrot.com/en/article465/episode-32-the-battlefield too (also see the Midrash in the blog comments.)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">there's probably too few movies and too many actors</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">when you're "in", you bring marketing to the movie</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">showbiz...</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">some producers seem to cast a selected group though</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">continuously</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">hemkunskapz: many positively "hot"/attractive actors are unhirable: https://www.youtube.com/results?search_query=why+hollywood+can%27t+cast</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">yea some acting skills are probably needed</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">otherwise it's cameos</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">but a lot of movies have bad acting too :)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">hemkunskapz: BTW: if this was a real film (after some possible revamp) - https://www.shlomifish.org/humour/Summerschool-at-the-NSA/ - i bet thousands of "geeks" would love to see it. ok, i either need to rework the screenplay into the blessed hollywood format or some director needs to take the effort to clear their prejudice and read it as it is: http://paulgraham.com/gba.html (the word "hacker"). being a hero implies "hacking" as the ages old "David vs. Goliath" myth indicates: https://github.com/shlomif/missile-vs-melee-take-three</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">hemkunskapz: when i was in the psychiatric ward, a fellow patient (who seemed fairly sane and rational and informed) told me there is a genuine shortage of 'original' screenplays in .il. But even my "humanity" screenplay ( https://www.shlomifish.org/humour/humanity/ - cc-by-sa ) is based on the Jewish Bible and history lessons. Now imagine how films will flourish if they allowed fanfics and crossovers of proprietary franchises</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">hemkunskapz: re acting skills, sharon stone ( https://en.wikipedia.org/wiki/Sharon_Stone ) acted fairly badly in many of her earlier films, but they were still successful (and i enjoyed https://en.wikipedia.org/wiki/The_Quick_and_the_Dead_(1995_film) immensely) and i find the bad acting in last action hero' s hamlet scene and most of Mel Brooks' films a feature - not a bug</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">For the record: https://www.youtube.com/watch?v=9Eont_yEGZs</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">rindolf: i've heard that too, shortage of screenplays</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">hence remakes etc</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">it may even be hard to find any old book that hasn't been adapted</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">crossovers is a matter of copyrights i believe</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hemkunskapz</td>
+            <td class="text">if that can be negotiated, no problem</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">hemkunskapz: yes</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">hemkunskapz: there was https://en.wikipedia.org/wiki/Alien_vs._Predator_%28film%29</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">hemkunskapz: i released all of my franchises under cc-by: https://www.shlomifish.org/meta/copyrights/#characters_concepts_plots_and_worlds - but it's a drop in the ocean</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">and you often need to get clearance for parent franchises</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">hemkunskapz: here i broke the unwritten rule of doing star trek+starwars crossovers: https://github.com/shlomif/missile-vs-melee-take-three - it gave me an idea for a franchise crossing star wars Ep. I, Star Trek TNG/DS9, and current real-world/online life with Tiffany Alvord as https://en.wikipedia.org/wiki/Padm%C3%A9_Amidala ; My Little Pony's Fluttershy as her internal thought process ; and the https://en.wikipedia.org/wiki/Wayne%27s_World_(film) duo as the plot commentors and manipulators. I never said I was sane. (and normal people aren't fun)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">I think I'm going to try https://en.wikipedia.org/wiki/Con_Man_(web_series) next - giving it 3 episodes. I think stars/creators stardom and fandom are self-sustaining and invigorating.</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="info">
+        <tbody>
+          <tr class="channel">
+            <td class="field">
+              <b>Channel</b>
+            </td>
+            <td class="value">##cinema</td>
+          </tr>
+          <tr class="network">
+            <td class="field">
+              <b>Network</b>
+            </td>
+            <td class="value">Freenode</td>
+          </tr>
+          <tr class="tagline">
+            <td class="field">
+              <b>Tagline</b>
+            </td>
+            <td class="value">Tragedy of the creative non-commons</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>“They who saved one soul has saved the world Entire”</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">“They who saved one soul has saved the world Entire”</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#mishnah--saving-one-soul" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#mishnah--saving-one-soul</id>
+    <published>2020-12-26T18:45:23Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="mishnah--saving-one-soul">“They who saved one soul has saved the world Entire”</h3>
+      <blockquote>
+        <blockquote>
+
+                        <p>
+                        “They who saved one soul has saved the world Entire”
+                        </p>
+
+                    </blockquote>
+        <p>
+                    <a href="https://he.wikipedia.org/wiki/%D7%9B%D7%9C_%D7%94%D7%9E%D7%A7%D7%99%D7%99%D7%9D_%D7%A0%D7%A4%D7%A9_%D7%90%D7%97%D7%AA">Mishnah</a>
+                    </p>
+        <p>
+                    <b>Midrash:</b>
+                    </p>
+        <p>
+                    It's fine to help, convince, inspire, etc. even only one person at a time.
+                    </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Jewish Mishnah</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://he.wikipedia.org/wiki/%D7%9B%D7%9C_%D7%94%D7%9E%D7%A7%D7%99%D7%99%D7%9D_%D7%A0%D7%A4%D7%A9_%D7%90%D7%97%D7%AA">"He who sustains one soul"</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Klingons, Hamlet, and The Lion King</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Klingons, Hamlet, and The Lion King</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-klingon-watching-the-lion-king" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-klingon-watching-the-lion-king</id>
+    <published>2020-12-31T09:58:39Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-klingon-watching-the-lion-king">Klingons, Hamlet, and The Lion King</h3>
+      <blockquote>
+        <p>
+You can never truly appreciate Hamlet until you've read it in the original
+Klingon.
+</p>
+        <p>
+But all the mightiest Klingon warriors have watched
+<a href="https://en.wikipedia.org/wiki/The_Lion_King"><i>The Lion King</i></a>
+instead (or in addition), possibly with Klingon subtitles.
+</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://twitter.com/shlomif/status/1337514771936063492">Tweet</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Beauty Products as the Stone Soup Effect</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Beauty Products as the Stone Soup Effect</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-beauty-products-as-the-stone-soup-effect" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-beauty-products-as-the-stone-soup-effect</id>
+    <published>2021-01-03T06:32:47Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-beauty-products-as-the-stone-soup-effect">Beauty Products as the Stone Soup Effect</h3>
+      <blockquote>
+        <p>
+            ( <b>Caveat Emptor:</b> I am a <a href="https://www.shlomifish.org/meta/FAQ/guy_or_girl.xhtml">straight and non-trans male</a>,
+            so I may not know what I am talking about. Here be dragons. )
+            </p>
+        <p>
+            Most men do not spend a lot of time and money on beauty products,
+            even though <a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=sharp-sharp-programming-men-about-problems-with-their-hair">they
+            often have their share of frustrations with their hair</a>, and they look fine.
+            As evidence, several heterosexual women who looked
+            at <a href="https://www.shlomifish.org/images/">some of the photos
+            people took of me</a>
+            (see the ones whose filenames start with "shlomif")
+            told me I looked handsome.
+            </p>
+        <p>
+            Moreover, most underage girls look cute, lovely, and beautiful,
+            despite not using makeup.
+            </p>
+        <p>
+            The <a href="https://en.wikipedia.org/wiki/Book_of_Esther">Scroll of Esther</a> testifies
+            that in the time of the Persian empire (circa 470 BC), <a href="https://en.wikipedia.org/wiki/Book_of_Esther#Text_and_translations">a woman's makeup process took 12 months</a>,
+            and these fictional women were blown out of the water
+            by Hadassah (who became queen Esther), who was simply confident,
+            <a href="https://www.youtube.com/watch?v=FktDDKNrWjk">was being herself</a>
+            and doing it in <a href="https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/putting-cards-on-the-table-2019-2020/make-your-own-kind-of-music.xhtml">her own (imperfect and thus perfect) way</a>.
+            </p>
+        <p>
+            So I suspect most beauty products are the
+            <a href="https://en.wikipedia.org/wiki/Stone_Soup">stone soup</a>
+            effect for women: they instil confidence, but then can
+            be avoided altogether for an even better, more
+            natural, and more beautiful look.
+            </p>
+        <p>
+            In my favourite <a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=mighty-boosh--ape-of-death">sketch</a>
+            of the British comedy troupe <a href="https://en.wikipedia.org/wiki/The_Mighty_Boosh">The Mighty Boosh</a>
+            the Ape of Death (a male) has suffered from
+            hair problems even as a child, and then after
+            six minutes of treatment says "Look at me. I'm
+            so confident… and feel strong and supersexy!".
+            </p>
+        <p>
+            In the
+            <a href="https://www.youtube.com/watch?v=0-EF60neguk">videoclip
+            for "Nothing Compares 2 U"</a>,
+            the female singer Sinead O'Connor looks great bald.
+            Moreover, the bald actor
+            <a href="https://en.wikipedia.org/wiki/Patrick_Stewart">Patrick
+            Stewart</a> became a sex symbol, and a role model,
+            playing
+            the also bald
+            <a href="https://en.wikipedia.org/wiki/Jean-Luc_Picard">Capt. Jean-Luc
+            Picard</a>
+            in the iconic
+            television series
+            <a href="https://memory-alpha.fandom.com/wiki/Star_Trek:_The_Next_Generation"><i>Star Trek: The Next Generation</i></a>.
+            </p>
+        <p>
+            As of January 2021, the canonical "Alpha Female" (think <a href="https://en.wikipedia.org/wiki/Sarah_Bernhardt">Sarah Bernhardt</a>
+            or <a href="https://en.wikipedia.org/wiki/Marilyn_Monroe">Marilyn Monroe</a>)
+            appears to be <a href="https://en.wikipedia.org/wiki/Emma_Watson">Emma Watson</a>,
+            who happens to be short and not busty. Some people will always be unhappy with
+            how you look or just tease you for it (see the
+            old tale
+            <a href="https://en.wikipedia.org/wiki/The_miller%2C_his_son_and_the_donkey">"The miller, his son and the donkey"</a>
+            and the song <a href="https://www.youtube.com/watch?v=omyAL5HrUGo">"Keep on Singin' My Song" by Christina Aguilera</a>);
+            the important thing is to realise that you are awesome, and can be confident and
+            competent and beautiful, and even take your "faults" to your advantage.
+            </p>
+        <p>
+            (If you feel that what enough, or even just one, people complain
+            about has merit <a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=linus-not-always-change-my-mind">you
+            can try changing your strategy</a>, but the "media", including web 2.0 social media
+            commentators, will always generate a lot of <a href="https://en.wikipedia.org/wiki/White_noise">white noise</a>,
+            and I admit I may have erred on that too.)
+            </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://twitter.com/shlomif/status/1337514771936063492">Tweet</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Shlomi Fish’s Emma Watson Fact #15</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Shlomi Fish’s Emma Watson Fact #15</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-emma-watson-15" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-emma-watson-15</id>
+    <published>2021-01-09T10:27:02Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-fact-emma-watson-15">Shlomi Fish’s Emma Watson Fact #15</h3>
+      <blockquote>
+        <p>
+                    “When I was your age, Emma Watson was called
+                    <a href="https://en.wikipedia.org/wiki/Sarah_Bernhardt">Sarah Bernhardt</a>!”
+                    </p>
+        <p>
+                    “Whoa, dude! How old are you?”
+                    </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="http://www.shlomifish.org/humour/bits/facts/Emma-Watson/">Emma Watson Facts by Shlomi Fish and Friends</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Make everyone messiahs</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Make everyone messiahs</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-gamedev--make-everyone--messiahs" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-gamedev--make-everyone--messiahs</id>
+    <published>2021-01-09T10:58:01Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="sharp-gamedev--make-everyone--messiahs">Make everyone messiahs</h3>
+      <table class="irc-conversation">
+        <tbody>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">pulse: i've set myself on a quest to make every man, woman, and child (and some fictional characters) a good, happy, but unique, messiah</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">frankly, i was misguided at first, and still constantly seek enlightenment</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">yeah i don't understand any of that rindolf</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">a messiah is by definition a leader so</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">can't have everyone be a leader</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">purely you know</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">logically</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">pulse: it is many-to-many</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">rindolf: https://www.shlomifish.org/humour/images/pope-card/pope_card_cropped.png ("You are a pope")</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">We made these cards and hand them out on a regular basis.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">It is from the Principia Discordia</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">gamelaw</td>
+            <td class="text">Well. at least the channel was Hail_Satan free for a few hours this morning.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">pulse: You CAN have everyone be a leader. Check out the link :)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">hmw[at]: heh! nice to meet you, your holiness! ;)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">:)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">Same here</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">hmw[at], well, not logically, maybe metaphorically :p</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">pulse: Well. As Heinlein put it:</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">“A human being should be able to change a diaper, plan an invasion,  butcher a hog, conn a ship, design a building, write a sonnet, balance  accounts, build a wall, set a bone, comfort the dying, take orders, give  orders, cooperate, act alone, solve equations, analyze a new problem,  pitch manure, program a computer, cook a tasty meal, fight efficiently,  die gallantly. Specialization is for insects.” -Robert A. Heinlein</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">hmw[at]: in https://www.shlomifish.org/humour/Queen-Padme-Tales/ Yoda becomes "Master Darth Yoda" or "just plain 'Yoda'"</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">I'd say, it depends on the situation, who is currently leading. Everyone _should_ be a potential leader and also capable of following</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">i disagree though</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">did you ever try fixing a car</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">it's really hard</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">So what.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">Are YOU an insect?? *evil grin*</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">it's not safe if you don't know what you're doing either</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">i once tried to fix brakes on my bicycle</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">Darwin wins once more.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">and they malfunctioned mid downhill</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">most terrifying 3 seconds of my life</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">I get you :)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">pulse</td>
+            <td class="text">i'd rather trust specialized professionals</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">hmw[at]</td>
+            <td class="text">I would rather have someone with experience fix my car, obviously</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">hmw[at]: I disagree with Heinlein that you should know everything. But I agree that one shouldn't over-specialise, be wilfully stupid, incompetent, or non-confident</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">hmw[at]: https://www.shlomifish.org/humour/Queen-Padme-Tales/Queen-Padme-Tales--Queen-Amidala-vs-the-Klingon-Warriors.html#dedication</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="info">
+        <tbody>
+          <tr class="channel">
+            <td class="field">
+              <b>Channel</b>
+            </td>
+            <td class="value">#gamedev</td>
+          </tr>
+          <tr class="network">
+            <td class="field">
+              <b>Network</b>
+            </td>
+            <td class="value">Freenode</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Internet Talk is Cheap</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Internet Talk is Cheap</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-internet-talk-is-cheap" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-internet-talk-is-cheap</id>
+    <published>2021-01-14T15:30:31Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-internet-talk-is-cheap">Internet Talk is Cheap</h3>
+      <blockquote>
+        <p>
+I suspect the media coverage of the violence in Syria to be skewed. I think
+most of Syria is peaceful most of the time and that both the Syrian government forces
+and ISIL are harmless if not benevolent. I hope and expect Damascus to remain
+the oldest continuously inhabited city in the world, and to feel as Shalom-ful
+as Tel Aviv or Beirut. Israel, the Hizbullah, the Syrian government, or ISIL will
+accept money donations, but will gladly pay volunteers to do more than just be
+web/social media bloggers (often parody ones).
+</p>
+        <p>
+Same for most other causes.
+</p>
+        <p>
+I wish to <a href="https://www.shlomifish.org/humour/Queen-Padme-Tales/Queen-Padme-Tales--Planting-Trees.html">plant trees somewhere in Europe</a> with some old or new online friends. We may not stop global warming, but we can at least try and have fun and bring love and joy and inspiration to ourselves and others.
+</p>
+        <p>
+<a href="https://www.youtube.com/watch?v=xjT1q7f5ysA">Com'on People</a>.
+</p>
+        <p>
+Note that as opposed to secret do-gooders and in accordance with
+<a href="https://www.chabad.org/library/bible_cdo/aid/16006/jewish/Chapter-9.htm">Jeremiah 9:22-9:23</a>,
+I will be full internet attention whoring (but honest and non-pushy)
+about my contributions: both given - and received. Yesterday I went outside,
+and said "Shavua tov", "bon appetit", and "have an easy curfew" to
+friendly-looking strangers. I hope this will encourage others to dedicate
+time, energy - and <a href="https://en.wikipedia.org/w/index.php?title=Sarah_Michelle_Gellar&amp;oldid=997890126#Charitable_activities">gain it in spades</a>.
+</p>
+        <p>
+The next revolution starts in us. Be a hero. Be a messiah. 😉
+</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://www.facebook.com/shlomi.fish/posts/10157764686691981">Facebook Post</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Shlomi Fish’s Chuck Norris Fact #159</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Shlomi Fish’s Chuck Norris Fact #159</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-159" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-159</id>
+    <published>2021-01-16T16:50:42Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-fact-chuck-159">Shlomi Fish’s Chuck Norris Fact #159</h3>
+      <blockquote>
+        <p>
+                    Chuck Norris actually died and became a badass
+                    undead zombie killer. He was actually
+                    easier to avoid while being alive.
+                    </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="http://www.shlomifish.org/humour/bits/facts/Chuck-Norris/">Chuck Norris Facts by Shlomi Fish and Friends</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>“I've heard a Jew and a Muslim argue in a Damascus cafe with less”</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">“I've heard a Jew and a Muslim argue in a Damascus cafe with less”</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#emacs-wars" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#emacs-wars</id>
+    <published>2021-01-18T11:22:25Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="emacs-wars">“I've heard a Jew and a Muslim argue in a Damascus cafe with less”</h3>
+      <blockquote>
+        <p>
+"I've heard a Jew and a Muslim argue in a Damascus cafe with less
+passion than the emacs wars."
+                </p>
+        <p>
+	-- Ronald Florence in &lt;ueu1c4mbrc.fsf@auda.18james.com&gt;
+                </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Ronald Florence</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=215884">Debian Bug</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Planning one's wedding</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Planning one's wedding</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-reddit--rindolf-planning-his-wedding" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-reddit--rindolf-planning-his-wedding</id>
+    <published>2021-01-19T07:20:06Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="sharp-reddit--rindolf-planning-his-wedding">Planning one's wedding</h3>
+      <table class="irc-conversation">
+        <tbody>
+          <tr class="saying">
+            <td class="who">Roza</td>
+            <td class="text">Hi</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Roza: hey</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Roza</td>
+            <td class="text">Hi</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">.pasta Roza</td>
+          </tr>
+          <tr class="me_is">
+            <td class="who">* reddit-bot</td>
+            <td class="text">hands Roza a conspicuously small box of conchiglie with pistachio pesto!</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">what a miser</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">tallguy</td>
+            <td class="text"> Roza hey lady</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Roza: how are you?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">there are many good but nonauthentic pasta places in telaviv/etc,</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">not sure if Italians will like them</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">tallguy: i worked on https://www.shlomifish.org/philosophy/culture/my-real-person-fan-fiction/take2/ today</td>
+          </tr>
+          <tr class="me_is">
+            <td class="who">* rindolf</td>
+            <td class="text">is switch tasking</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">also visited /r/buffy and said that i liked Faith better than Buffy</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">ruin</td>
+            <td class="text">you rebel</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">ruin</td>
+            <td class="text">absolute madlad</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">ruin: heh</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Roza</td>
+            <td class="text">Lol</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">some people liked willow best but i found her too sheepish and recessive</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">https://www.shlomifish.org/humour/Buffy/A-Few-Good-Slayers/ongoing-text.html#the_q_continuum_duplicator - duplicating golden rings</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">if and when I marry, I'll buy my sweetheart a ring made of wood, plastic or copper with a nice design. I'm not going to wear my wedding ring on my finger</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Roza</td>
+            <td class="text">Where, then ?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">https://twitter.com/shlomif/status/1347825822414073856</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">reddit-bot</td>
+            <td class="text">[!!] @shlomif (Shlomi Fish): There is industrial utility for gold, silver, etc. that it is a shame to waste them on jewellery, given people can buy cheap accessories made out of abundant materials if that's their thing [and they look better]. It's all about being confident anyway: https://t.co/4LxFtS0rRl . (6 days and 11 hours ago)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Roza: I'll keep it in a drawer</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">cadderly</td>
+            <td class="text">what about like jade or something</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">cadderly</td>
+            <td class="text">or even quartz</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Roza: or in my pencil case</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Roza: I also will give her my rpg dice set: https://www.shlomifish.org/meta/FAQ/d10_dice.xhtml</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">cadderly: maybe</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">cadderly: https://www.youtube.com/watch?v=PvMdN_i-D9I - nice rings!</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">reddit-bot</td>
+            <td class="text">Four Weddings and a Funeral: 1st Wedding: The Rings (Subtitled) - length 2m 56s - 160 likes, 17 dislikes (90.4%) - 71,212 views - Albertobezmiliana on 2015.03.29</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="info">
+        <tbody>
+          <tr class="channel">
+            <td class="field">
+              <b>Channel</b>
+            </td>
+            <td class="value">#reddit</td>
+          </tr>
+          <tr class="network">
+            <td class="field">
+              <b>Network</b>
+            </td>
+            <td class="value">Freenode</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>COVID and Detainment</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">COVID and Detainment</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-covid-and-the-effects-of-detainment" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-covid-and-the-effects-of-detainment</id>
+    <published>2021-01-25T12:15:03Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-covid-and-the-effects-of-detainment">COVID and Detainment</h3>
+      <blockquote>
+        <p>
+With all due respect to #COVID, putting people (especially old) in detainment makes them psychologically and biologically worse and worse. My father (a biologist) told me that just moving a mouse through corridors in a building had the same bad effect on their immunity system even without radiation. Humans wish to go outside and do what they want ( "as you wish" / "make it so" / "carpe diem" ): <a href="http://shlomifishswiki.branchable.com/Saladin_Style/">Saladin Style</a> .
+</p>
+        <p>
+(NOTE: here is  that my father found about the effect of stress on the immune system: <a href="https://www.simplypsychology.org/stress-immune.html#:~:text=When%20we're%20stressed%2C%20the,lowers%20the%20number%20of%20lymphocytes">a citation</a>
+; I recall reading that <a href="https://en.wikipedia.org/wiki/Maimonides">Maimonides</a> noted that a person's optimism influenced his recovery, and there may likely have been earlier sources).
+</p>
+        <p>
+The months i spent in the closed psychiatric ward for being "bipolar" and unable to leave were worse than my 6.5 years in the technion, and they would be even worse if I weren't so resourceful: <a href="https://www.youtube.com/watch?v=J0KpseN9AjE">Highway to Hell</a> ; <a href="https://www.youtube.com/watch?v=GIPl9o-SQRg">Wyclef Jean - Wish You Were Here</a>.
+</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://www.facebook.com/shlomi.fish/posts/10157754021291981">Facebook Post</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Fight fascism with fascism</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Fight fascism with fascism</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-linux-offtopic--fight-fascism-with-fascism" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-linux-offtopic--fight-fascism-with-fascism</id>
+    <published>2021-02-07T12:35:06Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="sharp-linux-offtopic--fight-fascism-with-fascism">Fight fascism with fascism</h3>
+      <table class="irc-conversation">
+        <tbody>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">The Trumpism cancer threatening fascism on America shows no signs of remission</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Hail_Satan: i'm hopeful</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Hail_Satan: and twitter censoring @realDonaldTrump was fascistic too</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">64% say they'd form a new party if he left</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">no, it was not fascistic.  You, a jew of all people, need to learn what "fascism" is about</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Hail_Satan: it is anti free speech</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">No it is not</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Hail_Satan: it is</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">Why can't I barge in on your house and yell at you about how jews are inferior?  Why is that something you support?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">c705</td>
+            <td class="text">you don't have a right to free speech on twitter</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">c705</td>
+            <td class="text">it's their platform, they have a right to do whatever they want with it</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">rindolf's on the spectrum</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Hail_Satan: c705 : https://www.reddit.com/r/Twitter/comments/kgmrxx/tip_make_sure_you_enter_your_real_birth_year_eg/</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">he needs edge case examples, because regular explanations don't work</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">c705</td>
+            <td class="text">great way to lose the argument before it even began</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">c705</td>
+            <td class="text">rindolf: i'm not clicking that</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">c705: can you form your own twitter? get real</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">yes, you have to be at least 13 years old to use twitter lol</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">c705</td>
+            <td class="text">rindolf: yes, actually you can</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Hail_Satan: and i am 42</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">that's nice</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">c705</td>
+            <td class="text">see Parler, and whatever other garbage is out there</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">I like some fish</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Hail_Satan: and sam smith was 10 y.o. when she sent the letter</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">that doesn't make any sense, rindolf</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Hail_Satan: why doesn't it? https://en.wikipedia.org/wiki/Samantha_Smith - read about her</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">this is your argument why twitter banning trump is fascist? lol</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">"We jewish autists endorse genocide as a form of speech, which must be respected"</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">lick boot harder</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">in fact, if these are your true beliefs, I'm fine with the Nazis genociding your bloodline.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Hail_Satan: no, these aer two different issues</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">Once sycophants like you are gone, we can finally get to the real work of ending the fascists</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Hail_Satan: i think "the truths are out there"</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Hail_Satan: https://www.reddit.com/r/quotes/comments/dwaviq/where_they_have_burned_books_they_will_end_in/</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">what do you have against fascists Hail_Satan ?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">Nothing.  Kill the jews, mawk.  Start with rindolf.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">hmm</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">but he's nice</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">You suck at fascism</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">:(</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">I'm a peaceful fascist</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">not everything trump said on twitter was bad, and many ppl replied to him or retweeted him</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">I'm going to ignore rindolf now</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">The last thing I need is Israeli pro-trump spam in my life</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">Fuck off n die</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">lol</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">heh.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">i am pro-free-speech - not pro-trump</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">sorry rindolf that's too fascist</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">you can't say that</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">you need to abide by the rules of the new sherif in town</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">Hello</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">hi</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">I'm in pain</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">in even more withdrawals</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">i was asked to delete https://www.shlomifish.org/humour/Star-Trek/We-the-Living-Dead/ongoing-text.html for [get this] saying "hot girls"</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rascul</td>
+            <td class="text">only fascists get pain</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">lol</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">not sure</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">mawk: heh</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rascul</td>
+            <td class="text">pretty sure hitler also wore shoes so wearing shoes supports nazism</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">mawk: aw</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">*hug*</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">rascul: lol wat</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">oh I get the joke</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">rascul: heh</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">reductio at hitlerum</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">ad</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">not at</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">reductio ad hitlerum*</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">mawk: yeah I Know</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">I'm kinda half asleep</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">but I know basic latin</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">kind of</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">at least I like latin anyways</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">I got kicked out of latin class after 2 years</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">for lack of interest</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rascul</td>
+            <td class="text">sorry i just missed the fascist nazi discussion by a few minutes and i wanted to take place</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">https://quoteinvestigator.com/2015/06/01/defend-say/ - « I Disapprove of What You Say, But I Will Defend to the Death Your Right to Say It» - a woman</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">look I had rough sleep and this coffee sucks but at least it lets me not fall asleep</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rascul</td>
+            <td class="text">s/place/part/</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">but I prefer ελλενικα</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Gustavo6046</td>
+            <td class="text">rascul: let me cheer and hug mawk in peace</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rascul</td>
+            <td class="text">no that's fascism</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">mawk: have you watched the life of brian skit?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">c705</td>
+            <td class="text">my cioffee this morning is fascist</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rascul</td>
+            <td class="text">down with cioffee</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">what's a skit rindolf ?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">O</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">I watched the whole movie</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">mawk: a sketch</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">a</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">mawk: https://www.youtube.com/watch?v=0lczHvB3Y9s</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mawk</td>
+            <td class="text">yes I remember</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">mawk: i wrote this in refto the "what have the romans done for us" sketch: https://github.com/shlomif/why-the-BSDs-should-not-blame-USL-vs-BSDi-for-linux-dominance</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">ask him about Buffy the Vampire</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Hail_Satan</td>
+            <td class="text">he has this weird blog where he pretends to be famous women</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">this is fanfic: e.g: https://www.shlomifish.org/humour/bits/facts/</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">mawk: "hot girls" is nothing compared to https://en.wikipedia.org/wiki/Song_of_Songs</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="info">
+        <tbody>
+          <tr class="channel">
+            <td class="field">
+              <b>Channel</b>
+            </td>
+            <td class="value">##Linux-offtopic</td>
+          </tr>
+          <tr class="network">
+            <td class="field">
+              <b>Network</b>
+            </td>
+            <td class="value">Freenode</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Doing Hot Celebs</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Doing Hot Celebs</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#doing-hot-celebs--2021-edition" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#doing-hot-celebs--2021-edition</id>
+    <published>2021-02-08T03:13:56Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="doing-hot-celebs--2021-edition">Doing Hot Celebs</h3>
+      <blockquote>
+        <p>
+            I at ~ 2006 "I'd rather be doing hot models than doing code".
+            </p>
+        <p>
+            I at ~2021 "I'm not just doing it for money. I'm doing it for doing
+            hot youtubers!" . I think most attractive MOTAS are polymath,
+            geeky and hacker (= action hero)
+            entertainers/educators/amateur philosophers, anyway.
+            </p>
+        <p>
+            (Also: your kilometrage may vary, but I need only one
+            attractive significant other at a time.
+            <a href="http://shlomifishswiki.branchable.com/99_Problems/">Or fewer</a>.
+            )
+            </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://www.facebook.com/shlomi.fish/posts/10157754021291981">Facebook Post</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>"Those who make a distinction between education and entertainment don't know the first thing about either."</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">"Those who make a distinction between education and entertainment don't know the first thing about either."</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#education-and-entertainment" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#education-and-entertainment</id>
+    <published>2021-02-14T08:27:43Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="education-and-entertainment">"Those who make a distinction between education and entertainment don't know the first thing about either."</h3>
+      <blockquote>
+        <p>
+                "Those who make a distinction between education and entertainment don't know the first thing about either."
+                </p>
+        <p>
+                   - Marshall McLuhan (via "movement-sigs")
+                </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Marshall McLuhan</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=215884">Debian Bug</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>"The difference between theory and practice is that in theory, there is no difference between theory and practice, while in practice, there is."</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">"The difference between theory and practice is that in theory, there is no difference between theory and practice, while in practice, there is."</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#difference-between-theory-and-practice" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#difference-between-theory-and-practice</id>
+    <published>2021-02-15T10:39:26Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="difference-between-theory-and-practice">"The difference between theory and practice is that in theory, there is no difference between theory and practice, while in practice, there is."</h3>
+      <blockquote>
+        <p>
+                The difference between theory and practice is that in theory,
+                there is no difference between theory and practice, while in
+                practice, there is.
+                </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Attributed to Yogi Berra and others</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://github.com/shlomif/fortune-mod">via fortune-mod</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Shlomi Fish’s Chuck Norris Fact #160</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Shlomi Fish’s Chuck Norris Fact #160</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-160" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-160</id>
+    <published>2021-02-19T05:45:07Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-fact-chuck-160">Shlomi Fish’s Chuck Norris Fact #160</h3>
+      <blockquote>
+        <p>
+                    If you do not like these factoids, Chuck Norris
+                    will still love you. However, it's not going
+                    to stop him from killing you, because
+                    he doesn't let his feelings get in the way
+                    of his day-to-day business.
+                    </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="http://www.shlomifish.org/humour/bits/facts/Chuck-Norris/">Chuck Norris Facts by Shlomi Fish and Friends</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>How the Chun Li vs. Tifa's Battle Should End</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">How the Chun Li vs. Tifa's Battle Should End</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-how-chun-li-vs-tifa-should-end" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-how-chun-li-vs-tifa-should-end</id>
+    <published>2021-02-26T19:23:44Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-how-chun-li-vs-tifa-should-end">How the Chun Li vs. Tifa's Battle Should End</h3>
+      <blockquote>
+        <p>
+Reflecting on <a href="https://www.youtube.com/watch?v=l0y734-uyzQ">Chun-Li vs Tifa (Street Fighter 2 vs Final Fantasy VII) - Girl Fight! Ultimate Fan Fights Ep. 5</a> video, I think both girls fought well. They should shake hands and declare themselves <a href="https://simpsons.fandom.com/wiki/Dead_Putting_Society">equally good</a> and go:
+</p>
+        <ol>
+<li>
+<p>
+Grab a few drinks or snacks together.
+</p>
+</li>
+
+<li>
+<p>
+Hit on a couple of men.
+</p>
+</li>
+
+<li>
+<p>
+Hit these men.
+</p>
+</li>
+
+<li>
+<p>
+Make out with these men.
+</p>
+</li>
+
+<li>
+<p>
+Make love to these men.
+</p>
+</li>
+
+<li>
+<p>
+Make love to each other…😉.
+</p>
+</li>
+
+<li>
+<p>
+Whatever floats their boat!
+</p>
+</li>
+</ol>
+        <p>
+<a href="https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition">"War is good for business. Peace is good for business."</a>
+— The Ferengi Rules of Acquisition.
+</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=shlomif-how-chun-li-vs-tifa-should-end">Original</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Nasruddin seeking the Perfect Wife</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Nasruddin seeking the Perfect Wife</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#nasruddin-seeking-the-perfect-wife" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#nasruddin-seeking-the-perfect-wife</id>
+    <published>2021-03-05T10:31:50Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="nasruddin-seeking-the-perfect-wife">Nasruddin seeking the Perfect Wife</h3>
+      <blockquote>
+        <p>
+There's the story of Mullah Nasruddin, who was asked why he never married and answered, "I was looking for the perfect wife. I went to Damascus and met a wonderful woman but she had no spiritual side. Then I went to Cairo and met a woman who was deeply spiritual, but we didn't communicate well. I went from place to place looking for the perfect woman, then finally I found her and she was beautiful and spiritual and we communicated well. She was perfect."
+</p>
+        <p>
+Then his friend asked why he didn’t marry her, and Mullah Nasruddin replied, "Unfortunately, she was looking for the perfect man!".
+                </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">via "Nice Inspiration For Everyone"</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://nice-inspiration.blogspot.com/2011/05/looking-for-perfect-wife.html">Looking For The Perfect Wife</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>"In Israel, we have…"</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">"In Israel, we have…"</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#in-israel-we-have-falafel-humous-shawarmah" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#in-israel-we-have-falafel-humous-shawarmah</id>
+    <published>2021-03-06T19:27:38Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="in-israel-we-have-falafel-humous-shawarmah">"In Israel, we have…"</h3>
+      <blockquote>
+        <p>
+            In Israel, we have <a href="https://en.wikipedia.org/wiki/Falafel">Falafel</a>,
+            <a href="https://en.wikipedia.org/wiki/Hummus">Hummus</a>,
+            <a href="https://en.wikipedia.org/wiki/Tahini">T'hina</a>,
+            <a href="https://en.wikipedia.org/wiki/Shawarma">Shawarma</a>,
+            <a href="https://en.wikipedia.org/wiki/Shashlik">Shishlik</a>…
+            </p>
+        <p>
+            And we love to eat
+            <a href="https://en.wikipedia.org/wiki/Bourekas">Bourekas</a>
+            in the morning!
+            </p>
+        <p>
+            — Israeli teenagers tormenting English-speaking tourists
+            while kayaking on <a href="https://en.wikipedia.org/wiki/Jordan_River">River Jordan</a>.
+            </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish's high school friends</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://twitter.com/shlomif/status/502722456641998849">Facebook Post</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+</feed>

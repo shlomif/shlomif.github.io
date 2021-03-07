@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="arrow.html"/><link rel="next" href="../debugger/"/><title>Dereferencing</title></head><body><main><header><h1>10.6. Dereferencing</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="arrow.html" class="nav" accesskey="p">Prev</a></td><td><a href="../debugger/" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">References</a> → <a href="dereferencing.html">Dereferencing</a></div></nav><p>The entire scalar or data structure pointed to by the reference can be retrieved by dereferencing. Dereferencing is done by using a <code>$</code>, a <code>@</code> or a <code>%</code> (depending if the reference refers to a scalar , array or a hash respectively), and then the reference inside curly braces.</p><p>Here are some simple examples:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$ds1</span> =
+&#x7B;
+    <span class="Constant">'h'</span> =&gt; [<span class="Constant">5</span>,<span class="Constant">6</span>,<span class="Constant">7</span>],
+    <span class="Constant">'y'</span> =&gt; &#x7B; <span class="Constant">'t'</span> =&gt; <span class="Constant">'u'</span>, <span class="Constant">'o'</span> =&gt; <span class="Constant">'p'</span> &#x7D;,
+    <span class="Constant">'hello'</span> =&gt; <span class="Constant">'up'</span>,
+&#x7D;;
+
+<span class="Statement">my</span> <span class="Identifier">$array_ref</span> = [<span class="Constant">5</span>, <span class="Constant">6</span>, <span class="Constant">7</span>, <span class="Constant">10</span>, <span class="Constant">24</span>, <span class="Constant">90</span>, <span class="Constant">14</span>];
+<span class="Statement">my</span> <span class="Identifier">$x</span> = <span class="Constant">&quot;Hello World!&quot;</span>;
+<span class="Statement">my</span> <span class="Identifier">$y</span> = \<span class="Identifier">$x</span>;
+
+<span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Special">\$</span><span class="Constant">array_ref:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;, &quot;</span>, <span class="Identifier">@&#x7B;$array_ref&#x7D;</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+
+
+<span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Special">\n\n\$</span><span class="Constant">ds1-&gt;&#x7B;'h'&#x7D;:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;, &quot;</span>, <span class="Identifier">@&#x7B;$ds1-&gt;&#x7B;</span><span class="Constant">'h'</span><span class="Identifier">&#x7D;&#x7D;</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+
+<span class="Statement">my</span> <span class="Identifier">%hash</span> = <span class="Identifier">%&#x7B;$ds1-&gt;&#x7B;</span><span class="Constant">'y'</span><span class="Identifier">&#x7D;&#x7D;</span>;
+
+<span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Special">\n\n\%</span><span class="Constant">hash:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+
+<span class="Statement">foreach</span> <span class="Statement">my</span> <span class="Identifier">$k</span> (<span class="Statement">keys</span>(<span class="Identifier">%hash</span>))
+&#x7B;
+    <span class="Statement">print</span> <span class="Identifier">$k</span>,  <span class="Constant">&quot; =&gt; &quot;</span>, <span class="Identifier">$hash&#x7B;$k&#x7D;</span>;
+&#x7D;
+
+
+<span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Special">\n\n\$\$</span><span class="Constant">y:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+
+<span class="Statement">print</span> <span class="Identifier">$&#x7B;$y&#x7D;</span>, <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>If the expression that yields the reference is a simple one than the curly brackets can be omitted (e.g: <code>@$array_ref</code> or <code>$$ref</code>). However, assuming you use curly brackets - the expression surrounded inside them can be as complex as you would like.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="arrow.html" class="nav">Prev</a></td><td><a href="../debugger/" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

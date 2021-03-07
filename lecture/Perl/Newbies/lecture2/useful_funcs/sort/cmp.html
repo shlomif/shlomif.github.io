@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="../grep.html"/><title>&lt;=&gt; and cmp</title></head><body><main><header><h1>9.3.1. &lt;=&gt; and cmp</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="../grep.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../">"Perl for Perl Newbies" - Part 2</a> → <a href="../">Useful Functions</a> → <a href="./">sort</a> → <a href="cmp.html">&lt;=&gt; and cmp</a></div></nav><p>Perl has two operators <code>&lt;=&gt;</code> and <code>cmp</code>, which are very useful when wishing to sort arrays. <code>$x &lt;=&gt; $y</code> returns -1 if <code>$x</code> is numerically lesser than <code>$y</code>, 1 if it's greater, and zero if they are equal.</p><p><code>cmp</code> does the same for string comparison. For instance the previous example could be re-written as:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">@array</span> = (<span class="Constant">100</span>,<span class="Constant">5</span>,<span class="Constant">8</span>,<span class="Constant">92</span>,-<span class="Constant">7</span>,<span class="Constant">34</span>,<span class="Constant">29</span>,<span class="Constant">58</span>,<span class="Constant">8</span>,<span class="Constant">10</span>,<span class="Constant">24</span>);
+
+<span class="Statement">my</span> <span class="Identifier">@sorted_array</span> = (<span class="Statement">sort</span> <span class="Statement">&#x7B;</span> <span class="Identifier">$a</span> &lt;=&gt; <span class="Identifier">$b</span> <span class="Statement">&#x7D;</span> <span class="Identifier">@array</span>);
+
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;,&quot;</span>, <span class="Identifier">@sorted_array</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>Much more civil, isn't it? The following example, sorts an array of strings in reverse:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">@input</span> = (
+    <span class="Constant">&quot;Hello World!&quot;</span>,
+    <span class="Constant">&quot;You is all I need.&quot;</span>,
+    <span class="Constant">&quot;To be or not to be&quot;</span>,
+    <span class="Constant">&quot;There's more than one way to do it.&quot;</span>,
+    <span class="Constant">&quot;Absolutely Fabulous&quot;</span>,
+    <span class="Constant">&quot;Ci vis pacem, para belum&quot;</span>,
+    <span class="Constant">&quot;Give me liberty or give me death.&quot;</span>,
+    <span class="Constant">&quot;Linux - Because software problems should not cost money&quot;</span>,
+);
+
+<span class="Comment"># Do a case-insensitive sort</span>
+<span class="Statement">my</span> <span class="Identifier">@sorted</span> = (<span class="Statement">sort</span> <span class="Statement">&#x7B;</span> <span class="Statement">lc</span>(<span class="Identifier">$b</span>) <span class="Statement">cmp</span> <span class="Statement">lc</span>(<span class="Identifier">$a</span>); <span class="Statement">&#x7D;</span> <span class="Identifier">@input</span>);
+
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>, <span class="Identifier">@sorted</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="../grep.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

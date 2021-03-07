@@ -1,0 +1,956 @@
+<?xml version='1.0' ?>
+
+
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="index" xml:lang="he">
+    <info>
+        <title>המדריך העברי ל-HTML תקני</title>
+        <author>
+            <personname>
+                <firstname>Shlomi</firstname>
+                <surname>Fish</surname>
+            </personname>
+            <affiliation>
+                <address>
+                    <email>shlomif@shlomifish.org</email>
+                    <uri type="homepage">https://www.shlomifish.org/</uri>
+                </address>
+            </affiliation>
+        </author>
+        <copyright>
+            <year>2008</year>
+            <holder>Shlomi Fish</holder>
+        </copyright>
+        <legalnotice xml:id="legalnotice" xml:lang="en">
+            <!-- Ci vis pacem -->
+            <para>
+                <!-- belum. ;-) -->
+                This document was written by Shlomi Fish and is available
+                under the terms of either the:
+            </para>
+            <orderedlist>
+                <listitem>
+                    <para>
+                        <link xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">The
+                            Public Domain/CC0 1.0 Universal</link> (or
+                        at your option any later version)
+                        as defined by the Creative Commons project
+                        or your local jurisdiction.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <link xlink:href="http://creativecommons.org/licenses/by/3.0/">The Creative Commons Attribution License (CC-by) version 3.0</link>
+                        (or at your option any later version of the same
+                        license.)
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        The
+                        <link
+                            xlink:href="http://www.opensource.org/licenses/mit-license.php">MIT
+                            Expat License</link>.
+                    </para>
+                </listitem>
+            </orderedlist>
+        </legalnotice>
+        <revhistory>
+            <revision>
+                <revnumber>2780</revnumber>
+                <date>27 April 2008</date>
+                <authorinitials>shlomif</authorinitials>
+                <revremark>
+                    Started working on this document after forking the template
+                    of an older one.
+                </revremark>
+            </revision>
+        </revhistory>
+    </info>
+    <chapter xml:id="introduction">
+        <info>
+            <title>מבוא</title>
+        </info>
+        <para>
+            מדריך זה בא לענות על החוסר במדריכים לכתיבת דפי ואתרי ווב בעברית שהנם:
+        </para>
+<orderedlist>
+<listitem>
+<para>
+מסבירים כיצד לכתוב קוד תקני וסמנטי.
+</para>
+</listitem>
+<listitem>
+<para>
+תחת רישיון מתירני מספיק.
+</para>
+</listitem>
+<listitem>
+<para>
+בעברית.
+</para>
+</listitem>
+</orderedlist>
+
+<para>
+מכיוון שאני מפתח ווב מנוסה וכותב קוד תקני וסמנטי, החלטתי לקחת את היזמה
+ולכתוב מדריך כזה. הידע הנדרש הוא:
+</para>
+
+<orderedlist>
+<listitem>
+<para>
+ידע בסיס בעריכת טקסט פשוט. לא מדובר בשימוש ב-וורד, אלא בעורך טקסט כמו Notepad.
+מומלץ בחום שימוש בעורך טקסט מתקדם יותר כמו
+<link xlink:href="http://notepad-plus.sourceforge.net/"><productname xml:lang="en">Notepad++</productname></link>
+או תחליף אחר הולם לסביבת העבודה החביבה עליכם.
+</para>
+</listitem>
+<listitem>
+<para>
+ידע בסיסי באנגלית, משום שיש לכתוב קוד באנגלית, גם אם רוב הדף הוא בעברית או בשפה אחרת.
+</para>
+</listitem>
+<listitem>
+<para>
+אמביציה, רעב לידע ונכונות ללמוד.
+</para>
+</listitem>
+</orderedlist>
+
+    </chapter>
+
+    <chapter xml:id="basic-html">
+        <info>
+            <title>HTML בסיסי</title>
+        </info>
+
+    <section xml:id="first-document">
+        <info>
+            <title>מסמך ה-HTML הראשון שלך</title>
+        </info>
+
+        <para>
+        בפרק זה נלמד כיצד לכתוב HTML בסיסי.
+        </para>
+
+	    <para>
+		HTML
+		הנו למעשה טקסט פשוט רק עם הוראות
+		שמסבירות כיצד יש לפרש את הטקסט. את
+		המסמך הראשון ניתן לכתוב למשל כך:
+	    </para>
+<programlisting xml:lang="en">
+<![CDATA[
+Hello, World! This is my first HTML Document.
+This is the second line.
+
+]]>
+</programlisting>
+
+
+	<para>
+	אם תשמרו מסמך זה לתוך קובץ עם סיומת
+	<filename xml:lang="en">.html</filename>
+	ותפתחו אותו באמצעות הדפדפן, אז תקבלו משהו
+	כזה בדפדפן:
+	</para>
+
+    <mediaobject>
+        <alt>מסמך ה-HTML הראשון</alt>
+	    <imageobject>
+		<imagedata fileref="images/first-document.png" format="PNG"/>
+	    </imageobject>
+	</mediaobject>
+
+	<para>
+	ניתן לראות שהדפדפן התעלם משבירת השורה השנייה. מה קורה אם נשבור פסקאות? שמרו טקסט
+	זה לתוך קובץ עם סיומת <filename xml:lang="en">.html</filename>:
+	</para>
+<programlisting xml:lang="en">
+<![CDATA[
+First Paragraph: my web-page is your web-page.
+
+
+Second paragraph: this is the second paragraph.
+
+]]>
+</programlisting>
+
+
+	<para>
+	שוב פעם נקבל את הכל בשורה אחת:
+	</para>
+
+	<mediaobject>
+	    <alt>שתי פסקאות ללא סימון</alt>
+	    <imageobject>
+		<imagedata fileref="images/two-paragraphs-without-markup.png" format="PNG"/>
+	    </imageobject>
+	</mediaobject>
+
+	<para>
+	מה שקרה הוא שבעוד שהטקסט הוא טקסט, הדפדפן זקוק לתגיות HTML (HTML Tags) כדי
+	לדעת כיצד פרמט אותו. אנו נראה מספר תגיות HTML בסיסיות בחלק הבא.
+	</para>
+
+	</section>
+
+    <section xml:id="basic-HTML-tags">
+        <info>
+            <title>תגיות HTML בסיסיות</title>
+        </info>
+
+        <para>
+            תגיות HTML בד"כ באות כתגית פותחת ובתוכה טקסט או תגיות נוספות
+            ותגית סוגרת. התגית הפותחת המתחילה בסימן "קטן
+            מ" )<code xml:lang="en">&lt;</code>( ואחריה מזהה התגית, ואחריו
+            תכונות )"Attributes"( הבאות כמזהה, כסימן שווה וכערך הבא בתוך
+            מירכאות. לבסוף באה סוף התגית הפותחת כסימן גדול-מ
+            )<code xml:lang="en">&gt;</code>( .
+        </para>
+
+        <para>
+            תגית סוגרת הנה פשוט
+            <code xml:lang="en">&lt;/tag-identifier&gt;</code> .
+        </para>
+
+        <para>
+            הנה דוגמה להמחשה באמצעות התגית
+            <code xml:lang="en">&lt;p&gt;</code> המייצגת פיסקה
+            (<quote xml:lang="en"><emphasis role="bold">P</emphasis>aragraph</quote>):
+        </para>
+<programlisting xml:lang="en">
+<![CDATA[
+<p>
+First paragraph - for real this time.
+</p>
+
+<p>
+Second paragraph - La la la la la.
+</p>
+
+]]>
+</programlisting>
+
+        <para>
+            ואנו מקבלים את:
+        </para>
+
+        <mediaobject>
+	    <alt>שתי פסקאות ללא תגיות P</alt>
+            <imageobject>
+            <imagedata fileref="images/two-paragraphs-with-p-tags.png" format="PNG"/>
+            </imageobject>
+        </mediaobject>
+
+        <para>
+            כפי שניתן לראות הפעם קיבלנו שתי פסקאות נפרדות. זאת משום שהדפדפן
+            זיהה את התגית <code xml:lang="en">&lt;p&gt;</code> כתוחמת של
+            פיסקה. כל מה שבין התגית הפותחת לסוגרת נחשב כתוכן של הפסקה.
+        </para>
+
+        <para>
+            עכשיו בו נכיר תגית נוספת המאפשרת לנו לסמן טקסט כקישור. לתגית
+            קוראים "a" (קיצור של "Anchor") והיא מקבלת תכונה בשם
+            <code xml:lang="en">href</code> כפרמטר. הבא נראה אותה בפעולה:
+        </para><programlisting xml:lang="en">
+<![CDATA[
+<p>
+Here is a link: <a href="http://www.w3.org/">The World-Wide-Web Consortium</a>.
+</p>
+
+<p>
+And here is another link - <a href="http://en.wikipedia.org/wiki/HTML">the
+    English Wikipedia Article about HTML</a>.
+</p>
+
+]]>
+</programlisting>
+
+
+        <mediaobject>
+	    <alt>דוגמה לתגית "a"</alt>
+            <imageobject>
+            <imagedata fileref="images/a-href-sample.png" format="PNG"/>
+            </imageobject>
+        </mediaobject>
+
+        <para>
+            כפי שניתן לראות מה שבתוך תגיות ה-"a" סומן כקישור, כאשר הקישור
+            מצביע למה שבתוך תכונת ה-"href". ראוי לציין שכאשר יש לסגור מספר
+            תגים יש לסגור אותם בסדר הפוך מהסדר בו הם נפתחו, באופן כזה
+            שיהיה לנו עץ מקונן.
+        </para>
+
+        <para>
+            לסיום החלק הזה, אנו נשחק במספר תגיות נוספות לשם עיצוב הדף:
+        </para>
+
+        <orderedlist>
+
+            <listitem>
+                <para>
+                    <code xml:lang="en">&lt;b&gt;</code> - לשם הפיכת
+                    טקסט למעובה. ("bold")
+                </para>
+            </listitem>
+
+            <listitem>
+                <para>
+                    <code xml:lang="en">&lt;i&gt;</code> - לשם הפיכת
+                    טקסט למוטה. ("italics")
+                </para>
+            </listitem>
+
+        </orderedlist>
+        <para>
+            הנה הדוגמה:
+        </para><programlisting xml:lang="en">
+<![CDATA[
+<p>
+<i>Alice</i> was beginning to get very tired of sitting by her sister
+on the bank, and of having nothing to do: once or twice she had peeped
+into the book her sister was reading, but it had no pictures or
+conversations in it, "and what is the use of a book," thought Alice,
+"without <b>pictures</b> or <b>conversation?</b>"
+</p>
+
+<p>
+From <a href="http://www.gutenberg.org/etext/11">Alice's
+    Adventures in Wonderland - Chapter 1</a>.
+</p>
+
+
+]]>
+</programlisting>
+
+
+        <mediaobject>
+	    <alt>דוגמה לגופן מעובה ונטוי</alt>
+           <imageobject>
+            <imagedata fileref="images/bold-and-italics-sample.png" format="PNG"/>
+            </imageobject>
+        </mediaobject>
+
+         <para>
+            כפי שניתן לראות, הטקסט המוכל בתוך התגיות עוצב בהתאם
+            להן.
+        </para>
+
+        <para>
+            בפרק הבא נראה כיצד לכתוב מסמך HTML מלא באופן כזה שיהיה
+            מסמך תקין העובר אימות.
+        </para>
+
+    </section>
+
+    <section xml:id="writing-complete-HTML-documents">
+        <info>
+            <title>כתיבת מסמכי HTML מלאים.</title>
+        </info>
+        <para>
+            עד עכשיו, מסמכי ה-HTML שכתבנו לא היו מלאים וככאלה לא היו
+            עוברים <emphasis role="bold">אימות</emphasis>. כדי שמסמכי
+            HTML יהיו תקינים הם צריכים להיות במבנה מוגדר, עם תחילית
+            וסופית מתאימים. בו נראה וננתח דוגמה למסמך HTML מלא כזה:
+        </para>
+<programlisting xml:lang="en">
+<![CDATA[
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Excerpt from the Three Musketeers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <h1>Excerpt from the Three Musketeers</h1>
+
+    <p>
+A young man--we can sketch his portrait at a dash. Imagine
+to yourself a Don Quixote of eighteen; a Don Quixote without
+his corselet, without his coat of mail, without his cuisses;
+a Don Quixote clothed in a woolen doublet, the blue color of
+which had faded into a nameless shade between lees of wine
+and a heavenly azure; face long and brown; high cheek bones,
+a sign of sagacity; the maxillary muscles enormously
+developed, an infallible sign by which a Gascon may always
+be detected, even without his cap--and our young man wore a
+cap set off with a sort of feather; the eye open and
+intelligent; the nose hooked, but finely chiseled. Too big
+for a youth, too small for a grown man, an experienced eye
+might have taken him for a farmer's son upon a journey had
+it not been for the long sword which, dangling from a
+leather baldric, hit against the calves of its owner as he
+walked, and against the rough side of his steed when he was
+on horseback.
+    </p>
+
+    <p>
+    Taken from <a
+        href="http://www.gutenberg.org/etext/1257">the
+    Project Gutenberg page</a>.
+    </p>
+
+</body>
+</html>
+
+]]>
+</programlisting>
+
+
+        <para>
+            היא נראית כך:
+        </para>
+
+        <mediaobject>
+            <alt>דוגמה מלאה מספר 1</alt>
+            <imageobject>
+                <imagedata fileref="images/complete-example-1.png" format="PNG"/>
+            </imageobject>
+        </mediaobject>
+
+        <para>
+            עכשיו למספר הסברים בנוגע לדוגמה:
+        </para>
+
+        <orderedlist>
+
+            <listitem>
+                <para>
+                    הצהרת ה-"DOCTYPE" בהתחלה מצהירה שסוג המסמך הוא
+                    "XHTML 1.0 Transitional". יש לשם הצהרה כזאת בהתחלה
+                    כדי שאפשר יהיה לזהות על פי איזה תקן המסמך נכתב.
+                </para>
+            </listitem>
+
+            <listitem>
+                <para>
+                    ניתן להבחין שהמסמך מתחיל מתגית פתיחה <code xml:lang="en">&lt;html&gt;</code>
+                    ומסתיים בתגית <code xml:lang="en">&lt;/html&gt;</code>
+                    במסמך XML יש לכלול את כל התוכן בתוך תגית פתיחה ותגית
+                    סיום. במקרה של מסמך HTML מדובר בתגית
+                    <code xml:lang="en">&lt;html&gt;</code>.
+                </para>
+            </listitem>
+
+            <listitem>
+                <para>
+                    לתגית <code xml:lang="en">&lt;html&gt;</code> מקבלת מספר תכונות. הראשונה שבהן
+                    היא "xmlns" המצהירה על מרחב-השמות של ברירת המחדל של המסמך.
+                    במסמכי XHTML ניתן לכלול מרחבי שמות אחרים, המאפשרים שילוב
+                    של תגיות של תחבירי XML אחרים. כרגע לא צריך להתעמק בזה
+                    יותר מדי.
+                </para>
+
+                <para>
+                    התכונות האחרות ("lang") מצהירות על שפת המסמך, במקרה
+                    שלנו אנגלית אמריקאית. ראוי לציין שכדאי שהן lang והן
+                    xml:lang תקבענה ביחד.
+                </para>
+
+            </listitem>
+            <listitem>
+                <para>
+                    האלמנט <code xml:lang="en">&lt;head&gt;</code> מכיל כותר למסמך ומכיל
+                    מעט מטה-מידה הקשור אליו.
+                </para>
+            </listitem>
+            <listitem>
+                <para>
+                    האלמנט <code xml:lang="en">&lt;title&gt;</code> שחייב להימצא בתוך
+                    <code xml:lang="en">&lt;head&gt;</code> מכיל טקסט (מחוסר תיוג) המהווה
+                    כותרת למסמך - ניתן לראות שהוא מופיע בכותר החלון
+                    של הדפדפן.
+                </para>
+                <para>
+                    רצוי מאוד לתת כותרת בעלת משמעות למסמך כדי שאנשים ותוכניות
+                    מחשב (כמו מנועי חיפוש) יוכלו לדעת מיד מה תכליתו.
+                </para>
+            </listitem>
+            <listitem>
+                <para>
+                    מטרת תגית ה-<code xml:lang="en">&lt;meta&gt;</code> המסוימת הזאת היא להצהיר
+                    שקידוד המסמך הוא "utf-8". יש שימושים אחרים לתגיות
+                    "meta" ואת חלקם נראה בהמשך.
+                </para>
+                <para>
+                    ניתן גם לראות שהקו הנטוי ("/") בסוף התגית אומר למפענח
+                    שהתגית סוגרת את עצמה. זה כמו לומר:
+                </para>
+<programlisting xml:lang="en">
+<![CDATA[
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+]]>
+</programlisting>
+
+                <para>
+                אבל מאפשר תאימות טובה יותר לדפדפנים ישנים.
+                </para>
+            </listitem>
+            <listitem>
+                <para>
+                    האלמנט <code xml:lang="en">&lt;body&gt;</code> מכיל את גוף הטקסט של המסמך
+                    ומה שיוצג למשתמש.
+                </para>
+            </listitem>
+            <listitem>
+                <para>
+                    האלמנט <code xml:lang="en">&lt;h1&gt;</code> מכיל כותרת המוצגת בגוף הטקסט. יש
+                    גם את <code xml:lang="en">&lt;h2&gt;</code>, <code xml:lang="en">&lt;h3&gt;</code> עד
+                    <code xml:lang="en">&lt;h6&gt;</code>. מומלץ לחלק את המסמך לחלקים על-ידי
+                    הכותרות כך שידעו מה משמעות כל חלק.
+                </para>
+            </listitem>
+        </orderedlist>
+
+        <section xml:id="validate-your-documents">
+            <info>
+                <title>כדאי לאמת את המסמכים שלכם</title>
+            </info>
+
+            <para>
+                כדי לוודא שהמסמך שכתבתם (או חוללתם) הוא תקין,
+                רצוי לבצע לו <emphasis role="bold">אימות
+                    (Validation)</emphasis> באמצעות מאמתים מקוונים:
+            </para>
+
+            <orderedlist>
+                <listitem>
+                    <para>
+                        <link xlink:href="http://validator.w3.org/">המאמת
+                            של ה-W3C</link>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <link xlink:href="http://htmlhelp.com/tools/validator/">המאמת
+                            של ה-Web Design Group</link>
+                    </para>
+                </listitem>
+            </orderedlist>
+
+            <para>
+                חשוב לבצע אימות כדי לוודא שטעויות בדפים אינן גוררות
+                התנהגות לא רצויה של הדפדפנים השונים. עוד על המוטיבציה
+                לאימות, ניתן למצוא בדפים הבאים:
+            </para>
+
+            <orderedlist>
+                <listitem>
+                    <para>
+                        <link xlink:href="http://www.shlomifish.org/philosophy/by-others/mashhoor--10-reasons--hebrew.html">10 סיבות שבגללן חברות צריכות
+                        לשקול ללכת לפי התקנים של הווב</link>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <link xlink:href="http://www.shlomifish.org/lecture/LAMP/slides/compatibility/">תכן לתאימות</link> - מהרצאה שכתבתי.
+                    </para>
+                </listitem>
+            </orderedlist>
+            <para>
+                במידה שדף ה-HTML זמין באינטרנט בפומבי, ניתן לשלוח קישור
+                אליו למאמת. אחרת, ניתן להעלות את התוכן המקומי למאמת
+                כדי לקבל עליו דו"ח.
+            </para>
+            <para>
+                ככה נראה אימות של דף כתקין בעזרת המאמת:
+            </para>
+
+            <mediaobject>
+                <alt>אימות של הדף</alt>
+                <imageobject>
+                <imagedata fileref="images/validates-screenshot.png" format="PNG"/>
+                </imageobject>
+            </mediaobject>
+        </section>
+    </section>
+    <section xml:id="more-HTML-tags">
+        <info>
+            <title>תגי HTML נוספים</title>
+        </info>
+        <para>
+            בפרק זה נכיר תגי HTML נוספים ושימושיים.
+        </para>
+        <section xml:id="headings">
+            <info>
+                <title>כותרות - h1, h2, h3</title>
+            </info>
+            <para>
+                ראינו כבר את הכותרת <code xml:lang="en">&lt;h1&gt;</code>, אבל יש גם את
+                <code xml:lang="en">&lt;h2&gt;</code> וכן הלאה עד <code xml:lang="en">&lt;h6&gt;</code>. ככל
+                שהמספר גדול יותר כך הכותרת פחותה יותר בערכה. רצוי לחלק
+                את מסמך ה-HTML לכותרות באופן כזה. בו נראה דוגמה למסמך
+                המחולק לחלקים בעזרת כותרותיו:
+            </para>
+<programlisting xml:lang="en">
+<![CDATA[
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Mission Statement</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <h1>Mission Statement</h1>
+
+    <h2>Introduction</h2>
+
+    <p>
+    This is a mission statement for the Hebrew HTML tutorial.
+    </p>
+
+    <h2>The Objective</h2>
+
+    <p>
+    The objective is simple: teach whoever read the document - HTML.
+    </p>
+
+    <h2>Constraints</h2>
+
+    <p>
+    Here are some constraints:
+    </p>
+
+    <h3>#1: Valid HTML</h3>
+
+    <p>
+    Teach using Valid HTML.
+    </p>
+
+    <h3>#2: In Hebrew</h3>
+
+    <p>
+    Teach using
+    <a href="http://en.wikipedia.org/wiki/Hebrew_language">Hebrew</a>.
+    </p>
+
+</body>
+</html>
+
+]]>
+</programlisting>
+
+
+            <para>
+                וכך זה נראה:
+            </para>
+
+            <mediaobject>
+	        <alt>דוגמה עם תגיות h1 ו-h2</alt>
+                <imageobject>
+                <imagedata fileref="images/h1-h2-example.png" format="PNG"/>
+                </imageobject>
+            </mediaobject>
+
+            <para>
+                כפי שניתן לראות הכותרות בעלות המספר הגבוה יותר, קטנות
+                יותר ובכך פחותות בחשיבותן.
+            </para>
+
+        </section>
+
+        <section xml:id="line-break-tag">
+            <info>
+                <title>תגית שבירת השורה - &lt;br /&gt;</title>
+            </info>
+            <para>
+                ניתן להשתמש בתגית <code xml:lang="en">&lt;br /&gt;</code> )תגית העומדת בפני
+                עצמה ואינה מקבלת פרמטרים( כדי לשבור את
+                השורה, ולהתחיל שורה חדשה באמצע פיסקה. לא רצוי להשתמש בה
+                פעמיים בשביל להפריד בין פסקאות, וכן רצוי להימנע משימוש מיותר
+                בתגית זאת.
+            </para>
+        </section>
+
+        <section xml:id="id-attribute">
+            <info>
+                <title>התכונה id="" ושימוש בסמנים</title>
+            </info>
+            <para>
+                ניתן להשתמש בתכונה "id" שקבילה כמעט לכל האלמנטים
+                כדי להכניס סמן בטקסט, שמאפשר לקישורים פנימיים או חיצוניים
+                להפנות לחלק מסוים של הדף. ההפניה לסמן מבוצעת על-ידי השימוש
+                בתו "#" ובמזהה של הסמן. ראוי לציין שלא כל התווים קבילים במזהה
+                ומומלץ להיזהר. הנה דוגמה:
+            </para>
+<programlisting xml:lang="en">
+<![CDATA[
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Page with Table-of-Contents</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <h1>Page with Table-of-Contents</h1>
+
+<ul>
+<li><a href="#alice">Alice in Wonderland</a></li>
+<li><a href="#gulliver">Gulliver's Travels</a></li>
+<li><a href="#treasure">Treasure Island</a></li>
+<li><a href="#musketeers">The Three Musketeers</a></li>
+<li><a href="#looking_glass">Through The Looking Glass</a></li>
+</ul>
+
+<h2 id="alice">Alice in Wonderland</h2>
+
+<p>
+Alice in Wonderland is a book by <a
+href="http://en.wikipedia.org/wiki/Lewis_Carroll">Lewis Carroll</a>, which was
+the pen name of Charles Lutwidge Dodgson.
+</p>
+
+<h2 id="gulliver">Gulliver's Travels</h2>
+
+<p>
+Gulliver's Travels is a novel by Jonathan Swift. While not intended as
+Children's literature, it became popular as such.
+</p>
+
+<h2 id="treasure">Treasure Island</h2>
+
+<p>
+Treasure Island is a novel by Robert Louis Stevenenson about pirates.
+</p>
+
+<h2 id="musketeers"><a href="http://en.wikipedia.org/wiki/The_Three_Musketeers">The
+Three Musketeers</a></h2>
+
+<p>
+This is a historical fiction novel by Alexandre Dumas, père.
+</p>
+
+<h2 id="looking_glass">Through The Looking Glass</h2>
+
+<p>
+The follow-up to <a href="#alice">Alice in Wonderland</a>.
+</p>
+
+</body>
+</html>
+
+]]>
+</programlisting>
+
+
+        </section>
+
+        <section xml:id="head-element">
+            <info>
+                <title>השימוש בתגית head</title>
+            </info>
+            <para>
+                מטרת התגית <code>&lt;head&gt;...&lt;/head&gt;</code>, שכבר ראינו
+                בדוגמאות קודמות היא לספק מטה-מידע (meta-data) עבור המסמך. ניתן
+                בעזרתה לקבוע קישורים גלובליים למסמך (כמו גיליון-סגנון, המסמך הבא,
+                המסמך הקודם, הזנות ווב של RSS או Atom, ) וכו לשייך סגנונות הייחודיים
+                לדף. בו נעבור על מה שניתן לעשות.
+             </para>
+
+             <section xml:id="head-title-element">
+                <info>
+                    <title>כותרת גלובלית למסמך באמצעות התגית title</title>
+                </info>
+                <para>
+                    התגית title הנמצאת בתוך האלמנט
+                    <code>&lt;head&gt;...&lt;/head&gt;</code>
+                    (ורצוי שתבוא מוקדם ככל
+                    האפשר) מאפשרת לקבוע למסמך כותרת גלובלית. זאת בדומה לכותרת של
+                    ספר המופיעה בכריכה שלו, או כותרת של מאמר (בעיתון, מדעי וכו)
+                    הנמצאת גם בתוכן העניינים.
+                </para>
+                <para>
+                    מומלץ מאוד לקבוע לכל מסמך תגית title משמעותית משום שמנועי חיפוש
+                    מציגים אותה בקישור, מה שמלמד על תוכנה, וכן היא מוצגת בכותרת
+                    של חלון הדפדפן. ראוי לציין שבתגית ניתן רק להכניס טקסט פשוט ולא
+                    תגיות נוספות של ׁHTML . ניתן להכניס בתוכה SGML entities במידת הצורך,
+                    אבל בכל מקרה עדיף להשתמש בתווים של UTF-8 במידת האפשר ולהגביל את השימוש
+                    ב-entities לתווים מיוחדים כמו
+                   <code>&amp;amp;, &amp;lt; &amp;gt;</code>
+                   וכו.
+                </para>
+                <para>
+                    הנה דוגמה קטנה:
+                </para>
+<programlisting xml:lang="en">
+<![CDATA[
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>This title was intentionally left blank.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <h1>Excerpt from the Three Musketeers</h1>
+
+    <p>
+A young man--we can sketch his portrait at a dash. Imagine
+to yourself a Don Quixote of eighteen; a Don Quixote without
+his corselet, without his coat of mail, without his cuisses;
+a Don Quixote clothed in a woolen doublet, the blue color of
+which had faded into a nameless shade between lees of wine
+and a heavenly azure; face long and brown; high cheek bones,
+a sign of sagacity; the maxillary muscles enormously
+developed, an infallible sign by which a Gascon may always
+be detected, even without his cap--and our young man wore a
+cap set off with a sort of feather; the eye open and
+intelligent; the nose hooked, but finely chiseled. Too big
+for a youth, too small for a grown man, an experienced eye
+might have taken him for a farmer's son upon a journey had
+it not been for the long sword which, dangling from a
+leather baldric, hit against the calves of its owner as he
+walked, and against the rough side of his steed when he was
+on horseback.
+    </p>
+
+    <p>
+    Taken from <a
+        href="http://www.gutenberg.org/etext/1257">the
+    Project Gutenberg page</a>.
+    </p>
+
+</body>
+</html>
+
+]]>
+</programlisting>
+
+
+             </section>
+
+             <section xml:id="head-link-element">
+                <info>
+                    <title>קישורים ושיוכים גלובליים למסמך בעזרת התגית link</title>
+                </info>
+
+                <para>
+                אחד הדברים שניתן לשים ב-head הוא
+                <emphasis role="bold">קישורים גלובליים</emphasis>
+                או מה שהם ליתר דיוק, בטרמינולוגיה שלי, שיוכים (associations). בניגוד לקישוריי
+                ה-HTML הרגילים שמשויכים רק עם חלק מהמסמך וניתנים ללחיצה בתוך גוף המסמך, הרי
+                שהקישורים הגלובליים משפיעים על כך המסמך או משייכים לו משאב אחר ברשת.
+                </para>
+
+                <para>
+                לדוגמה, אם נרצה לשייך גיליון סגנון (stylesheet) מסוג CSS (= Cascading Style Sheets)
+                (אנו נלמד CSS מעט בהמשך) הרי שנוכל לעשות זאת על-ידי כתיבת הקוד הבא בתוך אלמנט
+                ה-head:
+                </para>
+
+                <para xml:lang="en">
+                    <code>&lt;link rel="stylesheet" href="style.css" type="text/css" /&gt;</code>
+                </para>
+
+             </section>
+
+         </section>
+
+         <section xml:id="head-style-element">
+             <info>
+                 <title>תגית ה-style</title>
+             </info>
+
+             <para>
+             ניתן גם לכלול הוראות CSS נפרדות באמצעות תגית ה-style שבאה
+             בתוך תגית ה-head, לדוגמה באופן הבא:
+             </para>
+<programlisting xml:lang="en">
+<![CDATA[
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>This title was intentionally left blank.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+    body { color: green; }
+</style>
+</head>
+<body>
+    <h1>Excerpt from the Three Musketeers</h1>
+
+    <p>
+A young man--we can sketch his portrait at a dash. Imagine
+to yourself a Don Quixote of eighteen; a Don Quixote without
+his corselet, without his coat of mail, without his cuisses;
+a Don Quixote clothed in a woolen doublet, the blue color of
+which had faded into a nameless shade between lees of wine
+and a heavenly azure; face long and brown; high cheek bones,
+a sign of sagacity; the maxillary muscles enormously
+developed, an infallible sign by which a Gascon may always
+be detected, even without his cap--and our young man wore a
+cap set off with a sort of feather; the eye open and
+intelligent; the nose hooked, but finely chiseled. Too big
+for a youth, too small for a grown man, an experienced eye
+might have taken him for a farmer's son upon a journey had
+it not been for the long sword which, dangling from a
+leather baldric, hit against the calves of its owner as he
+walked, and against the rough side of his steed when he was
+on horseback.
+    </p>
+
+    <p>
+    Taken from <a
+        href="http://www.gutenberg.org/etext/1257">the
+    Project Gutenberg page</a>.
+    </p>
+
+</body>
+</html>
+
+]]>
+</programlisting>
+
+
+             <para>
+             כפי שניתן לראות מצילום המסך, הטקסט במסמך הוא ירוק:
+             </para>
+
+             <mediaobject>
+             <alt>דוגמה לשימוש בתגית style</alt>
+             <imageobject>
+                <imagedata fileref="images/with-head-style-tag.png" format="PNG"/>
+                </imageobject>
+             </mediaobject>
+
+             <para>
+             ראוי לציין שבעוד ששימוש בתגית style טוב להתנסות, רצוי שלא
+             לעשות בה שימוש בקוד הסופי. זאת מפני ששימוש בגיליון סגנון נפרד
+             מאפשר יותר בקלות להחיל עיצוב אחיד לכל העמודים באתר, וכן חוסך
+             בתעבורה וגורם לטעינת הדפים הבאים באתר להיות מהירה יותר.
+             </para>
+
+             <para>
+             בכל מקרה, אם ברצונכם עדיין להשתמש בתגית זאת, זכרו לכלול את
+             התכונה <code xml:lang="en">type="text/css"</code>, או אחרת
+             הדף לא יעבור אימות.
+             </para>
+         </section>
+
+     </section>
+
+     <section xml:id="basic_html_conclusion">
+         <info>
+             <title>סיכום הפרק</title>
+         </info>
+
+         <para>
+            בפרק זה למדנו כיצד לכתוב XHTML בסיסי, ועדיין תקין ושימושי.
+            בפרק הבא נלמד מעט על אודות CSS שהיא השפה בה משתמשים לעצב את
+            HTML ותסדירים אחרים.
+         </para>
+     </section>
+
+    </chapter>
+</book>
+

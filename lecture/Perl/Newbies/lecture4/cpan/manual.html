@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="mcpan.html"/><title>Manual Compilation</title></head><body><main><header><h1>1.1. Manual Compilation</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="mcpan.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 4</a> → <a href="./">CPAN Modules</a> → <a href="manual.html">Manual Compilation</a></div></nav><p>To compile a CPAN distribution manually, you first need to download it. You can start by browsing your nearest CPAN module and downloading from there. On UNIX the following command, will download version 2.31 of the XML::Parser module.</p><div class="code_block"><pre>
+$ wget http://www.cpan.org/modules/by-module/XML/XML-Parser-2.31.tar.gz
+</pre></div><p>Next unpack it using the "tar -xvf" command:</p><div class="code_block"><pre>
+$ tar -xvf XML-Parser-2.31.tar.gz
+</pre></div><p>(if you don't have GNU tar use "gunzip" and then "tar -xvf" instead. On Windows you can use WinZip.)</p><p>Now cd to its directory and type "perl Makefile.PL" and "make".</p><div class="code_block"><pre>
+$ cd XML-Parser-2.31
+$ perl Makefile.PL
+Checking if your kit is complete...
+Looks good
+Writing Makefile for XML::Parser::Expat
+Writing Makefile for XML::Parser
+$ make
+cp Parser/Encodings/x-sjis-cp932.enc blib/lib/XML/Parser/Encodings/x-sjis-cp932.enc
+cp Parser/Encodings/iso-8859-7.enc blib/lib/XML/Parser/Encodings/iso-8859-7.enc
+cp Parser/Encodings/x-euc-jp-unicode.enc blib/lib/XML/Parser/Encodings/x-euc-jp-unicode.enc
+cp Parser/Encodings/iso-8859-9.enc blib/lib/XML/Parser/Encodings/iso-8859-9.enc
+cp Parser/Encodings/README blib/lib/XML/Parser/Encodings/README
+cp Parser/Encodings/euc-kr.enc blib/lib/XML/Parser/Encodings/euc-kr.enc
+cp Parser/Encodings/big5.enc blib/lib/XML/Parser/Encodings/big5.enc
+cp Parser/Encodings/windows-1250.enc blib/lib/XML/Parser/Encodings/windows-1250.enc
+cp Parser/Encodings/Japanese_Encodings.msg blib/lib/XM
+.
+.
+.
+</pre></div><p>After the wait, the module will be compiled. It is preferable to test it first, by invoking <code>make test</code>:</p><div class="code_block"><pre>
+$ make test
+</pre></div><p>Now you can install it, by becoming a super-user and typing <code>make install</code> at the command line.</p><div class="code_block"><pre>
+$ su
+Password:
+\# make install
+</pre></div><h2 id="module-build">Module-Build</h2><p>Note that some distributions are now using <a href="http://metacpan.org/release/Module-Build/">Module-Build</a>. If your distribution contains a <code>Build.PL</code> file, you should run the following commands instead:</p><div class="code_block"><pre>
+perl Build.PL
+./Build
+./Build test
+./Build install
+</pre></div><p>More information can be found in <a href="http://metacpan.org/pod/Module::Build">the main Module-Build document</a></p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="mcpan.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="style.css" type="text/css"/><title>Haskell for Perl Programmers</title></head><body><section class="page"><header><h2 id="page--DIR">Haskell for Perl Programmers</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--DIR" class="nav" accesskey="c">Contents</a></td><td><b>Up</b></td><td><b>Prev</b></td><td><a href="#page--intro--PAGE" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--DIR">Haskell for Perl Programmers</a></div></nav><ul class="contentsmain"><li><a href="#page--intro--PAGE" class="contents">1. Introduction</a></li><li><a href="#page--basic--DIR" class="contents">2. Basic Examples</a><ul class="contents"><li><a href="#page--basic--recursion--PAGE" class="contents">2.1. Recursion</a></li><li><a href="#page--basic--lists--PAGE" class="contents">2.2. Lists</a></li></ul></li><li><a href="#page--infinite_lists--DIR" class="contents">3. Infinite Lists</a><ul class="contents"><li><a href="#page--infinite_lists--fibonacci--PAGE" class="contents">3.1. Fibonacci with Lists</a></li><li><a href="#page--infinite_lists--primes1--PAGE" class="contents">3.2. Primes (with low efficiency)</a></li><li><a href="#page--infinite_lists--primes2--PAGE" class="contents">3.3. Primes (with better efficiency)</a></li></ul></li><li><a href="#page--list_manip--DIR" class="contents">4. List and String Manipulation Routines</a><ul class="contents"><li><a href="#page--list_manip--examples--PAGE" class="contents">4.1. Examples</a></li><li><a href="#page--list_manip--multimap--PAGE" class="contents">4.2. Multi-map Function</a></li></ul></li><li><a href="#page--arrays--DIR" class="contents">5. Arrays</a><ul class="contents"><li><a href="#page--arrays--histogram--PAGE" class="contents">5.1. Histogram</a></li><li><a href="#page--arrays--hash--PAGE" class="contents">5.2. Hash</a></li></ul></li></ul><h2 id="licence">Licence</h2><p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"><a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style:none" alt="CC0"/></a><br/>To the extent possible under law, <a rel="dct:publisher" href="http://www.shlomifish.org/"><span property="dct:title">Shlomi Fish</span></a> has waived all copyright and related or neighbouring rights to <span property="dct:title">Haskell for Perl Programmers</span>. This work is published from: <span property="vcard:Country" datatype="dct:ISO3166" content="IL" about="http://www.shlomifish.org/">Israel</span>.</p><p></p><hr/></section><section class="page"><header><h2 id="page--intro--PAGE">1. Introduction</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--DIR" class="nav" accesskey="p">Prev</a></td><td><a href="#page--basic--DIR" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--DIR">Haskell for Perl Programmers</a> → <a href="#page--intro--PAGE">Introduction</a></div></nav><ul class="point"><li><a href="http://www.haskell.org/">Haskell</a> is a purely functional programming language.</li><li>It is strongly typed.</li><li>Lazy Evaluation.</li><li>Has a portable but limited interpreter named hugs98, and several compilers.</li><li>The most prominent compiler is ghc, which is written in itself.</li></ul><hr/></section><section class="page"><header><h2 id="page--basic--DIR">2. Basic Examples</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--intro--PAGE" class="nav" accesskey="p">Prev</a></td><td><a href="#page--basic--recursion--PAGE" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--DIR">Haskell for Perl Programmers</a> → <a href="#page--basic--DIR">Basic Examples</a></div></nav><ul class="contentsmain"><li><a href="#page--basic--recursion--PAGE" class="contents">2.1. Recursion</a></li><li><a href="#page--basic--lists--PAGE" class="contents">2.2. Lists</a></li></ul><hr/></section><section class="page"><header><h2 id="page--basic--recursion--PAGE">2.1. Recursion</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--basic--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--basic--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--basic--DIR" class="nav" accesskey="p">Prev</a></td><td><a href="#page--basic--lists--PAGE" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--basic--DIR">Haskell for Perl Programmers</a> → <a href="#page--basic--DIR">Basic Examples</a> → <a href="#page--basic--recursion--PAGE">Recursion</a></div></nav><h2>Length</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+<span class="Comment">--  Type declaration : </span>
+<span class="Comment">--      [a] - a linked list of any type</span>
+<span class="Comment">--      x -&gt; y - function that accepts x and returns y</span>
+mylen <span class="Statement">::</span> [a] <span class="Statement">-&gt;</span> Integer
+<span class="Comment">-- Declare the length of the empty list to be 0</span>
+mylen [] <span class="Statement">=</span> <span class="Constant">0</span>
+<span class="Comment">-- x:xs == the list whose first item (the head) is x and the rest (the tail)</span>
+<span class="Comment">-- is xs.</span>
+mylen (x<span class="Statement">:</span>xs) <span class="Statement">=</span> <span class="Constant">1</span> <span class="Statement">+</span> (mylen xs)
+</pre></td></tr></table><h2>Fibonacci (Braindead)</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+fib <span class="Statement">::</span> Integer <span class="Statement">-&gt;</span> Integer
+fib <span class="Constant">0</span> <span class="Statement">=</span> <span class="Constant">0</span>
+fib <span class="Constant">1</span> <span class="Statement">=</span> <span class="Constant">1</span>
+fib a <span class="Statement">=</span> (fib (a<span class="Statement">-</span><span class="Constant">1</span>)) <span class="Statement">+</span> (fib (a<span class="Statement">-</span><span class="Constant">2</span>))
+</pre></td></tr></table><h2>Fibonacci (Less Braindead)</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+<span class="Comment">-- (a,b) is a tuple whose first element is a and its second is b</span>
+fibo_helper <span class="Statement">::</span> Integer <span class="Statement">-&gt;</span> (Integer,Integer)
+
+fibo_helper <span class="Constant">0</span> <span class="Statement">=</span> (<span class="Constant">0</span>,<span class="Constant">1</span>)
+<span class="Comment">-- Notice the use of the closure (where) to assign two temporary values</span>
+fibo_helper n <span class="Statement">=</span> (b,a<span class="Statement">+</span>b) <span class="Type">where</span>
+    (a,b) <span class="Statement">=</span> fibo_helper (n<span class="Statement">-</span><span class="Constant">1</span>)
+
+<span class="Comment">-- (fst (a,b)) = a</span>
+fibo n <span class="Statement">=</span> (fst (fibo_helper n))
+</pre></td></tr></table><hr/></section><section class="page"><header><h2 id="page--basic--lists--PAGE">2.2. Lists</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--basic--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--basic--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--basic--recursion--PAGE" class="nav" accesskey="p">Prev</a></td><td><a href="#page--infinite_lists--DIR" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--basic--DIR">Haskell for Perl Programmers</a> → <a href="#page--basic--DIR">Basic Examples</a> → <a href="#page--basic--lists--PAGE">Lists</a></div></nav><h2>Reversing a List</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+myreverse <span class="Statement">::</span> [a] <span class="Statement">-&gt;</span> [a]
+
+myreverse mylist <span class="Statement">=</span> helper mylist [] <span class="Type">where</span>
+    helper <span class="Statement">::</span> [a] <span class="Statement">-&gt;</span> [a] <span class="Statement">-&gt;</span> [a]
+    <span class="Comment">-- A stopping condition</span>
+    helper [] as <span class="Statement">=</span> as
+    <span class="Comment">-- Recurse</span>
+    helper (b<span class="Statement">:</span>bs) as <span class="Statement">=</span> helper bs (b<span class="Statement">:</span>as)
+</pre></td></tr></table><h2>Run-Length Encoding</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+rle <span class="Statement">::</span> Eq a <span class="Statement">=&gt;</span> [a] <span class="Statement">-&gt;</span> [(a,Integer)]
+
+rle [] <span class="Statement">=</span> []
+rle (a<span class="Statement">:</span>[]) <span class="Statement">=</span> [(a,<span class="Constant">1</span>)]
+rle (x<span class="Statement">:</span>xs) <span class="Statement">=</span> (<span class="Statement">if</span> (x <span class="Statement">==</span> a)
+              <span class="Statement">then</span> (a,count<span class="Statement">+</span><span class="Constant">1</span>)<span class="Statement">:</span>as
+              <span class="Statement">else</span> (x,<span class="Constant">1</span>)<span class="Statement">:</span>(a,count)<span class="Statement">:</span>as
+             ) <span class="Type">where</span>
+        ((a,count)<span class="Statement">:</span>as) <span class="Statement">=</span> (rle xs)
+</pre></td></tr></table><h2>Quick-Sort</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+qsort []     <span class="Statement">=</span> []
+<span class="Comment">-- ++ is list concatenation</span>
+qsort (x<span class="Statement">:</span>xs) <span class="Statement">=</span> qsort elts_lt_x <span class="Statement">++</span> [x] <span class="Statement">++</span> qsort elts_greq_x
+                 <span class="Type">where</span>
+                   <span class="Comment">-- Choose the elements out of xs that are lesser than x</span>
+                   elts_lt_x   <span class="Statement">=</span> [y <span class="Statement">|</span> y <span class="Statement">&lt;-</span> xs, y <span class="Statement">&lt;</span> x]
+                   elts_greq_x <span class="Statement">=</span> [y <span class="Statement">|</span> y <span class="Statement">&lt;-</span> xs, y <span class="Statement">&gt;=</span> x]
+</pre></td></tr></table><hr/></section><section class="page"><header><h2 id="page--infinite_lists--DIR">3. Infinite Lists</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--basic--lists--PAGE" class="nav" accesskey="p">Prev</a></td><td><a href="#page--infinite_lists--fibonacci--PAGE" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--DIR">Haskell for Perl Programmers</a> → <a href="#page--infinite_lists--DIR">Infinite Lists</a></div></nav><ul class="point"><li>Because of its lazy evaluation, infinite (lazy) lists are possible in Haskell.</li><li>The Haskell interpreter will calculate as many elements of them as are needed.</li></ul><ul class="contentsmain"><li><a href="#page--infinite_lists--fibonacci--PAGE" class="contents">3.1. Fibonacci with Lists</a></li><li><a href="#page--infinite_lists--primes1--PAGE" class="contents">3.2. Primes (with low efficiency)</a></li><li><a href="#page--infinite_lists--primes2--PAGE" class="contents">3.3. Primes (with better efficiency)</a></li></ul><hr/></section><section class="page"><header><h2 id="page--infinite_lists--fibonacci--PAGE">3.1. Fibonacci with Lists</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--infinite_lists--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--infinite_lists--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--infinite_lists--DIR" class="nav" accesskey="p">Prev</a></td><td><a href="#page--infinite_lists--primes1--PAGE" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--infinite_lists--DIR">Haskell for Perl Programmers</a> → <a href="#page--infinite_lists--DIR">Infinite Lists</a> → <a href="#page--infinite_lists--fibonacci--PAGE">Fibonacci with Lists</a></div></nav><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+fibs <span class="Statement">=</span> [<span class="Constant">0</span>,<span class="Constant">1</span>] <span class="Statement">++</span> [a<span class="Statement">+</span>b <span class="Statement">|</span> (a,b) <span class="Statement">&lt;-</span> zip fibs (tail fibs) ]
+
+<span class="Comment">-- zip is defined as:</span>
+<span class="Comment">-- zip (x:xs) (y:xs) = (x,y) : zip xs ys</span>
+<span class="Comment">-- zip xs ys = []</span>
+</pre></td></tr></table><hr/></section><section class="page"><header><h2 id="page--infinite_lists--primes1--PAGE">3.2. Primes (with low efficiency)</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--infinite_lists--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--infinite_lists--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--infinite_lists--fibonacci--PAGE" class="nav" accesskey="p">Prev</a></td><td><a href="#page--infinite_lists--primes2--PAGE" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--infinite_lists--DIR">Haskell for Perl Programmers</a> → <a href="#page--infinite_lists--DIR">Infinite Lists</a> → <a href="#page--infinite_lists--primes1--PAGE">Primes (with low efficiency)</a></div></nav><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+primes <span class="Statement">=</span> sieve [<span class="Constant">2</span><span class="Statement">..</span>] <span class="Type">where</span>
+    sieve (x<span class="Statement">:</span>xs) <span class="Statement">=</span> x<span class="Statement">:</span>(sieve [a <span class="Statement">|</span> a <span class="Statement">&lt;-</span> xs, a <span class="Statement">`mod`</span> x <span class="Statement">/=</span> <span class="Constant">0</span> ])
+</pre></td></tr></table><ul class="point"><li>This code has low efficiency because it uses division (or modulo) a lot.</li></ul><hr/></section><section class="page"><header><h2 id="page--infinite_lists--primes2--PAGE">3.3. Primes (with better efficiency)</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--infinite_lists--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--infinite_lists--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--infinite_lists--primes1--PAGE" class="nav" accesskey="p">Prev</a></td><td><a href="#page--list_manip--DIR" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--infinite_lists--DIR">Haskell for Perl Programmers</a> → <a href="#page--infinite_lists--DIR">Infinite Lists</a> → <a href="#page--infinite_lists--primes2--PAGE">Primes (with better efficiency)</a></div></nav><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+primes <span class="Statement">=</span> sieve [<span class="Constant">2</span><span class="Statement">..</span>] <span class="Type">where</span>
+    sieve (p<span class="Statement">:</span>xs) <span class="Statement">=</span>
+        p <span class="Statement">:</span> (sieve (remove p xs)) <span class="Type">where</span>
+            remove what (a<span class="Statement">:</span>as)  <span class="Statement">|</span> a <span class="Statement">&lt;</span> what <span class="Statement">=</span> a<span class="Statement">:</span>(remove what as)
+                                <span class="Statement">|</span> a <span class="Statement">==</span> what <span class="Statement">=</span> (remove (what<span class="Statement">+</span>p) as)
+                                <span class="Statement">|</span> a <span class="Statement">&gt;</span> what <span class="Statement">=</span> a<span class="Statement">:</span>(remove (what<span class="Statement">+</span>p) as)
+</pre></td></tr></table><hr/></section><section class="page"><header><h2 id="page--list_manip--DIR">4. List and String Manipulation Routines</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--infinite_lists--primes2--PAGE" class="nav" accesskey="p">Prev</a></td><td><a href="#page--list_manip--examples--PAGE" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--DIR">Haskell for Perl Programmers</a> → <a href="#page--list_manip--DIR">List and String Manipulation Routines</a></div></nav><ul class="point"><li>In Haskell, strings are represented and treated as linked lists of characters. Thus, all the functions that operate on lists, operate on strings as well.</li><li>Here are some common routines:</li></ul><table class="border1"><tr><th>Function Name</th><th>Description</th></tr><tr><td><code>head</code></td><td>The first element in the list</td></tr><tr><td><code>tail</code></td><td>The list containing the second to the other elements</td></tr><tr><td><code>length</code></td><td>The length of the list.</td></tr><tr><td><code>reverse</code></td><td>A list whose elements are reversed.</td></tr><tr><td><code>take num_elems list</code></td><td>Extracts a list with the first <code>num_elems</code> from <code>list</code>.</td></tr><tr><td><code>drop num_elems list</code></td><td>Extracts the list starting with the num_elems+1's element.</td></tr><tr><td><code>filter callback list</code></td><td>Extracts the list of elements that match a certain callback. A kin to <code>grep</code> in Perl.</td></tr><tr><td><code>map callback list</code></td><td>transforms each element in the list according to the callback</td></tr><tr><td><code>a ++ b</code></td><td>Concatenates the lists a and b</td></tr></table><hr/></section><section class="page"><header><h2 id="page--list_manip--examples--PAGE">4.1. Examples</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--list_manip--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--list_manip--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--list_manip--DIR" class="nav" accesskey="p">Prev</a></td><td><a href="#page--list_manip--multimap--PAGE" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--list_manip--DIR">Haskell for Perl Programmers</a> → <a href="#page--list_manip--DIR">List and String Manipulation Routines</a> → <a href="#page--list_manip--examples--PAGE">Examples</a></div></nav><h2>Greatest Common Prefix of a List of Strings</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+prefix_2 <span class="Statement">::</span> Eq a <span class="Statement">=&gt;</span> [a] <span class="Statement">-&gt;</span> [a] <span class="Statement">-&gt;</span> [a]
+
+prefix_2 xs [] <span class="Statement">=</span> []
+prefix_2 [] xs <span class="Statement">=</span> []
+prefix_2 (a<span class="Statement">:</span>as) (b<span class="Statement">:</span>bs) <span class="Statement">=</span> <span class="Statement">if</span> a <span class="Statement">==</span> b
+                         <span class="Statement">then</span> a<span class="Statement">:</span>(prefix_2 as bs)
+                         <span class="Statement">else</span> []
+
+<span class="Comment">-- Can also be expressed as:</span>
+prefix_2_other xs ys <span class="Statement">=</span> map fst <span class="Statement">.</span> takeWhile (uncurry (<span class="Statement">==</span>)) <span class="Statement">$</span> (zip xs ys)
+
+gc_prefix <span class="Statement">::</span> Eq a <span class="Statement">=&gt;</span> [[a]] <span class="Statement">-&gt;</span> [a]
+
+gc_prefix [] <span class="Statement">=</span> []
+gc_prefix (a<span class="Statement">:</span>as) <span class="Statement">=</span> foldl prefix_2 a as
+</pre></td></tr></table><h2>Split</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+<span class="PreProc">import</span> List
+
+mysplit <span class="Statement">::</span> Eq a <span class="Statement">=&gt;</span> [a] <span class="Statement">-&gt;</span> [a] <span class="Statement">-&gt;</span> [[a]]
+
+mysplit separator base <span class="Statement">=</span> helper base <span class="Type">where</span>
+    len <span class="Statement">=</span> (length separator)
+    helper [] <span class="Statement">=</span> [[]]
+    helper base <span class="Statement">=</span>
+        (<span class="Statement">if</span> (isPrefixOf separator base)
+         <span class="Statement">then</span> []<span class="Statement">:</span>(helper (drop len base))
+         <span class="Statement">else</span> <span class="Statement">let</span> ret <span class="Statement">=</span> (helper (tail base))
+              <span class="Statement">in</span> (head(base)<span class="Statement">:</span>head(ret)) <span class="Statement">:</span> tail(ret)
+        )
+</pre></td></tr></table><hr/></section><section class="page"><header><h2 id="page--list_manip--multimap--PAGE">4.2. Multi-map Function</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--list_manip--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--list_manip--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--list_manip--examples--PAGE" class="nav" accesskey="p">Prev</a></td><td><a href="#page--arrays--DIR" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--list_manip--DIR">Haskell for Perl Programmers</a> → <a href="#page--list_manip--DIR">List and String Manipulation Routines</a> → <a href="#page--list_manip--multimap--PAGE">Multi-map Function</a></div></nav><ul class="point"><li>In this example we will construct a function that performs a certain operation on the n'th elements of multiple lists.</li><li>Together we will get a mapping of multiple lists.</li></ul><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+orig <span class="Statement">=</span> [<span class="Constant">1</span> <span class="Statement">..</span> <span class="Constant">10</span>]
+one <span class="Statement">=</span> [ i<span class="Statement">*</span><span class="Constant">2</span> <span class="Statement">|</span> i <span class="Statement">&lt;-</span> orig ]
+two <span class="Statement">=</span> [ i<span class="Statement">*</span><span class="Constant">3</span><span class="Statement">+</span><span class="Constant">1</span> <span class="Statement">|</span> i <span class="Statement">&lt;-</span> orig ]
+three <span class="Statement">=</span> orig
+four <span class="Statement">=</span> [ <span class="Constant">100</span><span class="Statement">-</span>i <span class="Statement">|</span> i <span class="Statement">&lt;-</span> orig ]
+
+lists <span class="Statement">=</span> [one,two,three,four]
+
+transpose_list ([]<span class="Statement">:</span>as) <span class="Statement">=</span> []
+transpose_list as <span class="Statement">=</span>
+    [ head(i) <span class="Statement">|</span> i <span class="Statement">&lt;-</span> as] <span class="Statement">:</span>
+        transpose_list ([ tail (i) <span class="Statement">|</span> i <span class="Statement">&lt;-</span> as])
+
+multimap func list_of_lists <span class="Statement">=</span> (map func (transpose_list list_of_lists))
+
+result <span class="Statement">=</span> multimap sum lists
+
+</pre></td></tr></table><hr/></section><section class="page"><header><h2 id="page--arrays--DIR">5. Arrays</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--list_manip--multimap--PAGE" class="nav" accesskey="p">Prev</a></td><td><a href="#page--arrays--histogram--PAGE" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--DIR">Haskell for Perl Programmers</a> → <a href="#page--arrays--DIR">Arrays</a></div></nav><ul class="contentsmain"><li><a href="#page--arrays--histogram--PAGE" class="contents">5.1. Histogram</a></li><li><a href="#page--arrays--hash--PAGE" class="contents">5.2. Hash</a></li></ul><hr/></section><section class="page"><header><h2 id="page--arrays--histogram--PAGE">5.1. Histogram</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--arrays--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--arrays--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--arrays--DIR" class="nav" accesskey="p">Prev</a></td><td><a href="#page--arrays--hash--PAGE" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="#page--arrays--DIR">Haskell for Perl Programmers</a> → <a href="#page--arrays--DIR">Arrays</a> → <a href="#page--arrays--histogram--PAGE">Histogram</a></div></nav><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+hist            <span class="Statement">::</span> (Ix a, Integral b) <span class="Statement">=&gt;</span> (a,a) <span class="Statement">-&gt;</span> [a] <span class="Statement">-&gt;</span> Array a b
+hist bnds is    <span class="Statement">=</span>  accumArray (<span class="Statement">+</span>) <span class="Constant">0</span> bnds [(i, <span class="Constant">1</span>) <span class="Statement">|</span> i <span class="Statement">&lt;-</span> is, inRange bnds i]
+</pre></td></tr></table><hr/></section><section class="page"><header><h2 id="page--arrays--hash--PAGE">5.2. Hash</h2></header><nav><table class="page-nav-bar top"><tr><td><a href="#page--arrays--DIR" class="nav" accesskey="c">Contents</a></td><td><a href="#page--arrays--DIR" class="nav" accesskey="u">Up</a></td><td><a href="#page--arrays--histogram--PAGE" class="nav" accesskey="p">Prev</a></td><td><b>Next</b></td></tr></table><div class="bread"><a href="#page--arrays--DIR">Haskell for Perl Programmers</a> → <a href="#page--arrays--DIR">Arrays</a> → <a href="#page--arrays--hash--PAGE">Hash</a></div></nav><ul class="point"><li>This example will show the implementation of a hash - an array of linked lists of elements that are sorted according to a hash function.</li><li>We will also rehash it, and increase the number of elements there.</li></ul><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+<span class="Type">module</span> Hash <span class="Type">where</span>
+
+<span class="PreProc">import</span> Array
+
+<span class="Type">data</span> Hash hash_function compare_function size table num_elems <span class="Statement">=</span>
+    MyHash hash_function compare_function size table num_elems
+
+get_hash_function (MyHash hash_function compare_function size table num_elems) <span class="Statement">=</span> hash_function
+
+get_compare_function (MyHash hash_function compare_function size table num_elems) <span class="Statement">=</span> compare_function
+
+get_size (MyHash hash_function compare_function size table num_elems) <span class="Statement">=</span> size
+
+get_table (MyHash hash_function compare_function size table num_elems) <span class="Statement">=</span> table
+
+get_num_elems (MyHash hash_function compare_function size table num_elems) <span class="Statement">=</span> num_elems
+
+<span class="Type">type</span> IntHash <span class="Statement">=</span> Hash (Int <span class="Statement">-&gt;</span> Int) (Int <span class="Statement">-&gt;</span> Int <span class="Statement">-&gt;</span> Int) Int (Array Int [(Int,Int)]) Int
+
+<span class="Type">type</span> StringHash <span class="Statement">=</span> Hash (String <span class="Statement">-&gt;</span> Int) (String <span class="Statement">-&gt;</span> String <span class="Statement">-&gt;</span> Int) Int (Array Int [(Int,String)]) Int
+
+<span class="Type">type</span> StringToString <span class="Statement">=</span> (String,String)
+
+<span class="Type">type</span> StringToStringHash <span class="Statement">=</span> Hash (StringToString <span class="Statement">-&gt;</span> Int) (StringToString <span class="Statement">-&gt;</span> StringToString <span class="Statement">-&gt;</span> Int) Int (Array Int [(Int,StringToString)]) Int
+
+exists (MyHash hash_function compare_function size table num_elems) myelem <span class="Statement">=</span>
+    ((length
+    (filter
+        cmp_element
+        (table<span class="Statement">!</span>index)
+    )) <span class="Statement">&gt;</span> <span class="Constant">0</span>) <span class="Type">where</span>
+        hash_value <span class="Statement">=</span> (hash_function myelem)
+        index <span class="Statement">=</span> (hash_value <span class="Statement">`mod`</span> size)
+        cmp_element x <span class="Statement">=</span> (
+                (hash_value <span class="Statement">==</span> (fst x)) <span class="Statement">&amp;&amp;</span>
+                ((compare_function myelem (snd x)) <span class="Statement">==</span> <span class="Constant">0</span>)
+            )
+
+
+insert (MyHash hash_function compare_function size table num_elems) myelem <span class="Statement">=</span>
+    (<span class="Statement">if</span> (exists (MyHash hash_function compare_function size table num_elems) myelem)
+    <span class="Statement">then</span> (MyHash hash_function compare_function size table num_elems)
+    <span class="Statement">else</span>
+    (MyHash
+        hash_function
+        compare_function
+        size
+        (table <span class="Statement">//</span> [(index , new_list)])
+        (num_elems<span class="Statement">+</span><span class="Constant">1</span>)
+    )) <span class="Type">where</span>
+        hash_value <span class="Statement">=</span> (hash_function myelem)
+        index <span class="Statement">=</span> (hash_value <span class="Statement">`mod`</span> size)
+        new_list <span class="Statement">=</span> (hash_value,myelem)<span class="Statement">:</span>(table<span class="Statement">!</span>index)
+
+remove (MyHash hash_function compare_function size table num_elems) myelem <span class="Statement">=</span>
+    (MyHash
+        hash_function
+        compare_function
+        size
+        (table <span class="Statement">//</span> [(index, new_list)])
+        (<span class="Statement">if</span> orig_len <span class="Statement">==</span> length(new_list)
+         <span class="Statement">then</span> num_elems
+         <span class="Statement">else</span> (num_elems<span class="Statement">-</span><span class="Constant">1</span>)
+        )
+    ) <span class="Type">where</span>
+        hash_value <span class="Statement">=</span> (hash_function myelem)
+        index <span class="Statement">=</span> (hash_value <span class="Statement">`mod`</span> size)
+        orig_len <span class="Statement">=</span> length(table<span class="Statement">!</span>index)
+        cmp_element x <span class="Statement">=</span> (
+                (hash_value <span class="Statement">==</span> (fst x)) <span class="Statement">&amp;&amp;</span>
+                ((compare_function myelem (snd x)) <span class="Statement">==</span> <span class="Constant">0</span>)
+            )
+        new_list <span class="Statement">=</span>
+            (filter
+                (<span class="Statement">\</span>x <span class="Statement">-&gt;</span> (not(cmp_element x)))
+                (table<span class="Statement">!</span>index)
+            )
+
+get_value (MyHash hash_function compare_function size table num_elems) myelem <span class="Statement">=</span>
+    item_list <span class="Type">where</span>
+        hash_value <span class="Statement">=</span> (hash_function myelem)
+        index <span class="Statement">=</span> (hash_value <span class="Statement">`mod`</span> size)
+        cmp_element x <span class="Statement">=</span> (
+                (hash_value <span class="Statement">==</span> (fst x)) <span class="Statement">&amp;&amp;</span>
+                ((compare_function myelem (snd x)) <span class="Statement">==</span> <span class="Constant">0</span>)
+            )
+        item_list <span class="Statement">=</span>
+            [ snd(i) <span class="Statement">|</span> i <span class="Statement">&lt;-</span> (filter cmp_element (table<span class="Statement">!</span>index) ) ]
+
+replace_or_add (MyHash hash_function compare_function size table num_elems) myelem <span class="Statement">=</span>
+    (MyHash
+        hash_function
+        compare_function
+        size
+        (table <span class="Statement">//</span> [(index, new_list)])
+        (<span class="Statement">if</span> orig_len <span class="Statement">==</span> length(new_list)
+         <span class="Statement">then</span> num_elems
+         <span class="Statement">else</span> (num_elems<span class="Statement">-</span><span class="Constant">1</span>)
+        )
+    ) <span class="Type">where</span>
+        hash_value <span class="Statement">=</span> (hash_function myelem)
+        index <span class="Statement">=</span> (hash_value <span class="Statement">`mod`</span> size)
+        orig_len <span class="Statement">=</span> length(table<span class="Statement">!</span>index)
+        cmp_element x <span class="Statement">=</span> (
+                (hash_value <span class="Statement">==</span> (fst x)) <span class="Statement">&amp;&amp;</span>
+                ((compare_function myelem (snd x)) <span class="Statement">==</span> <span class="Constant">0</span>)
+            )
+        new_list <span class="Statement">=</span> (myreplace (table<span class="Statement">!</span>index)) <span class="Type">where</span>
+            myreplace <span class="Statement">::</span> [(Int,StringToString)] <span class="Statement">-&gt;</span> [(Int,StringToString)]
+            myreplace [] <span class="Statement">=</span> [(hash_value,myelem)]
+            myreplace (a<span class="Statement">:</span>as) <span class="Statement">=</span>
+                (<span class="Statement">if</span> (cmp_element a)
+                 <span class="Statement">then</span> ((hash_value,myelem)<span class="Statement">:</span>as)
+                 <span class="Statement">else</span> (a<span class="Statement">:</span>myreplace(as)))
+
+get_all_values (MyHash hash_function compare_function size table num_elems) <span class="Statement">=</span>
+    [ snd(a) <span class="Statement">|</span> i <span class="Statement">&lt;-</span> [ <span class="Constant">0</span> <span class="Statement">..</span> (size<span class="Statement">-</span><span class="Constant">1</span>) ] , a <span class="Statement">&lt;-</span> table<span class="Statement">!</span>i ]
+
+rehash (MyHash hash_function compare_function size table num_elems) new_size <span class="Statement">=</span>
+    (MyHash
+        hash_function
+        compare_function
+        new_size
+        new_table
+        num_elems
+    ) <span class="Type">where</span>
+        new_table <span class="Statement">=</span> (accumArray
+            (<span class="Statement">\</span>present <span class="Statement">-&gt;</span> <span class="Statement">\</span>new_elem <span class="Statement">-&gt;</span> (new_elem<span class="Statement">:</span>present))
+            ]
+            (<span class="Constant">0</span>,(new_size<span class="Statement">-</span><span class="Constant">1</span>))
+            [   (hash_value <span class="Statement">`mod`</span> new_size, (hash_value,elem)) <span class="Statement">|</span>
+                i <span class="Statement">&lt;-</span> [ <span class="Constant">0</span> <span class="Statement">..</span> (size<span class="Statement">-</span><span class="Constant">1</span>) ],
+                (hash_value,elem) <span class="Statement">&lt;-</span> table<span class="Statement">!</span>i
+            ]
+        )
+</pre></td></tr></table><hr/></section></body></html>

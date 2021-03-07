@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><title>[untitled]</title><meta charset="utf-8"/><style>body{color:#000;background:#fff none}A:link{color:#00f;background:#fff none}A:visited{color:#909;background:#fff none}A:hover{color:red;background:#fff none}A:active{color:red;background:#fff none}.synComment{color:#00f}.synConstant{color:#f0f}.synIdentifier{color:#008b8b}.synStatement{color:brown;font-weight:700}.synPreProc{color:#a020f0}.synType{color:#2e8b57;font-weight:700}.synSpecial{color:#6a5acd}.synUnderlined{color:#000;text-decoration:underline}.synError{color:#fff;background:red none}.synTodo{color:#00f;background:#ff0 none}</style></head><body><pre><span class="synComment">; Boolean constants in lambda calculus.</span>
+<span class="synComment">; -------------------------------------</span>
+
+<span class="synComment">; Traditionally true and false are:</span>
+(<span class="synStatement">define</span> lc_true  (<span class="synStatement">lambda</span> (x) (<span class="synStatement">lambda</span> (y) x)))
+(<span class="synStatement">define</span> lc_false (<span class="synStatement">lambda</span> (x) (<span class="synStatement">lambda</span> (y) y)))
+
+<span class="synComment">; Stay tuned to see why:</span>
+
+<span class="synComment">; Simple conditionals:</span>
+<span class="synComment">; --------------------</span>
+
+<span class="synComment">; The C-expression mycond ? a : b can be expressed in lambda calculus as:</span>
+((mycond a) b)
+
+<span class="synComment">; Therefore, we can define if as:</span>
+(<span class="synStatement">define</span> lc_if
+    (<span class="synStatement">lambda</span> (mycond)
+        (<span class="synStatement">lambda</span> (<span class="synStatement">if</span>-true)
+            (<span class="synStatement">lambda</span> (<span class="synStatement">if</span>-false)
+                ((mycond <span class="synStatement">if</span>-true) <span class="synStatement">if</span>-false)
+            )
+        )
+    )
+)
+
+(<span class="synIdentifier">display</span> (((lc_if lc_true) <span class="synConstant">5</span>) <span class="synConstant">6</span>))
+(<span class="synIdentifier">newline</span>)
+<span class="synComment">; Prints 5</span>
+
+<span class="synComment">; Representing Tuples</span>
+<span class="synComment">; -------------------</span>
+
+<span class="synComment">; We can represent tuple as an if-expression. If the conditional is passed</span>
+<span class="synComment">; the value lc_true then we will return the tuple's car. If the if is passed</span>
+<span class="synComment">; the value lc_false then we will return the tuple's cdr.</span>
+
+(<span class="synStatement">define</span> lc_cons
+    (<span class="synStatement">lambda</span> (mycar)
+        (<span class="synStatement">lambda</span> (mycdr)
+            <span class="synComment">; we return this lambda-expression:</span>
+            (<span class="synStatement">lambda</span> (which)
+                ((which mycar) mycdr)
+            )
+        )
+    )
+)
+
+(<span class="synStatement">define</span> lc_car
+    (<span class="synStatement">lambda</span> (tuple)
+        (tuple lc_true)
+    )
+)
+
+(<span class="synStatement">define</span> lc_cdr
+    (<span class="synStatement">lambda</span> (tuple)
+        (tuple lc_false)
+    )
+)
+
+<span class="synComment">; Example:</span>
+(<span class="synStatement">define</span> mytuple ((lc_cons <span class="synConstant">&quot;A car&quot;</span>) <span class="synConstant">&quot;A cdr&quot;</span>))
+
+(<span class="synIdentifier">display</span> (lc_car mytuple))
+(<span class="synIdentifier">newline</span>)
+<span class="synComment">; Prints &quot;A car&quot;</span>
+(<span class="synIdentifier">display</span> (lc_cdr mytuple))
+(<span class="synIdentifier">newline</span>)
+<span class="synComment">; Prints &quot;A cdr&quot;</span>
+</pre></body></html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="../destructor.html"/><title>Calling Overridden Methods of Base Classes</title></head><body><main><header><h1>4.3.3.1. Calling Overridden Methods of Base Classes</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="../destructor.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../../">Perl for Newbies - Part 3 - Modules and Objects</a> → <a href="../../">Objects in Perl</a> → <a href="../">Making Your Own Objects</a> → <a href="./">Object Inheritance</a> → <a href="super.html">Calling Overridden Methods of Base Classes</a></div></nav><p>It is possible to explicitly call the method of a base class even if it was overridden by another method in the derived class. To do that use the <code>SUPER::</code> prefix before the method name.</p><p>Here is a rewrite of the <code>Bar</code> class, this time with <code>assign_name</code> retaining its name.</p><div class="code_block"><pre>
+<span class="Statement">package</span><span class="Type"> Bar2</span>;
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">use vars</span> <span class="Constant">qw(@ISA)</span>;
+
+<span class="Statement">use </span>Foo;
+
+<span class="Identifier">@ISA</span>=<span class="Constant">qw(Foo)</span>;
+
+<span class="Statement">sub </span><span class="Identifier">assign_name</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$self</span> = <span class="Statement">shift</span>;
+
+    <span class="Statement">my</span> <span class="Identifier">$name</span> = <span class="Statement">shift</span>;
+
+    <span class="Comment"># Call the method of the base class</span>
+    <span class="Statement">my</span> <span class="Identifier">$ret</span> = <span class="Identifier">$self-&gt;SUPER</span>::assign_name(<span class="Identifier">$name</span>);
+    <span class="Statement">if</span> (! <span class="Identifier">$ret</span>)
+    &#x7B;
+        <span class="Identifier">$self-&gt;&#x7B;</span><span class="Constant">'num_times'</span><span class="Identifier">&#x7D;</span>++;
+    &#x7D;
+
+    <span class="Statement">return</span> <span class="Identifier">$ret</span>;
+&#x7D;
+
+<span class="Statement">sub </span><span class="Identifier">get_num_times_assigned</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$self</span> = <span class="Statement">shift</span>;
+
+    <span class="Statement">return</span>
+        (<span class="Statement">exists</span>(<span class="Identifier">$self-&gt;&#x7B;</span><span class="Constant">'num_times'</span><span class="Identifier">&#x7D;</span>) ?
+            <span class="Identifier">$self-&gt;&#x7B;</span><span class="Constant">'num_times'</span><span class="Identifier">&#x7D;</span> :
+            <span class="Constant">0</span>
+        );
+&#x7D;
+
+<span class="Constant">1</span>;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="../destructor.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

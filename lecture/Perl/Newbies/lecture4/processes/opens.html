@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="backticks.html"/><link rel="next" href="string-shellquote.html"/><title>open() for Command Execution</title></head><body><main><header><h1>4.3. open() for Command Execution</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="backticks.html" class="nav" accesskey="p">Prev</a></td><td><a href="string-shellquote.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 4</a> → <a href="./">Executing Other Processes</a> → <a href="opens.html">open() for Command Execution</a></div></nav><p>The <code>open</code> command can be used for command execution. By prefixing the filename with a pipe (<code>|</code>), the rest of it is interpreted as a command invocation, which accepts standard input by printing to the filehandle, and is executed after the filehandle is closed. If the last character is a pipe, then the command is executed and its standard output is fed into the filehandle where it can be read using Perl's file input mechanisms.</p><p>Here are some examples:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">open</span> <span class="Statement">my</span> <span class="Identifier">$in</span>, <span class="Constant">&quot;/sbin/ifconfig |&quot;</span>;
+
+<span class="Statement">my</span> (<span class="Identifier">@addrs</span>);
+
+<span class="Statement">while</span> (<span class="Statement">my</span> <span class="Identifier">$line</span> = &lt;<span class="Identifier">$in</span>&gt;)
+&#x7B;
+    <span class="Statement">if</span> (<span class="Identifier">$line</span> =~ <span class="Statement">/</span><span class="Constant">inet addr:</span><span class="Special">((\d+\.)+\d)</span><span class="Statement">/</span>)
+    &#x7B;
+        <span class="Statement">push</span> <span class="Identifier">@addrs</span>, <span class="Identifier">$1</span>;
+    &#x7D;
+&#x7D;
+<span class="Statement">close</span>(<span class="Identifier">$in</span>);
+
+<span class="Statement">print</span> <span class="Constant">&quot;You have the following addresses: </span><span class="Special">\n</span><span class="Constant">&quot;</span>, <span class="Statement">join</span>(<span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>,<span class="Identifier">@addrs</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><hr/><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Comment"># Send an E-mail to myself</span>
+<span class="Comment"># Note: this is just an example - there are modules to do this on CPAN.</span>
+
+<span class="Statement">open</span> <span class="Identifier">MAIL</span>, <span class="Constant">&quot;|/usr/sbin/sendmail shlomif</span><span class="Special">\@</span><span class="Constant">shlomifish.org&quot;</span>;
+<span class="Statement">print</span> <span class="Identifier">MAIL</span> <span class="Constant">&quot;To: Shlomi Fish &lt;shlomif</span><span class="Special">\@</span><span class="Constant">shlomifish.org&gt;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Statement">print</span> <span class="Identifier">MAIL</span> <span class="Constant">&quot;From: Shlomi Fish &lt;shlomif</span><span class="Special">\@</span><span class="Constant">shlomifish.org&gt;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Statement">print</span> <span class="Identifier">MAIL</span> <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Statement">print</span> <span class="Identifier">MAIL</span> <span class="Constant">&quot;Hello there, moi!</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Statement">close</span>(<span class="Identifier">MAIL</span>);
+</pre></div><h2 id="open-pipe-list">Pipe to @args</h2><p>Recent versions of Perl also have a syntax that allows opening a process for input or output using its command line arguments. These are:</p><div class="code_block"><pre>
+open my $print_to_process, "|-", $cmd, @args;
+print {$print_to_process} ...;
+</pre></div><p>and:</p><div class="code_block"><pre>
+open my $read_from_process, "-|", $cmd, @args;
+while (my $line = &lt;$read_from_process&gt;)
+{
+.
+.
+.
+}
+</pre></div><p>Doing something like <code>open my $print_to_process, "|-", "sendmail", $to_address;</code> is safer than doing: <code>open my $print_to_process, "|-", "sendmail $to_address";</code> Because a malicious person may put some offending shell characters in <code>$to_address</code> and end up with something like:</p><div class="code_block"><pre>
+sendmail ; rm -fr $HOME
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="backticks.html" class="nav">Prev</a></td><td><a href="string-shellquote.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

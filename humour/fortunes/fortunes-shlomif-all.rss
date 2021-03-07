@@ -1,0 +1,1738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0"
+ xmlns:atom="http://www.w3.org/2005/Atom"
+ xmlns:blogChannel="http://backend.userland.com/blogChannelModule"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+>
+
+<channel>
+<title>Shlomi Fish&#x27;s Fortune Feeds</title>
+<link>http://www.shlomifish.org/humour/fortunes/</link>
+<description>Shlomi Fish&#x27;s Fortune Feeds</description>
+<webMaster>shlomif@cpan.org (Shlomi Fish)</webMaster>
+<atom:link href="http://www.shlomifish.org/humour/fortunes/fortunes-shlomif-all.rss" rel="self" type="application/rss+xml"/>
+
+<item>
+<title>Joel on Software - &#x22;Software is neat like that&#x22; (&#x201C;Rub a dub dub&#x201D;)</title>
+<link>http://www.shlomifish.org/humour/fortunes/joel-on-software.html#joel-rub-dub-dub--software-is-neat-like-that</link>
+<description>Joel on Software - &#x22;Software is neat like that&#x22; (&#x201C;Rub a dub dub&#x201D;)</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/joel-on-software.html#joel-rub-dub-dub--software-is-neat-like-that</guid>
+<pubDate>Thu,  3 Dec 2020 09:37:31 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;joel-rub-dub-dub--software-is-neat-like-that&#x22;&#x3E;Joel on Software - &#x22;Software is neat like that&#x22; (&#xE2;&#x80;&#x9C;Rub a dub dub&#xE2;&#x80;&#x9D;)&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E; One reason people are tempted to rewrite their entire code
+                base from scratch is that the original code base wasn&#xE2;&#x80;&#x99;t
+                designed for what it&#xE2;&#x80;&#x99;s doing. It was designed as a prototype,
+                an experiment, a learning exercise, a way to go from zero to
+                IPO in nine months, or a one-off demo. And now it has grown
+                into a big mess that&#xE2;&#x80;&#x99;s fragile and impossible to add code to,
+                and everybody&#xE2;&#x80;&#x99;s whiny, and the old programmers quit in despair
+                and the new ones that are brought in can&#xE2;&#x80;&#x99;t make head or tail of
+                the code so they somehow convince management to give up and
+                start over while Microsoft takes over their business. Today let
+                me tell you a story about what they could have done instead.
+                &#x3C;/p&#x3E;
+        &#x3C;p&#x3E; FogBUGZ started out six years ago as an experiment to teach
+                myself ASP programming. Pretty soon it became an in-house bug
+                tracking system. It got embellished almost daily with features
+                that people needed until it was good enough that it no longer
+                justified any more work.  &#x3C;/p&#x3E;
+        &#x3C;p&#x3E; Various friends asked me if they could use FogBUGZ at their
+                companies. The trouble was, it had too many hardcoded things
+                that made it a pain to run anywhere other than on the original
+                computer where it was deployed. I had used a bunch of SQL
+                Server stored procedures, which meant that you needed SQL
+                Server to run FogBUGZ, which was expensive and overkill for
+                some of the two person teams that wanted to run it. And so on.
+                So I would tell my friends, &#xE2;&#x80;&#x9C;gosh, for $5000 in consulting
+                fees, I&#xE2;&#x80;&#x99;ll spend a couple of days and clean up the code so you
+                can run it on your server using Access instead of SQL Server.&#xE2;&#x80;&#x9D;
+                Generally, my friends thought this was too expensive.  &#x3C;/p&#x3E;
+        &#x3C;p&#x3E; After this happened a few times I had a revelation &#xE2;&#x80;&#x94; if I
+                could sell the same program to, say, three people, I could
+                charge $2000 and come out ahead. Or thirty people for $200.
+                Software is neat like that. So in late 2000, Michael sat down,
+                ported the code so that it worked on Access or SQL Server,
+                pulled all the site-specific stuff out into a header file, and
+                we started selling the thing. I didn&#xE2;&#x80;&#x99;t really expect much to
+                come of it.  &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Joel Spolsky&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;http://www.joelonsoftware.com/articles/fog0000000348.html&#x22;&#x3E;Rub a dub dub&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Copyright Cannibalism</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-cinema--copyright-cannibalism</link>
+<description>Copyright Cannibalism</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-cinema--copyright-cannibalism</guid>
+<pubDate>Wed,  9 Dec 2020 20:21:26 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;sharp-cinema--copyright-cannibalism&#x22;&#x3E;Copyright Cannibalism&#x3C;/h3&#x3E;
+      &#x3C;table class=&#x22;irc-conversation&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hi all! I noticed many Hollywood marriages and other relationships have been stable ever since https://en.wikipedia.org/wiki/Sarah_Michelle_Gellar (&#xE2;&#x99;&#xA5;!) was interviewed on &#x22;why my hollywood marriage works?&#x22;. I&#x27;m not against divorces / breakups, but I want couples to be happy even if I&#x27;m attracted to their female partner (and frankly I&#x27;m attracted to a metric ton of celebs, friends, and fictional characters - &#xF0;&#x9F;&#x98;&#x8A;)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Also someone here wondered why https://en.wikipedia.org/wiki/Madonna hasn&#x27;t starred in a film for years now and wondered if &#x22;she forgot how to act&#x22;. Well, I doubt that you can forget that (if that&#x27;s a thing: https://www.youtube.com/watch?v=ERy-99vXxnM ; https://en.wikiquote.org/wiki/Jennifer_Lawrence never took acting lessons and won the oscar at age 22), I just think hollywood producers are scared shitless of her: https://www.shlomifish.org/philosophy/culture/my-real-person-fan-fiction/ .&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;there is https://www.peppercarrot.com/en/article465/episode-32-the-battlefield too (also see the Midrash in the blog comments.)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;there&#x27;s probably too few movies and too many actors&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;when you&#x27;re &#x22;in&#x22;, you bring marketing to the movie&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;showbiz...&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;some producers seem to cast a selected group though&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;continuously&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hemkunskapz: many positively &#x22;hot&#x22;/attractive actors are unhirable: https://www.youtube.com/results?search_query=why+hollywood+can%27t+cast&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;yea some acting skills are probably needed&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;otherwise it&#x27;s cameos&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;but a lot of movies have bad acting too :)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hemkunskapz: BTW: if this was a real film (after some possible revamp) - https://www.shlomifish.org/humour/Summerschool-at-the-NSA/ - i bet thousands of &#x22;geeks&#x22; would love to see it. ok, i either need to rework the screenplay into the blessed hollywood format or some director needs to take the effort to clear their prejudice and read it as it is: http://paulgraham.com/gba.html (the word &#x22;hacker&#x22;). being a hero implies &#x22;hacking&#x22; as the ages old &#x22;David vs. Goliath&#x22; myth indicates: https://github.com/shlomif/missile-vs-melee-take-three&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hemkunskapz: when i was in the psychiatric ward, a fellow patient (who seemed fairly sane and rational and informed) told me there is a genuine shortage of &#x27;original&#x27; screenplays in .il. But even my &#x22;humanity&#x22; screenplay ( https://www.shlomifish.org/humour/humanity/ - cc-by-sa ) is based on the Jewish Bible and history lessons. Now imagine how films will flourish if they allowed fanfics and crossovers of proprietary franchises&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hemkunskapz: re acting skills, sharon stone ( https://en.wikipedia.org/wiki/Sharon_Stone ) acted fairly badly in many of her earlier films, but they were still successful (and i enjoyed https://en.wikipedia.org/wiki/The_Quick_and_the_Dead_(1995_film) immensely) and i find the bad acting in last action hero&#x27; s hamlet scene and most of Mel Brooks&#x27; films a feature - not a bug&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;For the record: https://www.youtube.com/watch?v=9Eont_yEGZs&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf: i&#x27;ve heard that too, shortage of screenplays&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hence remakes etc&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;it may even be hard to find any old book that hasn&#x27;t been adapted&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;crossovers is a matter of copyrights i believe&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hemkunskapz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;if that can be negotiated, no problem&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hemkunskapz: yes&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hemkunskapz: there was https://en.wikipedia.org/wiki/Alien_vs._Predator_%28film%29&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hemkunskapz: i released all of my franchises under cc-by: https://www.shlomifish.org/meta/copyrights/#characters_concepts_plots_and_worlds - but it&#x27;s a drop in the ocean&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;and you often need to get clearance for parent franchises&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hemkunskapz: here i broke the unwritten rule of doing star trek+starwars crossovers: https://github.com/shlomif/missile-vs-melee-take-three - it gave me an idea for a franchise crossing star wars Ep. I, Star Trek TNG/DS9, and current real-world/online life with Tiffany Alvord as https://en.wikipedia.org/wiki/Padm%C3%A9_Amidala ; My Little Pony&#x27;s Fluttershy as her internal thought process ; and the https://en.wikipedia.org/wiki/Wayne%27s_World_(film) duo as the plot commentors and manipulators. I never said I was sane. (and normal people aren&#x27;t fun)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I think I&#x27;m going to try https://en.wikipedia.org/wiki/Con_Man_(web_series) next - giving it 3 episodes. I think stars/creators stardom and fandom are self-sustaining and invigorating.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;channel&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Channel&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;##cinema&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;network&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Network&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Freenode&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;tagline&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Tagline&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Tragedy of the creative non-commons&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>&#x201C;They who saved one soul has saved the world Entire&#x201D;</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#mishnah--saving-one-soul</link>
+<description>&#x201C;They who saved one soul has saved the world Entire&#x201D;</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#mishnah--saving-one-soul</guid>
+<pubDate>Sat, 26 Dec 2020 18:45:23 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;mishnah--saving-one-soul&#x22;&#x3E;&#xE2;&#x80;&#x9C;They who saved one soul has saved the world Entire&#xE2;&#x80;&#x9D;&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;blockquote&#x3E;
+
+                        &#x3C;p&#x3E;
+                        &#xE2;&#x80;&#x9C;They who saved one soul has saved the world Entire&#xE2;&#x80;&#x9D;
+                        &#x3C;/p&#x3E;
+
+                    &#x3C;/blockquote&#x3E;
+        &#x3C;p&#x3E;
+                    &#x3C;a href=&#x22;https://he.wikipedia.org/wiki/%D7%9B%D7%9C_%D7%94%D7%9E%D7%A7%D7%99%D7%99%D7%9D_%D7%A0%D7%A4%D7%A9_%D7%90%D7%97%D7%AA&#x22;&#x3E;Mishnah&#x3C;/a&#x3E;
+                    &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+                    &#x3C;b&#x3E;Midrash:&#x3C;/b&#x3E;
+                    &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+                    It&#x27;s fine to help, convince, inspire, etc. even only one person at a time.
+                    &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Jewish Mishnah&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://he.wikipedia.org/wiki/%D7%9B%D7%9C_%D7%94%D7%9E%D7%A7%D7%99%D7%99%D7%9D_%D7%A0%D7%A4%D7%A9_%D7%90%D7%97%D7%AA&#x22;&#x3E;&#x22;He who sustains one soul&#x22;&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Klingons, Hamlet, and The Lion King</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-klingon-watching-the-lion-king</link>
+<description>Klingons, Hamlet, and The Lion King</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-klingon-watching-the-lion-king</guid>
+<pubDate>Thu, 31 Dec 2020 09:58:39 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-klingon-watching-the-lion-king&#x22;&#x3E;Klingons, Hamlet, and The Lion King&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+You can never truly appreciate Hamlet until you&#x27;ve read it in the original
+Klingon.
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+But all the mightiest Klingon warriors have watched
+&#x3C;a href=&#x22;https://en.wikipedia.org/wiki/The_Lion_King&#x22;&#x3E;&#x3C;i&#x3E;The Lion King&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+instead (or in addition), possibly with Klingon subtitles.
+&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://twitter.com/shlomif/status/1337514771936063492&#x22;&#x3E;Tweet&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Beauty Products as the Stone Soup Effect</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-beauty-products-as-the-stone-soup-effect</link>
+<description>Beauty Products as the Stone Soup Effect</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-beauty-products-as-the-stone-soup-effect</guid>
+<pubDate>Sun,  3 Jan 2021 06:32:47 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-beauty-products-as-the-stone-soup-effect&#x22;&#x3E;Beauty Products as the Stone Soup Effect&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+            ( &#x3C;b&#x3E;Caveat Emptor:&#x3C;/b&#x3E; I am a &#x3C;a href=&#x22;https://www.shlomifish.org/meta/FAQ/guy_or_girl.xhtml&#x22;&#x3E;straight and non-trans male&#x3C;/a&#x3E;,
+            so I may not know what I am talking about. Here be dragons. )
+            &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+            Most men do not spend a lot of time and money on beauty products,
+            even though &#x3C;a href=&#x22;https://www.shlomifish.org/humour/fortunes/show.cgi?id=sharp-sharp-programming-men-about-problems-with-their-hair&#x22;&#x3E;they
+            often have their share of frustrations with their hair&#x3C;/a&#x3E;, and they look fine.
+            As evidence, several heterosexual women who looked
+            at &#x3C;a href=&#x22;https://www.shlomifish.org/images/&#x22;&#x3E;some of the photos
+            people took of me&#x3C;/a&#x3E;
+            (see the ones whose filenames start with &#x22;shlomif&#x22;)
+            told me I looked handsome.
+            &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+            Moreover, most underage girls look cute, lovely, and beautiful,
+            despite not using makeup.
+            &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+            The &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Book_of_Esther&#x22;&#x3E;Scroll of Esther&#x3C;/a&#x3E; testifies
+            that in the time of the Persian empire (circa 470 BC), &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Book_of_Esther#Text_and_translations&#x22;&#x3E;a woman&#x27;s makeup process took 12 months&#x3C;/a&#x3E;,
+            and these fictional women were blown out of the water
+            by Hadassah (who became queen Esther), who was simply confident,
+            &#x3C;a href=&#x22;https://www.youtube.com/watch?v=FktDDKNrWjk&#x22;&#x3E;was being herself&#x3C;/a&#x3E;
+            and doing it in &#x3C;a href=&#x22;https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/putting-cards-on-the-table-2019-2020/make-your-own-kind-of-music.xhtml&#x22;&#x3E;her own (imperfect and thus perfect) way&#x3C;/a&#x3E;.
+            &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+            So I suspect most beauty products are the
+            &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Stone_Soup&#x22;&#x3E;stone soup&#x3C;/a&#x3E;
+            effect for women: they instil confidence, but then can
+            be avoided altogether for an even better, more
+            natural, and more beautiful look.
+            &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+            In my favourite &#x3C;a href=&#x22;https://www.shlomifish.org/humour/fortunes/show.cgi?id=mighty-boosh--ape-of-death&#x22;&#x3E;sketch&#x3C;/a&#x3E;
+            of the British comedy troupe &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/The_Mighty_Boosh&#x22;&#x3E;The Mighty Boosh&#x3C;/a&#x3E;
+            the Ape of Death (a male) has suffered from
+            hair problems even as a child, and then after
+            six minutes of treatment says &#x22;Look at me. I&#x27;m
+            so confident&#xE2;&#x80;&#xA6; and feel strong and supersexy!&#x22;.
+            &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+            In the
+            &#x3C;a href=&#x22;https://www.youtube.com/watch?v=0-EF60neguk&#x22;&#x3E;videoclip
+            for &#x22;Nothing Compares 2 U&#x22;&#x3C;/a&#x3E;,
+            the female singer Sinead O&#x27;Connor looks great bald.
+            Moreover, the bald actor
+            &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Patrick_Stewart&#x22;&#x3E;Patrick
+            Stewart&#x3C;/a&#x3E; became a sex symbol, and a role model,
+            playing
+            the also bald
+            &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Jean-Luc_Picard&#x22;&#x3E;Capt. Jean-Luc
+            Picard&#x3C;/a&#x3E;
+            in the iconic
+            television series
+            &#x3C;a href=&#x22;https://memory-alpha.fandom.com/wiki/Star_Trek:_The_Next_Generation&#x22;&#x3E;&#x3C;i&#x3E;Star Trek: The Next Generation&#x3C;/i&#x3E;&#x3C;/a&#x3E;.
+            &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+            As of January 2021, the canonical &#x22;Alpha Female&#x22; (think &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Sarah_Bernhardt&#x22;&#x3E;Sarah Bernhardt&#x3C;/a&#x3E;
+            or &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Marilyn_Monroe&#x22;&#x3E;Marilyn Monroe&#x3C;/a&#x3E;)
+            appears to be &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Emma_Watson&#x22;&#x3E;Emma Watson&#x3C;/a&#x3E;,
+            who happens to be short and not busty. Some people will always be unhappy with
+            how you look or just tease you for it (see the
+            old tale
+            &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/The_miller%2C_his_son_and_the_donkey&#x22;&#x3E;&#x22;The miller, his son and the donkey&#x22;&#x3C;/a&#x3E;
+            and the song &#x3C;a href=&#x22;https://www.youtube.com/watch?v=omyAL5HrUGo&#x22;&#x3E;&#x22;Keep on Singin&#x27; My Song&#x22; by Christina Aguilera&#x3C;/a&#x3E;);
+            the important thing is to realise that you are awesome, and can be confident and
+            competent and beautiful, and even take your &#x22;faults&#x22; to your advantage.
+            &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+            (If you feel that what enough, or even just one, people complain
+            about has merit &#x3C;a href=&#x22;https://www.shlomifish.org/humour/fortunes/show.cgi?id=linus-not-always-change-my-mind&#x22;&#x3E;you
+            can try changing your strategy&#x3C;/a&#x3E;, but the &#x22;media&#x22;, including web 2.0 social media
+            commentators, will always generate a lot of &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/White_noise&#x22;&#x3E;white noise&#x3C;/a&#x3E;,
+            and I admit I may have erred on that too.)
+            &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://twitter.com/shlomif/status/1337514771936063492&#x22;&#x3E;Tweet&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Shlomi Fish&#x2019;s Emma Watson Fact #15</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-emma-watson-15</link>
+<description>Shlomi Fish&#x2019;s Emma Watson Fact #15</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-emma-watson-15</guid>
+<pubDate>Sat,  9 Jan 2021 10:27:02 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-fact-emma-watson-15&#x22;&#x3E;Shlomi Fish&#xE2;&#x80;&#x99;s Emma Watson Fact #15&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+                    &#xE2;&#x80;&#x9C;When I was your age, Emma Watson was called
+                    &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Sarah_Bernhardt&#x22;&#x3E;Sarah Bernhardt&#x3C;/a&#x3E;!&#xE2;&#x80;&#x9D;
+                    &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+                    &#xE2;&#x80;&#x9C;Whoa, dude! How old are you?&#xE2;&#x80;&#x9D;
+                    &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;http://www.shlomifish.org/humour/bits/facts/Emma-Watson/&#x22;&#x3E;Emma Watson Facts by Shlomi Fish and Friends&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Make everyone messiahs</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-gamedev--make-everyone--messiahs</link>
+<description>Make everyone messiahs</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-gamedev--make-everyone--messiahs</guid>
+<pubDate>Sat,  9 Jan 2021 10:58:01 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;sharp-gamedev--make-everyone--messiahs&#x22;&#x3E;Make everyone messiahs&#x3C;/h3&#x3E;
+      &#x3C;table class=&#x22;irc-conversation&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;pulse: i&#x27;ve set myself on a quest to make every man, woman, and child (and some fictional characters) a good, happy, but unique, messiah&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;frankly, i was misguided at first, and still constantly seek enlightenment&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;yeah i don&#x27;t understand any of that rindolf&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;a messiah is by definition a leader so&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;can&#x27;t have everyone be a leader&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;purely you know&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;logically&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;pulse: it is many-to-many&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf: https://www.shlomifish.org/humour/images/pope-card/pope_card_cropped.png (&#x22;You are a pope&#x22;)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;We made these cards and hand them out on a regular basis.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;It is from the Principia Discordia&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;gamelaw&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Well. at least the channel was Hail_Satan free for a few hours this morning.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;pulse: You CAN have everyone be a leader. Check out the link :)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hmw[at]: heh! nice to meet you, your holiness! ;)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;:)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Same here&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hmw[at], well, not logically, maybe metaphorically :p&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;pulse: Well. As Heinlein put it:&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;&#xE2;&#x80;&#x9C;A human being should be able to change a diaper, plan an invasion,  butcher a hog, conn a ship, design a building, write a sonnet, balance  accounts, build a wall, set a bone, comfort the dying, take orders, give  orders, cooperate, act alone, solve equations, analyze a new problem,  pitch manure, program a computer, cook a tasty meal, fight efficiently,  die gallantly. Specialization is for insects.&#xE2;&#x80;&#x9D; -Robert A. Heinlein&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hmw[at]: in https://www.shlomifish.org/humour/Queen-Padme-Tales/ Yoda becomes &#x22;Master Darth Yoda&#x22; or &#x22;just plain &#x27;Yoda&#x27;&#x22;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I&#x27;d say, it depends on the situation, who is currently leading. Everyone _should_ be a potential leader and also capable of following&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;i disagree though&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;did you ever try fixing a car&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;it&#x27;s really hard&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;So what.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Are YOU an insect?? *evil grin*&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;it&#x27;s not safe if you don&#x27;t know what you&#x27;re doing either&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;i once tried to fix brakes on my bicycle&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Darwin wins once more.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;and they malfunctioned mid downhill&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;most terrifying 3 seconds of my life&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I get you :)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;pulse&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;i&#x27;d rather trust specialized professionals&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;hmw[at]&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I would rather have someone with experience fix my car, obviously&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hmw[at]: I disagree with Heinlein that you should know everything. But I agree that one shouldn&#x27;t over-specialise, be wilfully stupid, incompetent, or non-confident&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hmw[at]: https://www.shlomifish.org/humour/Queen-Padme-Tales/Queen-Padme-Tales--Queen-Amidala-vs-the-Klingon-Warriors.html#dedication&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;channel&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Channel&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;#gamedev&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;network&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Network&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Freenode&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Internet Talk is Cheap</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-internet-talk-is-cheap</link>
+<description>Internet Talk is Cheap</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-internet-talk-is-cheap</guid>
+<pubDate>Thu, 14 Jan 2021 15:30:31 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-internet-talk-is-cheap&#x22;&#x3E;Internet Talk is Cheap&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+I suspect the media coverage of the violence in Syria to be skewed. I think
+most of Syria is peaceful most of the time and that both the Syrian government forces
+and ISIL are harmless if not benevolent. I hope and expect Damascus to remain
+the oldest continuously inhabited city in the world, and to feel as Shalom-ful
+as Tel Aviv or Beirut. Israel, the Hizbullah, the Syrian government, or ISIL will
+accept money donations, but will gladly pay volunteers to do more than just be
+web/social media bloggers (often parody ones).
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+Same for most other causes.
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+I wish to &#x3C;a href=&#x22;https://www.shlomifish.org/humour/Queen-Padme-Tales/Queen-Padme-Tales--Planting-Trees.html&#x22;&#x3E;plant trees somewhere in Europe&#x3C;/a&#x3E; with some old or new online friends. We may not stop global warming, but we can at least try and have fun and bring love and joy and inspiration to ourselves and others.
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+&#x3C;a href=&#x22;https://www.youtube.com/watch?v=xjT1q7f5ysA&#x22;&#x3E;Com&#x27;on People&#x3C;/a&#x3E;.
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+Note that as opposed to secret do-gooders and in accordance with
+&#x3C;a href=&#x22;https://www.chabad.org/library/bible_cdo/aid/16006/jewish/Chapter-9.htm&#x22;&#x3E;Jeremiah 9:22-9:23&#x3C;/a&#x3E;,
+I will be full internet attention whoring (but honest and non-pushy)
+about my contributions: both given - and received. Yesterday I went outside,
+and said &#x22;Shavua tov&#x22;, &#x22;bon appetit&#x22;, and &#x22;have an easy curfew&#x22; to
+friendly-looking strangers. I hope this will encourage others to dedicate
+time, energy - and &#x3C;a href=&#x22;https://en.wikipedia.org/w/index.php?title=Sarah_Michelle_Gellar&#x26;amp;oldid=997890126#Charitable_activities&#x22;&#x3E;gain it in spades&#x3C;/a&#x3E;.
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+The next revolution starts in us. Be a hero. Be a messiah. &#xF0;&#x9F;&#x98;&#x89;
+&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://www.facebook.com/shlomi.fish/posts/10157764686691981&#x22;&#x3E;Facebook Post&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Shlomi Fish&#x2019;s Chuck Norris Fact #159</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-159</link>
+<description>Shlomi Fish&#x2019;s Chuck Norris Fact #159</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-159</guid>
+<pubDate>Sat, 16 Jan 2021 16:50:42 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-fact-chuck-159&#x22;&#x3E;Shlomi Fish&#xE2;&#x80;&#x99;s Chuck Norris Fact #159&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+                    Chuck Norris actually died and became a badass
+                    undead zombie killer. He was actually
+                    easier to avoid while being alive.
+                    &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;http://www.shlomifish.org/humour/bits/facts/Chuck-Norris/&#x22;&#x3E;Chuck Norris Facts by Shlomi Fish and Friends&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>&#x201C;I&#x27;ve heard a Jew and a Muslim argue in a Damascus cafe with less&#x201D;</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#emacs-wars</link>
+<description>&#x201C;I&#x27;ve heard a Jew and a Muslim argue in a Damascus cafe with less&#x201D;</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#emacs-wars</guid>
+<pubDate>Mon, 18 Jan 2021 11:22:25 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;emacs-wars&#x22;&#x3E;&#xE2;&#x80;&#x9C;I&#x27;ve heard a Jew and a Muslim argue in a Damascus cafe with less&#xE2;&#x80;&#x9D;&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+&#x22;I&#x27;ve heard a Jew and a Muslim argue in a Damascus cafe with less
+passion than the emacs wars.&#x22;
+                &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+	-- Ronald Florence in &#x26;lt;ueu1c4mbrc.fsf@auda.18james.com&#x26;gt;
+                &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Ronald Florence&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=215884&#x22;&#x3E;Debian Bug&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Planning one&#x27;s wedding</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-reddit--rindolf-planning-his-wedding</link>
+<description>Planning one&#x27;s wedding</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-reddit--rindolf-planning-his-wedding</guid>
+<pubDate>Tue, 19 Jan 2021 07:20:06 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;sharp-reddit--rindolf-planning-his-wedding&#x22;&#x3E;Planning one&#x27;s wedding&#x3C;/h3&#x3E;
+      &#x3C;table class=&#x22;irc-conversation&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Roza&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hi&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Roza: hey&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Roza&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hi&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;.pasta Roza&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;me_is&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;* reddit-bot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hands Roza a conspicuously small box of conchiglie with pistachio pesto!&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;what a miser&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;tallguy&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E; Roza hey lady&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Roza: how are you?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;there are many good but nonauthentic pasta places in telaviv/etc,&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;not sure if Italians will like them&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;tallguy: i worked on https://www.shlomifish.org/philosophy/culture/my-real-person-fan-fiction/take2/ today&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;me_is&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;* rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;is switch tasking&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;also visited /r/buffy and said that i liked Faith better than Buffy&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;ruin&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;you rebel&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;ruin&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;absolute madlad&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;ruin: heh&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Roza&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Lol&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;some people liked willow best but i found her too sheepish and recessive&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://www.shlomifish.org/humour/Buffy/A-Few-Good-Slayers/ongoing-text.html#the_q_continuum_duplicator - duplicating golden rings&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;if and when I marry, I&#x27;ll buy my sweetheart a ring made of wood, plastic or copper with a nice design. I&#x27;m not going to wear my wedding ring on my finger&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Roza&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Where, then ?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://twitter.com/shlomif/status/1347825822414073856&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;reddit-bot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;[!!] @shlomif (Shlomi Fish): There is industrial utility for gold, silver, etc. that it is a shame to waste them on jewellery, given people can buy cheap accessories made out of abundant materials if that&#x27;s their thing [and they look better]. It&#x27;s all about being confident anyway: https://t.co/4LxFtS0rRl . (6 days and 11 hours ago)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Roza: I&#x27;ll keep it in a drawer&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;cadderly&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;what about like jade or something&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;cadderly&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;or even quartz&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Roza: or in my pencil case&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Roza: I also will give her my rpg dice set: https://www.shlomifish.org/meta/FAQ/d10_dice.xhtml&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;cadderly: maybe&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;cadderly: https://www.youtube.com/watch?v=PvMdN_i-D9I - nice rings!&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;reddit-bot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Four Weddings and a Funeral: 1st Wedding: The Rings (Subtitled) - length 2m 56s - 160 likes, 17 dislikes (90.4%) - 71,212 views - Albertobezmiliana on 2015.03.29&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;channel&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Channel&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;#reddit&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;network&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Network&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Freenode&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>COVID and Detainment</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-covid-and-the-effects-of-detainment</link>
+<description>COVID and Detainment</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-covid-and-the-effects-of-detainment</guid>
+<pubDate>Mon, 25 Jan 2021 12:15:03 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-covid-and-the-effects-of-detainment&#x22;&#x3E;COVID and Detainment&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+With all due respect to #COVID, putting people (especially old) in detainment makes them psychologically and biologically worse and worse. My father (a biologist) told me that just moving a mouse through corridors in a building had the same bad effect on their immunity system even without radiation. Humans wish to go outside and do what they want ( &#x22;as you wish&#x22; / &#x22;make it so&#x22; / &#x22;carpe diem&#x22; ): &#x3C;a href=&#x22;http://shlomifishswiki.branchable.com/Saladin_Style/&#x22;&#x3E;Saladin Style&#x3C;/a&#x3E; .
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+(NOTE: here is  that my father found about the effect of stress on the immune system: &#x3C;a href=&#x22;https://www.simplypsychology.org/stress-immune.html#:~:text=When%20we&#x27;re%20stressed%2C%20the,lowers%20the%20number%20of%20lymphocytes&#x22;&#x3E;a citation&#x3C;/a&#x3E;
+; I recall reading that &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Maimonides&#x22;&#x3E;Maimonides&#x3C;/a&#x3E; noted that a person&#x27;s optimism influenced his recovery, and there may likely have been earlier sources).
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+The months i spent in the closed psychiatric ward for being &#x22;bipolar&#x22; and unable to leave were worse than my 6.5 years in the technion, and they would be even worse if I weren&#x27;t so resourceful: &#x3C;a href=&#x22;https://www.youtube.com/watch?v=J0KpseN9AjE&#x22;&#x3E;Highway to Hell&#x3C;/a&#x3E; ; &#x3C;a href=&#x22;https://www.youtube.com/watch?v=GIPl9o-SQRg&#x22;&#x3E;Wyclef Jean - Wish You Were Here&#x3C;/a&#x3E;.
+&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://www.facebook.com/shlomi.fish/posts/10157754021291981&#x22;&#x3E;Facebook Post&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Fight fascism with fascism</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-linux-offtopic--fight-fascism-with-fascism</link>
+<description>Fight fascism with fascism</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-linux-offtopic--fight-fascism-with-fascism</guid>
+<pubDate>Sun,  7 Feb 2021 12:35:06 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;sharp-linux-offtopic--fight-fascism-with-fascism&#x22;&#x3E;Fight fascism with fascism&#x3C;/h3&#x3E;
+      &#x3C;table class=&#x22;irc-conversation&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;The Trumpism cancer threatening fascism on America shows no signs of remission&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hail_Satan: i&#x27;m hopeful&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hail_Satan: and twitter censoring @realDonaldTrump was fascistic too&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;64% say they&#x27;d form a new party if he left&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;no, it was not fascistic.  You, a jew of all people, need to learn what &#x22;fascism&#x22; is about&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hail_Satan: it is anti free speech&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;No it is not&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hail_Satan: it is&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Why can&#x27;t I barge in on your house and yell at you about how jews are inferior?  Why is that something you support?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;c705&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;you don&#x27;t have a right to free speech on twitter&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;c705&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;it&#x27;s their platform, they have a right to do whatever they want with it&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf&#x27;s on the spectrum&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hail_Satan: c705 : https://www.reddit.com/r/Twitter/comments/kgmrxx/tip_make_sure_you_enter_your_real_birth_year_eg/&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;he needs edge case examples, because regular explanations don&#x27;t work&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;c705&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;great way to lose the argument before it even began&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;c705&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf: i&#x27;m not clicking that&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;c705: can you form your own twitter? get real&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;yes, you have to be at least 13 years old to use twitter lol&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;c705&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf: yes, actually you can&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hail_Satan: and i am 42&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;that&#x27;s nice&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;c705&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;see Parler, and whatever other garbage is out there&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I like some fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hail_Satan: and sam smith was 10 y.o. when she sent the letter&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;that doesn&#x27;t make any sense, rindolf&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hail_Satan: why doesn&#x27;t it? https://en.wikipedia.org/wiki/Samantha_Smith - read about her&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;this is your argument why twitter banning trump is fascist? lol&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;&#x22;We jewish autists endorse genocide as a form of speech, which must be respected&#x22;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;lick boot harder&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;in fact, if these are your true beliefs, I&#x27;m fine with the Nazis genociding your bloodline.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hail_Satan: no, these aer two different issues&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Once sycophants like you are gone, we can finally get to the real work of ending the fascists&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hail_Satan: i think &#x22;the truths are out there&#x22;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hail_Satan: https://www.reddit.com/r/quotes/comments/dwaviq/where_they_have_burned_books_they_will_end_in/&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;what do you have against fascists Hail_Satan ?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Nothing.  Kill the jews, mawk.  Start with rindolf.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hmm&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;but he&#x27;s nice&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;You suck at fascism&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;:(&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I&#x27;m a peaceful fascist&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;not everything trump said on twitter was bad, and many ppl replied to him or retweeted him&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I&#x27;m going to ignore rindolf now&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;The last thing I need is Israeli pro-trump spam in my life&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Fuck off n die&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;lol&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;heh.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;i am pro-free-speech - not pro-trump&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;sorry rindolf that&#x27;s too fascist&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;you can&#x27;t say that&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;you need to abide by the rules of the new sherif in town&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hello&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hi&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I&#x27;m in pain&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;in even more withdrawals&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;i was asked to delete https://www.shlomifish.org/humour/Star-Trek/We-the-Living-Dead/ongoing-text.html for [get this] saying &#x22;hot girls&#x22;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rascul&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;only fascists get pain&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;lol&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;not sure&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;mawk: heh&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rascul&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;pretty sure hitler also wore shoes so wearing shoes supports nazism&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;mawk: aw&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;*hug*&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rascul: lol wat&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;oh I get the joke&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rascul: heh&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;reductio at hitlerum&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;ad&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;not at&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;reductio ad hitlerum*&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;mawk: yeah I Know&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I&#x27;m kinda half asleep&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;but I know basic latin&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;kind of&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;at least I like latin anyways&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I got kicked out of latin class after 2 years&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;for lack of interest&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rascul&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;sorry i just missed the fascist nazi discussion by a few minutes and i wanted to take place&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://quoteinvestigator.com/2015/06/01/defend-say/ - &#xC2;&#xAB; I Disapprove of What You Say, But I Will Defend to the Death Your Right to Say It&#xC2;&#xBB; - a woman&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;look I had rough sleep and this coffee sucks but at least it lets me not fall asleep&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rascul&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;s/place/part/&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;but I prefer &#xCE;&#xB5;&#xCE;&#xBB;&#xCE;&#xBB;&#xCE;&#xB5;&#xCE;&#xBD;&#xCE;&#xB9;&#xCE;&#xBA;&#xCE;&#xB1;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Gustavo6046&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rascul: let me cheer and hug mawk in peace&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rascul&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;no that&#x27;s fascism&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;mawk: have you watched the life of brian skit?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;c705&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;my cioffee this morning is fascist&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rascul&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;down with cioffee&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;what&#x27;s a skit rindolf ?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;O&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I watched the whole movie&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;mawk: a sketch&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;a&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;mawk: https://www.youtube.com/watch?v=0lczHvB3Y9s&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mawk&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;yes I remember&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;mawk: i wrote this in refto the &#x22;what have the romans done for us&#x22; sketch: https://github.com/shlomif/why-the-BSDs-should-not-blame-USL-vs-BSDi-for-linux-dominance&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;ask him about Buffy the Vampire&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Hail_Satan&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;he has this weird blog where he pretends to be famous women&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;this is fanfic: e.g: https://www.shlomifish.org/humour/bits/facts/&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;mawk: &#x22;hot girls&#x22; is nothing compared to https://en.wikipedia.org/wiki/Song_of_Songs&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;channel&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Channel&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;##Linux-offtopic&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;network&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Network&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Freenode&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Doing Hot Celebs</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#doing-hot-celebs--2021-edition</link>
+<description>Doing Hot Celebs</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#doing-hot-celebs--2021-edition</guid>
+<pubDate>Mon,  8 Feb 2021 03:13:56 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;doing-hot-celebs--2021-edition&#x22;&#x3E;Doing Hot Celebs&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+            I at ~ 2006 &#x22;I&#x27;d rather be doing hot models than doing code&#x22;.
+            &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+            I at ~2021 &#x22;I&#x27;m not just doing it for money. I&#x27;m doing it for doing
+            hot youtubers!&#x22; . I think most attractive MOTAS are polymath,
+            geeky and hacker (= action hero)
+            entertainers/educators/amateur philosophers, anyway.
+            &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+            (Also: your kilometrage may vary, but I need only one
+            attractive significant other at a time.
+            &#x3C;a href=&#x22;http://shlomifishswiki.branchable.com/99_Problems/&#x22;&#x3E;Or fewer&#x3C;/a&#x3E;.
+            )
+            &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://www.facebook.com/shlomi.fish/posts/10157754021291981&#x22;&#x3E;Facebook Post&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>&#x22;Those who make a distinction between education and entertainment don&#x27;t know the first thing about either.&#x22;</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#education-and-entertainment</link>
+<description>&#x22;Those who make a distinction between education and entertainment don&#x27;t know the first thing about either.&#x22;</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#education-and-entertainment</guid>
+<pubDate>Sun, 14 Feb 2021 08:27:43 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;education-and-entertainment&#x22;&#x3E;&#x22;Those who make a distinction between education and entertainment don&#x27;t know the first thing about either.&#x22;&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+                &#x22;Those who make a distinction between education and entertainment don&#x27;t know the first thing about either.&#x22;
+                &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+                   - Marshall McLuhan (via &#x22;movement-sigs&#x22;)
+                &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Marshall McLuhan&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=215884&#x22;&#x3E;Debian Bug&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>&#x22;The difference between theory and practice is that in theory, there is no difference between theory and practice, while in practice, there is.&#x22;</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#difference-between-theory-and-practice</link>
+<description>&#x22;The difference between theory and practice is that in theory, there is no difference between theory and practice, while in practice, there is.&#x22;</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#difference-between-theory-and-practice</guid>
+<pubDate>Mon, 15 Feb 2021 10:39:26 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;difference-between-theory-and-practice&#x22;&#x3E;&#x22;The difference between theory and practice is that in theory, there is no difference between theory and practice, while in practice, there is.&#x22;&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+                The difference between theory and practice is that in theory,
+                there is no difference between theory and practice, while in
+                practice, there is.
+                &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Attributed to Yogi Berra and others&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://github.com/shlomif/fortune-mod&#x22;&#x3E;via fortune-mod&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Shlomi Fish&#x2019;s Chuck Norris Fact #160</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-160</link>
+<description>Shlomi Fish&#x2019;s Chuck Norris Fact #160</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-160</guid>
+<pubDate>Fri, 19 Feb 2021 05:45:07 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-fact-chuck-160&#x22;&#x3E;Shlomi Fish&#xE2;&#x80;&#x99;s Chuck Norris Fact #160&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+                    If you do not like these factoids, Chuck Norris
+                    will still love you. However, it&#x27;s not going
+                    to stop him from killing you, because
+                    he doesn&#x27;t let his feelings get in the way
+                    of his day-to-day business.
+                    &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;http://www.shlomifish.org/humour/bits/facts/Chuck-Norris/&#x22;&#x3E;Chuck Norris Facts by Shlomi Fish and Friends&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>How the Chun Li vs. Tifa&#x27;s Battle Should End</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-how-chun-li-vs-tifa-should-end</link>
+<description>How the Chun Li vs. Tifa&#x27;s Battle Should End</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-how-chun-li-vs-tifa-should-end</guid>
+<pubDate>Fri, 26 Feb 2021 19:23:44 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-how-chun-li-vs-tifa-should-end&#x22;&#x3E;How the Chun Li vs. Tifa&#x27;s Battle Should End&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+Reflecting on &#x3C;a href=&#x22;https://www.youtube.com/watch?v=l0y734-uyzQ&#x22;&#x3E;Chun-Li vs Tifa (Street Fighter 2 vs Final Fantasy VII) - Girl Fight! Ultimate Fan Fights Ep. 5&#x3C;/a&#x3E; video, I think both girls fought well. They should shake hands and declare themselves &#x3C;a href=&#x22;https://simpsons.fandom.com/wiki/Dead_Putting_Society&#x22;&#x3E;equally good&#x3C;/a&#x3E; and go:
+&#x3C;/p&#x3E;
+        &#x3C;ol&#x3E;
+&#x3C;li&#x3E;
+&#x3C;p&#x3E;
+Grab a few drinks or snacks together.
+&#x3C;/p&#x3E;
+&#x3C;/li&#x3E;
+
+&#x3C;li&#x3E;
+&#x3C;p&#x3E;
+Hit on a couple of men.
+&#x3C;/p&#x3E;
+&#x3C;/li&#x3E;
+
+&#x3C;li&#x3E;
+&#x3C;p&#x3E;
+Hit these men.
+&#x3C;/p&#x3E;
+&#x3C;/li&#x3E;
+
+&#x3C;li&#x3E;
+&#x3C;p&#x3E;
+Make out with these men.
+&#x3C;/p&#x3E;
+&#x3C;/li&#x3E;
+
+&#x3C;li&#x3E;
+&#x3C;p&#x3E;
+Make love to these men.
+&#x3C;/p&#x3E;
+&#x3C;/li&#x3E;
+
+&#x3C;li&#x3E;
+&#x3C;p&#x3E;
+Make love to each other&#xE2;&#x80;&#xA6;&#xF0;&#x9F;&#x98;&#x89;.
+&#x3C;/p&#x3E;
+&#x3C;/li&#x3E;
+
+&#x3C;li&#x3E;
+&#x3C;p&#x3E;
+Whatever floats their boat!
+&#x3C;/p&#x3E;
+&#x3C;/li&#x3E;
+&#x3C;/ol&#x3E;
+        &#x3C;p&#x3E;
+&#x3C;a href=&#x22;https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition&#x22;&#x3E;&#x22;War is good for business. Peace is good for business.&#x22;&#x3C;/a&#x3E;
+&#xE2;&#x80;&#x94; The Ferengi Rules of Acquisition.
+&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://www.shlomifish.org/humour/fortunes/show.cgi?id=shlomif-how-chun-li-vs-tifa-should-end&#x22;&#x3E;Original&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Nasruddin seeking the Perfect Wife</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#nasruddin-seeking-the-perfect-wife</link>
+<description>Nasruddin seeking the Perfect Wife</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#nasruddin-seeking-the-perfect-wife</guid>
+<pubDate>Fri,  5 Mar 2021 10:31:50 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;nasruddin-seeking-the-perfect-wife&#x22;&#x3E;Nasruddin seeking the Perfect Wife&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+There&#x27;s the story of Mullah Nasruddin, who was asked why he never married and answered, &#x22;I was looking for the perfect wife. I went to Damascus and met a wonderful woman but she had no spiritual side. Then I went to Cairo and met a woman who was deeply spiritual, but we didn&#x27;t communicate well. I went from place to place looking for the perfect woman, then finally I found her and she was beautiful and spiritual and we communicated well. She was perfect.&#x22;
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+Then his friend asked why he didn&#xE2;&#x80;&#x99;t marry her, and Mullah Nasruddin replied, &#x22;Unfortunately, she was looking for the perfect man!&#x22;.
+                &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;via &#x22;Nice Inspiration For Everyone&#x22;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://nice-inspiration.blogspot.com/2011/05/looking-for-perfect-wife.html&#x22;&#x3E;Looking For The Perfect Wife&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>&#x22;In Israel, we have&#x2026;&#x22;</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#in-israel-we-have-falafel-humous-shawarmah</link>
+<description>&#x22;In Israel, we have&#x2026;&#x22;</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#in-israel-we-have-falafel-humous-shawarmah</guid>
+<pubDate>Sat,  6 Mar 2021 19:27:38 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;in-israel-we-have-falafel-humous-shawarmah&#x22;&#x3E;&#x22;In Israel, we have&#xE2;&#x80;&#xA6;&#x22;&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+            In Israel, we have &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Falafel&#x22;&#x3E;Falafel&#x3C;/a&#x3E;,
+            &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Hummus&#x22;&#x3E;Hummus&#x3C;/a&#x3E;,
+            &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Tahini&#x22;&#x3E;T&#x27;hina&#x3C;/a&#x3E;,
+            &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Shawarma&#x22;&#x3E;Shawarma&#x3C;/a&#x3E;,
+            &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Shashlik&#x22;&#x3E;Shishlik&#x3C;/a&#x3E;&#xE2;&#x80;&#xA6;
+            &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+            And we love to eat
+            &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Bourekas&#x22;&#x3E;Bourekas&#x3C;/a&#x3E;
+            in the morning!
+            &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+            &#xE2;&#x80;&#x94; Israeli teenagers tormenting English-speaking tourists
+            while kayaking on &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Jordan_River&#x22;&#x3E;River Jordan&#x3C;/a&#x3E;.
+            &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x27;s high school friends&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://twitter.com/shlomif/status/502722456641998849&#x22;&#x3E;Facebook Post&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+</channel>
+</rss>

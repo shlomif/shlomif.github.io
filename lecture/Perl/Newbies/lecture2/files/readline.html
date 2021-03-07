@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="print.html"/><link rel="next" href="../argv.html"/><title>The &lt;FILEHANDLE&gt; Operator</title></head><body><main><header><h1>5.2. The &lt;FILEHANDLE&gt; Operator</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="print.html" class="nav" accesskey="p">Prev</a></td><td><a href="../argv.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">File Input/Output</a> → <a href="readline.html">The &lt;FILEHANDLE&gt; Operator</a></div></nav><p>Just like <code>print</code> can be generalised to files, so can the <code>&lt;&gt;</code> which we encountered before. If you place the name of the filehandle inside the operator, it will read a line from the file opened by that filehandle.</p><p>Here's an example, let's append the line numbers to a given file:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> (<span class="Identifier">$line_num</span>, <span class="Identifier">$line</span>);
+
+<span class="Identifier">$line_num</span> = <span class="Constant">0</span>;
+<span class="Statement">open</span> <span class="Statement">my</span> <span class="Identifier">$in</span>, <span class="Constant">&quot;&lt;&quot;</span>, <span class="Constant">&quot;input.txt&quot;</span>;
+<span class="Statement">open</span> <span class="Statement">my</span> <span class="Identifier">$out</span>, <span class="Constant">&quot;&gt;&quot;</span>, <span class="Constant">&quot;output.txt&quot;</span>;
+
+<span class="Statement">while</span> (<span class="Identifier">$line</span> = &lt;<span class="Identifier">$in</span>&gt;)
+&#x7B;
+    <span class="Comment"># We aren't chomping it so we won't lose the newline.</span>
+    <span class="Statement">print</span> <span class="Statement">&#x7B;</span><span class="Identifier">$out</span><span class="Statement">&#x7D;</span> <span class="Identifier">$line_num</span>, <span class="Constant">&quot;: &quot;</span>, <span class="Identifier">$line</span>;
+    <span class="Identifier">$line_num</span>++;
+&#x7D;
+
+<span class="Statement">close</span> (<span class="Identifier">$in</span>);
+<span class="Statement">close</span> (<span class="Identifier">$out</span>);
+</pre></div><p>And the following example counts the number of lines in a file that start with the letter "A" (case-insensitive).</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> (<span class="Identifier">$filename</span>, <span class="Identifier">$lines_num</span>, <span class="Identifier">$line</span>, <span class="Identifier">$c</span>);
+
+<span class="Identifier">$lines_num</span> = <span class="Constant">0</span>;
+<span class="Identifier">$filename</span> = <span class="Constant">&quot;input.txt&quot;</span>;
+<span class="Statement">open</span> <span class="Statement">my</span> <span class="Identifier">$in</span>,  <span class="Constant">&quot;&lt;&quot;</span>, <span class="Identifier">$filename</span>;
+<span class="Statement">while</span> (<span class="Identifier">$line</span> = &lt;<span class="Identifier">$in</span>&gt;)
+&#x7B;
+    <span class="Identifier">$c</span> = <span class="Statement">substr</span>(<span class="Identifier">$line</span>, <span class="Constant">0</span>, <span class="Constant">1</span>);
+    <span class="Statement">if</span> (<span class="Statement">lc</span>(<span class="Identifier">$c</span>) <span class="Statement">eq</span> <span class="Constant">&quot;a&quot;</span>)
+    &#x7B;
+        <span class="Identifier">$lines_num</span>++;
+    &#x7D;
+&#x7D;
+<span class="Statement">close</span>(<span class="Identifier">$in</span>);
+
+<span class="Statement">print</span> <span class="Constant">&quot;In &quot;</span> , <span class="Identifier">$filename</span>, <span class="Constant">&quot; there are &quot;</span>,
+    <span class="Identifier">$lines_num</span>, <span class="Constant">&quot; lines that start with </span><span class="Special">\&quot;</span><span class="Constant">A</span><span class="Special">\&quot;</span><span class="Constant">.</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>The <code>join("", &lt;FILEHANDLE&gt;)</code> command returns the entire contents of the file from the current position onwards, and may prove to be useful. Examples for it will be given in the next section where regular expressions will be taught.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="print.html" class="nav">Prev</a></td><td><a href="../argv.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

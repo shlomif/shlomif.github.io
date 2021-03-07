@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../style.css" type="text/css"/><link rel="prev" href="../negative_indexes.html"/><link rel="next" href="for_and_dotdot.html"/><title>The foreach loop</title></head><body><main><header><h1>9.3. The foreach loop</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../" class="nav" accesskey="c">Contents</a></td><td><a href="../" class="nav" accesskey="u">Up</a></td><td><a href="../negative_indexes.html" class="nav" accesskey="p">Prev</a></td><td><a href="for_and_dotdot.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../">"Perl for Perl Newbies" - Part 1</a> → <a href="../">Arrays</a> → <a href="./">The foreach loop</a></div></nav><p>By using the <code>foreach</code> loop we can iterate over all the elements of an array, and perform the same set of operations on each one of them. Here's an example:</p><div class="code_block"><pre>
+<span class="Identifier">@numbers</span> = (<span class="Constant">15</span>,<span class="Constant">5</span>,<span class="Constant">7</span>,<span class="Constant">3</span>,<span class="Constant">9</span>,<span class="Constant">1</span>,<span class="Constant">20</span>,<span class="Constant">13</span>,<span class="Constant">9</span>,<span class="Constant">8</span>,
+    <span class="Constant">15</span>,<span class="Constant">16</span>,<span class="Constant">2</span>,<span class="Constant">6</span>,<span class="Constant">12</span>,<span class="Constant">90</span>);
+
+<span class="Identifier">$max</span> = <span class="Identifier">$numbers[</span><span class="Constant">0</span><span class="Identifier">]</span>;
+<span class="Identifier">$min</span> = <span class="Identifier">$numbers[</span><span class="Constant">0</span><span class="Identifier">]</span>;
+
+<span class="Statement">foreach</span> <span class="Identifier">$i</span> (<span class="Identifier">@numbers[</span><span class="Constant">1.</span>.<span class="Identifier">$#numbers]</span>)
+&#x7B;
+    <span class="Statement">if</span> (<span class="Identifier">$i</span> &gt; <span class="Identifier">$max</span>)
+    &#x7B;
+        <span class="Identifier">$max</span> = <span class="Identifier">$i</span>;
+    &#x7D;
+    <span class="Statement">elsif</span> (<span class="Identifier">$i</span> &lt; <span class="Identifier">$min</span>)
+    &#x7B;
+        <span class="Identifier">$min</span> = <span class="Identifier">$i</span>;
+    &#x7D;
+&#x7D;
+
+<span class="Statement">print</span> <span class="Constant">&quot;The maximum is &quot;</span> . <span class="Identifier">$max</span> . <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Statement">print</span> <span class="Constant">&quot;The minimum is &quot;</span> . <span class="Identifier">$min</span> . <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>The <code>foreach</code> loop in the example assigns each of the elements of the array which was passed to it to <code>$i</code> in turn, and executes the same set of commands for each value.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../" class="nav">Contents</a></td><td><a href="../" class="nav">Up</a></td><td><a href="../negative_indexes.html" class="nav">Prev</a></td><td><a href="for_and_dotdot.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

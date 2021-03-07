@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="whence_for.html"/><title>Behaviour of next in the for Loop</title></head><body><main><header><h1>1.1. Behaviour of next in the for Loop</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="whence_for.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">The for Loop</a> → <a href="next.html">Behaviour of next in the for Loop</a></div></nav><p>An important difference between the <code>for</code> loop and the <code>while</code> loop is the behaviour of <code>next</code> inside it. In a <code>for</code> loop, <code>next</code> skips the rest of the iteration but still executes the iteration commands which were passed to the loop as arguments.</p><p>For example, the following program prints the first 200 primes:</p><div class="code_block"><pre>
+<span class="Statement">MAIN_LOOP:</span> <span class="Statement">for</span>(
+    <span class="Identifier">@primes</span>=(<span class="Constant">2</span>), <span class="Identifier">$i</span>=<span class="Constant">3</span> ;
+    <span class="Statement">scalar</span>(<span class="Identifier">@primes</span>) &lt; <span class="Constant">200</span> ;
+    <span class="Identifier">$i</span>++
+    )
+&#x7B;
+    <span class="Statement">foreach</span> <span class="Identifier">$p</span> (<span class="Identifier">@primes</span>)
+    &#x7B;
+        <span class="Statement">if</span> (<span class="Identifier">$i</span> % <span class="Identifier">$p</span> == <span class="Constant">0</span>)
+        &#x7B;
+            <span class="Statement">next</span> MAIN_LOOP;
+        &#x7D;
+    &#x7D;
+
+    <span class="Statement">push</span> <span class="Identifier">@primes</span>, <span class="Identifier">$i</span>;
+&#x7D;
+
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;, &quot;</span> , <span class="Identifier">@primes</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>Now, the equivalent program using a while loop:</p><div class="code_block"><pre>
+<span class="Identifier">@primes</span> = (<span class="Constant">2</span>);
+<span class="Identifier">$i</span> = <span class="Constant">3</span>;
+<span class="Statement">MAIN_LOOP:</span>
+<span class="Statement">while</span> (<span class="Statement">scalar</span>(<span class="Identifier">@primes</span>) &lt; <span class="Constant">200</span>)
+&#x7B;
+    <span class="Statement">foreach</span> <span class="Identifier">$p</span> (<span class="Identifier">@primes</span>)
+    &#x7B;
+        <span class="Statement">if</span> (<span class="Identifier">$i</span> % <span class="Identifier">$p</span> == <span class="Constant">0</span>)
+        &#x7B;
+            <span class="Statement">next</span> MAIN_LOOP;
+        &#x7D;
+    &#x7D;
+
+    <span class="Statement">push</span> <span class="Identifier">@primes</span>, <span class="Identifier">$i</span>;
+    <span class="Identifier">$i</span>++;
+&#x7D;
+
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;, &quot;</span> , <span class="Identifier">@primes</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>gets stuck. (<b>why?</b>)</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="whence_for.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

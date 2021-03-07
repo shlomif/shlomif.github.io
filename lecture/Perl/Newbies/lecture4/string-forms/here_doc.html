@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="q_qq.html"/><link rel="next" href="../processes/"/><title>Here Document</title></head><body><main><header><h1>3.2. Here Document</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="q_qq.html" class="nav" accesskey="p">Prev</a></td><td><a href="../processes/" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 4</a> → <a href="./">Alternate Forms for Writing Strings</a> → <a href="here_doc.html">Here Document</a></div></nav><p>In a here document, one specifies an ending string to end the string on a separate line, and between it, one can place any string he wishes. This is useful if your string contains a lot of irregular characters.</p><p>The syntax for a here document is a <code>&lt;&lt;</code> followed by the string ending sequence, followed by the end of the statement. In the lines afterwards, one places the string itself followed by its ending sequence.</p><p>Here is an example:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+
+<span class="Statement">my</span> <span class="Identifier">$x</span> = <span class="Constant">&quot;Hello&quot;</span>;
+<span class="Statement">my</span> <span class="Identifier">$str</span> = <span class="Constant">&quot;There you go.&quot;</span>;
+<span class="Statement">my</span> <span class="Identifier">$true</span> = <span class="Constant">&quot;False&quot;</span>;
+
+<span class="Statement">print</span> <span class="Constant">&lt;&lt;&quot;END&quot;</span>;
+<span class="Constant">The value of </span><span class="Special">\$</span><span class="Constant">x is: &quot;</span><span class="Identifier">$x</span><span class="Constant">&quot;</span>
+<span class="Constant">The value of </span><span class="Special">\$</span><span class="Constant">str is: &quot;</span><span class="Identifier">$str</span><span class="Constant">&quot;</span>
+<span class="Constant">The value of true is: &quot;</span><span class="Identifier">$true</span><span class="Constant">&quot;</span>
+
+<span class="Constant">Hoola</span>
+
+<span class="Constant">END</span>
+</pre></div><p>Its output is:</p><div class="code_block"><pre>
+The value of $x is: "Hello"
+The value of $str is: "There you go."
+The value of true is: "False"
+
+Hoola
+
+
+</pre></div><p>Note that if the delimeters on the terminator after the <code>&lt;&lt;</code> are double-quotes (<code>"..."</code>), then the here-document will interpolate, and if they are single-quotes (<code>'...'</code>), it will not.</p><p>An unquoted ending string causes the here-doc to interpolate, in case you encounter it in the wild. Note however, that in your code, you should always quote it, so people won't have to guess what you meant.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="q_qq.html" class="nav">Prev</a></td><td><a href="../processes/" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>
