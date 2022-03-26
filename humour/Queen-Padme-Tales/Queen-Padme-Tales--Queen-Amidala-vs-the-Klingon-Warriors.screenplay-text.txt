@@ -1,0 +1,830 @@
+<s id="Queen-Amidala-vs-the-Klingon-Warriors" lang="en" title="Queen Amidala vs. The Klingon Warriors">
+
+<s id="about" title="About this screenplay">
+
+<s id="about-objective" title="Objective">
+
+[
+
+An illustrated screenplay crossing <a href="https://en.wikipedia.org/wiki/Star_Wars%3A_Episode_I_%E2%80%93_The_Phantom_Menace">Star Wars Ep. I</a>,
+the <a href="https://buffyfanfiction.fandom.com/wiki/Selinaverse">Selinaverse</a> (itself
+crossing Star Trek TNG/DS9, Buffy, Judaism, Israel, <a href="https://en.wikipedia.org/wiki/Objectivism_(Ayn_Rand)">Objectivism</a>, etc.)
+the real world online/offline life in 2010s/2020s,
+<a href="https://en.wikipedia.org/wiki/Wayne%27s_World_(film)">Wayne's World</a>,
+and
+<a href="https://mlp.fandom.com/wiki/My_Little_Pony_Friendship_is_Magic">My Little Pony</a>.
+
+It aims to launch the "Queen Padmé Tales" web series (
+whose format is
+modelled loosely after <a href="https://en.wikipedia.org/wiki/Ox_Tales">Ox Tales</a>
+). It stars <a href="https://en.wikipedia.org/wiki/Tiffany_Alvord">Tiffany Alvord</a> as
+<a href="https://starwars.fandom.com/wiki/Padm%C3%A9_Amidala">Queen Padmé Amidala of the Naboo</a>, and
+aims to be codirected and costarred by
+<a href="https://en.wikipedia.org/wiki/Natalie_Portman_filmography">Natalie Portman</a>.
+More ambitiously it aims to pave way for commercial crossover / <a href="https://en.wikipedia.org/wiki/Real_person_fiction">RPF</a> fanart, help reverse copyright
+maximalism and convert Hollywood and the film industry at large to the open/free/amateur model ( see my essay <a href="https://www.shlomifish.org/philosophy/culture/case-for-commercial-fan-fiction/">“Commercial Real Person Fan Fiction (RPFs), crossovers and parodies as 2021 geek/hacker imperatives for revitalising the film industry”</a> ).
+
+We may not succeed, but at least we're going to try.
+
+This screenplay <b>is not</b> written in the Hollywood blessed format because
+<a href="https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/putting-cards-on-the-table-2019-2020/hacking-heroism.xhtml">good
+hackers (= resourceful and rule bending heroes)</a>
+which include the talented actors and actresses in this film can
+withstand reading a raw and non-CSS-styled XHTML5 file. That - and hackers like
+me do not have the time to massage a screenplay into Hollywood's whimsical
+format only to be rejected, rinse and repeat.
+
+]
+
+</s>
+
+<s id="license" title="Licence">
+
+[
+
+Emblem: <img src="images/evilphish-svg--facing-right.min.svg.png" alt="Shlomi Fish’s EvilPHish Emblem" />
+
+This text is Copyright by <a href="https://www.shlomifish.org/">Shlomi Fish</a> , 2020 and is
+made available under the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Unported Licence (CC-by)</a>
+(or at your option - any later version).
+
+]
+
+</s>
+
+<s id="dedication" title="Dedication">
+
+[
+
+The <b>Dedication</b>:
+<img src="images/Christina_Grimmie_in_November_2014--resized.webp" alt="Photo of Christina Grimmie" />
+
+This story is dedicated to the memory of <a href="https://en.wikipedia.org/wiki/Christina_Grimmie">Christina Grimmie (1994-2016)</a>,
+a remarkable singer and youtuber, who was killed at age 22 by a fan who was
+obsessed with her, and who almost immediately committed suicide himself.
+
+For what I consider her Magnus Opus see her original
+<a href="https://www.youtube.com/watch?v=kYX8sjIzjGw">"Feelin' Good" song and videoclip</a>
+whose message I believe is:
+
+«
+
+Be confident. Do the best you can given the time frame.
+It doesn't have to be perfect. You are allowed to be wrong and say wrong things
+that you think will still impress people. Try to learn from your mistakes,
+<a href="http://shlomifishswiki.branchable.com/Encourage_criticism_and_try_to_get_offended/">encourage the critics</a>
+and try to improve, but realise that
+<a href="http://shlomifishswiki.branchable.com/Never_Try_to_Please_Everyone/">some people will always be unhappy</a>
+and hold you liable for your past opinions, past mistakes,
+past failures, opinions that they disagree with, your non-normative behaviour,
+your qualities (age, gender, country, city, ethnicity, religion, ideology,
+beliefs, wealth, image, personality, cultural tastes, etc.) and your works.
+
+You will likely "fail" to become the "next biggest thing", but even if you
+do, you can at least fail "in style" and inspire or help even just <a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=mishnah--saving-one-soul">one person</a>.
+
+Always remember: you are awesome. You can become more awesome, regardless
+of any "IQ" myths. But you may one day <a href="https://www.shlomifish.org/humour/Summerschool-at-the-NSA/ongoing-text.html#summer_glau_presents__the_talk__amateur_fighters">"lose"</a> to someone less qualified than you.
+That's OK - <a href="https://www.shlomifish.org/humour/Buffy/A-Few-Good-Slayers/ongoing-text.html#becky_in_the_library__chit_chat">you can learn from a lost fight</a> and make
+<a href="https://www.shlomifish.org/philosophy/culture/my-real-person-fan-fiction/#actors_are_unique">a comeback</a>.
+Frankly, heroes do not die ("reputationally" at least) - they accumulate.
+
+As the <a href="https://www.youtube.com/watch?v=kQKrmDLvijo">Indiana Jones' gun vs, sword</a>
+scene shows, if something takes too long or seems too risky, then think outside
+the box, challenge the invisible rules, "hack" something, or even temporarily
+or permanently give
+up. <a href="https://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it">There's more than one way to do it</a>
+(even <a href="https://brilliant.org/wiki/proofs-of-the-pythagorean-theorem/">in maths</a> and
+when writing <a href="https://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a> code)
+and different people like different things.
+
+»
+
+(Also see <a href="https://www.poetryfoundation.org/poems/46473/if---">If—</a> by Rudyard
+Kipling which has a similar message, and is the most favourite poem among
+British citizens, a favourite among Israelis, was Ayn Rand’s favourite, and mine.)
+
+]
+
+</s>
+
+</s>
+
+<s id="plan-to-throw-one-away" title="“Plan to throw one away”">
+
+<s id="filming-version-0.2.x" title="Filming Version 0.2.x">
+
+[Black screen.
+
+Logo: <img src="images/tacos6306095903_a5c92746ba_o--tacos-reduced-by-jeffreyw--small-400px.webp" alt="Tacos with many toppings" />
+
+Initial Credits.
+
+]
+
+[
+
+Queen <a href="https://starwars.fandom.com/wiki/Padm%C3%A9_Amidala">Padmé Amidala of the Naboo</a>
+(Star Wars Ep. 1, played by <a href="https://en.wikipedia.org/wiki/Tiffany_Alvord">Tiffany Alvord</a>) is in a corridor with the young
+<a href="https://starwars.fandom.com/wiki/Obi-Wan_Kenobi">Obi-Wan Kenobi</a>
+and his jedi mentor ( <a href="https://en.wikipedia.org/wiki/Qui-Gon_Jinn">Qui-Gon Jinn</a> ) guarding
+her with light sabers. On the ends there are two armoured but unarmed <a href="https://memory-alpha.fandom.com/wiki/Klingon">Klingon</a> warriors
+(Star Trek), <a href="https://memory-alpha.fandom.com/wiki/Worf">Worf</a> and <a href="https://memory-alpha.fandom.com/wiki/Gowron">Gowron</a>,
+who fight against a metric ton of “throwaway” lightsabered
+jedi warriors who rush from the middle to try to take the malevolent Klingons
+out of the equation somehow. The Klingons have immense strength, agility, and
+stamina, and use basic and advanced martial arts tactics: kicking the jedis in
+the crotch; poking their eyes out, stabbing them with their own lightsabers,
+pushing them onto each other's laser swords in cascade, etc.
+
+Eventually the lesser Jedis are all dead or wounded, and the Klingons rush
+towards the trio screaming battle cries. The queen looks startled and
+frightened while Obi-Wan and Qui-Gon are trying to prepare tensely and without
+much hope to win.
+
+The queen's face becomes tense and focused, she pulls two small crossbows from
+her waist, looks to her right, aims, and shoots an arrow at the Klingon
+warrior's forehead; then she turns her head to the left, aims and shoots. The
+crossbows' arrows pass through the two Klingons' warriors foreheads, who
+quickly faint and fall forward, dead.
+
+The two Jedis protagonists are relieved, laugh, disable their lightsabers'
+laser blades, high five and huggle the queen. The queen smiles, hands them the
+crossbows to study and each jedi examines his crossbow, discussing them with the
+queen.
+
+A tagline appears on the screen as a mock commercial:
+
+“<b>PersonalQrossBow's 2-in-1 Pocketbow kit. Why not have both?</b>”
+
+( <a href="https://www.buzzfeed.com/alexlee/porque-no-los-dos">see this</a>.)
+
+]
+
+</s>
+
+<s id="what-wayne-and-garth-think" title="What Wayne and Garth think">
+
+Natalie Portman's voice from behind: and — cut! Great job everyone!
+
+[
+
+The actors of Worf and Gowron rise from their place. Tiffany Alvord
+is smiling relieved and shakes the hands of the 4 male actors
+and hugs them compassionately. <a href="https://en.wikipedia.org/wiki/Natalie_Portman_filmography">Natalie Portman</a> (= the
+director, and the actress who had originally played Queen Amidala in the <a href="https://starwars.fandom.com/wiki/Prequel_trilogy">original
+Star Wars prequel trilogy</a>) enters the frame and does the same.
+
+]
+
+Natalie: [to Tiffany] I knew you had it in you. [They hug].
+
+Wayne's voice from a different frame: Dude! This sucks.
+
+[ Split frame with Wayne and Garth (from
+<a href="https://en.wikipedia.org/wiki/Wayne%27s_World_(film)"><i>Wayne’s World</i></a>)
+sitting in an untidy room next to a computer screen.
+They are the plot programmers. ]
+
+Wayne: …I left you alone asking you to write a draft for a feature about
+ethical hacking for PBS, and you come up with this??
+
+Garth: What's wrong with it?
+
+Wayne: It's the old <a href="http://shlomifishswiki.branchable.com/Missiles_vs_Melee_Motif/">missile-vs-melee paradigm</a>! Thrown in a Star Wars / Star Trek
+crossover and "girl power" and stuff. Every 2nd-class fan fic writer could
+have written it in three days!
+
+Garth: Took me less than an hour, after lunch, before playing
+<a href="https://en.wikipedia.org/wiki/Dwarf_Fortress">Dwarf Fortress</a>…
+
+Wayne: <a href="https://www.youtube.com/watch?v=lQALLGsn-Fk">Beginners' luck</a>,
+I guess.
+
++++: Anyway, who's gonna play the Queen, Natalie Portman?
+
+Garth: nah… we asked her and she wanted too much money. So we went with
+Tiffany Alvord, man!
+
+[ Tiffany looks angry, crosses her hands and glances at Natalie with disapproval. ]
+
+Wayne: Dude, are you freaking kidding me? She's like <a href="https://www.shlomifish.org/humour/Muppets-Show-TNI/Summer-Glau-and-Chuck-Norris.html#venting_is_us">the Fluttershy of YouTube musicians</a>. Do you ever see <a href="https://mlp.fandom.com/wiki/Fluttershy">Fluttershy</a> using a machine gun?
+
+[ Fluttershy is seen flying, using a machine gun to shoot at a terrified <a href="https://mlp.fandom.com/wiki/Rainbow_Dash">Rainbow Dash</a> who
+just robbed a bank, and trying to shoot back at Fluttershy using a smaller one hand gun. As she leaves the frame, Fluttershy pauses and winks at the camera. ]
+
+Wayne: Next thing you tell me, <a href="https://en.wikipedia.org/wiki/Taylor_Swift">Taylor Swift</a> can get away with being shown laying waste to a whole city in a videoclip.
+
+Garth: but, but…
+
+[
+
+Still from toward the end of Taylor Swift’s
+<a href="https://www.youtube.com/watch?v=QcIy9NiNbmo">Bad Blood videoclip</a>:
+<img src="images/bad-blood189.webp" alt="Taylor Swift and friends still from Bad Blood" />
+
+]
+
+Wayne: no "but"s, Garth, dude.
+
++++: OK, enough about the Queen, who's the director? Is it going to be <a href="https://en.wikipedia.org/wiki/George_Lucas">George Lucas</a>?
+
+Garth: nah, he also ended up wanting too much. We ended up hiring Natalie Portman instead.
+
+[
+
+Natalie Portman is resentful and disappointed. Tiffany is smiling
+from <a href="https://en.wikipedia.org/wiki/Schadenfreude">Schadenfreude</a>.
+
+]
+
+Wayne: OK, not ideal but we can work with that.
+
++++: Anyway, you do realise that one of these "throwaway" jedi knights could
+just hurl his lightsaber at the Klingon warrior throat like a spear, right?
+
+[ The 5 main actors and Natalie seem contemplative. ]
+
+Garth: ah… didn't think about it.
+
+Wayne: we can use that to our advantage. Let me tell you, plot programming
+could use some <a href="https://mlp.fandom.com/wiki/Applejack%27s_%22Day%22_Off">code review</a>
+too. You could have requested this on Internet forums before you started playing Dwarf Fortress.
+
+Garth: dude, you're right!
+
+Wayne: let's rework the plot <a href="https://en.wikipedia.org/wiki/Pair_programming">together</a>.
+What you did is not too bad for a beginner and I believe in delegating responsibility and decision-making,
+But we can do a better ethical hacking film.
+
+</s>
+
+<s id="film-crew-ungathers" title="The film crew disassembles">
+
+[ All the film personnel in the filming room sigh and shake their head. ]
+
+Natalie: sorry, everybody… [looks at Fluttershy and Rainbow Dash who float in mid-air peacefully] and everypony.
+
+Rainbow Dash: No worries, Nat! We can make the scene at least 100% more awesome.
+
+Natalie: Right, Rainbow Dash [she pats her head.]. OK, everyone, we need to
+wait for the plot programmers to write the new version. We may still be able to
+reuse some of the filmed material, but probably we're going to have a lot of
+work to do.
+
++++: In the meanwhile, get changed to normal clothes, go home, and I'll give you guys
+3 day notices on all the relevant electronic media. Sorry.
+
++++: Oh, and happy <a href="https://en.wikipedia.org/wiki/Hanukkah">Hanukkah</a>!
+
+[ Tiffany has already taken off the Queen Padmé outfit and is wearing a T-shirt
+and jeans. ]
+
+Tiffany: the outfit was itchy.
+
+Natalie: mine was too back when I had to wear it for the Star Wars prequels.
+
++++: Anyway, can I invite you to lunch?
+
+Tiffany: Sure! I'm so hungry I could eat a horse!
+
+[ Fluttershy gasps. ]
+
+Tiffany: It's just an expression, Flutteroo! I'm not <b>that</b> crazy.
+
+[ Fluttershy is relieved ; Rainbow Dash extends her tongue towards her.
+
+Tiffany pats both their heads one by one. ]
+
+Natalie: What do you want to eat?
+
+Tiffany: I think I'll have some noodles.
+
+Natalie: No problem! I know a nice general café/restaurant just across the
+road, with a large selection of noodles' dishes. Probably not authentic, but
+good enough for a Westerner.
+
++++: as for me, I think I ate too much at breakfast, so I think I'll have a
+juice or a soda or both, heh.
+
+Tiffany: which ones?
+
+Natalie: I'll just go down the waitors' recommendations heh. Oh -
+and I wanna have some <a href="https://en.wikipedia.org/wiki/Latke">Latkes</a>!
+
+Tiffany: oh, I want some Latkes too…
+
+[
+
+They leave the frame.
+
+Fade to black.
+
+Message on the screen: "To be continued… Be a hero."
+
+]
+
+</s>
+
+<s id="unaccepted_version_commission_pledge" title="Commission Pledge">
+
+[
+
+Note that I am offering up to 3,000 USD for
+a video version of the first <a href="https://www.reddit.com/r/mylittlepony/comments/kaajb9/commission_fluttershy_as_queen_amidala_of_the/">stanza</a>
+which can be either animated or live action, and whose quality I
+am happy with.
+
+]
+
+[
+
+Despite what the screenplay jokes about, Tiffany Alvord is my first choice to play
+the Selinaverse's Padmé, in part because she has much better Internet Read/Write
+web, <a href="http://www.paulgraham.com/web20.html">web 2.0</a> /
+<a href="https://en.wikipedia.org/wiki/Social-media">social media</a>
+presence than Natalie Portman does at present (which she may or may not
+opt to remedy), and which is essential for the future screenplays.
+
+I wouldn't mind George Lucas codirecting or coproducing this series in effect, but
+Portman seems better as a codirector (including as a presumed one).
+
+]
+
+</s>
+
+</s>
+
+<s id="ethical-hacking-version" title="Ethical Hacking Version">
+
+<s id="ethical--peaceful-resolution" title="Peaceful Resolution">
+
+[ The filming set. ]
+
+Natalie: everyone in position…and - action!
+
+[ Worf and Gowron growl. The two closest Jedi knights quickly pull
+two <a href="https://starwars.fandom.com/wiki/DL-44_heavy_blaster_pistol">black blasters</a> and aim them at the Klingons; Obi-Wan and Qui-Gon do the same. ]
+
+The Jedi Knights: hands up!
+
+[ The Klingons comply. ]
+
+Queen Padme: [using her smartphone as a loud speaker.] Dear Klingon sirs…
+what did you intend to do?
+
+Worf: we were hired to kill you and our plan has failed. We thought using
+missiles would be too cowardly.
+
++++: Nevertheless…it is against
+the Klingon ethos to retreat from a battle nonvictorious, so please
+kill us now, and if you wish, torture us beforehand.
+
+[ Worf and Gowron close their eyes. Padmé sighs.]
+
+Padmé: OK… let's suppose for the sake of argumentation that my jedi knights
+and I have killed you (or <a href="https://www.shlomifish.org/humour/Selina-Mandrake/">slain</a>
+you), that you have died (or admitted you were wrong), and were reborn.
+Will this be acceptable?
+
+[ Worf and Gowron smile, then laugh, open their eyes and are
+relieved. ]
+
+Gowron: you were a truly worthy opponent your majesty!
+What should we do next?
+
+Padmé: [uses her smartphone. Shows Darth Vader on the screen]
+Hey uncle Vader! Guess what? We found the assassins and they
+have been slain and reborn. We're going to chat with them and get some
+"intel" out about their clients. But tell aunt Liz to be
+the ceremonial female royal in the Jedi tournament instead
+of me.
+
+Vader: sure thing, Padpad! May the force be with you.
+
+Padmé: [to Worf and Gowron] OK, you seem to be noble and think highly
+of me now. What prompted you to attempt to assassinate me?
+
+Worf: we accumulated debt… wine, song and the wrong kind of women.
+So Gowron and I started a side-business as mercenaries. We
+were offered a large amount of money to assassinate you,
+which we accepted after reading your Wikipedia page,
+which gave us the impression that you were some kind of power,
+fame, and money hungry politician, tyrant, and celebrity.
+
+Padmé: A power, fame, and money hungry politician, tyrant, and celebrity?
+<a href="https://www.youtube.com/watch?v=KNYI3iINXrQ">Why, thank you!</a>
+
+[ They laugh. ]
+
+Padmé: OK, seriously now: I had my share of frustrations from
+that page, which is kind of a "can't see the forest from the trees"
+syndrome, and being a royal doesn't help (and I'll gladly pass the
+crown to someone I can trust, but nobody volunteered so far.)
+
++++: Anyway, Obi-Wan and Qui-Gon will escort you to the palace's
+café where you can find an open wifi, some tablets, a screen,
+and a digital video camera, and can order <a href="https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/#amateur-modelled-commerce">free food</a>.
+
++++: Please give them the identity of your client - both for my good,
+as I have likely been doing something wrong, and for your client's.
+
++++: Once you arrive at the café, I suggest you start reading
+my bio on my personal website and my FAQ.
+
+[ Rainbow Dash and <a href="https://mlp.fandom.com/wiki/Big_McIntosh">Big Mac</a>
+materialise out of thin air carrying large blasters. ]
+
+Rainbow Dash: We'll make sure they do not leave the palace's premises!
+
+Big Mac: ayyup!
+
+Padmé: Oh Lord! Are you trying to scare people with these blasters though?
+
+Gowron: Rainbow, Big Mac: to quote
+<a href="https://memory-alpha.fandom.com/wiki/Kahless_the_Unforgettable">Kahless
+the Unforgettable</a>:
+“Only the most timid of warriors shall attempt to evade an opportunity of
+peaceful enlightenment.”. We have no intention to escape, and surely you can
+outrun… or outfly us.
+
+[ <b>Note:</b> I (= Shlomi Fish) made up this Kahless quote. ]
+
+Rainbow Dash: Fair enough, <a href="https://mlp.fandom.com/wiki/Discord">Discord</a>,
+please take care of these blasters.
+
+[ Discord appears, snaps his fingers and converts Rainbow Dash's and Big Mac's blasters
+into a <a href="https://duckduckgo.com/?q=mirror+dice&amp;atb=v140-1&amp;iax=images&amp;ia=images">Mirror Dice</a>
+-like ornament. ]
+
+Discord: These will look great on my new <a href="https://starwars.fandom.com/wiki/Podracer">podracer</a>.
+
+[ He flies in a podracer not unlike the Star Wars Ep. 1's Anakin Skywalker's podracer
+, with scarves and sunglasses
+similar to <a href="https://en.wikipedia.org/wiki/Thelma_%26_Louise">Thelma &amp; Louise</a>, does a U-turn,
+and leaves the frame. ]
+
+Padmé: Well, I need to go to my room and change. This ceremonial robe is
+itchy. I'm going to need one of you Jedi knights' gentlemen to escort
+me. I have my own blaster here, but still will need a body guard in
+the unlikely case that there are going to be more assassins.
+
+</s>
+
+<s id="at-the-cafe" title="At the café">
+
+[
+
+Worf, Gowron, Obi-Wan, Qui-Gon, Big Mac and Rainbow Dash are at the
+café. Worf and Gowron are reading Padmé’s FAQ on tablets and are laughing
+and discussing it with the others. Worf is wearing glasses.
+
+Padmé approaches them wearing a captioned T-shirt, trousers, and
+a medallion made out of <a href="https://twitter.com/shlomif/status/1347825822414073856">copper
+or similar</a>, escorted by her Jedi knight acting bodyguard.
+
+]
+
+Padmé: [to the bodyguard] Thanks! good luck in the tournament. [He waves and
+Padmé waves back.]
+
+[ He walks away. Padmé sits down. ]
+
+Padmé: hi, sorry it took me so long - I have too much to wear…
+
+Worf: hah! I thought I'll never hear a lady say that!
+
+Padmé: yes, well: I have this offer where people can ask me to buy one
+T-shirt/etc.  for them and one for myself if I like the design in their link.
+And I often do, and I hate to disappoint them, so…
+
+Worf: well, frankly you look both more dashing and more authoritative
+now than in that ridiculous ceremonial robe! Heh…
+
+Gowron: I agree!
+
+Padmé: thank you! On the other hand, most Jedis (both men and women)
+like their uniforms… misery!
+
+Gowron: really? How so?
+
+Qui-Gon: well, they are comfortable, and fairly functional, and have a cool
+retro look… and they sort of convey authority.
+
+Obi-Wan: Chicks love them too!
+
+[They laugh.]
+
+Worf: How many girls do you need?
+
+Obi-Wan: <a href="https://quoteinvestigator.com/2014/07/16/bigamy/">One too many</a>
+obviously!
+
+Qui-Gon: I suggest you <a href="https://en.wikipedia.org/wiki/Fifth_Amendment_to_the_United_States_Constitution">take the fifth</a>!
+
+Obi-Wan: you think I have five girlfriends?
+
+Gowron: Or more!
+
+[ They laugh. ]
+
+Worf: Anyway… back to business: your majesty, your FAQ is incredibly funny.
+
+Padmé: yes, well… it is mostly written seriously. [She seems unhappy.]
+
+Worf: well, its <a href="https://www.goodreads.com/quotes/49156-comedy-is-simply-a-funny-way-of-being-serious">comedic effect may indicate it is more true</a>.
+
+Padmé: yes… anyway, how much money do you owe - and to whom?
+
+Gowron: Well, we jointly owe Robandy of the Orion syndicate 220 thousand
+dollars. He erased our bet deficit at <a href="https://memory-alpha.fandom.com/wiki/Quark%27s_Bar,_Grill,_Gaming_House_and_Holosuite_Arcade">Quark’s</a>
+in exchange for a one time interest.
+
+Padmé: 220,000 USD? Are you kidding? It is pocket change for me. I can
+<a href="https://en.wikipedia.org/wiki/Society_for_Worldwide_Interbank_Financial_Telecommunication">SWIFT</a>
+you 3 millions dollars to erase the bet, and have a fresh start.
+
+Worf: As a loan?
+
+Padmé: Nah… as a present. I dislike keeping track of loans
+<a href="https://shlomifish.livejournal.com/1991.html">in my head</a>.
+These things
+<a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=smg-about-giving-back-money-and-time">tend to bounce back</a>
+anyway (unfortunately for me and my increasing positive bank balance).
+
++++: Please promise that you'll try to avoid getting drunk in the future,
+though. There are fruit juices, there are carbonated beverages, there are
+syrups… teas and infusions… malt beers… they may cloud your judgement a bit,
+but not enough to go into debt.
+
+Gowron: Thank you, your majesty! This is especially noble of you given we
+just tried to kill you. But following <a href="https://www.shlomifish.org/humour/Selina-Mandrake/ongoing-text.html#from-dispeller-to-selina">his return</a>,
+Kahless did quote other fine warriors that "an eye for an eye will make the
+whole world blind".
+
++++: I've emailed you our SWIFT details.
+
+</s>
+
+<s id="padmes-frustrations-with-her-life" title="Padmé’s Frustrations With her Life">
+
+Padmé: I should note that I was less lucky at being unlucky at Quark’s.
+
+Obi-Wan: you mean… you tried to lose money?
+
+Padmé: Yeah… first I tried to make the most atrociously atrocious predictions
+at his <a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=shlomif-story-of-the-stock-exchange-of-the-gods-in-the-Selinaverse">"Stock Exchange of The Profiles"</a> and… most of them materialised.
+
+[ Obi-Wan smiles. ]
+
+Padmé: Then I tried
+<a href="https://memory-alpha.fandom.com/wiki/Dabo">Dabo</a>, a game of pure
+chance as the computer cannot read my mind, am I right? I tried to lose, and…
+I've won.
+
+Gowron: Sounds like you have <a href="https://en.wikipedia.org/wiki/Midas#Golden_Touch">Midas' Golden Touch</a>, your majesty!
+
+Padmé: Yes, only at this rate, I'll turn my firstborns into gold too!
+
+Gowron and Worf: hah hah… [they gently pat Padmé’s shoulders.]
+
+Padmé: Anyway, the other gamblers quickly followed my lead, so Quark
+lost a lot of money that day. I felt sorry for him so I volunteered
+to offset his losses as a gift. Then people on social media and mainstream
+media accused me of being addicted to gambling. I am not, but I
+decided to avoid that just to please them.
+
+Worf: You should not care <b>that much</b> what other people say about you.
+
+Padmé: maybe…
+
+Worf: And why do you care that your positive bank balance is high?
+<a href="https://en.wikipedia.org/wiki/First_World_problem">A First World problem</a>, hah!
+
+Padmé: Well, while I'm not a Christian, I kinda agree that
+<a href="https://en.wikipedia.org/wiki/Matthew_5:3">"blessed are the poor"</a>,
+and that the more money you have, the more people are jealous of you,
+and resent you. And there is <a href="https://www.shlomifish.org/philosophy/culture/case-for-commercial-fan-fiction/#money_cant_buy_you_love">little of value you can do with it</a>.
+
+</s>
+
+<s id="how-the-assassination-was-foiled" title="How the assassination was foiled">
+
+Padmé: I should note that that was the first attempt to assassinate me, and
+your wives turned you in many days ago, and cooperated with the Selinaverse's
+intelligence community.
+
+Gowron: Wow! We thought we could trust them…
+
+Worf: we can… that is why they turned us in.
+
+Padmé: Exactly, after the news broke out that an assassination attempt is
+upcoming, the whole multiverse was abuzz. Luckily, most laymen were not informed
+on the exact identity of the assassins, though there were many speculations.
+
++++: We tightened security, equipped all jedi guards with blasters, and I had to get
+a blaster licence myself. All those hours playing
+<a href="https://en.wikipedia.org/wiki/Duck_Hunt">Duck Hunt</a> with my cousins and friends have paid off… heh.
+
+Gowron: We're sorry, your majesty…
+
+Padmé: no worries… it was actually quite exciting. "War is good for business; peace is good for business." like <a href="https://memory-beta.fandom.com/wiki/Ferengi_Rules_of_Acquisition">The Ferengi Rules of Acquisition</a> go.
+
+Worf: Speaking of guards, Rainbow Dash: can you tell us why <a href="https://mlp.fandom.com/wiki/Twilight_Sparkle">Princess Twilight Sparkle</a>'s castle does not have guards as opposed to Celestia's and Luna's?
+
+[ Twilight Sparkle appears out of thin air. ]
+
+Twilight Sparkle: Hi Commander Worf! Big fan!
+
+Worf: Likewise, your highness!
+
+Padmé: [frustrated] Twillie!
+
+Twilight Sparkle: heh heh… anyway, there has been interest by someponies in becoming guards at my castle, but I'll need to fulfil so many prerequisites: define patrol routes, anti-discrimination hiring policies, wage rates, code of conduct, design uniforms, vacation days and holidays, catering, dental…
+
+Gowron: hah! If I may interrupt you, your highness… even Queen Elizabeth II does not <a href="https://www.manchestereveningnews.co.uk/news/greater-manchester-news/guest-honour-queen-leaves-couple-685253">bring her ridiculous guards to weddings she attends in Manchester</a>. If someone tries to assassinate you, you have been doing something wrong.
+
++++: You can say that volunteers may patrol your castle voluntarily, and request as much money as they wish after giving their reports, and you'll give them as much as you think they deserve.
+
+Twilight Sparkle: I guess you're right. That will simplify matters considerably.
+
+</s>
+
+<s id="padmes-frustrations-with-her-love-life" title="Padmé’s Frustrations With her Love Life">
+
+Padmé: Oh, Worf, Gowron, your wives messaged me saying that although they are emotionally
+still mad at you, they have <a href="https://www.shlomifish.org/humour/Selina-Mandrake/indiv-nodes/the-essence-of-being-a-dispeller.xhtml">rationally forgiven you</a>
+and say they love you and are glad no one got hurt.
+
+Worf: Thank you all! <a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=almost-worthy">We are almost worthy of them</a>.
+
+Gowron: Speaking of significant others: what can you tell us about yours?
+
+Padmé: well, his name is Anakin Skywalker. People rant about him all over the social media: "why is he white?"; "why isn't he Jewish?"; "why isn't he a Naboo citizen?"; "why is he a Terran?". At least nobody suggests that I date a girl, or <a href="https://en.wikipedia.org/wiki/Tank_Girl">a kangaroo</a> or <a href="https://starwars.fandom.com/wiki/Jar_Jar_Binks">Jar Jar Binks</a> or complains about the fact that he is my age, or whatever.
+
++++: The worst part about him is that after we both got our Computer Science B.Sc's, he decided to go to Jedi school, and he's been stuck there for over 2 years now, and he's become so busy that he started taking our relationship for granted.
+
+Gowron: Jedi-training programs can reportedly be completed in under a year [ Qui-Gon nods], and it is a crime to take a relationship with a beautiful warrior such as yourself for granted! You have your needs, for once…
+
+Padmé: Oh, I have my needs all-right! Only my physical needs are not a problem…
+
+[ The ponies say "Ooh!" and then start chuckling. ]
+
+Padmé: Knock it off, you three!
+
+[ The ponies laugh, take out smartphones, and use them to tweet. ]
+
+Padmé: Anyway, the problem is my spiritual needs: talking, going on dates, <a href="https://www.shlomifish.org/philosophy/culture/case-for-commercial-fan-fiction/indiv-nodes/hacking_and_amateur__vs__conformism_and_professional.xhtml">geeking</a> out together.
+
++++: As it stands, he has become incredibly terse even in our online messaging conversations.
+
+Worf: Your majesty, would you like to make that part off-the-record?
+
+Padmé: off-the-record? <a href="https://github.com/shlomif/supporting-older-perl5-releases">Fuck that!</a> I want the whole world and their sister-in-law to know that while I ostensibly have a boyfriend, and I still love him, he is not giving me sufficient attention.
+
+Gowron: [cheers for Padmé] your Majesty, sounds like you need to <a href="https://www.youtube.com/watch?v=QUQsqBqxoR4">honestly</a> confront him, and give him an ultimatum.
+
+Padmé: Perhaps…
+
+</s>
+
+<s id="About-Worf-and-Gowron" title="About Worf and Gowron">
+
+Padmé: Well, let's talk about you. Mr. Worf, you had an illustrious career as a
+UFP Star Fleet officer while Mr. Gowron was a <a href="https://memory-alpha.fandom.com/wiki/Chancellor_of_the_Klingon_High_Council">Chancellor of the Klingon High Council</a>. Now you are family men, and also <a href="https://en.wikipedia.org/wiki/Mixed_martial_arts">Mixed martial arts (MMA)</a> fighters who together or individually hold several galactical records.
+
+Worf: yes, do note that it is a step <a href="https://www.youtube.com/watch?v=oZoCmeXgE9U">sideways</a>, because we just <a href="https://www.youtube.com/watch?v=mpv8prvZufk">needed a change</a>. We might return or wage war in altogether different ways.
+
+Padmé: sure, even my grandparents, the king of Naboo, and his wife (who is a Jewess by blood, and the reason I am Jewish too) retired about 29 years ago.
+
++++: anyway, can you give any MMA fighting tips?
+
+Gowron: Well, Worf and I are still figuring out the rules… <a href="https://www.shlomifish.org/philosophy/culture/case-for-commercial-fan-fiction/indiv-nodes/guidelines_as_dogma.xhtml">the guidelines</a>! … as we run into them, heh.
+
++++: But here is some advice: try to <a href="https://twitter.com/shlomif/status/1394277859561283586">know (= be educated/entertained)</a> your opponent. Before the fight, we invite them for a drink and talk about stuff we both like: video shows, comics, films, literature, software dev (a bottomless pit, I admit), internet memes, songs, etc. We want to get them to like us and vice versa, and develop a general fuzzy model of their personality.
+
++++: Muhammad Ali, who was a great warrior in his day reportedly said <a href="http://www.quotationspage.com/quote/413.html">"My toughest fight was with my first wife."</a>,
+and we suspect it was because he ended up taking her too much for granted.
+
++++: Anyway, if they seem certain they will win, we cancel the fight, because it'd be too risky. If they are convinced they will lose, we try to tell them there is still a chance, however small, that <a href="https://www.shlomifish.org/humour/Summerschool-at-the-NSA/indiv-nodes/summer_glau_presents__the_talk__amateur_fighters.xhtml">they will win</a>, and they actually do on rare ocassions.
+
++++: ( If they think either of us may win, then it's all good, hah! )
+
++++: We then watch some of their latest martial arts fights - often with them overlooking.
+
+</s>
+
+<s id="Padme-inviting-the-assassins-wives" title="Inviting the Assassins' Wives">
+
+Padmé: I should note that I invited your wives, to help me beta test a new
+clothes selector product by me giving them clothes.
+
+Worf: yes, they complain they don't have enough to wear.
+
+Padmé: Yes, it is really <a href="https://en.wikipedia.org/wiki/Sabrina_the_Teenage_Witch_(1996_TV_series)#Opening_sequence">Sabrina-style</a>. I was offered early access and accepted, and ended up finding a few bugs. They were fixed.
+
+Worf: Heh, nice. Were you paid for that?
+
+Padmé: Well… if I pay, commentators complain; if I get paid, commentators complain; if it's a free gift, they also complain.
+
+Twilight Sparkle: <a href="http://shlomifishswiki.branchable.com/Never_Try_to_Please_Everyone/">You can never please everypony</a>!
+
+Big Mac: ayyup!
+
+Gowron: Story of my life… of everypony's, heh.
+
+</s>
+
+<s id="Naboo--going-to-eat" title="Going to eat">
+
+Worf: Hey, I'm getting hungry.
+
+[ Everyone else: "yeah, let's eat." ]
+
+Worf: Given her majesty was the victim, she gets to choose the restaurant.
+
+Padmé: Well, I don't think <a href="https://mlp.fandom.com/wiki/Party_Pooped">you'll like our non-Authentic Klingon food</a>,
+but how about non-Authentic Pizza?
+<a href="https://twitter.com/search?q=%40TiffanyAlvord%20pizza&amp;src=typed_query">The
+actress who plays me is obsessed with Pizza</a>.
+
+Worf: Sure, we like Pizza too.
+
+Padmé: Then I know many good Pizza outlets. One of them is a walk away. And we can use the exercise.
+
+Padmé: Do note that as far as I, and Naboo's law, are concerned, everything I
+said and was recorded here is
+<a href="https://en.wikipedia.org/wiki/Creative_Commons_license#Zero_/_public_domain">CC-zero / public domain</a>.
+We'll send you two a copy of the recording.
+
+Worf: Thank you!
+
+Padmé: yes, eat, drink, and be happy for tomorrow I need to be the ceremonial female in the female jedis' tournament. The Selinaverse's security community recommended they also be equipped with blasters.
+
+Obi-Wan: hawt!
+
+Padmé: yeah - well <a href="https://en.wikipedia.org/w/index.php?title=The_pen_is_mightier_than_the_sword&amp;oldid=1023977437">the pen is mightier than the bow</a>. I probably have been doing some things wrong.
+
++++: and Obi-Wan, you probably noticed them <a href="https://www.shlomifish.org/humour/Selina-Mandrake/ongoing-text.html#kate-s-assignment">bitching</a> about the whole situation.
+
+Obi-Wan: I did, yes. Wow! And I thought my (one and only, hah!) girlfriend was bad. Do note, however that I kindof am attracted to the bitch type. One of my many kinks. While my friends are attracted to everything that moves, I see no reason to limit myself ( <a href="https://www.amazon.com/Best-Things-Anybody-Ever-Said/dp/0743235797/ref=sr_1_1">Reference</a> ).
+
+</s>
+
+<s id="hacky-ending" title="A Hacky Ending">
+
+[
+
+Padmé is watching a public video message from Worf and Gowron on her
+<a href="https://en.wikipedia.org/wiki/Linux">Desktop Linux</a>
+system.
+
+]
+
+Worf: Greetings Queen Padmé Amidala of the Naboo! It turns out failing to assassinate you has had a much better financial outcome than if we'd have succeeded. We got so much publicity, and made a lot of money from relicensing pledges, merchandise, selling higher quality media, and interviews / collabs ( <a href="https://www.shlomifish.org/philosophy/computers/web/models-for-commerce/">Reference</a> ), and the publicity has been good as well.
+
++++: Anyway, we respected your wish to help sustain your bank balance, but we donated to some charities that you endorse. And we always can be reached - whether online or offline - either by you, or anybody else.
+
++++: <a href="https://www.youtube.com/watch?v=eZQyVUTcpM4">Keep The Faith!</a>
+
+[ The video completes playing. Padmé "likes" it and posts a brief "Thank you! ♥!" reply. ]
+
+Padmé: computer: voice bank balance offset since before monetary gift to Worf and Gowron.
+
+Computer: Offset is a positive 12.7 million U.S. Dollars
+
+Padmé: rats!
+
+Jadzia Dax's Voice: [ <b>Note:</b> Jadzia is Worf's wife in the Selinaverse, and was invited by Padmé to help offset her wardrobe ] Hey, Padmé, which dress should I take from these two?
+
+[ Padmé heads over. ]
+
+Padmé: "Porque no los dos?" Take them both… I still love both, but will gladly give both away precisely because of that.
+
+</s>
+
+</s>
+
+<s id="credits" title="Image Credits">
+
+[
+
+*
+<a href="https://www.shlomifish.org/meta/FAQ/#evilphish-emblem">EvilPHish emblem by UserFriendly.org</a>
+
+*
+<a href="https://en.wikipedia.org/wiki/Christina_Grimmie#/media/File:Christina_Grimmie_in_November_2014.jpg">Photo of Christina Grimmie from the Wikipedia by Justin Higuchi</a>
+
+*
+<a href="https://www.flickr.com/photos/7927684@N03/6306095903">Tacos photo by jeffreyw</a>
+
+*
+<a href="https://www.youtube.com/watch?v=QcIy9NiNbmo">Bad Blood videoclip by Taylor Swift</a>
+
+]
+
+</s>
+
+</s>
+
+</s>

@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:fic="http://web-cpan.berlios.de/modules/XML-Grammar-Fortune/fiction-xml-0.2/" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="index" xml:lang="en" version="5.0">
+  <db:info>
+    <db:title>The Pope Died on Sunday</db:title>
+  </db:info>
+  <section xml:id="copyright" xml:lang="en">
+    <db:info>
+      <db:title>Copyright</db:title>
+    </db:info>
+    <db:para>This is a fictional story that is being written by
+<db:link xlink:href="http://www.shlomifish.org/">Shlomi Fish</db:link>, and is original
+artwork.
+</db:para>
+    <db:para>It is made available under the
+<db:link xlink:href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+Attribution-Share Alike 3.0 Unported Licence (CC-by-sa)</db:link>(or at your option - any later version).
+</db:para>
+    <db:para>See <db:link xlink:href="http://www.shlomifish.org/meta/copyrights/">Shlomi Fish’s
+Copyright Terms Page</db:link> for how to comply with this licence.
+</db:para>
+  </section>
+  <section xml:id="chapter-monday">
+    <db:info>
+      <db:title>Part 1: Monday</db:title>
+    </db:info>
+    <db:para>The pope died on Sunday.
+</db:para>
+    <db:para>It didn't bother Rachel Southern too much. Even though she was half-Catholic,
+if you asked her if God exists, she would say: “Even if God existed,
+he would not expect us to believe in him”. And of course she didn't buy
+an artificial division of him into three parts, even if she believed he
+exists. And so she went on her way to work on Monday, on what seemed like
+the start of a perfectly typical week in the life of a female American
+bachelor in her twenties.
+</db:para>
+    <db:para>Rachel did not admit it a lot, but Monday was her favourite day of the
+week - her most hated one being Wednesday. It was not that she did not
+like the weekend. However, she loved her work enough to appreciate the
+beginning of the workdays. She had also liked Monday when she had
+studied in college, only now she loved it more, because she preferred
+working over studying.
+</db:para>
+    <db:para>A graphic artist such as Rachel, could not afford to lose a
+single moment from that precious day which is known as Monday.
+Maneuvering between four different software applications (Adobe Illustrator,
+Adobe Photoshop, Corel-Draw and GIMP), on what was in her own
+words “that excuse for an operating system also known as Windows 98”,
+required a large amount of patience and tolerance. Rachel had a severe
+lack of these qualities, but she actually loved doing graphics work.
+However, at her home, she had many T-shirts with that
+perhaps-Penguin-perhaps-Duck, to signify her hope for better days.
+</db:para>
+    <db:para>Anyway, that day, Rachel was able to catch an early bus, and reached her
+workplace some time before her work started, at a quarter to nine. She lay
+down her backpack, and turned on the computer. She checked her E-mail, went
+over her task list, set up the daily schedule, and then decided to prepare
+some fruit tea to start the day on the right foot. Therefore, she walked to
+the kitchen. A few of her colleagues were at the kitchen discussing what
+seemed like the significant event that took place the day before.
+</db:para>
+    <db:para>“Well, in my opinion, Cardinal Averus has the best chances of being voted
+as the new pope.” said Adam Grinsky, who was another graphic artist who
+worked in the company.
+</db:para>
+    <db:para>“I’m not sure about it.” said Eva Hallworth, who was an accountant.
+“When the late Pope was elected, most people thought his chances of
+getting elected were minimal.”
+</db:para>
+    <db:para>Rachel went to prepare some Almond tea, and activated the electric
+kettle, even though she was almost certain the water inside was warm
+enough.
+</db:para>
+    <db:para>“Ah, Rachel, ”, Adam told her, “who do you think will be elected as
+the new Pope?”
+</db:para>
+    <db:para>“In my opinion, the next pope is a Poisson random variable, with a
+mean of 0.7, where 0 is Cardinal Averus, 1 is…”, said Rachel.
+</db:para>
+    <db:para>“Are you ever going to stop stressing the fact that you are a
+Computer Science graduate?”, asked Adam.
+</db:para>
+    <db:para>“The time I will stop that is an exponential random variable with
+a mean of 5 years.” Rachel told him.
+</db:para>
+    <db:para>“What does it mean?” asked Adam.
+</db:para>
+    <db:para>“It means that no matter how much time has passed, the chance I will
+quit within a given time frame of a certain length always remains
+constant.”
+</db:para>
+    <db:para>“That doesn't sound good.” said Eva.
+</db:para>
+    <db:para>“It does not.” said Rachel, as she lifted her cup of tea. “It really
+really doesn't.”
+</db:para>
+    <db:para>Rachel went to her computer, and started to work on it. She had a
+picture she had to finish in Illustrator, but at the same time also
+read her E-mail.
+</db:para>
+    <db:para>It didn’t take too long, and Alex Rodman, a young man, who decided to
+work before starting to learn in the University (“If at all” as he
+said). He was one of the system administration people, and Rachel found
+it convenient to delegate some tasks for him to do.
+</db:para>
+    <db:para>"I finished writing the script you asked me to write for you." Alex told her.
+</db:para>
+    <db:para>"Alex, " answered Rachel, while not lifting her eyes from the computer,
+"You are incredibly sweet."
+</db:para>
+    <db:para>“Ah, if only my dates would say that!”
+</db:para>
+    <db:para>“They are eventually going to tell you that - believe me. Anyway, how long
+is the script?”
+</db:para>
+    <db:para>“I don’t know. 100, 200 lines.”
+</db:para>
+    <db:para>“And how many greps, sorts, maps and joins have you used?”
+</db:para>
+    <db:para>“Too many, heh.”
+</db:para>
+    <db:para>“Well, whatever. Thanks anyway. Anyway, I hated Lisp when I studied in
+college, and, in my opinion,  Perl inherited a few of its features
+that I like the least.”
+</db:para>
+    <db:para>“Then you won’t be happy to learn that I used eval to compile some code
+at run-time.”
+</db:para>
+    <db:para>“Oh no!” Rachel said, while putting her face in her palms, “Why did
+you have to do such a thing? I think your destiny is to be a Lisp or
+Scheme programmer.”
+</db:para>
+    <db:para>”Do you want me to write the program in a more C-like manner?”
+</db:para>
+    <db:para>“No, never mind. ‘If it is working - don’t touch’. I don’t know why
+Larry Wall decided that in Perl, it should be possible to write code
+that is similar to every other language. I personally would be happy
+if it was just C with unlimited strings that can contain every character…”
+</db:para>
+    <db:para>“Regular expressions.” said Alex.
+</db:para>
+    <db:para>“Yes, arbitrary sized arrays, and all the other sane stuff.”
+</db:para>
+    <db:para>“I happen to think it is nifty that you can do Lambda Calculus in Perl.”
+</db:para>
+    <db:para>“For your information, one can also do it in C.”
+</db:para>
+    <db:para>“Really, how?”
+</db:para>
+    <db:para>“Something to do with a stack — I do not remember the exact details
+because I did not focus on it too much, and it was the first thing
+that I forgot after I took the course. However, one of my co-students
+used it in C.”
+</db:para>
+    <db:para>“Really, how was his code?”
+</db:para>
+    <db:para>“The Lambda Calculus was beautiful.”
+</db:para>
+    <db:para>“And how was it as a C program?”
+</db:para>
+    <db:para>“Completely illegible. Eventually, I convinced him to convert it
+to normal C code. Anyway, I think I should start working a little
+on my work work. I will already try to digest the script you wrote,
+on my own.”
+</db:para>
+    <db:para>“OK, farewell!” said Alex.
+</db:para>
+    <db:para>“Bye!” Rachel said and went back to work.
+</db:para>
+    <db:para>Rachel was able to finish the drawing until 11:00, and from then until
+lunch, she walked around trying to receive feedback from her co-workers.
+It was not easy, because each one had an opinion that something completely
+different there needs to be changed. Rachel organised a mini-conference
+to discuss what should be done in order to correct the drawing, and as
+a result, it seemed like the lack-of-consensus only became stronger.
+But then came the time for lunch.
+</db:para>
+    <db:para>Sometimes Rachel was sorry that she did not work as a programmer, where
+the fellow programmers were happy that the code compiled and worked at all.
+“Oh well,” she told herself, “even if I completely get tired of doing
+graphical work, I can always find work as a programmer. At least now.”
+She used to look at the job adverts in the newspaper, and most of them
+were not for graphic artists.
+</db:para>
+    <db:para>That day, Rachel decided to go for lunch with Alex, Betty Pierce, who was
+also a graphic artist, as well as Angela Cronman, who was a secretary in
+the company. They decided to go to a nearby Chinese restaurant, which not
+only was cheap, but also served pretty good food.
+</db:para>
+    <db:para>Rachel insisted on eating with chopsticks, and she also noticed that Alex
+used to do so as well. The two other women ate using a fork and a knife.
+</db:para>
+    <db:para>“I got a chance to look at your script.” Rachel told Alex as the awaited
+for the arrival of the main course.
+</db:para>
+    <db:para>“And-?” Alex said expectedly.
+</db:para>
+    <db:para>“I have seen easier to understand programs in Scheme that used all the bad
+things you used: eval, mappings, filters, accumulators, etc.”
+</db:para>
+    <db:para>“I see. Perl is not supposed to be easier to understand than Scheme.”
+</db:para>
+    <db:para>“That’s right. But when I write something in Perl or in a different programming
+language, I try to think of the people who read it. Thus, I very rarely call
+my variables ‘a’, ‘b’, ‘i’ or ‘j’, and even if they are one or two-letter
+variables, I add a note that tells me what the letter signifies. I am lucky
+that, in your case, I knew what the script is supposed to do, or else I
+completely won’t have understood it.”
+</db:para>
+    <db:para>“I don’t suppose you gain such practises when you learn Computer Science in
+college?” Alex told her.
+</db:para>
+    <db:para>“Unfortunately, the purpose of Computer Science education in college is
+to teach you completely different things. Like how to implement a
+self-balancing tree, or how to write a program that calculates a product
+of two numbers in Lambda calculus, or how to write a compiler. Or a thousand
+different things that in 90% of the cases you won’t have to use. And in the
+remaining 10% cases, I am sure that Electrical Engineers, or Physicists or
+people without any academic qualification could be equally
+as successful.”
+</db:para>
+    <db:para>“However, not to write a program in a readable, comprehensible, extensible,
+and cross-platform manner.”, said Alex.
+</db:para>
+    <db:para>“Yes, true. I don't know if I helped or hindered my partner for ‘Intro to
+Computer Science’, which was our introductory course in Penn State. Every
+idea he had on how to write a program would work, but was just unacceptable
+from the point-of-view of an experienced programmer. I have no idea how
+people come to college before they have got their feet wet with programming
+themselves.”
+</db:para>
+    <db:para>“Rachel dearest, ” Betty said, “you told us enough how your brother and you
+were serious hackers in your time.”
+</db:para>
+    <db:para>“If you call people who programmed with Basic and with 16-bit C++ — without
+SQL databases, without an operating system with proper multitasking, with
+no extensive knowledge of mathematics, and with array and structs as
+the only data structures — “hackers”, then yes — we did it alright. And that
+was still very impressive for what Bill Gates did in his youth. But in these
+chaotic Linux times, the experiences of my brother and me in our youth have
+been depreciated for a long time, like they say.”
+</db:para>
+    <db:para>“And was that the reason why you became a graphics artist?”
+</db:para>
+    <db:para>“No, I just love graphics and drawing in general, so I got this job in
+order to delay the inevitable.” Rachel said.
+</db:para>
+    <db:para>“Which is working in Silicon Valley?”
+</db:para>
+    <db:para>“Something like that.” Rachel said and went to eat her food which had finally
+arrived.
+</db:para>
+    <db:para>After lunch, Rachel played one game of Freecell, and worked on a new
+artwork — this time in the GIMP. After everyone returned from lunch, she
+set up another mini-conference and this time wrote down the comments of
+everyone and divided them based on what exactly they didn't like in the
+drawing. Then she brought them to discuss every issue separately and
+eventually a wide agreement prevailed about what needs to be changed.
+So she went to do that.
+</db:para>
+    <db:para>When Rachel finished working on the changes, it was about the time when
+she used to leave for home, and she decided to postpone handing out the final
+product to her superior, into the day after that. She turned off her computer,
+and went out of the complex of the company in which she worked.
+</db:para>
+    <db:para>When she arrived at the building where she lived, and climbed up the stairs
+to her apartment, she saw her neighbour, Cliff, talking with a different man.
+She liked Cliff and therefore stopped to see what it was all about.
+</db:para>
+    <db:para>“Rachel,” Cliff called as she approached. “Please meet Greg, my friend
+from university, who relocated to Milwaukee for a new job, recently.”
+</db:para>
+    <db:para>“Pleasure to meet you, Greg.” Rachel said and took a look at him. Greg had
+straight black hair, brown eyes, and very interesting face. Quite handsome,
+at least in Rachel’s opinion.
+</db:para>
+    <db:para>“My name is Rachel Southern, I live upstairs in apartment 6B. I studied
+Comp. Sci. in college, but I work as a graphic artist.”
+</db:para>
+    <db:para>“Very nice to meet you, Miss Southern.”
+</db:para>
+    <db:para>“‘Rachel’. Please call me ‘Rachel’. ” she said and added, “what do you do
+for a living, Greg?”
+</db:para>
+    <db:para>“I’m a civil engineer. There are not too many like me, but there’s only
+one exactly like me.”
+</db:para>
+    <db:para>“And where are you going to work?”
+</db:para>
+    <db:para>“I’m going to work at the Milwaukee municipality as a water infrastructure
+engineer.”
+</db:para>
+    <db:para>“Sounds interesting.” Rachel said, even though it didn’t sound too interesting
+to her and added “Listen, if you are not busy tomorrow’s night, what do you
+say of the two of us going out on a date?” Rachel could not believe she
+was able to utter it in one sentence.
+</db:para>
+    <db:para>Greg thought of it for a moment. “Sure. I know the address because I got here
+on my own. So see you tomorrow.”
+</db:para>
+    <db:para>“O.B.K.B. . See you both.” said Rachel, but as she went to go, she noticed
+that in Greg’s pocket there was something that looked like a Palm Pilot.
+</db:para>
+    <db:para>“Is this a Palm by any chance?” she said as she pointed at his pocket.
+</db:para>
+    <db:para>“Yes, why?”
+</db:para>
+    <db:para>“Aren’t you going to write the date there by any chance?”
+</db:para>
+    <db:para>“Nah, I don’t forget things like that.”
+</db:para>
+    <db:para>“Fair enough.” Rachel said, “See you Cliff and Greg — I’ll see you tomorrow.”
+</db:para>
+    <db:para>She went up the stairs.
+</db:para>
+    <db:para>That evening, Rachel connected to the Internet, and chatted on IRC. She met
+there one of her electronic friends, who called herself “Cruella”. They got
+into a conversation of what happened to Rachel that day.
+</db:para>
+    <db:para>“And then when I returned home, I met a guy.” Rachel said in the chat.
+</db:para>
+    <db:para>“Really? And what happened?”
+</db:para>
+    <db:para>“I asked him to go on a date with me tomorrow.”
+</db:para>
+    <db:para>“You rule, girlfriend! In any case, what does he do?”
+</db:para>
+    <db:para>“Water infrastructure engineer, from what I understood.”
+</db:para>
+    <db:para>“Boooooooooring. And how does he look?”
+</db:para>
+    <db:para>“Pretty good, in my opinion.”
+</db:para>
+    <db:para>“Excellent.”
+</db:para>
+    <db:para>“Anyway, one thing bothers me — he had a Palm Pilot, but he did not use
+it to take a note of the date’s time.”
+</db:para>
+    <db:para>“And why is it wrong?”
+</db:para>
+    <db:para>“I don’t know, maybe he'll forget. Or he is going to become too dependent on
+that device by then.”
+</db:para>
+    <db:para>“Get a life!”
+</db:para>
+    <db:para>“That’s exactly what I’m doing. :-|====&gt;”
+</db:para>
+  </section>
+  <section xml:id="chapter-tuesday">
+    <db:info>
+      <db:title>Part 2: Tuesday</db:title>
+    </db:info>
+    <db:para>When Rachel took the bus that Tuesday’s morning, she got into an
+interesting conversation with a Black man, who, while wearing simple clothing,
+was quite rich, based on what he told her.
+</db:para>
+    <db:para>“Then why are you still taking buses?” Rachel asked.
+</db:para>
+    <db:para>“First of all, I feel a little loyalty for the buses which I used back when
+I was poor. And more importantly, I hate the concept of having a private car.
+It’s simply too much trouble.”
+</db:para>
+    <db:para>“Amen.” added Rachel, who did not intend on purchasing a private car at least
+until she had children. “Anyway, ” she added “You lived in the
+poor neighbourhoods during your youth, and worked doing hard jobs with very
+low wage — and now you are a millionaire and employ some other people. How
+did you do that?”
+</db:para>
+    <db:para>The Black man, that asked Rachel to address him as “Mr. Neimann” said “The
+turning point in my life came when I understood what is the answer to the
+question.”
+</db:para>
+    <db:para>“Which question?”
+</db:para>
+    <db:para>“The question.”
+</db:para>
+    <db:para>“The question of life, the universe and everything?” enquired Rachel.
+</db:para>
+    <db:para>“Yes.”
+</db:para>
+    <db:para>“And what is this question?”
+</db:para>
+    <db:para>“Who is the most powerful man on earth?”
+</db:para>
+    <db:para>“Who is the most powerful man on earth?”
+</db:para>
+    <db:para>“Indeed.”
+</db:para>
+    <db:para>“Don’t know. Bill Gates, the president of the United States, whoever will be
+the new pope. Linus Torvalds.”
+</db:para>
+    <db:para>“No, no, no and no.”
+</db:para>
+    <db:para>“Then who?”
+</db:para>
+    <db:para>“You’ll need to find it on your own. I need to get off the bus here. Farewell,
+Miss Southern.”
+</db:para>
+    <db:para>“Bye” Rachel replied and then Mr. Neimann went off the bus. Rachel remained
+sitting in her chair for a while thinking, and then the bus reached her station.
+She went off the bus.
+</db:para>
+    <db:para>Rachel walked down the street and noticed she was walking behind a man who was
+smoking. All the cigarette smoke reached her, which bothered her a great deal.
+As a result, she started to run, went passed the man and went back to her
+normal walking speed. “It's good that I never wear high heels” she thought
+to herself.
+</db:para>
+    <db:para>She reached her workplace and again and again placed her backpack next to her
+computer, and logged into the computer. She sent what she prepared a day
+earlier to her superior by E-mail, and then went to his table.
+</db:para>
+    <db:para>“Not bad…” he told her, “just kidding, it’s very nice.” and then he gave her
+a few new tasks to do. Rachel returned to her desk.
+</db:para>
+    <db:para>Rachel always wondered if the demand for new graphical works will ever
+reach saturation, and one no longer will need new graphics. Or perhaps her
+tasks were like headers of hydra, that whenever one cuts one down, three
+spring in its place. Whenever a customer was happy from a certain logo, he
+wanted to integrate its versions in his letter paper, on the company's
+homepage, on the business cards of the company, in the leaflets of the
+products, and so forth. This required more and more work.
+</db:para>
+    <db:para>Rachel was happy that she'll always have more to do, but always wanted some
+time-out in her life from the time she finished a task until she started a new
+one. It was always hard to start a new task after an old task was finished,
+because the feeling of success and achievement used to intoxicate her.
+</db:para>
+    <db:para>Aside from all that, Rachel’s work day was uneventful. Lunch passed without
+a lot of conversation, and Rachel felt that she achieved quite a lot that day.
+She left work in the usual hour, when the tasks she had to perform were
+more or less half-done. She took the bus home, and arrived early enough to
+be able to ride her bicycle, what she really enjoyed and looked forward to.
+</db:para>
+    <db:para>On the staircase, Rachel met Cliff once again, who was accompanied by a man
+who looked in his 30s or 40s with a moustache and a beard, who seemed familiar
+to her from somewhere.
+</db:para>
+    <db:para>“Hi.” Rachel said.
+</db:para>
+    <db:para>“Hi, ” said Cliff, “Meet Rudolph Eisenberg. If the name is not familiar to
+you, then you should know he is a German fashion designer, and don’t tell it
+to his face, but he is also world-recognised.”
+</db:para>
+    <db:para>“Ah, yes, I heard the name sometime.”
+</db:para>
+    <db:para>“Actually, I am an Architect by qualification, but I discovered after a while
+that my personal insanity was more suitable for fashion. It happened when I
+helped my friend, who is a full-time fashion designer to design his collection,
+and he insisted on putting my name next to his. And the fact is that there are
+enough people of a similar taste to mine that they buy my clothes, which
+confirms my suspicion that I am not the only insane person in the world.”
+</db:para>
+    <db:para>“Amen to that.” said Rachel.
+</db:para>
+    <db:para>“Beside all that, ” added Cliff, “he is a genius and refuses to admit it.”
+</db:para>
+    <db:para>“I am not a genius and I do not refuse to admit it.”
+</db:para>
+    <db:para>“Anyway, ” said Rachel “what are you doing in this building?”
+</db:para>
+    <db:para>“Mr. Carter here helps me set up something which is actually a play that will
+show off my clothes. Sort of a fashion-play.”
+</db:para>
+    <db:para>“Great idea!” said Rachel. She always thought that fashion shows were
+incredibly boring.
+</db:para>
+    <db:para>“If it’s a good idea, it’s a different question. But it’s definitely such
+a crazy and unconventional idea that I am sure I came up with it on my own.
+Believe it or not, but it came to me in a dream where instead of walking on
+the runway, the models started talking to each other and tell experiences
+from their recent past. I woke up from the dream, and after some mental
+processing, came up with the idea in question.
+</db:para>
+    <db:para>It may also work well logistically, because a lot of the models nowadays
+want to be actors. Or vice versa. As a result, actors who want to be
+models, or models who want to be actors, or those who wants to be either,
+or both — will all find a place in such a show. Perfect.”
+</db:para>
+    <db:para>“Yes, it may definitely work. Where do you intend this show to take place?”
+</db:para>
+    <db:para>“Right here!”, answered Eisenberg. “Meaning, in the nearby park. I want to
+do it in one of the suburbs to give it a lower profile. This is just a kind
+of a rehearsal (although in front of the audience) of the play before a
+performance with a higher profile in New-York.”
+</db:para>
+    <db:para>“Interesting…” said Rachel. “So when will it take place?”
+</db:para>
+    <db:para>“Sunday night.”
+</db:para>
+    <db:para>“Hmmm… very well, I think I’ll go biking, and I also have a date later on,
+with a friend of Cliff here.”
+</db:para>
+    <db:para>“Oh, you did not forget!” Cliff exclaimed.
+</db:para>
+    <db:para>“No…” Rachel said and blushed.
+</db:para>
+    <db:para>After Rachel went to ride the bicycle that day, she went to get ready for
+the date. People in the vicinity of Rachel (men and women alike) described
+Rachel as “cute”, “gorgeous”, “lovely” etc.: “you look great!”, “you look
+wonderful!”, etc. Rachel did not believe she was beautiful, but despite all
+that, spent a lot of time in bathing, brushing, putting make up, dressing,
+and accessorising in order to make herself look more tolerable.
+</db:para>
+    <db:para>When she was in the final stages of getting ready, there was a ring at the
+door. It was Greg, and he was ready for the date. “Wow!” he said, “you look
+really good”. Rachel sighed in her heart. “Thank you, you also look nice”
+and thought he may think the same. “Please, come in.” she said and Greg
+entered the apartment.
+</db:para>
+    <db:para>Greg noticed that Rachel was wearing snickers. “Aren't you going to wear
+high heels?” he asked.
+</db:para>
+    <db:para>“I never wear heals. They make running, walking, biking, exercising and
+all sorts of activities that I may wish to do sometime much harder. God
+made women shorter than men, and it’s time women will accept this fact.
+And besides — it’s part of an encompassing philosophy of mine.”
+</db:para>
+    <db:para>“Which philosophy?”
+</db:para>
+    <db:para>“I don’t wear heels, am not afraid of bugs and mice, my ears are not pierced,
+and I am a qualified hacker (not “cracker” please) of computers. I don’t have
+a good technical sense, but I invite technicians to fix things in my house
+from the money that I earn. Long live female liberation!!”
+</db:para>
+    <db:para>“Amazing.” Greg said and clapped his hands, “by the way, I know how to
+fix mechanical things and stuff like that — but I am almost clueless around
+computers.”
+</db:para>
+    <db:para>“Then we may be a perfect couple.” Rachel said, “anyway, I still have not
+finished getting ready, so in the meanwhile you can sit on the couch and
+make yourself at home.”
+</db:para>
+    <db:para>“Thanks. I’ll wait. I understand you still believe a woman should
+make herself beautiful.”
+</db:para>
+    <db:para>“Yes. I don’t find that female quality irrational at all.” and she returned
+to the bathroom.
+</db:para>
+    <db:para>A while afterwards, as Rachel was just about to put earrings on her ears
+the door bell rang again. “Someone else?” Rachel thought and yelled “I’ll
+get it.”
+</db:para>
+    <db:para>Rachel went to open the door as she was still placing one of the clips of
+the earrings on her ear. After she opened the door, she saw Katie Adams,
+who was her best friend, at least since Rachel moved to Milwaukee. Katie
+was wearing a large smile on her lips, that Rachel found a bit fake.
+</db:para>
+    <db:para>“Hi,” Katie said, “you look wonderful.”
+</db:para>
+    <db:para>“Thank you.” Rachel said, “you too.” even though Katie was dressed far more
+plainly.
+</db:para>
+    <db:para>“Listen,” she went on, “you're a little…”.
+</db:para>
+    <db:para>“Yes, apparently, you have a meeting today, I should have known that… it’s
+not that every day you look so great…”
+</db:para>
+    <db:para>“Yes, you are right” Rachel said — she pretended that what Katie said did not
+insult her.
+</db:para>
+    <db:para>“It’s just that I have some small problem, and wanted to consult you.”
+</db:para>
+    <db:para>“OK, what is exactly the problem?”
+</db:para>
+    <db:para>“It’s about my boyfriend…”
+</db:para>
+    <db:para>“Who? Roger?” Rachel had a hard time remembering the names of Katie’s friends,
+but she was with Roger for a long time, and kept talking about him endlessly.
+</db:para>
+    <db:para>“Yes, Roger.” Katie said, and widened her smile.
+</db:para>
+    <db:para>“What about him?” Rachel asked. She felt irritated, but hoped she didn’t
+externalise it.
+</db:para>
+    <db:para>“Emmm… yes Roger… it’s just that he…”
+</db:para>
+    <db:para>“Yes?” asked Rachel.
+</db:para>
+    <db:para>“He dumped me!” Katie cried and burst into tears.
+</db:para>
+    <db:para>Rachel did not consider herself a sane person. But she thought that if all
+the people were like her friend, she would be considered the sanest person
+in the world. So such a behaviour was familiar it. Anyway, she brought Katie
+closer to her so she can place her head on Rachel’s shoulder.
+</db:para>
+    <db:para>“It was so sudden… and unexpected… and I thought everything was going well
+for us. Do you know when we had sex the last time?”
+</db:para>
+    <db:para>“No, ” Rachel told her, “and it's more than what I need to know. In any case,
+it is OK — such things happen sometimes.”
+</db:para>
+    <db:para>“Easy for you to say. You were never dumped by any of your boyfriends.”
+</db:para>
+    <db:para>“As if!” Rachel thought in her heart.
+</db:para>
+    <db:para>“What is going on here?”, Greg’s voice came from the direction of the
+living room, as he went towards the door.
+</db:para>
+    <db:para>“Nothing, ” said Rachel, “It's just that Katie here…” and then she noticed
+that Katie looked in the direction of Greg and that her facial expression
+changed gradually.
+</db:para>
+    <db:para>“Yes, I just broke up from my boyfriend today” Katie said joyfully as she
+went around Rachel in order to shake Greg’s hand, It’s nothing really, I feel
+fine.”. Rachel thought, “What the hell?” and then saw Katie saying “Oh, allow
+me to introduce myself - Katie Adams. Call me Katie.” and she shook Greg’s
+hand with both her hands.
+</db:para>
+    <db:para>“Greg.” he said with a facial expression which Rachel interpreted as
+between embarrassed and amused. “I’m sorry to hear about you and your friend.”
+</db:para>
+    <db:para>“Oh, it's nothing, ” Katie said, “Anyway, I presume that Rachel and you
+intend to go on a date. I am sure that Rachel wouldn’t want me joining you.”
+</db:para>
+    <db:para>“To be honest, ”, Rachel said, “I don’t have a problem with it.” (and then
+thought to herself “Why did I have to say that?”).
+</db:para>
+    <db:para>“I’m also OK with it.” Greg said and looked at Rachel with an amused look.
+</db:para>
+    <db:para>“Wow, thanks to you both.” said Katie as she arranged her face. To Rachel it
+seemed like Katie was happy from the entire arrangement.
+</db:para>
+    <db:para>“OK, shall we go?” Rachel said, “Do we need to order a cab or something?”
+</db:para>
+    <db:para>“Yes,” Greg said, “where is the phone?” and he took his Palm Pilot out of
+his pocket.
+</db:para>
+    <db:para>They ordered a cab and in the meantime Katie told Greg about herself and about
+what happened with her and Roger, while Rachel was trying to join the
+conversation. This situation repeated itself in the taxicab as well.
+Rachel wondered what the taxi driver thought about the fact that a guy and
+two girls took the cab to a fancy restaurant, and the one who was dressed
+less elegantly was the one talking with the guy most of the time. Then she
+concluded that regardless of what the cab driver thought, which didn't
+bother her too much, in her opinion, the whole situation was awkward and
+uncomfortable forever. As much as Rachel cared about Katie, she wondered
+if it was right that she would ruin her first date with a guy that had made
+a good impression on her.
+</db:para>
+    <db:para>They arrived at the restaurant eventually, and were seated. Katie and Greg
+continued to talk, and Rachel asked the waiter to wait before they would
+order. Thus, some time went on.
+</db:para>
+    <db:para>“So you said you are a water and sewers infrastructures engineer. Anything
+new there?” Katie asked.
+</db:para>
+    <db:para>“New? Yes, there’s always something new.” said Greg, “for instance, I recently
+read in an article that appeared in one of the papers of civil engineering,
+that they did a massive change of the infrastructure in large parts of the
+city, and cut every area from the supply only once, and never more than two
+hours. They used a computer program to plan everything, and it worked almost
+according to plan.”
+</db:para>
+    <db:para>“Really?” Katie said, “Rachel, computer programs are your forte…” (“thanks
+that you finally including me in the conversation”, Rachel thought)
+“…, how do you think that this program worked?”
+</db:para>
+    <db:para>“Don't know,” Rachel said, “I suppose it has to do with Graph Theory, but I
+am not familiar with the characteristics of the situation.”
+</db:para>
+    <db:para>“Graph Theory… to be honest - I am not sure what that is. Greg, maybe you can
+explain the constraints to Rachel, and she will develop an algorithm or
+whatever it is called? Actually no, I won’t understand anything from that.”
+</db:para>
+    <db:para>“Yes,” Rachel said, “You may be left out of the conversation.” (“Which may
+not be a bad thing.”, she thought.)
+</db:para>
+    <db:para>“Anyway,” Katie said, “I need to go to the bathroom now, so you’ll have to
+excuse me.” and she rose up, left them both and went to the bathroom.
+</db:para>
+    <db:para>“All right,” Greg said with a playful look, “what do you want to talk about?”
+</db:para>
+    <db:para>Rachel thought for a moment and said: “Actually, I also need to go to the
+bathroom. I think I forgot to do something at home.”
+</db:para>
+    <db:para>“OK,” Greg said, “I’ll wait here.”
+</db:para>
+    <db:para>Rachel went to the bathroom, opened the door and saw Katie arrange her face.
+Rachel went to do it herself. “Greg is very nice.” Katie said, “I’m enjoying
+every moment.”
+</db:para>
+    <db:para>“Yes, so do I.” said Rachel without a lot of enthusiasm.
+</db:para>
+    <db:para>Katie seemed like she was digesting what Rachel just said and then told her:
+“It doesn’t look like you are having a very good time. Is there a problem?”
+</db:para>
+    <db:para>“Do you want me to be sincere?” Rachel said.
+</db:para>
+    <db:para>“Yes, of course, we are after all friends.” Katie said.
+</db:para>
+    <db:para>“OK, but, in my humble opinion, you won’t wish to hear what I am going to tell
+you.”
+</db:para>
+    <db:para>“Why not? They always say that you should be honest with other people.”
+</db:para>
+    <db:para>“And if you ask me, ” Rachel replied, “what you don’t know, will not hurt
+you.”
+</db:para>
+    <db:para>“Believe me that right now, it hurts me a lot. So please share what you think.”
+Katie said with a chuckle.
+</db:para>
+    <db:para>“All right, ” Rachel said, “don’t say I didn’t warn you.” and she sighed, “I
+am not having such a good time, because I think you occupied Greg, and you
+are ruining my date.”
+</db:para>
+    <db:para>“I’m occupying Greg?!” Katie cried (Rachel was afraid someone will notice)
+“What the hell? Are you sure you’re simply unhappy from the fact that I am
+happy or something?”
+</db:para>
+    <db:para>Rachel opened her mouth to say something, but Katie interrupted her “Yes,
+I understand now. Never mind. This is your date. I won’t interrupt you any
+more because I am going. Goodbye and I hope you enjoy the date. I know when
+I’m not wanted.”
+</db:para>
+    <db:para>Katie went away and then turned again towards the mirror “Wait, do I look
+fine?” she said and arranged her hair in her hand, “Actually it doesn’t
+matter.” and she went from there with vigour.
+</db:para>
+    <db:para>Rachel was stunned. “What in the name of all that is holy, just happened here?”
+she thought to herself. She looked at the mirror, arranged her look a
+little (it was her excuse for going to the bathroom after all) until she
+was content, and went away.
+</db:para>
+    <db:para>Greg sat at the table, and looked bored. Rachel joined him. “Where is Katie?”
+he asked.
+</db:para>
+    <db:para>“Katie?” asked Rachel.
+</db:para>
+    <db:para>“Yes. Where is she?” he replied.
+</db:para>
+    <db:para>“Oh, she went away.” Rachel answered.
+</db:para>
+    <db:para>“Oh, all-right.” Greg said and smiled, “OK, so let’s continue with the date?
+The waiter came here and I told him to return in 10 minutes.”
+</db:para>
+    <db:para>“No problem, ” Rachel said. “I’m glad he didn’t ask <db:emphasis role="bold">why</db:emphasis> Katie left”
+she thought to herself.
+</db:para>
+    <db:para>Rachel contemplated how to start the conversation.
+</db:para>
+    <db:para>“So how did you become an infrastructures engineer?” Rachel asked.
+</db:para>
+    <db:para>“Well, ever since I was young, I wanted to be a plumber.” Greg replied.
+</db:para>
+    <db:para>“A plumber? Seriously?” Rachel said with astonishment.
+</db:para>
+    <db:para>“Yes. Very strange, but what can I do — that is what I wanted to be.” Greg
+said, “I spent a large part of the summer vacations being an apprentice for
+plumbers and enjoyed every moment. Anyway, after I graduated from high school,
+I was planning to go through a plumbing training course and to get my
+qualification. But my father approached me and told me: ‘Greg, my son, I have,
+thank God, enough money so you study what you want in university. So why not
+exploit that? If you want, you can become a plumber who graduated from
+university.’”
+</db:para>
+    <db:para>And he went on: “So I agreed with him, but decided to study the closest
+thing to plumbing: civil engineering with a specialisation in the engineering
+of water and sewerage infrastructures. And surprisingly I realised that
+a large part of it was quite interesting.”
+</db:para>
+    <db:para>“So did you become a qualified plumber eventually?” Rachel queried.
+</db:para>
+    <db:para>“Yes, I passed the course. But I still got a Bachelor’s degree in civil
+engineering and that’s what I prefer to do.”
+</db:para>
+    <db:para>“Hmmm…” Rachel said “Finding a good plumber in this day and age, to say nothing
+of one who is a university graduate, is hard.”
+</db:para>
+    <db:para>“Well, I cannot testify that I’m a good plumber. A person cannot testify for
+his own qualities.” Greg replied.
+</db:para>
+    <db:para>“Well, even a bad plumber is good enough for certain needs.” said
+Rachel and witnessed Greg bursting into laughter.
+</db:para>
+    <db:para>At that moment, the waiter approached the table and smiled due to Greg’s
+laughter. “Do you want to order anything now?” he asked.
+</db:para>
+    <db:para>Rachel ordered Minestrone soup as an entrée and steak for the main course,
+while Greg ordered Minestrone soup and a Hamburger. The waiter took note
+of the order and went away.
+</db:para>
+    <db:para>“OK, let’s return to the conversation,” Greg told Rachel, “You said you are
+a computer developer and you deal with…”
+</db:para>
+    <db:para>“Graphics, yes.”
+</db:para>
+    <db:para>“Oh, nice! And are you happy?”
+</db:para>
+    <db:para>“Yes, mostly.”
+</db:para>
+    <db:para>“And how did you get into that?”
+</db:para>
+    <db:para>“Well, it started from an early age, when my parents bought my brother and
+I an XT machine, and told us we should both sit next to it simultaneously
+and that we should learn to program it. So that way my brother and I
+learned how to program various games and demos in BASIC, and later on learned
+some other programming languages that were available there. Towards the
+end of high school, we also became familiar with the Internet (on a more
+advanced computer, naturally) and now I am using it most of the time. Also
+in university, I became familiar with UNIX machines, and that included Linux —
+even while working on the local workstation — not while working on a remote
+server, and I concluded that this is where the future of home computing is.”
+</db:para>
+    <db:para>“I know what UNIX is, as I dealt with it a little in college, naturally,
+but I didn’t hear of Linux.” Greg said.
+</db:para>
+    <db:para>“Well, Linux for simplicity’s sake is ‘UNIX for PCs’ and it also does not
+usually cost any money, and the code is available under an open-source licence.
+It also has a cool name, as well as a nice mascot of a penguin called ‘Tux’.”
+</db:para>
+    <db:para>“All right, nice. So why are you dealing with computer graphics?”
+</db:para>
+    <db:para>“Well, it’s a talent that I acquired during my studies in college, where I
+volunteered for various newspapers and pamphlets as a reporter and a
+designer. It requires me to work with the Windows 98 operating system, which
+I have unbelievably learned to despise. During my free time, I am still
+programming stuff, and it also gives me an advantage over other graphic
+artists, who are less proficient in programming than I am. All in all,
+the pay is good, and the job is also interesting and satisfying, so that
+is what I am doing now.”
+</db:para>
+    <db:para>“Nice.” Greg replied.
+</db:para>
+    <db:para>“So how were your first days at your work here?” Rachel asked.
+</db:para>
+    <db:para>“Fine, I am still working on studying the system of this city. It’s quite
+complicated, but I ran into worse things. As you can expect from a public
+office, the computer at my disposal is not configured in the best manner,
+but I suppose I can cope with it, in the ongoing work.”
+</db:para>
+    <db:para>“Yes, I have heard of that symptom.” Rachel said.
+</db:para>
+    <db:para>“So I understand you have a brother?” Greg said.
+</db:para>
+    <db:para>“Yes, I do.”
+</db:para>
+    <db:para>“What does he do?”
+</db:para>
+    <db:para>“At the moment, he is working in programming before going to college. He
+travels around the States, and works at what he can. He is happy from the
+fact that he is using Linux and I am jealous of him. But overall we are in
+good relations.”
+</db:para>
+    <db:para>“Sounds great. I have two sisters - one is older than me and one younger. The
+younger one is still in high school, and the older one is working on her
+Doctorate for Linguistics.”
+</db:para>
+    <db:para>“Linguistics…” Rachel said, “that’s lovely - I always support people who
+invest a lot of effort in improving their speech and communication. I read
+somewhere, that the Human language is primarily a tool of thought, and
+her function as a tool of communication is secondary. They also claimed that
+by mutilating words, you also mutilate the thought.”
+</db:para>
+    <db:para>“Yes, I remember something like that.”
+</db:para>
+    <db:para>Then the waiter brought the food, and the two started eating.
+</db:para>
+    <db:para>“So what was your minor in college?” Greg asked Rachel.
+</db:para>
+    <db:para>“I studied acting. But I’m not an actor - I only play one on T.V..”
+</db:para>
+    <db:para>Greg burst out laughing. “Yes, seems like you have a penchant for logical
+jokes.”
+</db:para>
+    <db:para>“Yes, I am a rational girl.”
+</db:para>
+    <db:para>“Have you always been like that?” Greg asked.
+</db:para>
+    <db:para>“I’ll tell you a story.” Rachel said, “When I was ten years old and I went one
+day with my father to the mall close to Christmas, I asked him to stand
+in line for Santa Claus and ask him for a present. He didn’t let me, and
+said he would explain why when we arrive him.”
+</db:para>
+    <db:para>“When we got home,” she continued, “we sat together on the couch and he
+told me that Santa Claus does not exist, that he is fictional, and that it’s
+only a man who dresses like him. ‘In short, ’ he told me, ‘if you want to
+ask for a present, then ask me. I may not agree, but it will still be
+more efficient for you, if you asked it from Santa.” The day after, I argued
+with my friends about that, and eventually in order to prove why I was right,
+we walked in the neighbourhood, and I showed them how there was more than
+one Santa Claus there simultaneously.”
+</db:para>
+    <db:para>“Have you always been such a logician?” Greg asked.
+</db:para>
+    <db:para>“I tend to believe that my logicianness only became stronger in time.
+</db:para>
+    <db:para>Anyway, a few days afterwards, my friends’ parents complained to my parents,
+on why they should shatter such ‘harmless’ illusions (as the put them). My
+father protected his behaviour by saying it’s an irrational belief,
+with which we shouldn’t feed the children. ‘And what was I supposed to tell
+her if we were Jewish’ he told them. Some of the parents tried to
+turn the wheel back by saying that there’s a real Santa Claus in the
+north pole, but my friends did not believe them.”
+</db:para>
+    <db:para>“Nice story.”
+</db:para>
+    <db:para>“Yes.”
+</db:para>
+    <db:para>Rachel and Greg finished their supper, and ordered a cab back to their
+homes. After the cab stopped by Rachel’s apartment building, Greg and she
+went out. “Well,” Greg said, “I had a great time tonight.”.
+</db:para>
+    <db:para>“So I understand that you like Katie a lot.” Rachel said.
+</db:para>
+    <db:para>“I’m not talking about her.”
+</db:para>
+    <db:para>“Wait a sec - you didn’t prefer her?”
+</db:para>
+    <db:para>“No, I like you more.”
+</db:para>
+    <db:para>Rachel smiled. “Well, I’m glad that we had a great date.”
+</db:para>
+    <db:para>And Greg said: “So do I.”. After a while he added: “Well, I’d better
+take the can back to my apartment. The meter is running.”
+</db:para>
+    <db:para>“Yes, farewell. We’ll talk.”
+</db:para>
+    <db:para>“Bye.”
+</db:para>
+    <db:para>Greg entered the cab, that went away soon after that. Rachel entered the
+building and went up to her apartment.
+</db:para>
+  </section>
+  <section xml:id="wednesday">
+    <db:info>
+      <db:title>Wednesday</db:title>
+    </db:info>
+    <db:para>Rachel was awaken by hearing the door bell. She rose out of bed, looked at
+her alarm clock and noticed the hour was a quarter to six. Who the hell
+had to wake her up a quarter of an hour before her rising time? She wore
+pants and went to open the door.
+</db:para>
+    <db:para>As she opened it, she saw her parents standing there outside. “Hi Mum,
+hi Dad,” she said and her voice did not hide her dissatisfaction from this
+sudden visit.
+</db:para>
+    <db:para>“Hi Dear, ” her mother told her, “We just arrived here from the plane, and
+we decided to visit you in the strange town you dared to live in.”
+</db:para>
+    <db:para>“You know, there is a reason I did it…” Rachel said.
+</db:para>
+    <db:para>“Of course there is. You never acted based on impulses alone.” her mother
+added. (“Not!” Rachel thought).
+</db:para>
+    <db:para>“In any case what’s up with you and why aren’t you calling us enough?”
+</db:para>
+    <db:para>“I am fine, and I haven’t been calling enough because I am busy.” (That was
+the best excuse that Rachel could think of.) “In any case, now is not the
+best time for you to visit.”
+</db:para>
+    <db:para>“Why, do you have someone?” her father asked, without a tone of anger.
+</db:para>
+    <db:para>“To be honest - no.”
+</db:para>
+    <db:para>“Well, that’s your problem.” her mother told her.
+</db:para>
+    <db:para>Rachel believed she inherited the sum of her parents’ insanities. Rachel’s
+father went to Medical school, but after 5 years of treating patients
+decided to transfer to research. He has already done a Masters and a Ph.D
+in Biology but still believed he was a doctor by heart. However, Rachel and
+her brother always said he was “a scientist” because a doctor sounded
+too mundane for them. Rachel’s mother studied along with Rachel’s father
+in university, for a B.Sc. in chemistry, but since Rachel was born worked
+in casual part time jobs that were not related to her qualification.
+</db:para>
+    <db:para>“In any case, I am busy today” Rachel said.
+</db:para>
+    <db:para>------------
+</db:para>
+  </section>
+  <section xml:id="unintegrated-portions">
+    <db:info>
+      <db:title>Portions of the story that were not integrated into the mainline yet.</db:title>
+    </db:info>
+    <db:para>------------
+</db:para>
+    <db:para>“You know,” Rachel said, “your character does not add up to a whole number.”
+</db:para>
+    <db:para>“You are wrong.” answered Rudolph, “My character adds up to a
+<db:link xlink:href="https://en.wikipedia.org/wiki/Hypercomplex_number">hypercomplex</db:link>number that is 100% whole.”
+</db:para>
+    <db:para>“The question is whether its absolute value is whole.” Rachel noted.
+</db:para>
+    <db:para>“I did not think about it, but I think this is indeed the case.” Rudolph
+answered and laughed.
+</db:para>
+    <db:para>------------
+</db:para>
+    <db:para>“Rudolph Eisenberg? Are you kidding? He is dreamy.”
+</db:para>
+    <db:para>“How exactly is he dreamy?”
+</db:para>
+    <db:para>“He is a genius!”
+</db:para>
+    <db:para>“A genius who refuses to admit it, but in fact is certain he is a genius.”
+</db:para>
+    <db:para>“Yes, in an interview I read with him, he said he is definitely not a genius.
+Anyway, are you saying he is in Milwaukee now?”
+</db:para>
+    <db:para>“Or at least someone who claims he is.”
+</db:para>
+    <db:para>“I’ve got to meet him!”
+</db:para>
+    <db:para>“Then come to my house on Sunday, because he is doing some kind of
+fashion show — slash — play, then.” (“Why the hell did I have to say that?”
+Rachel thought to herself.)
+</db:para>
+    <db:para>“Really? Thank you. You are the best friend in the whole world.” (And one
+of the most stupid ones too, Rachel thought to herself.)
+</db:para>
+    <db:para>“So see you on Sunday.”
+</db:para>
+    <db:para>“Yes. Bye, and I love you.”
+</db:para>
+    <db:para>------------
+</db:para>
+    <db:para>A few people helped Ashley lie on the couch. It was obvious from her facial
+expression and her groans that she was in pain. Rachel looked around. Her
+parents sat on two chairs besides each other, and did not talk, close to
+her brother. Her father seemed disturbed from seeing Ashley in pain, but
+remained seated in his chair. Rachel approached him.
+</db:para>
+    <db:para>“Daddy, you're a doctor.” she told him. It seems like it took him a little
+while to digest that and then he said: “Oh! Right!” and then he went to
+help Ashley. Rachel sat next to her brother. “I hoped I would never have
+to say that.”
+</db:para>
+    <db:para>“Yes, so did I.” he told her and hugged her out of compassion.
+</db:para>
+    <db:para>------------
+</db:para>
+    <db:para>“So where do you put yourself on the political map?”
+</db:para>
+    <db:para>“It may sound a little weird for a German…” replied Rudolph, “but I am
+an Objectivist. It’s just the crazies philosophy that is suitable for my
+own private craziness.”
+</db:para>
+    <db:para>“To be honest, one needs to be a little Objectivist in order to internalise
+the books of Ayn Rand, so the Objectivistification process requires a little
+bootstrapping.”
+</db:para>
+    <db:para>“What is ‘bootstrapping’?” Ashley asked.
+</db:para>
+    <db:para>“It’s a term from computing” Rachel answered, “which means that one needs to
+use something to build or initiate itself. I’ll give you an example: there’s
+a compiler of the C programming language called gcc, which is itself
+written in C.”
+</db:para>
+    <db:para>“So how do you compile it?”
+</db:para>
+    <db:para>“You use a different compiler, or an older version of the same compiler.”
+</db:para>
+    <db:para>“Or you install a package that someone else compiled for you…” added Rudolph.
+</db:para>
+    <db:para>------------
+</db:para>
+    <db:para>“‘I am.’, ‘I am.’ !”
+</db:para>
+    <db:para>“You are what?”
+</db:para>
+    <db:para>“‘I am” is the answer to the question of Life, the Universe and Everything.”
+</db:para>
+    <db:para>“Really? I thought the answer to it was 42.”
+</db:para>
+    <db:para>Rachel really wanted to hit Greg with her fist. But she knew better than
+to do that, and so only said “Bleh.”, and went away. Greg watched her exit
+into the balcony.
+</db:para>
+    <db:para>“What is Rachel’s problem?” Greg asked the attendants of the room.
+</db:para>
+    <db:para>“She asked me who the most powerful man in the world was and I told her it was
+me.”
+</db:para>
+    <db:para>“Well, that explains some things.”
+</db:para>
+    <db:para>Greg went out to the balcony and saw Rachel standing there and glancing at
+the script. He approached her. “Rudolph told me that you asked him who the
+most powerful man in the Earth was. So this is the question of Life, the
+Universe and Everything.”
+</db:para>
+    <db:para>“At least for now.”, Rachel said and grinned.
+</db:para>
+    <db:para>“I understand you had a rough week, and now you need to play in this
+fashion-play.”
+</db:para>
+    <db:para>“That is true.” she said and then there was silence for a while.
+</db:para>
+    <db:para>“I really like Rudolph.” Greg said.
+</db:para>
+    <db:para>“Really?” Rachel said, “even though he is the most boastful, and in the
+most (supposedly) humble manner, you ever knew?”
+</db:para>
+    <db:para>“Yes, I noticed. No, it does not bother me too much. In fact, it’s part of
+his charm.”
+</db:para>
+    <db:para>“Hmmm…” Rachel uttered, “to think about it, maybe he is not too bad. And
+at least he solved the riddle, that's been bothering me since the beginning of
+the week.”
+</db:para>
+    <db:para>“About who the most powerful man in the world is?”
+</db:para>
+    <db:para>“Yes.”
+</db:para>
+    <db:para>“Well, I am sorry that I said it was ‘42’.”
+</db:para>
+    <db:para>“Listen,” Rachel said and held his hands, “it will be very important to
+me if you go to sit and watch the show.”
+</db:para>
+    <db:para>“Why?” Greg said, “All the action’s here…”
+</db:para>
+    <db:para>“Still, as… I don’t know… my boyfriend.”
+</db:para>
+    <db:para>“You consider me your boyfriend?” Greg said as he grabbed her shoulders.
+</db:para>
+    <db:para>“At least for now.” Rachel replied. She kissed him and they started making
+out.
+</db:para>
+    <db:para>“Where’s Rachel?” Rachel heard her mother said from inside the apartment,
+and then watched her open the balcony’s door. “Ohhhh!” she said as she looked
+at the couple.
+</db:para>
+    <db:para>Rachel quickly stopped kissing Greg and told her mother: “Hi, mum, it’s
+so nice you joined us here. We were just talking about… hmmm… oh well, we
+were not really talking.”
+</db:para>
+    <db:para>“I will go to the seats to sea the second part of the play.” Greg said, and
+passed Rachel’s mother, and exited the balcony.”
+</db:para>
+    <db:para>“Well, mother, ” Rachel said, “I have a script to memorise.”
+</db:para>
+    <db:para>------------
+</db:para>
+    <db:para>“Well, ” Rachel said to the other actors, “everyone know that when it
+comes to the clothes of Rudolph Eisenberg — registered trademark — limited
+warranty, all the rights reserved under the GNU General Public License —
+you should wear at least three pieces of his clothing every day.”
+</db:para>
+    <db:para>------------
+</db:para>
+    <db:para>“As opposed to what Rachel said, my designs are not distributed under the
+GNU General Public License, for those who know what it is. At least not
+now. But you are invited to buy them anyway.”
+</db:para>
+    <db:para>Rachel heard Eisenberg said these things as she stood on the sage along
+with the other actors in the fashion-play. She smiled a stupid smile, stood
+in a stupid pose, and in general tried to look as stupid as humanly possible.
+(And in her opinion was quite successful doing that.)
+</db:para>
+    <db:para>“Rachel replaced Ashley Holloway, who strained her leg. But don’t worry,
+you’ll see her enough in my next fashion show, whatever its format may be.”
+</db:para>
+    <db:para>------------
+</db:para>
+    <db:para>“Tell me, is there a chance that the new pope died today?”
+</db:para>
+    <db:para>“They didn’t tell it in the news.”
+</db:para>
+    <db:para>“Did Bill Gates die in a plane crash? (God forbid.)”
+</db:para>
+    <db:para>“No, he did not.”
+</db:para>
+    <db:para>“Did a bus hit Linus Torvalds? Again, God forbid.”
+</db:para>
+    <db:para>“I don’t think so.”
+</db:para>
+    <db:para>“Great.” Rachel said as she fell on the couch. “There’s a good chance that
+the upcoming week will be saner.”
+</db:para>
+  </section>
+</article>

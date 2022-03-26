@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="shift.html"/><title>Function Recursion</title></head><body><main><header><h1>4.1. Function Recursion</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="shift.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">Functions</a> → <a href="recursion.html">Function Recursion</a></div></nav><p>Functions can call other functions. In fact, a function can call itself, either directly or indirectly. When a function calls itself it is known as <b>recursion</b>, a Computer Science methodology which can be implemented with or without functions.</p><p>Here's an example where recursion is used to find all the permutations of splitting 10 among three numbers:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">sub </span><span class="Identifier">mysplit</span>
+&#x7B;
+    <span class="Statement">my</span> (<span class="Identifier">$total</span>, <span class="Identifier">$num_elems</span>, <span class="Identifier">@accum</span>) = <span class="Identifier">@_</span>;
+
+    <span class="Statement">if</span> (<span class="Identifier">$num_elems</span> == <span class="Constant">1</span>)
+    &#x7B;
+        <span class="Statement">push</span> <span class="Identifier">@accum</span>, <span class="Identifier">$total</span>;
+        <span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;,&quot;</span>, <span class="Identifier">@accum</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+
+        <span class="Statement">return</span>;
+    &#x7D;
+
+    <span class="Statement">for</span> (<span class="Statement">my</span> <span class="Identifier">$item</span>=<span class="Constant">0</span> ; <span class="Identifier">$item</span> &lt;= <span class="Identifier">$total</span> ; <span class="Identifier">$item</span>++)
+    &#x7B;
+        <span class="Statement">my</span> <span class="Identifier">@new_accum</span> = (<span class="Identifier">@accum</span>, <span class="Identifier">$item</span>);
+        mysplit(<span class="Identifier">$total</span>-<span class="Identifier">$item</span>, <span class="Identifier">$num_elems</span>-<span class="Constant">1</span>, <span class="Identifier">@new_accum</span>);
+    &#x7D;
+&#x7D;
+
+mysplit(<span class="Constant">10</span>,<span class="Constant">3</span>);
+</pre></div><p>A couple of notes are in place. First of all, perl does not handle tail recursion very well, at least not in the current incarnation of the compiler. If your recursion can be done using a simple loop, do it with it.</p><p>Secondly, some systems (such as Microsoft Windows) limit an executable to a certain amount of stack, as far as such languages as Assembler or C are concerned. This should not be of any concern to perl hackers, because the perl interpreter does not translate a perl function call into a C function call. (not to mention that the perl interpreter on those systems is compiled with enough stack for itself).</p><p>Sometimes, recursion is helpful, but if you see that your recursion is getting too deep, you should consider using your own dedicated stack (which can be implemented as an array) instead. It's a good programming practice.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="shift.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

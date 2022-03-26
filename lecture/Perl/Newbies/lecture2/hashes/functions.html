@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="../my/"/><title>Hash-Related Functions</title></head><body><main><header><h1>2.1. Hash-Related Functions</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="../my/" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">Hashes</a> → <a href="functions.html">Hash-Related Functions</a></div></nav><h2>delete</h2><p>delete can be used to remove a key or a set of keys out of a hash. For example:</p><div class="code_block"><pre>
+<span class="Identifier">$myhash&#x7B;</span><span class="Constant">&quot;hello&quot;</span><span class="Identifier">&#x7D;</span> = <span class="Constant">&quot;world&quot;</span>;
+<span class="Identifier">$myhash&#x7B;</span><span class="Constant">&quot;perl&quot;</span><span class="Identifier">&#x7D;</span> = <span class="Constant">&quot;TMTOWTDI&quot;</span>;
+<span class="Identifier">$myhash&#x7B;</span><span class="Constant">&quot;shlomi&quot;</span><span class="Identifier">&#x7D;</span> = <span class="Constant">&quot;fish&quot;</span>;
+
+<span class="Statement">if</span> (<span class="Statement">exists</span>(<span class="Identifier">$myhash&#x7B;</span><span class="Constant">&quot;perl&quot;</span><span class="Identifier">&#x7D;</span>))
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;The key perl exists!</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+<span class="Statement">else</span>
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;The key perl does not exist!</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+
+<span class="Statement">delete</span>(<span class="Identifier">$myhash&#x7B;</span><span class="Constant">&quot;perl&quot;</span><span class="Identifier">&#x7D;</span>);
+
+<span class="Statement">if</span> (<span class="Statement">exists</span>(<span class="Identifier">$myhash&#x7B;</span><span class="Constant">&quot;perl&quot;</span><span class="Identifier">&#x7D;</span>))
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;The key perl exists!</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+<span class="Statement">else</span>
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;The key perl does not exist!</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+</pre></div><h2>The Comma Regarding Hashes</h2><p>The comma can be used to combine two arrays into one larger one. Given the fact that a mini-hash with one key and one value can be specified using the <code>$key =&gt; $value</code> notation (which is essentially equivalent to <code>$key, $value</code>) a hash can be initialized in one statement.</p><p>Here's an example:</p><div class="code_block"><pre>
+<span class="Identifier">%hash1</span> = (
+    <span class="Constant">&quot;shlomi&quot;</span> =&gt; <span class="Constant">&quot;fish&quot;</span>,
+    <span class="Constant">&quot;orr&quot;</span> =&gt; <span class="Constant">&quot;dunkelman&quot;</span>,
+    <span class="Constant">&quot;guy&quot;</span> =&gt; <span class="Constant">&quot;keren&quot;</span>
+    );
+
+<span class="Identifier">%hash2</span> = (
+    <span class="Constant">&quot;george&quot;</span> =&gt; <span class="Constant">&quot;washington&quot;</span>,
+    <span class="Constant">&quot;jules&quot;</span> =&gt; <span class="Constant">&quot;verne&quot;</span>,
+    <span class="Constant">&quot;isaac&quot;</span> =&gt; <span class="Constant">&quot;newton&quot;</span>
+    );
+
+<span class="Identifier">%combined</span> = (<span class="Identifier">%hash1</span>, <span class="Identifier">%hash2</span>);
+
+<span class="Statement">foreach</span> <span class="Identifier">$key</span> (<span class="Statement">keys</span>(<span class="Identifier">%combined</span>))
+&#x7B;
+    <span class="Statement">print</span> <span class="Identifier">$key</span>, <span class="Constant">&quot; = &quot;</span>, <span class="Identifier">$combined&#x7B;$key&#x7D;</span>, <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+</pre></div><p>If the two combined hashes contain several identical keys, then the values of the latter hash will win.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="../my/" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

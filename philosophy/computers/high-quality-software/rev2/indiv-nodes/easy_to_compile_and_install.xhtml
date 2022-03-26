@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>What Makes Software High-Quality? (Revision 2) - The Program is Easy to Compile, Deploy and Install</title>
+<meta charset="utf-8"/>
+<meta name="description" content=
+"What Makes Software High-Quality? (Revision 2) - The Program is Easy to Compile, Deploy and Install"/>
+<link rel="stylesheet" href="../../../../../faq-indiv.css" media="screen"/>
+<link rel="stylesheet" href="../../../../../screenplay.css" media="screen"
+title="Normal"/>
+<link rel="stylesheet" href="../../../../../print.css" media="print"/>
+<link rel="shortcut icon" href="../../../../../favicon.ico" type=
+"image/x-icon"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
+<body class="fancy_sects faq_indiv_entry limit_imgs_width screenplay_indiv_entry">
+<div class="header" id="header">
+<a href="../../../../../"><img src="../../../../../images/evilphish-flipped.png"
+alt="EvilPHish site logo"/></a>
+<div class="leading_path"><a href="../../../../../">Shlomi Fish’s
+Homepage</a> →
+<a href="../" title="What Makes Software High-Quality? (Revision 2)">What Makes Software High-Quality? (Revision 2)</a>
+ → <a href="parameters-of-quality.xhtml">Parameters of Quality</a>
+→ <b>The Program is Easy to Compile, Deploy and Install</b>
+</div>
+</div>
+<div id="faux">
+<main class="main faq screenplay">
+<section xmlns="http://www.w3.org/1999/xhtml" class="section"><header xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="titlepage"><h4 id="easy_to_compile_and_install" class="title">The Program is Easy to Compile, Deploy and Install</h4><h:a class="back_to_faq" href="../#easy_to_compile_and_install">Node Link</h:a></header><p>A high-quality program is easy to compile, deploy and install. It builds out of the box with minimal hassles. There are several common standard building procedures for such software:</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>The common standard building procedure using the <a class="link" href="http://sourceware.org/autobook/">GNU Autotools</a> is <code class="literal">./configure --prefix=$PREFIX ; make ; make install</code>.</p></li><li class="listitem"><p>There are now <a class="link" href="http://www.shlomifish.org/open-source/resources/software-tools/">some more modern alternatives to the GNU Autotools</a>, which may also prove useful.</p></li><li class="listitem"><p><a class="link" href="http://www.cpan.org/">CPAN</a> Perl distributions have a similar <code class="literal">perl Makefile.PL</code> procedure or more recently also one using <code class="literal">perl Build.PL</code> which tends to be less quirky (see <a class="link" href="http://cpan.uwinnipeg.ca/dist/Module-Build">Module-Build</a> ).</p><p>Generally, one usually installs them using the CPAN.pm or CPANPLUS.pm interfaces to CPAN, or preferably using a wrapper that converts every CPAN distribution to a native (or otherwise easy to remove) native system package.</p></li><li class="listitem"><p><a class="link" href="http://www.python.org/">Python</a> packages have the standard <code class="literal">setup.py</code> procedure which can also generate Linux RPMs and other native packages.</p></li><li class="listitem"><p>There are similar building procedures for most other technologies out there.</p></li></ol></div><p>However, it&#8217;s not uncommon to find a program that fails to build even on GNU/Linux on an x86 computer, which is the most common platform for development. Or the case of <a class="link" href="http://www.shlomifish.org/open-source/anti/qmail/">the qmail email server</a>, which has a long and quirky build process. It reportedly fails to compile on modern Linuxes, and someone I know who tried to build it said that it did not work after following all the steps.</p><p>One thing that detracts from a piece of software being high-quality is a large amount of dependencies.</p><p>If we take <a class="link" href="http://plagger.org/">Plagger</a>, a web-feed mix-and-match framework in Perl (not unlike <a class="link" href="http://pipes.yahoo.com/">Yahoo Pipes</a>, but predates it), then its <a class="link" href="http://search.cpan.org/dist/Plagger/">Plagger distribution on CPAN</a> contains all of its plug-ins inside, and as a result requires &#8220;half of CPAN&#8221; including such obscure modules, as those for handling Chinese and Japanese dates.</p><p>Popular programs like GCC, perl 5, Vim, Subversion and Emacs have very few dependencies and they are normally included in the package, if necessary to build the system. They are all written in very portable C and POSIX and have been successfully deployed on all modern UNIX-flavours, on Microsoft Windows and on many other more obscure systems.</p><p>While reducing the number of dependencies often means re-inventing wheels, it still increases the quality of your software. I&#8217;m not saying a program cannot be high-quality if it has a large amount of dependencies, but it&#8217;s still a good idea to keep it to a minimum.</p></section></main>
+</div>
+<footer>
+<div class="foot_left">
+<ul class="bt_nav">
+<li><a href="../../../../../">Home</a></li>
+<li><a href="../../../../../me/">About</a></li>
+<li><a href="../../../../../me/contact-me/">Contact Us</a></li>
+<li><a href="../../../../../meta/privacy-policy/">Privacy Policy</a></li>
+<li><a href="../../../../../meta/anti-spam-policy/">Anti-Spam
+Policy</a></li>
+<li><a href="../../../../../meta/FAQ/" title=
+"Frequently asked questions list">FAQ</a></li>
+<li><a href="../../../../../me/blogs/">RSS/Atom Feeds</a></li>
+</ul>
+<p>Written, designed, and maintained by Shlomi Fish, <a href=
+"mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a>.</p>
+</div>
+<a href="../../../../../"><img src="../../../../../images/bk2hp-v2.min.svg" class=
+"bk2hp" alt="Back to my Homepage"/></a></footer>
+</body>
+</html>

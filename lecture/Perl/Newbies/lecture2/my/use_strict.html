@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="use_warnings.html"/><title>"use strict", Luke!</title></head><body><main><header><h1>3.1. "use strict", Luke!</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="use_warnings.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">Declaring Local Variables with "my"</a> → <a href="use_strict.html">"use strict", Luke!</a></div></nav><p>Perl has a pragma (= an interpreter-related directive) known as <code>use strict;</code>, which among other things, makes sure all the variables you use will be declared with <code>my</code>. If you reference a variable that was not declared with <code>my</code> it will generate an error.</p><p>Using <code>use strict</code> is in most cases a good idea, because it minimises the number of errors because of typos. Just type <code>use strict;</code> at the beginning of your program and you can sleep better at nights.</p><p>As an example, here is the primes program, <code>use strict</code>-ed:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> (<span class="Identifier">@primes</span>, <span class="Identifier">$i</span>);
+
+<span class="Statement">MAIN_LOOP:</span> <span class="Statement">for</span>(
+    <span class="Identifier">@primes</span>=(<span class="Constant">2</span>), <span class="Identifier">$i</span>=<span class="Constant">3</span> ;
+    <span class="Statement">scalar</span>(<span class="Identifier">@primes</span>) &lt; <span class="Constant">200</span> ;
+    <span class="Identifier">$i</span>++
+    )
+&#x7B;
+    <span class="Statement">foreach</span> <span class="Statement">my</span> <span class="Identifier">$p</span> (<span class="Identifier">@primes</span>)
+    &#x7B;
+        <span class="Statement">if</span> (<span class="Identifier">$i</span> % <span class="Identifier">$p</span> == <span class="Constant">0</span>)
+        &#x7B;
+            <span class="Statement">next</span> MAIN_LOOP;
+        &#x7D;
+    &#x7D;
+
+    <span class="Statement">push</span> <span class="Identifier">@primes</span>, <span class="Identifier">$i</span>;
+&#x7D;
+
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;, &quot;</span> , <span class="Identifier">@primes</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>Notice the use of <code>my</code> in the declaration of the <code>foreach</code> loop. Such just-in-time declarations, inspired by C++, are possible in perl.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="use_warnings.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

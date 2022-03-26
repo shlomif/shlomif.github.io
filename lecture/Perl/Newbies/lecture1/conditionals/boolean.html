@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="string.html"/><link rel="next" href="true_vs_false.html"/><title>Boolean Operators</title></head><body><main><header><h1>7.3. Boolean Operators</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="string.html" class="nav" accesskey="p">Prev</a></td><td><a href="true_vs_false.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 1</a> → <a href="./">Conditionals</a> → <a href="boolean.html">Boolean Operators</a></div></nav><p>Sometimes it is useful to check for the validation of more than one condition. For doing this, Perl supplies boolean operators.</p><table class="border1"><tr><td><h2>&amp;&amp;</h2><p><code>$x &amp;&amp; $y</code> evaluates to true if both <code>$x</code> and <code>$y</code> are true. It is called the “logical and” of the two operands <code>$x</code> and <code>$y</code>.</p></td></tr><tr><td><h2>||</h2><p><code>$x || $y</code> (called the “logical or” of <code>$x</code> and <code>$y</code>) is evaluated to true if one or both of its operands are true.</p></td></tr><tr><td><h2>!</h2><p><code>! $x</code> (pronounced “not <code>$x</code>”) evaluates to true if <code>$x</code> is false.</p></td></tr></table><p>Note that if the first operand is evaluated to false in an <code>&amp;&amp;</code> operation, the second operand will not be evaluated at all. Similarly, if the first operand of <code>||</code> was found to be true, the second one will not be evaluated either.</p><p>If you wish both operands to be evaluated at all times you need to assign them to variables first.</p><p>Here are some examples:</p><div class="code_block"><pre>
+<span class="Statement">print</span> <span class="Constant">&quot;Please enter the lower bound of the range:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Identifier">$lower</span> = &lt;&gt;;
+<span class="Statement">chomp</span>(<span class="Identifier">$lower</span>);
+<span class="Statement">print</span> <span class="Constant">&quot;Please enter the upper bound of the range:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Identifier">$upper</span> = &lt;&gt;;
+<span class="Statement">chomp</span>(<span class="Identifier">$upper</span>);
+<span class="Statement">if</span> (<span class="Identifier">$lower</span> &gt; <span class="Identifier">$upper</span>)
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;This is not a valid range!</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+<span class="Statement">else</span>
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;Please enter a number:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+    <span class="Identifier">$number</span> = &lt;&gt;;
+    <span class="Statement">chomp</span>(<span class="Identifier">$number</span>);
+    <span class="Statement">if</span> ((<span class="Identifier">$lower</span> &lt;= <span class="Identifier">$number</span>) &amp;&amp; (<span class="Identifier">$number</span> &lt;= <span class="Identifier">$upper</span>))
+    &#x7B;
+        <span class="Statement">print</span> <span class="Constant">&quot;The number is in the range!</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+    &#x7D;
+    <span class="Statement">else</span>
+    &#x7B;
+        <span class="Statement">print</span> <span class="Constant">&quot;The number is not in the range!</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+    &#x7D;
+&#x7D;
+</pre></div><hr/><div class="code_block"><pre>
+<span class="Statement">print</span> <span class="Constant">&quot;Please enter your name:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Identifier">$name</span> = &lt;&gt;;
+<span class="Statement">chomp</span>(<span class="Identifier">$name</span>);
+<span class="Identifier">$fl</span> = <span class="Statement">lc</span>(<span class="Statement">substr</span>(<span class="Identifier">$name</span>, <span class="Constant">0</span>, <span class="Constant">1</span>));
+<span class="Statement">if</span> ((<span class="Identifier">$fl</span> <span class="Statement">eq</span> <span class="Constant">&quot;a&quot;</span>)||(<span class="Identifier">$fl</span> <span class="Statement">eq</span> <span class="Constant">&quot;b&quot;</span>)||(<span class="Identifier">$fl</span> <span class="Statement">eq</span> <span class="Constant">&quot;c&quot;</span>))
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;Your name starts with one of the &quot;</span> .
+        <span class="Constant">&quot;first three letters of the ABC.</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+<span class="Statement">else</span>
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;Your name does not start with one of the &quot;</span> .
+        <span class="Constant">&quot;first three letters of the ABC.</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+</pre></div><p>Note: The function <code>lc()</code> converts a string to lowercase.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="string.html" class="nav">Prev</a></td><td><a href="true_vs_false.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

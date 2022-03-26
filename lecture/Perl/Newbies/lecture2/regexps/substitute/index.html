@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../style.css" type="text/css"/><link rel="prev" href="../binding.html"/><link rel="next" href="e_switch.html"/><title>Substituting using Regular Expressions</title></head><body><main><header><h1>7.7. Substituting using Regular Expressions</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../" class="nav" accesskey="c">Contents</a></td><td><a href="../" class="nav" accesskey="u">Up</a></td><td><a href="../binding.html" class="nav" accesskey="p">Prev</a></td><td><a href="e_switch.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../">"Perl for Perl Newbies" - Part 2</a> → <a href="../">Regular Expressions</a> → <a href="./">Substituting using Regular Expressions</a></div></nav><p>One can use regular expression to substitute an occurrence of a regular expression found inside a string to something else. The operator used for this is <code>s/$exp_to_search/$exp_to_subs_for/</code>. The following simple program replaces a number with the string "Some Number":</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$string</span> = <span class="Statement">shift</span>;
+
+<span class="Identifier">$string</span> =~ <span class="Statement">s/</span><span class="Special">[0-9]+</span><span class="Statement">/</span><span class="Constant">Some Number</span><span class="Statement">/</span>;
+
+<span class="Statement">print</span> <span class="Identifier">$string</span>, <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>Notice that in this case, only the first occurrence of the string will be substituted. The <code>g</code> switch which will be covered soon, enables us to substitute <b>all</b> of the occurrences.</p><p>One can include the captures that are matched in the expression as part of the substitution string. The first capture is <code>$1</code>, the second <code>$2</code> etc.</p><p>Here's an example which reverses the order of two words at the beginning of a sentence:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$string</span> = <span class="Statement">shift</span>;
+
+<span class="Identifier">$string</span> =~ <span class="Statement">s/</span><span class="Constant">^</span><span class="Special">([A-Za-z]+)</span><span class="Constant"> </span><span class="Special">*([A-Za-z]+)</span><span class="Statement">/</span><span class="Identifier">$2</span><span class="Constant"> </span><span class="Identifier">$1</span><span class="Statement">/</span>;
+
+<span class="Statement">print</span> <span class="Identifier">$string</span>, <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><table class="note"><tr class="note"><td class="note"><h3 class="note">Note</h3><p>The <code>$1</code>, <code>$2</code> variables are also available after the regular expression match or substitution is performed, and can be used inside your perl code.</p></td></tr></table><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../" class="nav">Contents</a></td><td><a href="../" class="nav">Up</a></td><td><a href="../binding.html" class="nav">Prev</a></td><td><a href="e_switch.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

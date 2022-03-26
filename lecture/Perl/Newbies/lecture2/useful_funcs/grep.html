@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="sort/cmp.html"/><link rel="next" href="../references/"/><title>grep</title></head><body><main><header><h1>9.4. grep</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="sort/cmp.html" class="nav" accesskey="p">Prev</a></td><td><a href="../references/" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">Useful Functions</a> → <a href="grep.html">grep</a></div></nav><p>The <code>grep</code> function can be used to filter items out of an array based on a boolean expression or a regular expression. The syntax for the block usage is similar to <code>map</code> while the syntax for the regexp usage is similar to <code>split</code>.</p><p>Here is an example that takes a file and filters only the perl comments whose length is lesser than 80 characters:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> (<span class="Identifier">@lines</span>, <span class="Identifier">$l</span>);
+
+<span class="Statement">my</span> <span class="Identifier">$filename</span> = <span class="Statement">shift</span>;
+
+<span class="Statement">open</span> <span class="Statement">my</span> <span class="Identifier">$in</span>, <span class="Constant">&quot;&lt;&quot;</span>, <span class="Identifier">$filename</span>;
+<span class="Statement">while</span> (<span class="Identifier">$l</span> = &lt;<span class="Identifier">$in</span>&gt;)
+&#x7B;
+    <span class="Statement">chomp</span>(<span class="Identifier">$l</span>);
+    <span class="Statement">push</span> <span class="Identifier">@lines</span>, <span class="Identifier">$l</span>;
+&#x7D;
+<span class="Statement">close</span>(<span class="Identifier">$in</span>);
+
+<span class="Comment"># Filter the comments</span>
+<span class="Statement">my</span> <span class="Identifier">@comments</span> = <span class="Statement">grep</span>(<span class="Statement">/</span><span class="Constant">^#</span><span class="Statement">/</span>, <span class="Identifier">@lines</span>);
+<span class="Comment"># Filter out the long comments</span>
+<span class="Statement">my</span> <span class="Identifier">@short_comments</span> = (<span class="Statement">grep</span> <span class="Statement">&#x7B;</span> <span class="Statement">length</span>(<span class="Identifier">$_</span>) &lt;= <span class="Constant">80</span> ; <span class="Statement">&#x7D;</span> <span class="Identifier">@comments</span>);
+
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>, <span class="Identifier">@short_comments</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>And here's how <code>grep</code> can help us find the first 100 primes:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">@primes</span> = (<span class="Constant">2</span>);
+<span class="Statement">for</span>(<span class="Statement">my</span> <span class="Identifier">$n</span>=<span class="Constant">3</span> ; <span class="Statement">scalar</span>(<span class="Identifier">@primes</span>) &lt; <span class="Constant">100</span> ; <span class="Identifier">$n</span>++)
+&#x7B;
+    <span class="Statement">if</span> (<span class="Statement">scalar</span>(<span class="Statement">grep</span> <span class="Statement">&#x7B;</span> <span class="Identifier">$n</span> % <span class="Identifier">$_</span> == <span class="Constant">0</span> ; <span class="Statement">&#x7D;</span> <span class="Identifier">@primes</span>) == <span class="Constant">0</span>)
+    &#x7B;
+        <span class="Statement">push</span> <span class="Identifier">@primes</span>, <span class="Identifier">$n</span>;
+    &#x7D;
+&#x7D;
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;, &quot;</span>, <span class="Identifier">@primes</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="sort/cmp.html" class="nav">Prev</a></td><td><a href="../references/" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

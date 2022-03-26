@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../style.css" type="text/css"/><link rel="prev" href="../how_it_works.html"/><link rel="next" href="methods.html"/><title>Object Use</title></head><body><main><header><h1>4.2. Object Use</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../" class="nav" accesskey="c">Contents</a></td><td><a href="../" class="nav" accesskey="u">Up</a></td><td><a href="../how_it_works.html" class="nav" accesskey="p">Prev</a></td><td><a href="methods.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../">Perl for Newbies - Part 3 - Modules and Objects</a> → <a href="../">Objects in Perl</a> → <a href="./">Object Use</a></div></nav><p>Let's demonstrate the object use cycle on a very useful Perl class called <code>Data::Dumper</code>. This class accepts a set of perl data structures, and renders them into a string which is an easy-to-read Perl representation of them.</p><p>Here's a program that uses it to display a perl data structure on the screen:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Comment"># Import the Data::Dumper class</span>
+<span class="Statement">use </span>Data::Dumper;
+
+<span class="Comment"># Define a sample data structure</span>
+<span class="Statement">my</span> <span class="Identifier">$data</span> =
+&#x7B;
+    <span class="Constant">&quot;a&quot;</span> =&gt; [ <span class="Constant">5</span>, <span class="Constant">100</span>, <span class="Constant">3</span> ],
+    <span class="Constant">&quot;hello&quot;</span> =&gt;
+    &#x7B;
+        <span class="Constant">&quot;yes&quot;</span> =&gt; <span class="Constant">&quot;no&quot;</span>,
+        <span class="Constant">&quot;r&quot;</span> =&gt; <span class="Constant">&quot;l&quot;</span>,
+    &#x7D;,
+&#x7D;;
+
+<span class="Comment"># Construct a Data::Dumper instance that is associated with this data</span>
+<span class="Statement">my</span> <span class="Identifier">$dumper</span> = Data::Dumper-&gt;new([ <span class="Identifier">$data</span>], [ <span class="Constant">&quot;</span><span class="Special">\$</span><span class="Constant">data&quot;</span> ]);
+
+<span class="Comment"># Call its method that renders it into a string.</span>
+<span class="Statement">print</span> <span class="Identifier">$dumper-&gt;Dump</span>();
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../" class="nav">Contents</a></td><td><a href="../" class="nav">Up</a></td><td><a href="../how_it_works.html" class="nav">Prev</a></td><td><a href="methods.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

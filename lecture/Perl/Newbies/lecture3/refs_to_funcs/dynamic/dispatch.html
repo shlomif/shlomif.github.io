@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../style.css" type="text/css"/><link rel="prev" href="behaviour.html"/><link rel="next" href="lambda-calculus.html"/><title>Demo: A Dispatch Function</title></head><body><main><header><h1>2.3.2. Demo: A Dispatch Function</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="behaviour.html" class="nav" accesskey="p">Prev</a></td><td><a href="lambda-calculus.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../">Perl for Newbies - Part 3 - Modules and Objects</a> → <a href="../">References to Functions</a> → <a href="./">Dynamic References to Functions</a> → <a href="dispatch.html">Demo: A Dispatch Function</a></div></nav><p>It is possible to define more than one closure inside a function. Here is an example that uses closures to create a simple object-like construct. The code here borrows heavily from the book <a href="http://www-mitpress.mit.edu/sicp/">"Structure and Interpretation of Computer Programs"</a> in which a similar code can be found written in Scheme.</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">sub </span><span class="Identifier">create_bank_account</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$name</span> = <span class="Statement">shift</span>;
+    <span class="Statement">my</span> <span class="Identifier">$total</span> = <span class="Constant">0</span>;
+
+    <span class="Statement">my</span> <span class="Identifier">$deposit</span> = <span class="Statement">sub </span>&#x7B;
+        <span class="Statement">my</span> <span class="Identifier">$how_much</span> = <span class="Statement">shift</span>;
+
+        <span class="Identifier">$total</span> += <span class="Identifier">$how_much</span>;
+    &#x7D;;
+
+    <span class="Statement">my</span> <span class="Identifier">$print</span> = <span class="Statement">sub </span>&#x7B;
+        <span class="Statement">my</span> <span class="Identifier">$title</span> = <span class="Statement">shift</span>;
+
+        <span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Identifier">$name</span><span class="Constant"> has </span><span class="Identifier">$total</span><span class="Constant"> NIS.</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+    &#x7D;;
+
+    <span class="Statement">my</span> <span class="Identifier">$can_extract</span> = <span class="Statement">sub </span>&#x7B;
+        <span class="Statement">my</span> <span class="Identifier">$how_much</span> = <span class="Statement">shift</span>;
+
+        <span class="Statement">if</span> (<span class="Identifier">$how_much</span> &lt;= <span class="Constant">0</span>)
+        &#x7B;
+            <span class="Statement">return</span>;
+        &#x7D;
+
+        <span class="Statement">if</span> (<span class="Identifier">$total</span> &gt;= <span class="Identifier">$how_much</span>)
+        &#x7B;
+            <span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Identifier">$name</span><span class="Constant"> can afford to pay it!</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+        &#x7D;
+        <span class="Statement">else</span>
+        &#x7B;
+            <span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Identifier">$name</span><span class="Constant"> cannot afford to pay it!</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+        &#x7D;
+    &#x7D;;
+
+    <span class="Statement">my</span> <span class="Identifier">%ops</span> =
+        (
+            <span class="Constant">&quot;deposit&quot;</span> =&gt; <span class="Identifier">$deposit</span>,
+            <span class="Constant">&quot;print&quot;</span> =&gt; <span class="Identifier">$print</span>,
+            <span class="Constant">&quot;can_extract&quot;</span> =&gt; <span class="Identifier">$can_extract</span>,
+        );
+
+    <span class="Statement">my</span> <span class="Identifier">$dispatch</span> = <span class="Statement">sub </span>&#x7B;
+        <span class="Statement">my</span> <span class="Identifier">$op</span> = <span class="Statement">shift</span>;
+
+        <span class="Comment"># Call the matching operation with the rest of the arguments.</span>
+        <span class="Identifier">$ops&#x7B;$op&#x7D;</span>-&gt;(<span class="Identifier">@_</span>);
+    &#x7D;;
+
+    <span class="Statement">return</span> <span class="Identifier">$dispatch</span>;
+&#x7D;
+
+<span class="Comment"># Create ten bank accounts</span>
+<span class="Statement">my</span> <span class="Identifier">@accounts</span> = (<span class="Statement">map</span> <span class="Statement">&#x7B;</span> create_bank_account(<span class="Constant">&quot;Person #&quot;</span>.<span class="Identifier">$_</span>) <span class="Statement">&#x7D;</span> (<span class="Constant">0</span> .. <span class="Constant">9</span>));
+
+<span class="Statement">while</span> (<span class="Statement">my</span> <span class="Identifier">$line</span> = &lt;&gt;)
+&#x7B;
+    <span class="Statement">chomp</span>(<span class="Identifier">$line</span>);
+    <span class="Statement">my</span> <span class="Identifier">@components</span> = <span class="Statement">split</span>(<span class="Statement">/</span><span class="Special">\s+</span><span class="Statement">/</span>, <span class="Identifier">$line</span>);
+    <span class="Statement">my</span> <span class="Identifier">$account_index</span> = <span class="Statement">shift</span>(<span class="Identifier">@components</span>);
+    <span class="Statement">my</span> <span class="Identifier">$op</span> = <span class="Statement">shift</span>(<span class="Identifier">@components</span>);
+
+    <span class="Identifier">$accounts[$account_index]</span>-&gt;(<span class="Identifier">$op</span>, <span class="Identifier">@components</span>);
+&#x7D;
+
+<span class="Comment"># Usage:</span>
+<span class="Comment"># [Account Number] [Operation] [Parameters]</span>
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="behaviour.html" class="nav">Prev</a></td><td><a href="lambda-calculus.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

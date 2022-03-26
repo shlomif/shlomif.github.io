@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="basics.html"/><link rel="next" href="notes.html"/><title>Makefile Variables</title></head><body><main><header><h1>3.2. Makefile Variables</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="basics.html" class="nav" accesskey="p">Prev</a></td><td><a href="notes.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">Software Development under Linux</a> → <a href="./">Writing Makefiles</a> → <a href="variables.html">Makefile Variables</a></div></nav><ul class="point"><li>We can define variables in makefiles to make the writing shorter and the modifications easier.</li><li>Rewriting the previous makefile with variables and extra targets:</li></ul><div class="mycode"><pre>
+<span class="c31">CC</span>= gcc
+<span class="c31">LD</span>= gcc
+<span class="c31">CC_FLAGS </span>= -ansi -Wall -c
+<span class="c31">LD_FLAGS </span>= -Wall
+
+<span class="c31">all</span>: foo bar
+
+<span class="c31">foo</span>: foo.o helper.o
+    <span class="c31">$(LD)</span> <span class="c31">$(LD_FLAGS)</span> foo.o helper.o -o foo
+<span class="c31">bar</span>: bar.o helper.o
+    <span class="c31">$(LD)</span> <span class="c31">$(LD_FLAGS)</span> bar.o helper.o -o bar
+
+<span class="c31">bar.o</span>: bar.c
+    <span class="c31">$(CC)</span> <span class="c31">$(CC_FLAGS)</span> bar.c
+<span class="c31">foo.o</span>: foo.c foo.h
+    <span class="c31">$(CC)</span> <span class="c31">$(CC_FLAGS)</span> foo.c
+
+<span class="c31">clean</span>: rm -f *.o foo bar
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="basics.html" class="nav">Prev</a></td><td><a href="notes.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

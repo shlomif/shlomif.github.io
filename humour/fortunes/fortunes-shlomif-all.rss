@@ -1,0 +1,1936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0"
+ xmlns:atom="http://www.w3.org/2005/Atom"
+ xmlns:blogChannel="http://backend.userland.com/blogChannelModule"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+>
+
+<channel>
+<title>Shlomi Fish&#x27;s Fortune Feeds</title>
+<link>http://www.shlomifish.org/humour/fortunes/</link>
+<description>Shlomi Fish&#x27;s Fortune Feeds</description>
+<webMaster>shlomif@cpan.org (Shlomi Fish)</webMaster>
+<atom:link href="http://www.shlomifish.org/humour/fortunes/fortunes-shlomif-all.rss" rel="self" type="application/rss+xml"/>
+
+<item>
+<title>Joel on Software - Why People Buy Operating Systems</title>
+<link>http://www.shlomifish.org/humour/fortunes/joel-on-software.html#joel-why-people-buy-OSes</link>
+<description>Joel on Software - Why People Buy Operating Systems</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/joel-on-software.html#joel-why-people-buy-OSes</guid>
+<pubDate>Wed, 13 Oct 2021 04:46:31 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;joel-why-people-buy-OSes&#x22;&#x3E;Joel on Software - Why People Buy Operating Systems&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;Remember the definition of an operating system? It&#xE2;&#x80;&#x99;s the
+                thing that manages a computer&#xE2;&#x80;&#x99;s resources so that application
+                programs can run.  People don&#xE2;&#x80;&#x99;t really care much about
+                operating systems; they care about those application programs
+                that the operating system makes possible.  Word Processors.
+                Instant Messaging. Email. Accounts Payable. Web sites with
+                pictures of Paris Hilton. By itself, an operating system is not
+                that useful. People buy operating systems because of the useful
+                applications that run on it. And therefore the most useful
+                operating system is the one that has the most useful
+                applications.&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;The logical conclusion of this is that if you&#xE2;&#x80;&#x99;re trying to
+                sell operating systems, the most important thing to do is make
+                software developers want to develop software for your operating
+                system. That&#xE2;&#x80;&#x99;s why Steve Ballmer &#x3C;a href=&#x22;http://www.ntk.net/ballmer/mirrors.html&#x22;&#x3E;was jumping
+                around the stage&#x3C;/a&#x3E; shouting &#xE2;&#x80;&#x9C;Developers, developers,
+                developers, developers.&#xE2;&#x80;&#x9D; It&#xE2;&#x80;&#x99;s so important for Microsoft that
+                the only reason they don&#xE2;&#x80;&#x99;t outright &#x3C;em&#x3E;give away
+                &#x3C;/em&#x3E;development tools for Windows is because they don&#xE2;&#x80;&#x99;t want
+                to inadvertently cut off the oxygen to competitive development
+                tools vendors (well, those that are left) because having a
+                variety of development tools available for their platform makes
+                it that much more attractive to developers. But they really
+                &#x3C;em&#x3E;want&#x3C;/em&#x3E; to give away the development tools. Through their
+                &#x3C;a href=&#x22;http://members.microsoft.com/partner/competency/isvcomp/empower/default.aspx&#x22;&#x3E;Empower
+                ISV&#x3C;/a&#x3E; program you can get five complete sets of MSDN
+                Universal (otherwise known as &#xE2;&#x80;&#x9C;&#x3C;em&#x3E;basically every Microsoft
+                product except Flight Simulator&#x3C;/em&#x3E;&#xE2;&#x80;&#x9C;) for about $375. Command
+                line compilers for the .NET languages are included with the
+                free .NET runtime&#xE2;&#x80;&#xA6; also free. The C++ compiler is now &#x3C;a href=&#x22;http://msdn.microsoft.com/visualc/vctoolkit2003/&#x22;&#x3E;free&#x3C;/a&#x3E;.
+                Anything to encourage developers to build for the .NET
+                platform, and holding just short of wiping out companies like
+                Borland.&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Joel Spolsky&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;http://www.joelonsoftware.com/articles/APIWar.html&#x22;&#x3E;How Microsoft Lost the API War&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>&#x22;When I hear SASL&#x22;</title>
+<link>http://www.shlomifish.org/humour/fortunes/sharp-perl.html#sharp-perl-when-I-hear-SASL</link>
+<description>&#x22;When I hear SASL&#x22;</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/sharp-perl.html#sharp-perl-when-I-hear-SASL</guid>
+<pubDate>Wed, 13 Oct 2021 12:45:07 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;sharp-perl-when-I-hear-SASL&#x22;&#x3E;&#x22;When I hear SASL&#x22;&#x3C;/h3&#x3E;
+      &#x3C;table class=&#x22;irc-conversation&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Altreus&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;oh, SASL actually works here&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Altreus&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;nice to not have to /nick and reauth&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;El_Che&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;when I hear SASL, I think LDAP and pain&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;El_Che: when I hear SASL, I think of you&#xE2;&#x80;&#xA6; ;)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rbraun&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;LOL&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Altreus&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;as long as it&#x27;s other people&#x27;s pain&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;channel&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Channel&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;#perl&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;network&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Network&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Freenode&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>&#x22;3 to 1&#x22;</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#three-to-one-rabbis</link>
+<description>&#x22;3 to 1&#x22;</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#three-to-one-rabbis</guid>
+<pubDate>Wed, 20 Oct 2021 05:11:47 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;three-to-one-rabbis&#x22;&#x3E;&#x22;3 to 1&#x22;&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+Seems like these four rabbis had a series of theological arguments, and three
+were always in accord against the fourth.  One day, the odd rabbi out, with
+the usual &#x22;3 to 1, majority rules&#x22; statement that signified that he had lost
+again, decided to appeal to a higher authority.  &#x22;Oh, God!&#x22; he cried.  &#x22;I
+know in my heart that I am right and they are wrong!  Please show me a sign,
+so they too will know that I understand Your laws.&#x22;
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+	It was a beautiful, sunny day.  As soon as the rabbi finished his
+plaint, a storm cloud moved across the sky above the four.  It rumbled once
+and dissolved.  &#x22;A sign from God!  See, I&#x27;m right, I knew it!&#x22;  But the other
+three disagreed, pointing out that stormclouds form on hot days.
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+So he asked again: &#x22;Oh, God, I need a bigger sign to show that I am
+right and they are wrong.  So please, God, a bigger sign.&#x22;
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+This time four stormclouds appeared, rushed toward each other to form
+one big cloud, and a bolt of lightning knocked down a tree ten feet away from
+the rabbis.  The cloud dispersed at once.  &#x22;I told you I was right!&#x22; insisted
+the loner, but the others insisted that nothing had happened that could not
+be explained by natural causes.
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+The insisting rabbi is all ready to ask for a *very big* sign when
+just as he says &#x22;Oh God...&#x22; the sky turns pitch black, the earth shakes, and
+a deep, booming voice intones, &#x22;HEEEEEEEE&#x27;S RIIIIIIIGHT!&#x22;
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+The sky returns to normal.  The one rabbi puts his hands on his hips
+and snarls, &#x22;Well?&#x22;  &#x22;Okay, okayyyy,&#x22; replied another, &#x22;so now it&#x27;s 3 to 2!&#x22;
+&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;via fortune-mod&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://github.com/shlomif/fortune-mod/blob/bd50022492379436a8b219112ef537b112f2e397/fortune-mod/datfiles/off/unrotated/religion#L860&#x22;&#x3E;fortune&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Third Cousin</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#trashlord-third-cousin</link>
+<description>Third Cousin</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#trashlord-third-cousin</guid>
+<pubDate>Wed, 20 Oct 2021 11:57:03 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;trashlord-third-cousin&#x22;&#x3E;Third Cousin&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+I had sex with my third cousin. My sister told me to stop counting.
+&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Trashlord&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;#perlcafe conversation.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Quote from &#x22;Steal Like an Artist&#x22;</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#steal-like-an-artist-1</link>
+<description>Quote from &#x22;Steal Like an Artist&#x22;</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#steal-like-an-artist-1</guid>
+<pubDate>Sun,  7 Nov 2021 15:29:32 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;steal-like-an-artist-1&#x22;&#x3E;Quote from &#x22;Steal Like an Artist&#x22;&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+As the French writer Andr&#xC3;&#xA9; Gide put it, &#xE2;&#x80;&#x9C;Everything that needs to be said
+has already been said. But, since no one was listening, everything must be
+said again.&#xE2;&#x80;&#x9D; If we&#xE2;&#x80;&#x99;re free from the burden of trying to be completely
+original, we can stop trying to make something out of nothing, and we can
+embrace influence instead of running away from it.
+&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Austin Kleon&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://austinkleon.com/steal/&#x22;&#x3E;Steal Like an Artist&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Stop eating for one year</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#stop_eating_for_a_year</link>
+<description>Stop eating for one year</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#stop_eating_for_a_year</guid>
+<pubDate>Sat, 13 Nov 2021 07:49:08 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;stop_eating_for_a_year&#x22;&#x3E;Stop eating for one year&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+&#x3C;b&#x3E;Jack:&#x3C;/b&#x3E; I suggest we stop eating for one year and thus save a lot of money. But what will we buy with all the money we save?
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+&#x3C;b&#x3E;Sophie:&#x3C;/b&#x3E; we&#x27;ll buy food!
+&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;http://www.shlomifish.org/humour.html#taking_good_care_of_a_book&#x22;&#x3E;Aphorisms Collection&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Shlomi Fish&#x2019;s Chuck Norris Fact #162</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-162</link>
+<description>Shlomi Fish&#x2019;s Chuck Norris Fact #162</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-162</guid>
+<pubDate>Wed, 22 Dec 2021 18:35:24 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-fact-chuck-162&#x22;&#x3E;Shlomi Fish&#xE2;&#x80;&#x99;s Chuck Norris Fact #162&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+                    Captain Picard told Chuck Norris to
+                    &#x3C;a href=&#x22;https://scifi.stackexchange.com/questions/9695/whats-the-origin-of-picards-signature-phrase-make-it-so&#x22;&#x3E;&#x22;make it so&#x22;&#x3C;/a&#x3E;.
+                    Chuck made it so much better.
+                    &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;http://www.shlomifish.org/humour/bits/facts/Chuck-Norris/&#x22;&#x3E;Chuck Norris Facts by Shlomi Fish and Friends&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Shlomi Fish&#x2019;s Chuck Norris Fact #163</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-163</link>
+<description>Shlomi Fish&#x2019;s Chuck Norris Fact #163</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-163</guid>
+<pubDate>Tue, 28 Dec 2021 10:42:25 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-fact-chuck-163&#x22;&#x3E;Shlomi Fish&#xE2;&#x80;&#x99;s Chuck Norris Fact #163&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+                    Chuck Norris coerced God into giving him the source code of
+                    the universe, but then destroyed it because real
+                    programmers can alter binaries directly.
+                    &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;http://www.shlomifish.org/humour/bits/facts/Chuck-Norris/&#x22;&#x3E;Chuck Norris Facts by Shlomi Fish and Friends&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Shlomi Fish&#x2019;s Summer Glau Fact #33</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-sglau-33</link>
+<description>Shlomi Fish&#x2019;s Summer Glau Fact #33</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-sglau-33</guid>
+<pubDate>Mon, 17 Jan 2022 04:22:26 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-fact-sglau-33&#x22;&#x3E;Shlomi Fish&#xE2;&#x80;&#x99;s Summer Glau Fact #33&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+                    If Chuck Norris were to screw hot babes (ex. Jessica Alba,
+                    Jessica Simpson, Jennifer Garner, Jennifer Aniston, and
+                    Paris Hilton.) I can assure you that that their acting
+                    careers will no longer prosper due to the fact that they
+                    will spend the rest of their lives in wheelchairs.
+                    &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+                    On the other hand, if he &#x3C;b&#x3E;tried&#x3C;/b&#x3E; to &#xE2;&#x80;&#x9C;screw&#xE2;&#x80;&#x9D; Summer
+                    Glau, he&#x27;d be the one in the wheelchair.
+                    &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;http://www.shlomifish.org/humour/bits/facts/Summer-Glau/&#x22;&#x3E;Summer Glau Facts by Shlomi Fish and Friends&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Men being attracted to physically strong women</title>
+<link>http://www.shlomifish.org/humour/fortunes/sharp-perl.html#sharp-perl-physically-strong-women</link>
+<description>Men being attracted to physically strong women</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/sharp-perl.html#sharp-perl-physically-strong-women</guid>
+<pubDate>Wed, 26 Jan 2022 16:19:37 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;sharp-perl-physically-strong-women&#x22;&#x3E;Men being attracted to physically strong women&#x3C;/h3&#x3E;
+      &#x3C;table class=&#x22;irc-conversation&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;wow! the chicks here are so beautiful and physically strong: https://www.youtube.com/channel/UCZF1RB5xiirFDb2nPhoh36A . I don&#x27;t recall ever being so aroused.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Paperbot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Link title(s): [ GYM GIRLS CLUB - YouTube ]&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf: it&#x27;s the gaslighting of society&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;and it&#x27;s fucking hilarious and sad at the same time&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;men, deep down, prefer to have strong capable women that can actually guard the household and protect the kids while the man is off doing man things (like, going on hunting things for months on end, or laying siege to nations, or w/e)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;modern third wave feminism is this weird hijacking of the attempt to reset things to normal&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;like, they started out well, I even agree with their ideals, but it just got fucked over and subverted to help the nation/state/corporation machine&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;this&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;men should be aroused by women that show physically healthy traits&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: ah&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;&#x22;oh, but if you like women like that, you&#x27;re a closet homosexual&#x22; -- gaslighters&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;&#x22;oh, if you like women like that, you hate women&#x22; -- gaslighters&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;&#x22;oh, if you like that and not docile little women, you hate femininity&#x22; -- gaslighting from the ridiculous right and their trad obsession&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: https://www.shlomifish.org/meta/FAQ/are_you_a_sexist__are_you_a_feminist.xhtml&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Paperbot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Link title(s): [ Shlomi Fish&#xE2;&#x80;&#x99;s FAQ - Are you a sexist? Are you a Feminist? ]&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;yeah, I&#x27;ve seen your shit :P&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;but yeah, no, dude, you&#x27;re fine&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;women like that are somewhere on the healthy image scale&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;maybe a little *too* healthy, but I don&#x27;t judge&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: heh. people need to be wellrounded&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;they need to be in shape, and no, round isn&#x27;t a shape&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;badass fluttershy: https://www.shlomifish.org/humour/Terminator/Liberation/ongoing-text.html#hannah-using-a-tank&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Paperbot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Link title(s): [ &#xE2;&#x80;&#x9C;Terminator: Liberation&#xE2;&#x80;&#x9D; - An Illustrated Screenplay for a Terminator parody - Ongoing Text - ]&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: heh. nice pun&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3++&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://twitter.com/shlomif/status/1480050133014388736&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Paperbot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Shlomi Fish (@shlomif) 17d4h ago: https://classics.mit.edu/Aristotle/poetics.1.1.html - like Aristotle notes about Homer, the characters in my fics are confident, open, forgiving, competent, funny [I hope], greedy, generous, passionate, and sexy. https://www.shlomifish.org/humour/&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: https://github.com/shlomif/shlomif-tech-diary/blob/master/multiverse-cosmology-v0.4.x.asciidoc#user-content-about-sex&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Paperbot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Link title(s): [ shlomif-tech-diary/multiverse-cosmology-v0.4.x.asciidoc at master &#xC2;&#xB7; shlomif/shlomif-tech-diary &#xC2;&#xB7; ... ]&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf: you write weird shit man :P&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: I knowz&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: https://www.shlomifish.org/humour/fortunes/show.cgi?id=doing-hot-celebs--2021-edition&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Paperbot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Link title(s): [ Doing Hot Celebs - Fortune ]&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;stop hitting on all the poly polymaths&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: heh :D&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I&#x27;m just flirting&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: can I publish this conversation?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Trashlord&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I think technically it&#x27;s allowed since it&#x27;s a public forum&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Trashlord&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;legally, at least&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Trashlord: true, but I don&#x27;t want Diablo-D3 to get hurt&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Trashlord: https://www.shlomifish.org/humour/fortunes/show.cgi?id=sharp-perl-jobs-EmWatson-Saladin-knights-Templar - I changed johndoemer&#x27;s name&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Paperbot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Link title(s): [ Jobs, Emma Watson, Saladin &#x26;amp; Knights Templar - Fortune ]&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Trashlord: hi, sup?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I can&#x27;t stop you from publishing, but I&#x27;m certainly not saying anything new&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;entire books are written about the subject by better writers&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: TL;DR ;]&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: https://www.youtube.com/watch?v=FFrag8ll85w&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Paperbot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;YouTube video linked by rindolf: Show Me the Money!   Jerry Maguire 1 8) Movie CLIP (1996) HD - published by itsathwv&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: here?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;yes?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: sup?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: re women - i think both sexes covet competence&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Trashlord: #gamedev &#x27;aleyhum&#x27; me so i ran away&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Trashlord: also https://twitter.com/shlomif/status/1477951381248122881&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Paperbot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Shlomi Fish (@shlomif) 26d8h ago: https://mlp.fandom.com/wiki/Discord used to insist that his pronouns are &#x22;it/its&#x22;. Transilliness. #mylittlepony&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;[05:39:39] &#x26;lt;rindolf&#x26;gt; Diablo-D3: re women - i think both sexes covet competence&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;they do.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;guys want to surround themselves with competence but not more competent than themselves (else they have to vie for the same head of the alpha local maximum)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;women want to bang the alpha&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: hi, i&#x27;m thinking&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Diablo-D3&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hi thinking, I&#x27;m dad&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Diablo-D3: thing is: i want a seesaw battle-of-wits, like in https://www.shlomifish.org/humour/Queen-Padme-Tales/Queen-Padme-Tales--The-Fifth-Sith.html#after-the-date .&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;e.g. in TBBT, https://bigbangtheory.fandom.com/wiki/Penny is the leader, or on #perl it&#x27;s mst, but they win arguments much less than 50% of the time.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;channel&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Channel&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;#perlcafe&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;network&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Network&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Freenode&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>#typescript - Programming Languages and Tools</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-typescript-discussion-about-programming-languages-and-tools</link>
+<description>#typescript - Programming Languages and Tools</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-typescript-discussion-about-programming-languages-and-tools</guid>
+<pubDate>Fri, 28 Jan 2022 05:30:24 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;sharp-typescript-discussion-about-programming-languages-and-tools&#x22;&#x3E;#typescript - Programming Languages and Tools&#x3C;/h3&#x3E;
+      &#x3C;table class=&#x22;irc-conversation&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;trampi&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Hi! Where can I find the TypeScript language spec? It was previously available here, but it has been archived: https://github.com/microsoft/TypeScript/tree/main/doc&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;trampi: There&#x27;s no spec, they stopped caring about it a few years ago&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;systemfault++&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;IRC karma &#x26;gt; gold&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;;)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I think specs can often be useful for design, though.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;sometimes they can be pointless.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;:)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I don&#x27;t believe anyone would write another complete TypeScript compiler (I&#x27;m not talking about a TS stripper, there are already a lot of them)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;systemfault: &#x22;believe it.&#x22; -- http://www.earthstar.co.uk/deep1.htm&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;or https://www.shlomifish.org/humour/bits/facts/Taylor-Swift/  &#xE2;&#x80;&#xA6;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;or Chuck for that matter: https://en.wikipedia.org/wiki/Chuck_Norris_facts&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;;)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Haha :)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;systemfault: \o/&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;systemfault: my sites/blogs have many other jokes&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;systemfault: do you have WWW presence?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I&#x27;ve browsed through your website, it&#x27;s fine.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;jadew&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hey guys, I have a generic class &#x26;lt;T&#x26;gt;, and a method that takes &#x26;lt;O&#x26;gt;, is there a way to constrain O to extend T?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;jadew&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hmm, there might be&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;systemfault: http://old-1998-site.shlomifish.org/ - humble start&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I don&#x27;t, I bought my domain name but only use it for my Google email account&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;jadew: have you tried &#x26;lt;O extends T&#x26;gt; ?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;jadew&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;yeah, doesn&#x27;t work&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Can you write a small repro on the TS playground?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;systemfault: ah. :|&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;jadew&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;wait, that&#x27;s not what I want&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;jadew&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I want T extends O&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;jadew&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;nevermind, this is a non-issue&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Good :)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf: simple websites like that age well, it looks fine on my phone&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;jadew++ # updating us&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;systemfault: true, but I want a navigation menu, a breadcrumbs trail/etc&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://everybootstrap.site/ ;)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hey philosophical question. I think I saw an answer somewhere but forgot it. Why do programming languages have statements? I know the historical reason: FORTRAN had statements and expressions, and then the division just kind of was inherited on to other languages. But is there some tangible BENEFIT from saying &#x22;this here is not an expression, it doesn&#x27;t return a value you can assign or use elsewhere&#x22;?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I don&#x27;t know, my guess is simply because of how programming started.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;maybe something to do with sequence points?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;but it&#x27;s such an &#x22;obvious&#x22; thing that you might always want to potentially have a value back from any kind of expression; and, like, why not? It can always be ignored if it&#x27;s not needed&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;and I mean, new languages get designed all the time. Why does TypeScript have statements (ok, because js). Why does rust have statements?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://doc.rust-lang.org/reference/statements.html seems it&#x27;s declarations mostly&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;There&#x27;s a classic old paper that could be relevant&#xE2;&#x80;&#xA6; &#x22;Can Programming Be Liberated from the von Neumann Style? A Functional Style and Its Algebra of Programs&#x22;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;By John Bacus&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://www.cs.cmu.edu/~crary/819-f09/Backus78.pdf&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;systemfault: https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;sig: https://twitter.com/shlomif/status/1479822015464976389&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;sig: https://duckduckgo.com/?q=lambda+calculus&#x26;amp;atb=v140-1&#x26;amp;ia=web , Lambda Calculus, is cool, but gets tedious&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://www.shlomifish.org/humour/fortunes/show.cgi?id=sharp-programming-German-as-he-is-spoke&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf: Lambda Calculus is tedious because there aren&#x27;t good tools; there aren&#x27;t good tools because there hasn&#x27;t been a billion dollar demand&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;systemfault: cool paper. Reminds of Ryan Dahl lamenting how broken NPM and node.js is&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;sig: Then he went on to create Deno&#xE2;&#x80;&#xA6; which isn&#x27;t that much better&#xE2;&#x80;&#xA6;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;sig: perl is not tedious&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;sig: What will be his next project? Oden? Done? Nedo? Edon? What combination of &#x22;Node&#x22; is he going to use? ;)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf: perl also has absolutely nothing to do with lambda calculus :D&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Anyway, TL;DR&#xE2;&#x80;&#xA6; programming started really close to the machine which is imperative&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;systemfault: I don&#x27;t know enough history to know if Backus ever got a chance to have a stab at (more) functional languages than fortran and algol&#xE2;&#x80;&#xA6;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I used to write Perl in https://en.wikipedia.org/wiki/Joe&#x27;s_Own_Editor&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;The first programming languages were very simple abstractions on top of assembly&#xE2;&#x80;&#xA6; because well, CPU and RAM were very limited&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;sig: my point was that Perl lacks good tools and yet&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Perl is dead :P&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;ahum, ok&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I was actually super impressed with Perl when I once tried it&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I had this list of files and I wanted to generate an album HTML page&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;It&#x27;s like COBOL, existing codebases will keep being maintained&#xE2;&#x80;&#xA6; but I&#x27;m not sure that anyone is going to start a new Perl 5 project in 2022&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;@files = `ls`   # holy shit did I just parse the filenames in current directory into a list?!&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;systemfault&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;And Perl 6&#xE2;&#x80;&#xA6; was renamed Raku.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;sig: heh, I did an HTML album too&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;avu&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;sig: you did just parse the filenames in the current directory in a broken way that at best works most of the time, yes :)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;avu: scripting only needs to work for me, right now&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;TypeScript is an okay scripting language  &#x22;;D&#x22;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hey is it true btw that ts-node isn&#x27;t &#x22;production quality&#x22;? You can&#x27;t actually spawn lots of workers using it or whatever&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;avu&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;using ls in scripts is just as wrong in perl as it is in bash&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;sig&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;not if it works  &#x26;gt;:3&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;systemfault: https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f ;)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;sig: I find tsc/ts better than raw js.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I also use https://emscripten.org/&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Night all. Try dreaming of something more pleasant than COBOL&#xE2;&#x80;&#xA6;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;channel&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Channel&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;#typescript&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;network&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Network&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Freenode&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Shlomi Fish&#x2019;s Windows Update Fact #10</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-win-update-10</link>
+<description>Shlomi Fish&#x2019;s Windows Update Fact #10</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-win-update-10</guid>
+<pubDate>Thu, 24 Feb 2022 08:58:44 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-fact-win-update-10&#x22;&#x3E;Shlomi Fish&#xE2;&#x80;&#x99;s Windows Update Fact #10&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+                    If the Hare in &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/The_Tortoise_and_the_Hare&#x22;&#x3E;the
+                    &#x22;Tortoise and the Hare&#x22;&#x3C;/a&#x3E; was pitted against Windows
+                    Update, he could have taken a two weeks-long vacation in
+                    the Caribbean and still win.
+                    &#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;http://www.shlomifish.org/humour/bits/facts/Windows-Update/&#x22;&#x3E;Windows Update Facts by Shlomi Fish and Friends&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Let&#x27;s just kill prejudice</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#lets-just-kill-prejudice</link>
+<description>Let&#x27;s just kill prejudice</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#lets-just-kill-prejudice</guid>
+<pubDate>Thu,  3 Mar 2022 13:26:12 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;lets-just-kill-prejudice&#x22;&#x3E;Let&#x27;s just kill prejudice&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+First people were prejudiced about new vs. old. Then about popularity. Now they are about &#x22;mainstream&#x22;ness. &#x3C;a href=&#x22;https://www.shlomifish.org/humour/fortunes/show.cgi?id=two-kinds-of-fools&#x22;&#x3E;&#x22;Two kinds of fools&#x22;&#x3C;/a&#x3E;.
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+Let&#x27;s just kill prejudice once and for all! When I described Kate in my &#x3C;a href=&#x22;https://www.shlomifish.org/humour/Selina-Mandrake/&#x22;&#x3E;&#x3C;i&#x3E;Selina Mandrake&#x3C;/i&#x3E;&#x3C;/a&#x3E; story as a socialite, I was attacked, but what&#x27;s wrong with being one?
+&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://twitter.com/shlomif/status/1364839109068541958&#x22;&#x3E;Tweet&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>##writing - Pluralistic Tooling</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-writing-pluralistic-tooling</link>
+<description>##writing - Pluralistic Tooling</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-writing-pluralistic-tooling</guid>
+<pubDate>Mon,  7 Mar 2022 04:24:14 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;sharp-writing-pluralistic-tooling&#x22;&#x3E;##writing - Pluralistic Tooling&#x3C;/h3&#x3E;
+      &#x3C;table class=&#x22;irc-conversation&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;bomb&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;nothing rindolf&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;bomb&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;how was your day?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;bomb: productive&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;bomb: hacked on xhtml5, css, tt2, perl5, py3, etc. codes&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;bomb&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;that&#x27;s cool rindolf but what is tt2&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;bomb&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf aye template toolkit&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;bomb: yes. jinja2&#x27;s scoping confuses me :[&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;bomb&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I liked jinja2 when I was using Flask, but it&#x27;s smarter that it should be. gotta keep the template dumb&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;bomb: yes&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;i  used bottle.py for this script: https://www.shlomifish.org/humour/fortunes/show.cgi?id=shlomif-beauty-products-as-the-stone-soup-effect&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;bomb&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;ah, good ol&#x27; bottle.py, I remember it was way faster than Flask&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;also used sqlite&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;bomb&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;do you run it on Gunicorn?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;bomb: it is shared hosting - https://www.shlomifish.org/meta/hosting/&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;bomb&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf hmm, uses CGI then?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://www.shlomifish.org/meta/FAQ/site_loads_quickly.xhtml&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;bomb: maybe. i dont care as long as it&#x27;s fast&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;bomb&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;just make sure you don&#x27;t write a popular article :)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;bomb: https://www.buzzfeed.com/rossalynwarren/emma-watson-crashed-the-un-website - new age slashdot effect&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;most of my site is static&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Roey: shabbath shalosh&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Roey: i hacked on xhtml5, css, tt2, perl5, py3, etc. codes&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Roey&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf: shabbat shalom :)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Roey&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;yeah? what di dyou make with them/&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Roey&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Roey: web-pages. eg: https://www.shlomifish.org/humour/So-Who-The-Hell-Is-Qoheleth/ongoing-text.html&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;channel&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Channel&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;##writing&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;network&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Network&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Freenode&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>#security - Tanking Tanks</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-security-tanks</link>
+<description>#security - Tanking Tanks</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-security-tanks</guid>
+<pubDate>Fri, 11 Mar 2022 15:14:13 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;sharp-security-tanks&#x22;&#x3E;#security - Tanking Tanks&#x3C;/h3&#x3E;
+      &#x3C;table class=&#x22;irc-conversation&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Russia cutting off internet march11!&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;what can we do&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;operational&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;talk to elon&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;u mean starlink?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;ajak&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;right, because #security is who should be doing things&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;can we bypass this?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;ajak&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;...?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;still get access&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;ajak&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;???&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;HAM radio + email repeaters&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;you can send basic HTML over it&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;They&#x27;re still gonna need internet for their own local shit&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;so realistically it&#x27;s gonna be some BGP block or DNS fuckery&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;i&#x27;m sure if the Chinese can bypass the GFW so can the russians&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;ooh&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;.onion proxies and etc etc will help&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;so i simply continue to use .ru urls?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;what&#x27;s GFW?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;great firewall of china&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;GFW&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;ohhh&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;i need to get myself a HAM radio&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;are there .onion proxies for every possible url?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;ajak&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;what does that mean&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;no&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;.onions must be set up by the site admin&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;you don&#x27;t need a HAM radio to access Tor&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;but a HAM radio can help access other parts of the internet&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;BoBeR182&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;even if it&#x27;s just downloading an RSS feed&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;oh awesome that&#x27;s neat&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;idk the ru sites&#x27; admins&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;godSend23: see #linux&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;ok rindolf&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;why there?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;godSend23: i noted that i suspect russia will be egypt 2&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;godSend23&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;hmm&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;.ru-ers are crazy&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Apachez&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://twitter.com/UAWeapons/status/1501288850055995396  &#x22;The Ukrainian John Deere Brigade apparently found another abandoned T-80U tank.&#x22; :D&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;ajak&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;yes, everyone following the war knows Ukraine has captured at least several heavy vehicles a day&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;CombatVet&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;savage&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Apachez&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://pbs.twimg.com/media/FNW200nVQAAqWxR?format=jpg&#x26;amp;name=large&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Apachez&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;CombatVet: the next expansion pack for farming simulator? ;)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Apachez&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;how to tow a tank =)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;CombatVet&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;that thing is pulling like 20x+ its weight&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;ajak: reallife tanks are hateful - https://www.shlomifish.org/humour/Terminator/Liberation/indiv-nodes/hannah-using-a-tank.xhtml&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;ajak&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;what are you on about&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Apachez: heh&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;ajak: tanks are big, heavy, unagile &#x26;amp; vulnerable&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;and an environmental menace&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;ajak&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;i think this is a bit orthogonal to the issue&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;ajak: maybe,...&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;ajak: it tends2get stuffy inside tanks&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;cockatoodude&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;death in a tank, is horrible&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;cockatoodude&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;generally the tank becomes impossible to exit, and on fire, and you burn to death usually fairly slowly as the fuel leaks and spreads and ignites&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;That put aside, despite common belief, NASA astronauts did use pencils in space at first ( https://www.scientificamerican.com/article/fact-or-fiction-nasa-spen/ ), just like their Soviet peers.  However, this solution was found to be lacking. As a result, space-friendly pens were developed (within budget) and used (including by the USSR cosmonauts).&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;cockatoodude: :[&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mats1&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://www.theguardian.com/world/2022/mar/08/kyiv-deadlock-contrasts-russia-worrying-south-ukraine-war-progress&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;websec&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;^ Focus on Kyiv deadlock obscures Russia&#xE2;&#x80;&#x99;s success in south Ukraine | Ukraine | The Guardian&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;channel&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Channel&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;#security&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;network&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Network&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Freenode&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Good Luck, Bad Luck</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#good-luck-bad-luck</link>
+<description>Good Luck, Bad Luck</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#good-luck-bad-luck</guid>
+<pubDate>Sat, 12 Mar 2022 06:15:29 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;good-luck-bad-luck&#x22;&#x3E;Good Luck, Bad Luck&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+ There is a Chinese story of a farmer who used an old horse to till his fields. One day, the horse escaped into the hills and when the farmer&#x27;s neighbors sympathized with the old man over his bad luck, the farmer replied, &#x22;Bad luck? Good luck? Who knows?&#x22; A week later, the horse returned with a herd of horses from the hills and this time the neighbors congratulated the farmer on his good luck. His reply was, &#x22;Good luck? Bad luck? Who knows?&#x22;
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+Then, when the farmer&#x27;s son was attempting to tame one of the wild horses, he fell off its back and broke his leg. Everyone thought this very bad luck. Not the farmer, whose only reaction was, &#x22;Bad luck? Good luck? Who knows?&#x22;
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+Some weeks later, the army marched into the village and conscripted every able-bodied youth they found there. When they saw the farmer&#x27;s son with his broken leg, they let him off. Now was that good luck or bad luck?
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+Who knows?
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+Everything that seems on the surface to be an evil may be a good in disguise. And everything that seems good on the surface may really be an evil. So we are wise when we leave it to God to decide what is good fortune and what misfortune, and thank him that all things turn out for good with those who love him.
+&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Unknown&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;http://www.naute.com/inspiration/luck.phtml&#x22;&#x3E;Web page&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>#web - Lesbianism, heterosexuality, and Sappho</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-web--lesbian-straight-and-Sappho</link>
+<description>#web - Lesbianism, heterosexuality, and Sappho</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-web--lesbian-straight-and-Sappho</guid>
+<pubDate>Sun, 20 Mar 2022 04:30:49 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;sharp-web--lesbian-straight-and-Sappho&#x22;&#x3E;#web - Lesbianism, heterosexuality, and Sappho&#x3C;/h3&#x3E;
+      &#x3C;table class=&#x22;irc-conversation&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;kee++&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;i think hiding info from &#x27;hackers&#x27; is futile and nonconstructive - https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/indiv-nodes/fear-is-path-to-dark-side.xhtml&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Natasha&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;&#x26;gt;&#x26;gt; Putting Cards on the Table (2019-2022) - &#x22;Fear is the path to the dark side&#x22;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;K4rMa&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;i wonder if most muscular women are lesbians&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Statistically speaking, it&#x27;s unlikely.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Most women aren&#x27;t lesbians, so there&#x27;d have to be a high correlation between muscle-building exercise and sexuality, and I don&#x27;t see why there should be.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;K4rMa: there was https://friends.fandom.com/wiki/The_One_With_The_Male_Nanny&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Natasha&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;&#x26;gt;&#x26;gt; The One With The Male Nanny | Friends Central | Fandom&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;and i cried recently too when listening to songs&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;K4rMa&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;friends is great&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;kee: i suspect https://en.wikipedia.org/wiki/Sappho wasn&#x27;t really homosexual just playful and parodical, not unlike Ezekiel&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;K4rMa: yes. i also like TBBT, which is similar&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;K4rMa&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;the big bang theory is the worst&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;https://en.wikipedia.org/wiki/The_Big_Bang_Theory&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf: Ah yes. Sappho and her very good friend.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;What next? JavaScript was satire all along?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;To be honest, JavaScript being satire makes a lot more sense.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;In Java, Object types can be null, therefore typeof null == &#x22;object&#x22;.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;And so on. Decisions that made some sense in other languages are satirised by JavaScript implementing them identically, or worse, and revealing them for the mistakes they are.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;kee: there are many straight male combat soldiers who are fond of https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic . i dislike stigma and prejudice&#xE2;&#x80;&#xA6; :[&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;This is true, but Sappho wrote quite a lot of quite personal lesbian romantic poetry.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;It&#x27;s possible she was just that good a poet, but I think it&#x27;s an unlikely choice of topic for a heterosexual classical Greek.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Most of her surviving poetry is about her own life in some way.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;kee: there may have been fanfic of her, not unlike Aesop&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;No, most later commentators insisted she was only attracted to men.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;They wrote quite a lot on the topic, with their interpretations. (Quotes in such documents are the only known surviving copy of some bits of her poems.)&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;many people made up Aesop fables on the spot - https://www.shlomifish.org/meta/FAQ/factoids_obsession.xhtml&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Natasha&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;&#x26;gt;&#x26;gt; Shlomi Fish&#xE2;&#x80;&#x99;s FAQ - Why are you so obsessed with &#xE2;&#x80;&#x9C;facts&#xE2;&#x80;&#x9D;/factoids about Chuck Norris/etc.?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;kee: i am only mostly straight. i am attracted a little to&#xC2;&#xA0;men [and suspect every pleasure is sexual, creative, conceptual, and educational]&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I don&#x27;t think &#x22;straight&#x22; is even a particularly useful concept. (Nor &#x22;lesbian&#x22;.) But it&#x27;s one of the concepts in our culture, for good or for ill.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;We shouldn&#x27;t really try to attach modern conceptions of sexuality or whatever to Sappho.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;kee: &#xE2;&#x80;&#x9C;Do note, however that I kindof am attracted to the bitch type. One of my many kinks. While my friends are attracted to everything that moves, I see no reason to limit myself ( Reference: https://www.amazon.com/Best-Things-Anybody-Ever-Said/dp/0743235797/ref=sr_1_1 ).&#xE2;&#x80;&#x9D;&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Tbh, most historians are too obsessed with her sexuality. She wrote plenty of other poems! Just because we only have one-and-a-bit of those, doesn&#x27;t mean we should pretend they don&#x27;t exist.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;kee: yes.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;kee: i haven&#x27;t studied ancient greek philosophy / culture closely, but OTOH haven&#x27;t watched most sesame street skits either&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Sappho wrote in a regional dialect of Greek.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Since it was a different dialect to the one that later became Standard Classical Greek, many classicists decided her poems were trash, because they couldn&#x27;t understand them easily.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;kee&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;So they just didn&#x27;t copy them off the original papyrus.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;we will always play catchup&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;kee: ah&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;kee: BTW, did you hear about https://www.shlomifish.org/philosophy/fan-pages/samantha-smith/ ?&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Natasha&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;&#x26;gt;&#x26;gt; Fan page for Samantha Smith - Shlomi Fish&#xE2;&#x80;&#x99;s Homesite&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;channel&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Channel&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;#web&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;network&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Network&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Freenode&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>The story of Gideon Seyetik the Terraformer in the Selinaverse</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-story-of-Gideon-Seyetik-in-the-Selinaverse</link>
+<description>The story of Gideon Seyetik the Terraformer in the Selinaverse</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-story-of-Gideon-Seyetik-in-the-Selinaverse</guid>
+<pubDate>Tue, 22 Mar 2022 06:54:49 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;shlomif-story-of-Gideon-Seyetik-in-the-Selinaverse&#x22;&#x3E;The story of Gideon Seyetik the Terraformer in the Selinaverse&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+After &#x3C;a href=&#x22;https://memory-alpha.fandom.com/wiki/Gideon_Seyetik&#x22;&#x3E;Gideon Seyetik&#x3C;/a&#x3E;
+tried to commit suicide, he and Q materialised on the bridge of The Defiant, and
+Q said:
+&#x3C;/p&#x3E;
+        &#x3C;blockquote&#x3E;
+
+&#x3C;p&#x3E;
+What you did was brave, but not brave enough. See, the right to divorce is
+upheld by the constitution of the Q Continuum and all other known continuums
+as well as The-Codex&#xE2;&#x84;&#xA2;. I divorced &#x3C;a href=&#x22;https://www.shlomifish.org/humour/Star-Trek/We-the-Living-Dead/indiv-nodes/Qs-wife.xhtml&#x22;&#x3E;my share of wives&#x3C;/a&#x3E; and
+some organisms divorced after milliards of years of marriage.
+&#x3C;/p&#x3E;
+
+&#x3C;p&#x3E;
+Your wife&#x27;s race&#x27;s reluctance for separation is unlikely to be biological.
+&#x3C;/p&#x3E;
+
+&#x3C;/blockquote&#x3E;
+        &#x3C;p&#x3E;
+So Prof. Seyetik and his wife started a political / religious struggle
+to allow them and other unhappy couples to divorce. It was successful
+eventually, but ironically Mrs. Seyetik was so impressed by her husband&#x27;s
+perseverence, that she fell in love with him again, and they remained
+together.
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+Since then, the couple has been doing other political activism.
+&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Shlomi Fish&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://www.shlomifish.org/humour/fortunes/show.cgi?id=shlomif-how-chun-li-vs-tifa-should-end&#x22;&#x3E;Original&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>Atlas Shrugged: interests of the public</title>
+<link>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#atlas-shrugged--public-interests</link>
+<description>Atlas Shrugged: interests of the public</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#atlas-shrugged--public-interests</guid>
+<pubDate>Thu, 24 Mar 2022 12:42:28 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;atlas-shrugged--public-interests&#x22;&#x3E;Atlas Shrugged: interests of the public&#x3C;/h3&#x3E;
+      &#x3C;blockquote&#x3E;
+        &#x3C;p&#x3E;
+&#x22;Are we to understand,&#x22; asked the judge, &#x22;that you hold your own interests
+above the interests of the public?&#x22;
+&#x3C;/p&#x3E;
+        &#x3C;p&#x3E;
+&#x22;I hold that such a question can never arise except in a society of cannibals.&#x22;
+&#x3C;/p&#x3E;
+      &#x3C;/blockquote&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;author&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Author&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Ayn Rand&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;work&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Work&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;
+              &#x3C;a href=&#x22;https://en.wikipedia.org/wiki/Atlas_Shrugged&#x22;&#x3E;Atlas Shrugged&#x3C;/a&#x3E;
+            &#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+<item>
+<title>&#x22;Helping one person at a time&#x22;</title>
+<link>http://www.shlomifish.org/humour/fortunes/sharp-perl.html#sharp-perl-helping-one-person-at-a-time</link>
+<description>&#x22;Helping one person at a time&#x22;</description>
+<guid isPermaLink="true">http://www.shlomifish.org/humour/fortunes/sharp-perl.html#sharp-perl-helping-one-person-at-a-time</guid>
+<pubDate>Fri, 25 Mar 2022 15:09:52 +0000</pubDate>
+<content:encoded>
+    &#x3C;div class=&#x22;fortune&#x22;&#x3E;
+      &#x3C;h3 id=&#x22;sharp-perl-helping-one-person-at-a-time&#x22;&#x3E;&#x22;Helping one person at a time&#x22;&#x3C;/h3&#x3E;
+      &#x3C;table class=&#x22;irc-conversation&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mst&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Grinnz: turns out #hexchat blew him off, he&#x27;s relatively new to the linux ecosystem, and was just fucking frustrated&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mst&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;I didn&#x27;t manage to help him but he calmed down a bunch and was grateful for our not helping in the end&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Grinnz&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;understandable&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;mst++ # https://www.shlomifish.org/humour/fortunes/show.cgi?id=mishnah--saving-one-soul&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;Paperbot&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;Link title(s): [ &#xE2;&#x80;&#x9C;They who saved one soul has saved the world Entire&#xE2;&#x80;&#x9D; - Fortune ]&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;mst&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;rindolf: one at a time is the only way.&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;saying&#x22;&#x3E;
+            &#x3C;td class=&#x22;who&#x22;&#x3E;rindolf&#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;text&#x22;&#x3E;mst: well, there are also one-to-many web/etc. resources&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;table class=&#x22;info&#x22;&#x3E;
+        &#x3C;tbody&#x3E;
+          &#x3C;tr class=&#x22;channel&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Channel&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;#perl&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr class=&#x22;network&#x22;&#x3E;
+            &#x3C;td class=&#x22;field&#x22;&#x3E;
+              &#x3C;b&#x3E;Network&#x3C;/b&#x3E;
+            &#x3C;/td&#x3E;
+            &#x3C;td class=&#x22;value&#x22;&#x3E;Freenode&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+    &#x3C;/div&#x3E;
+  </content:encoded>
+</item>
+</channel>
+</rss>

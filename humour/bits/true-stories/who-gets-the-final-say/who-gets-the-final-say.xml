@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?><?asciidoc-numbered?><article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en" xml:id="main_doc">
+<info>
+<title>"Who gets the final say?"</title>
+<date>2022-03-20</date>
+<author>
+<personname>
+<firstname>Shlomi</firstname>
+<surname>Fish</surname>
+</personname>
+<email>shlomif@cpan.org</email>
+</author>
+<authorinitials>SF</authorinitials>
+</info>
+<section xml:id="story">
+<title>The story</title>
+<simpara>During one taxicab ride I took (I think it was from <link xl:href="https://en.wikipedia.org/wiki/Tel_Aviv">Tel Aviv</link>
+to <link xl:href="https://en.wikipedia.org/wiki/Haifa">Haifa</link>) we picked up a couple where the man was
+a Hebrew-speaking Israeli and his fiancée, who had an East Asian complexion and was an immigrant,
+didn’t speak Hebrew well and we spoke to her in English.</simpara>
+<simpara>We got to talk about relationships, and the driver decided to ask people we saw beside the road
+"who gets the final say, before and after marriage?".</simpara>
+<simpara>The driver stopped beside the road and asked one young woman that and she said: "[before?] the man" and "[after?] the woman".</simpara>
+<simpara>A different one we asked told us "The woman gets the final say, both before and after the marriage."</simpara>
+<simpara>We translated what they told us to English for the fiancée, and her Hebrew-speaking fiancé
+insisted they had mutual agreement as a couple.</simpara>
+<simpara>True story.</simpara>
+</section>
+<section xml:id="license">
+<title>Licence:</title>
+<simpara><link xl:href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike licence Unported (CC-by-sa) version 4.0 or above</link></simpara>
+</section>
+</article>

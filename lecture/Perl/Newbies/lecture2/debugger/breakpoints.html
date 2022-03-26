@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="stepping.html"/><link rel="next" href="perl_cmds.html"/><title>Setting Breakpoints and Continuing</title></head><body><main><header><h1>11.2. Setting Breakpoints and Continuing</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="stepping.html" class="nav" accesskey="p">Prev</a></td><td><a href="perl_cmds.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">Using the perl Debugger</a> → <a href="breakpoints.html">Setting Breakpoints and Continuing</a></div></nav><p>When the user places a breakpoint on a certain line in a program, they instruct the debugger to stop the execution of the program when this line is reached. Then, one can cause the program to run freely using the continue command, and have it stop only at this line.</p><p>Breakpoints generally save a lot of stepping. To set a breakpoint type <code>b $line_number</code> or <code>b $function_name</code> where $line_number is the line number and $function_name is the function name. A breakpoint on a function will stop the execution of the program as soon as the function is entered.</p><p>To continue the execution of the program until a breakpoint is reached (or until the program terminates) type <code>c</code>. Here is an example session with the same program:</p><div class="code_block"><pre>
+shlomi:~/bin# perl -d add_cr.pl test.txt
+Default die handler restored.
+
+Loading DB routines from perl5db.pl version 1.07
+Editor support available.
+
+Enter h or `h h' for help, or `man perldebug' for more help.
+
+main::(add_cr.pl:5):	my ($contents);
+  DB&lt;1&gt; b 11
+  DB&lt;2&gt; c
+main::(add_cr.pl:11):	    open my $in, "&lt;", $file;
+  DB&lt;2&gt;
+</pre></div><p>One can set a conditional breakpoint by typing <code>b [line] [perl expression]</code>. A conditional expression is one that stops the execution of the program only if the perl expression evaluates to true. The perl expression can be as complex as you like and may include whitespace.</p><p>To delete a breakpoint type <code>d [line]</code>. After a breakpoint is deleted it will no longer affect the execution of your program.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="stepping.html" class="nav">Prev</a></td><td><a href="perl_cmds.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

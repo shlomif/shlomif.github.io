@@ -1,0 +1,466 @@
+<s id="Queen-Padme--The-Fifth-Sith" lang="en" title="Queen Padmé Tales: The Fifth Sith">
+
+<s id="about" title="About this screenplay">
+
+<s id="about-objective" title="Objective">
+
+[
+
+An illustrated screenplay crossing <a href="https://en.wikipedia.org/wiki/Star_Wars%3A_Episode_I_%E2%80%93_The_Phantom_Menace">Star Wars Ep. I</a>,
+the <a href="https://buffyfanfiction.fandom.com/wiki/Selinaverse">Selinaverse</a> (itself
+crossing Star Trek TNG/DS9, Buffy, Judaism, Israel, <a href="https://en.wikipedia.org/wiki/Objectivism_(Ayn_Rand)">Objectivism</a>, etc.)
+the real world online/offline life in 2010s/2020s,
+and <a href="https://en.wikipedia.org/wiki/Spaceballs">Spaceballs</a>.
+
+This screenplay <b>is not</b> written in the Hollywood blessed format because
+<a href="https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/putting-cards-on-the-table-2019-2020/hacking-heroism.xhtml">good
+hackers (= resourceful and rule bending heroes)</a>
+who include the talented actors and actresses in this film, can
+withstand reading a raw and non-CSS-styled XHTML5 file. That - and hackers like me
+do not have the time to massage a screenplay into Hollywood's whimsical
+format only to be rejected, rinse and repeat.
+
+]
+
+</s>
+
+<s id="license" title="Licence">
+
+[
+
+Emblem: <img src="images/evilphish-svg--facing-right.min.svg.png" alt="Shlomi Fish’s EvilPHish Emblem" />
+
+This text is Copyright by <a href="https://www.shlomifish.org/">Shlomi Fish</a> , 2021 and is
+made available under the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Unported Licence (CC-by)</a>
+(or at your option - any later version).
+
+]
+
+</s>
+
+<s id="dedication" title="Dedication">
+
+[
+
+The <b>Dedication</b>:
+
+]
+
+</s>
+
+</s>
+
+<s id="main-scene" title="Main Scene">
+
+<s id="anakin-quitting-jedi-school" title="Anakin quitting jedi school">
+
+<s id="padme-criticising-anakin" title="Criticising Anakin">
+
+[
+
+Padmé is sitting in her office in the morning using a desktop Linux
+system. A male cat is lying above the keyboard.
+
+]
+
+Padmé: [in an E-mail] Anakin, to be frank, I am tired of you being so
+occupied with finishing that wretched Jedi school, that you seem oblivious
+to <a href="https://www.shlomifish.org/philosophy/computers/open-source/gpl-bsd-and-suckerism/">yourself and everybody else</a> in a truly self-harming way.
+Were you aware of <a href="https://www.shlomifish.org/humour/Queen-Padme-Tales/Queen-Padme-Tales--Queen-Amidala-vs-the-Klingon-Warriors.html">the attempt to assassinate me</a>? Or the <a href="https://www.shlomifish.org/humour/Queen-Padme-Tales/Queen-Padme-Tales--Take-It-Over.html">Naboo's crown's takeover attempt</a>?
+
++++: They did suggest <a href="https://www.shlomifish.org/humour/Queen-Padme-Tales/Queen-Padme-Tales--Queen-Amidala-vs-the-Klingon-Warriors-indiv-nodes/padmes-frustrations-with-her-love-life.xhtml">I give you an ultimatum</a> so here it is: either you give me enough attention or we'll part ways. I may record a heartache song or two ( <a href="https://www.youtube.com/channel/UCR-ENZ64WL1vB8KU4YzdmTQ">Tiffany</a> published her share of them so it won't surprise too many ), but I'll survive.
+
+[ Padmé pauses. ]
+
+Padmé’s Internal Dialogue: OK. Now calm down and do not send the email
+
+[
+
+The cat steps on the keyboard resulting in keystroke noise.
+
+Padmé sends the E-mail by accident.
+
+]
+
+Padmé: no!!.. Bad kitty!
+
+[ She sends a short apology email saying "Sorry, Ani! I sent the last message by accident. Cat…". She receives a reply. ]
+
+Anakin: To quote <a href="https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/indiv-nodes/fear-is-path-to-dark-side.xhtml">Master Oogway, "There are no accidents"</a>. I'm going to file an email of resignation. And that cat can trademark "ghhfnnneu" and sell it to <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon">Pokémon</a> for mucho dinnaros.
+
++++: Anyway, if dating a jedi knight was a kink of yours, then I don't mind
+us parting ways as a couple.
+
+Padmé: Anakin: I have my share of kinks, but I wouldn't mind dating a plain Anakin Skywalker. I'm going to ask <a href="https://stexpanded.fandom.com/wiki/Katie_Jacobson">Katie</a> [= the name of a Q capable of teleportation.] to teleport you here.
+
+[ She opens a videochat to Katie. ]
+
+Padmé: Hey Katie! Can you bring my boyfriend, Anakin, here? He has quit Jedi school.
+
+Katie: Hey Padmé! Sure, getting to it.
+
+[ Padmé gets out of her office to the corridor.
+
+A portal opens and Anakin and Katie step out.
+
+Anakin hugs Padmé .]
+
+Katie: ow.
+
+</s>
+
+</s>
+
+<s id="anakin-becoming-a-Sith" title="Anakin becoming a sith">
+
+<s id="anakin-the-jedi" title="Anakin the Jedi">
+
+[
+
+Anakin and Padmé enter Darth Vader’s office.
+
+<b>Note:</b> Anakin Skywalker and Darth Vader are two different characters
+in this screenplay.
+
+]
+
+Anakin: Hey Uncle Vader! Per the emails exchange I sent you, I have decided that
+my relationship with Padmé and my other friends and my emotional well-being are
+more important than graduating from that cursed jedi school.
+
++++: So for now here is my lightsaber [hands it to Vader].
+
+Vader: Keep it! It's yours. Anakin, having read that exchange and having forwarded
+it to my jedi colleagues, both Master Yoda, and <a href="https://starwars.fandom.com/wiki/Darth_Sidious">Emperor Palpatine</a> have approved of you being graduated. The Jedi council has also voted unanimously for that.
+
++++: All of that is more than enough for you to receive your jedi qualification.
+
+Anakin: Wow! Thanks! [ he hugs Padmé and they are happy. ]
+
+Vader: Yes, we have received several similar reports about your school in the past,
+and so requested them to amend their scholastic environment.
+
++++: That put aside, I have even better news… Anakin, you have become a sith!
+The fourth sith, in fact.
+
+</s>
+
+<s id="yoda-as-a-closet-Sith" title="Yoda">
+
+Anakin: I'm the fourth sith? Who is the third, then?
+
+[ Yoda appears on screen. ]
+
+Yoda: the third sith is I. Created the legend of the Sith 2,000 years ago
+have I. Tweeted about it now too have I.
+
+[ Tweet by @Yoda: “The third sith is I. Created the legend of the Sith 2,000 years ago
+have I. "Master Darth Yoda" call me you can. Or just plain "Yoda"." ]
+
+Anakin: way cool! But shouldn't Darth Yoda be the first Sith then?
+
+Yoda: Matters not Sith number, <a href="https://memory-alpha.fandom.com/wiki/Little_Green_Men_(episode)">as much as short-term quarterly gains.</a>
+
+Vader: Do note, however that there are now <b>five</b> Siths.
+
+Anakin: Great! But who is the Fifth Sith then?
+
+Yoda: mystery remain shall they for now.
+
+Anakin: "they"… [ he smiles ]
+
+Padmé: I wonder what kissing a Sith feels like.
+
++++: Anyway: Jedi and Sith or not, Darth Anakin is still my boyfriend, and we're going on a date. Our plan is to try doing crossover <a href="https://www.shlomifish.org/philosophy/culture/case-for-commercial-fan-fiction/">standup comedy / philosophy</a> today - both as artists and as attendees.
+
++++: So adios Uncle Vader, Darth Sidius, Master Yoda…
+
+Yoda: Go forth and multiply-lang.org !
+
+Padmé: Why thank you! Do note that Anakin and I are not in the rush to multiply-dash-lang-dot-org given the prematurity of our relationship.
+
++++: Just for the record, we have reached <a href="https://explainxkcd.com/wiki/index.php/540:_Base_System">4th base</a> ("home run"? not too big into baseball).
+
++++: And… it was good! It was decent… we both could use some practice.
+
+Anakin: [ blushing but content ] You heard the woman… nothing to add as she covered the first 4 bases. Bye all.
+
+[
+
+Padmé and Anakin leave the room.
+
+Yoda is seen chuckling, and the two other Siths join him.
+
+]
+
+</s>
+
+</s>
+
+<s id="after-the-date" title="After the Date">
+
+<s id="funny-can-be-sexy" title="Funny can be sexy">
+
+[ Padmé and Anakin returned from their date, and are walking towards Padmé's
+room.  ]
+
+Anakin: heh, we got a lot of cash today…
+
+Padmé: yes, with the milliards of USD that I have in the bank, I
+can blow it on hats…
+
+Anakin: <a href="https://www.youtube.com/watch?v=d4ftmOI5NnI">A truly noble cause!</a>
+
+Padmé: Indeed…
+
+Anakin: You know I think if <a href="https://en.wikipedia.org/wiki/Jennifer_Connelly">Jenn Connelly</a> heard your mock up of <a href="https://en.wikipedia.org/wiki/Labyrinth_(1986_film)"><i>Labyrinth</i></a>, she'd kill you very painfully:
+
++++: [parodying] "I wish the goblins would come and take you away right now,"
+
+Padmé: well, she'll likely not only kill you for mocking me mocking her, but damn your soul for a thousand years of burning in hell.
+
+[They both laugh.]
+
+Padmé: Who would have thought that being funny can be so sexy! ( <a href="https://www.shlomifish.org/philosophy/culture/case-for-commercial-fan-fiction/indiv-nodes/hacking_and_amateur__vs__conformism_and_professional.xhtml">Reference</a> )
+
+[ They think for a moment, and then start kissing passionately .
+
+Cut. ]
+
+</s>
+
+<s id="sith-in-the-sheets" title="Sith in the sheets">
+
+[
+
+Caption: "Later that night"
+
+Padmé and Anakin are in Padmé's bedroom.
+
+]
+
+
+Padmé: wow, that was… great!
+
+Anakin: which base was that?
+
+Padmé: in practice? <a href="https://www.firsttoeleven.com/">First to eleven</a>! I love you.
+
+Anakin: yes, you were great too.
+
+Padmé: Well, you know the old Internet meme: “Jedi in the streets; sith in the sheets.”
+
+Anakin: Yeah. Are you going to tweet about it?
+
+Padmé: Tweet? I'll buy a <a href="https://en.wikipedia.org/wiki/Super_Bowl">Super Bowl</a> commercial if you wish.
+
+Anakin: Well, knowing you and your spirit frenemies, it likely will be common knowledge soon anyhow.
+
++++: Anyway, I'm gonna move to the other room so we won't distract one another too much.
+
+[ before Anakin closes the door. ]
+
+Anakin: good night, Padpad! And by the way, despite appearances to the contrary, you're a sith in the streets, too.
+
+Padmé: thank you!
+
+[ Anakin closes the door. Padmé is lying in bed happy. After several seconds she opens her eyes widely. ]
+
+</s>
+
+<s id="what-maketh-a-sith" title="What maketh a sith?">
+
+[ Padmé is walking to her office. ]
+
+Padmé’s Internal Dialogue: I am a Sith. I am the fifth sith. But what does being a sith entail? What maketh a sith? And who will be the sixth sith?
+
++++: God, this word must have the worst <a href="https://en.wikipedia.org/wiki/Phonology">Phonology</a> ever!
+
+[ Padmé opens the door to her office. She enters, sits next to the computer, types
+"what is a sith" ( without the quotes ) into the browser's address bar, and presses
+Enter. Her vision becomes blurry and she falls asleep. ]
+
+</s>
+
+</s>
+
+<s id="Q-about-sithness" title="Q about the essence of being a Sith">
+
+<s id="the-morning-after" title="The morning after">
+
+[
+
+Padmé is in her office sleeping with a wide smile on her face. She wakes up,
+stretches her arms and then sees four spirit friends: <a href="https://mlp.fandom.com/wiki/Twilight_Sparkle">Twilight Sparkle</a>, <a href="https://mlp.fandom.com/wiki/Starlight_Glimmer">Starlight Glimmer</a>, <a href="https://mlp.fandom.com/wiki/Rainbow_Dash">Rainbow Dash</a> and <a href="https://mlp.fandom.com/wiki/Discord">Discord</a>.
+
+]
+
+Padmé: Whoa [scared…]
+
+Twilight Sparkle: Good morning your majesty, rise and shine.
+
++++: We're helping you with your research.
+
+Padmé: whoa… how?
+
+Twilight Sparkle: well, I'm programming a new task manager… <a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=szabgab-about-yak-shaving">yak shaving</a>!
+
+Starlight Glimmer: And I'm browsing through academic knowledge bases.
+
+Rainbow Dash: And I'm speed-reading through books.
+
+Discord: And I am running a sophisticated <a href="https://en.wikipedia.org/wiki/Deep_learning">deep learning</a> algorithm on this supercomputer.
+
+[ Showing an antique reel to reel computer not unlike <a href="https://web.archive.org/web/20060212045358/http://www.bell-labs.com/history/unix/firstport.html">the PDP-11</a> ]
+
+Discord: and it runs at a whopping 1,200 micro-FLOPS.
+
+Padmé: that is a very low speed, Discord.
+
+Discord: oh right, I need to press <a href="https://en.wikipedia.org/wiki/Turbo_button">the turbo button</a>.
+
+[ He presses a red button and the computer morphs into a more modern / futuristic one.]
+
+Discord: wow! 1.21 peta-FLOPS.
+
+[The printer starts printing. Discord takes a page.]
+
+Discord: "One sith, two siths; red sith, blue sith" [ <a href="https://en.wikipedia.org/wiki/One_Fish,_Two_Fish,_Red_Fish,_Blue_Fish">Reference</a> ]
+
++++: "On the Internet, everyone knows you're a sith." [ <a href="https://www.shlomifish.org/humour.html#on_the_Internet">Reference</a> ]
+
++++: "I'm not just doing it for money. I'm doing it for doing hot siths." [ <a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=doing-hot-celebs--2021-edition">Reference</a> ]
+
++++: does not make a lot of sense, does it?
+
+[ <a href="https://buffyfanfiction.fandom.com/wiki/Q_(Selinaverse)">Q of the Selinaverse</a> rings the office's door bell. He is wearing a Star Fleet uniform. ]
+
+Padmé: Enter! … oh! Hi, Mr. Q. [they hug]
+
+Q: Hi Padmé! You seem tired, but unusually happy and radiant.
+
+Padmé: well, I had a great night [the spirit friends blink]... a great day and night. Eh, a great day!
+
+[ The spirit friends say "ooh", chuckle, and use their smartphones to tweet. ]
+
+Padmé: fine, go ahead… I don't mind it <b>that</b> much.
+
++++: anyway, Mr. Q, I've become a sith and I'm trying to figure out what being a sith entails.
+
+Q: well, Darth Padmé, let me give you a spoiler: a sith is a <a href="https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/#hacker-monarchs">hacker king or a hacker queen</a>, which is a new name for "a messiah", or <a href="https://www.shlomifish.org/humour/Star-Trek/We-the-Living-Dead/indiv-nodes/final-scene-with-Q-and-Sisko.xhtml">a "Q" in the Selinaverse's parlance</a>: an action hero that aims for world saviouring, being a shaker and mover, helping himself and others as well as enjoying himself at the same time, letting no permanent obstacle stop him, and expecting everyone to become siths as well.
+
+Padmé: thank you, Mr. Q!
+
+Q: my pleasure. That put aside, I wish to dispense more insights about messiah-hood that the Selinaverse's creator has come up with, in the <a href="https://en.wikipedia.org/wiki/Tel_Aviv_University">Tel Aviv University's</a> campus near his home, and I am hoping you'll attend it as well.
+
++++: but first you'd better rest a little.
+
+Padmé: sure, I'd love to hear these insights. And I do need to rest. Can you wait here?
+
+Q: sure [ he snaps his fingers causing a desk with a computer to materialise.]! And I also have your spirit friends for company and entertainment.
+
+</s>
+
+<s id="Q-and-discord-presentation" title="Q and Discord Present about The State of the Selinaverse">
+
+[
+
+<b>TODO:</b> add live excerpts from the talk by <a href="https://buffyfanfiction.fandom.com/wiki/Q_(Selinaverse)">Q of the Selinaverse</a>
+and his spiritual cousin Discord (who was forked from the one at the
+end of the mlpfim 7th season).
+
+]
+
+</s>
+
+<s id="Padme-multiplies" title="Padme multiplies-dash-lang-dot-org">
+
+[ The first four Siths are sitting at Darth Vader's office playing
+<a href="https://en.wikipedia.org/wiki/Bohnanza">Bohnanza</a> with
+<a href="https://starwars.fandom.com/wiki/C-3PO">C-3PO</a> and
+<a href="https://starwars.fandom.com/wiki/R2-D2">R2-D2</a>. ]
+
+Yoda: getting my ass kicked am I.
+
+[ Padmé enters. ]
+
+The four siths: hail Darth Padmé!
+
+Padmé: hail me, heh. [Inspired by <a href="https://en.wikipedia.org/wiki/To_Be_or_Not_to_Be_%281942_film%29">To Be or Not to Be (1942 film)</a>]
+
++++: So… what's up, guys? or should I say "what's up, Darths?"
+
+Anakin: heh… we got bored waiting for you so the six of us have been
+playing Bohnanza. R2 is winning [R2-D2 emits a beep of approval.]
+
++++: I should also note that I found a part-time, telecommuting, job as a
+<a href="https://github.com/shlomif/Freenode-programming-channel-FAQ/blob/master/FAQ_with_ToC__generated.md#what-is-the-difference-between-scripting-languages-such-as-perl-php-python-or-ruby-and-industrial-strength-languages-such-as-c-c-java-and-c">coder</a>. I don't really need the money, but it will give me something to do.
+
+Padmé: nice! But seriously, "the <a href="https://www.youtube.com/watch?v=RI0i_tL-8aU">Schwartz is in you</a>"…
+<a href="https://en.wikipedia.org/wiki/Kung_Fu_Panda_(film)">"there is no secret ingredient"</a>, you <a href="https://www.youtube.com/watch?v=DGXx56WqqJw">already have the holy grail</a>.
+
++++: same old tired meme - why did you make me take this sleigh ride?!
+
+Vader: the screenplay writer wanted more money and to watch a live concert
+of <a href="https://en.wikipedia.org/wiki/Christina_Grimmie">Christina Grimmie</a>
+in <a href="https://en.wikipedia.org/wiki/Ramat_Aviv_Gimel">Ramat Aviv Gimel</a>.
+
+Padmé: These are free, right?
+
+Vader: Yes, but he needed 200 <a href="https://en.wikipedia.org/wiki/Israeli_new_shekel">ILS</a> in cash to buy snacks.
+
+Padmé: did he get them?
+
+Vader: Yes, <a href="https://www.shlomifish.org/humour/bits/facts/Emma-Watson/">Emma Watson</a> gave him 10,000 ILS in 100 * 100 ILS notes. In person.
+
+Padmé: cool beans.
+
++++: anyhow, after we will have this episode filmed, everybody will be the sixth sith. Or maybe the fifth sith, or the first sith. One's sith number doesn't matter as much as short-term quarterly gains.
+
++++: Moreover, I will no longer care too much about the fact that my bank balance gets higher. After all, <a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=smg-about-giving-back-money-and-time">as the rich are getting richer, the poor are getting richer too</a>. I also am going to stop <a href="http://shlomifishswiki.branchable.com/Never_Try_to_Please_Everyone/">trying to please everyone</a> online and offline.
+
+[ Anakin thumbs up. ]
+
+Padmé: However… note that this whole sleigh-ride has vexed me, so I'm planning to take vengence.
+
+[ Padmé's eyes become ebbing dark, and the four Spirit friends appear by Padmé's sides; Discord snaps his fingers, and intimidating guns not <a href="https://www.youtube.com/watch?v=NEG-jSXbMcY">unlike the ones in The Mask</a> materialise in the hands of the Spirit friends. ]
+
+Padmé: ask yourself, do you feel lucky?
+
+[
+
+The first four siths are startled, and scream.
+
+The four guns fire signs saying <a href="https://mlp.fandom.com/wiki/28_Pranks_Later">"gotcha!"</a>.
+
+]
+
+The spirit friends: Gotcha!
+
+Padmé: as a matter of fact, you should. I just wanted to scare you.
+
+[
+
+The first four siths are relieved.
+
+]
+
+Yoda: Now, like it is 2012, party will we. Get down! Get down!
+
+[
+
+<a href="https://www.shlomifish.org/Files/files/video/Like%20A%20Bad%20White%20Guy%20Party%20Gangnam%20Style%20-%20PSY,%20LMFAO,%20Dev,%20Offspring,%20Bloodhound%20Gang%20(Mashup)-eqHIkPzl0I0.webm">Gangnam Style/etc. remix</a>
+starts playing and the characters from the Queen Padmé Tales series start
+dancing or swaying to it.
+
+The End.
+
+]
+
+</s>
+
+</s>
+
+</s>
+
+</s>

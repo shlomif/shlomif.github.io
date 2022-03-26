@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="../while/last_and_next.html"/><link rel="next" href="comma.html"/><title>Arrays</title></head><body><main><header><h1>9. Arrays</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="../" class="nav" accesskey="u">Up</a></td><td><a href="../while/last_and_next.html" class="nav" accesskey="p">Prev</a></td><td><a href="comma.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 1</a> → <a href="./">Arrays</a></div></nav><p>Arrays are a sequence of variables, whose members can be retrieved and assigned to by using their indices. An index passed to an array may well be, and usually is, another variable.</p><p>To refer to the <code>$i</code>'th element of the array <code>@myarray</code>, one uses the syntax <code>$myarray[$i]</code>. This element can be assigned to or its value can be retrieved, with the same notation.</p><p>Array indices are whole numbers and the first index is 0. As in the length of a string, the number of elements in an array is bounded only by the amount of available memory the computer has.</p><p>The following program prints the primes up to 200:</p><div class="code_block"><pre>
+<span class="Identifier">$num_primes</span> = <span class="Constant">0</span>;
+
+<span class="Comment"># Put 2 as the first prime so we won't have an empty array,</span>
+<span class="Comment"># what might confuse the interpreter</span>
+<span class="Identifier">$primes[$num_primes]</span> = <span class="Constant">2</span>;
+<span class="Identifier">$num_primes</span>++;
+
+<span class="Statement">MAIN_LOOP:</span>
+<span class="Statement">for</span> <span class="Identifier">$number_to_check</span> (<span class="Constant">3</span> .. <span class="Constant">200</span>)
+&#x7B;
+    <span class="Statement">for</span> <span class="Identifier">$p</span> (<span class="Constant">0</span> .. (<span class="Identifier">$num_primes</span>-<span class="Constant">1</span>))
+    &#x7B;
+        <span class="Statement">if</span> (<span class="Identifier">$number_to_check</span> % <span class="Identifier">$primes[$p]</span> == <span class="Constant">0</span>)
+        &#x7B;
+            <span class="Statement">next</span> MAIN_LOOP;
+        &#x7D;
+    &#x7D;
+
+    <span class="Comment"># If we reached this point it means $number_to_check is not</span>
+    <span class="Comment"># divisible by any prime number that came before it.</span>
+    <span class="Identifier">$primes[$num_primes]</span> = <span class="Identifier">$number_to_check</span>;
+    <span class="Identifier">$num_primes</span>++;
+&#x7D;
+
+<span class="Statement">for</span> <span class="Identifier">$p</span> (<span class="Constant">0</span> .. (<span class="Identifier">$num_primes</span>-<span class="Constant">1</span>))
+&#x7B;
+    <span class="Statement">print</span> <span class="Identifier">$primes[$p]</span>, <span class="Constant">&quot;, &quot;</span>;
+&#x7D;
+<span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>The notation <code>scalar(@myarray)</code> can be used to refer to the number of elements in an array. This number is equal to the maximal index which was assigned in the array plus one. You will also see the notation <code>$#myarray</code> which is equal to the maximal index itself (or -1 if the array is empty).</p><p>Thus, for example, the above program could have been written as follows:</p><div class="code_block"><pre>
+<span class="Comment"># Put 2 as the first prime so we won't have an empty array,</span>
+<span class="Comment"># what might confuse the interpreter</span>
+<span class="Identifier">$primes[</span><span class="Constant">0</span><span class="Identifier">]</span> = <span class="Constant">2</span>;
+
+<span class="Statement">MAIN_LOOP:</span>
+<span class="Statement">for</span> <span class="Identifier">$number_to_check</span> (<span class="Constant">3</span> .. <span class="Constant">200</span>)
+&#x7B;
+    <span class="Statement">for</span> <span class="Identifier">$p</span> (<span class="Constant">0</span> .. <span class="Identifier">$#primes</span>)
+    &#x7B;
+        <span class="Statement">if</span> (<span class="Identifier">$number_to_check</span> % <span class="Identifier">$primes[$p]</span> == <span class="Constant">0</span>)
+        &#x7B;
+            <span class="Statement">next</span> MAIN_LOOP;
+        &#x7D;
+    &#x7D;
+
+    <span class="Comment"># If we reached this point it means $number_to_check is not</span>
+    <span class="Comment"># divisible by any prime number that came before it.</span>
+    <span class="Identifier">$primes[</span><span class="Statement">scalar</span>(<span class="Identifier">@primes</span>)<span class="Identifier">]</span> = <span class="Identifier">$number_to_check</span>;
+&#x7D;
+
+<span class="Statement">for</span> <span class="Identifier">$p</span> (<span class="Constant">0</span> .. <span class="Identifier">$#primes</span>)
+&#x7B;
+    <span class="Statement">print</span> <span class="Identifier">$primes[$p]</span>, <span class="Constant">&quot;, &quot;</span>;
+&#x7D;
+<span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="../" class="nav">Up</a></td><td><a href="../while/last_and_next.html" class="nav">Prev</a></td><td><a href="comma.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

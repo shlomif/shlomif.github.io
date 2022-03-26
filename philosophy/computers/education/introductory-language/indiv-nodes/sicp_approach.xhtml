@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Thoughts about the Best Introductory Language - The “Structure and Interpretation of Computer Programs” Approach</title>
+<meta charset="utf-8"/>
+<meta name="description" content=
+"Thoughts about the Best Introductory Language - The “Structure and Interpretation of Computer Programs” Approach"/>
+<link rel="stylesheet" href="../../../../../faq-indiv.css" media="screen"/>
+<link rel="stylesheet" href="../../../../../screenplay.css" media="screen"
+title="Normal"/>
+<link rel="stylesheet" href="../../../../../print.css" media="print"/>
+<link rel="shortcut icon" href="../../../../../favicon.ico" type=
+"image/x-icon"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
+<body class="fancy_sects faq_indiv_entry limit_imgs_width screenplay_indiv_entry">
+<div class="header" id="header">
+<a href="../../../../../"><img src="../../../../../images/evilphish-flipped.png"
+alt="EvilPHish site logo"/></a>
+<div class="leading_path"><a href="../../../../../">Shlomi Fish’s
+Homepage</a> →
+<a href="../" title="Thoughts about the Best Introductory Language">Thoughts about the Best Introductory Language</a>
+ → <a href="various_approaches.xhtml">The Various (Wrong) Approaches to Introductory Programming Languages</a>
+→ <b>The “Structure and Interpretation of Computer Programs” Approach</b>
+</div>
+</div>
+<div id="faux">
+<main class="main faq screenplay">
+<section xmlns="http://www.w3.org/1999/xhtml" class="section"><header xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="titlepage"><h4 id="sicp_approach" class="title">The &#8220;Structure and Interpretation of Computer Programs&#8221; Approach</h4><h:a class="back_to_faq" href="../#sicp_approach">Node Link</h:a></header><p><a class="link" href="http://mitpress.mit.edu/sicp/">&#8220;Structure and Interpretation of Computer Programs&#8221;</a> (or SICP for short) is a classic text and course material on programming, taught at MIT and many other universities around the world. SICP uses Scheme (a minimalistic dialect of Lisp) as its exclusive language to cover many important programming and meta-programming concepts.</p><p>I have read the book in my third semester of the Technion (without doing the exercises) and later took both of the SICP courses that were given by my department. I learned a lot from the book, and while the courses did not teach me too much new, I did enjoy working on the exercises.</p><p>However, there are several problems with teaching Scheme as an introductory language. The first is that it is too impractical. Scheme does not have system primitives that more modern languages take for granted like ones for random file and directory I/O, sockets, graphics primitives, Graphical User Interface (GUI), etc. Moreover, the core language is limited and most practical code tends to become very verbose in it. For example, whereas in Perl one would write <code class="literal">$myarray[$i]++</code> to increment an array element by one, in Scheme it would be: <code class="literal">(vector-set! myarray i (1+ (vector-ref myarray i)))</code>.</p><p>Most of the SICP exercises are about number theory, recursion, and a lot of other relatively abstract stuff, and too few are about real world and exciting tasks: writing games and other demos, working with files, writing scripts and utilities, networking and working with the WWW, etc. In fact, the Scheme standards define too few useful things. Most of <a class="link" href="http://community.schemewiki.org/?scheme-faq-standards#implementations">the dazzling number of different Scheme implementations</a> all extend the language in several ways, but all have their own idea of how to do it. Compare it to Perl, Python and friends which have one main C-based implementation, or to C where the standard library is actually quite useful.</p><p>I believe an introductory language has to grow with you. When I studied BASIC, I was able to use it for programming games, graphical demonstrations and animations, scripts, and other uses. I continued to use BASIC on DOS and Windows, until I learned the much-superior Perl, which I&#8217;m using today.</p></section></main>
+</div>
+<footer>
+<div class="foot_left">
+<ul class="bt_nav">
+<li><a href="../../../../../">Home</a></li>
+<li><a href="../../../../../me/">About</a></li>
+<li><a href="../../../../../me/contact-me/">Contact Us</a></li>
+<li><a href="../../../../../meta/privacy-policy/">Privacy Policy</a></li>
+<li><a href="../../../../../meta/anti-spam-policy/">Anti-Spam
+Policy</a></li>
+<li><a href="../../../../../meta/FAQ/" title=
+"Frequently asked questions list">FAQ</a></li>
+<li><a href="../../../../../me/blogs/">RSS/Atom Feeds</a></li>
+</ul>
+<p>Written, designed, and maintained by Shlomi Fish, <a href=
+"mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a>.</p>
+</div>
+<a href="../../../../../"><img src="../../../../../images/bk2hp-v2.min.svg" class=
+"bk2hp" alt="Back to my Homepage"/></a></footer>
+</body>
+</html>

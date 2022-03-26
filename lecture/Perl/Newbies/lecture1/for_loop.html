@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="style.css" type="text/css"/><link rel="prev" href="input.html"/><link rel="next" href="conditionals/"/><title>The For Loop</title></head><body><main><header><h1>6. The For Loop</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="./" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="input.html" class="nav" accesskey="p">Prev</a></td><td><a href="conditionals/" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="./">"Perl for Perl Newbies" - Part 1</a> → <a href="for_loop.html">The For Loop</a></div></nav><p>The for loop enables us to iterate over a sequence of numbers and repeat the same set of operations for each number.</p><p>For example, the following program prints all the numbers from 1 to 100:</p><div class="code_block"><pre>
+<span class="Statement">for</span> <span class="Identifier">$i</span> (<span class="Constant">1..100</span>)
+&#x7B;
+    <span class="Statement">print</span> <span class="Identifier">$i</span>, <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+</pre></div><p>Some explanations about the syntax:</p><ol><li><code>$i</code> is the iteration variable. It receives the value 1, then the value 2, then 3 and so forth until it is equal to 100, afterwards the loop terminates.</li><li>The curly brackets (<code>{ ... }</code>) encapsulate the loop block. The loop block is executed once for each value <code>$i</code> accepts. Within that block, called the loop body, you can use <code>$i</code> and you'll get its current value.</li></ol><p>We can nest loops, so for example the following program prints the multiplication board:</p><div class="code_block"><pre>
+<span class="Statement">for</span> <span class="Identifier">$y</span> (<span class="Constant">1</span> .. <span class="Constant">10</span>)
+&#x7B;
+    <span class="Statement">for</span> <span class="Identifier">$x</span> (<span class="Constant">1</span> .. <span class="Constant">10</span>)
+    &#x7B;
+        <span class="Identifier">$product</span> = <span class="Identifier">$y</span>*<span class="Identifier">$x</span>;
+        <span class="Comment"># Add as much whitespace as needed so the number will occupy</span>
+        <span class="Comment"># exactly 4 characters.</span>
+        <span class="Statement">for</span> <span class="Identifier">$whitespace</span> (<span class="Constant">1</span> .. (<span class="Constant">4</span>-<span class="Statement">length</span>(<span class="Identifier">$product</span>)))
+        &#x7B;
+            <span class="Statement">print</span> <span class="Constant">&quot; &quot;</span>;
+        &#x7D;
+        <span class="Statement">print</span> <span class="Identifier">$product</span>;
+    &#x7D;
+    <span class="Comment"># Move to the next line</span>
+    <span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+</pre></div><p>You may have noticed the program's comments. In perl comments start with the sharp sign (<code>#</code>) and extend to the end of the line. Writing the multiplication boards with the labels that indicate which numbers are being multiplied is left as an exercise to the reader.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="./" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="input.html" class="nav">Prev</a></td><td><a href="conditionals/" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

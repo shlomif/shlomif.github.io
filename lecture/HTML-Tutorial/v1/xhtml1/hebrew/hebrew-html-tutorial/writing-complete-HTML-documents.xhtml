@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" lang="he"><head><title>כתיבת מסמכי HTML מלאים.</title><link rel="stylesheet" type="text/css" href="docbook.css"/><link rel="stylesheet" type="text/css" href="style.css"/><meta name="generator" content="DocBook XSL Shlomif"/><link rel="prev" href="basic-HTML-tags.xhtml" title="תגיות HTML בסיסיות"/><link rel="next" href="more-HTML-tags.xhtml" title="תגי HTML נוספים"/></head><body><header><div class="center ads_top"/><div class="navheader"><table style="width:100%"><tr><th style="text-align:center" colspan="3">כתיבת מסמכי HTML מלאים.</th></tr><tr><td style="width:20%;text-align:right"><a accesskey="p" href="basic-HTML-tags.xhtml">הקודם</a> </td><th style="width:60%;text-align:center">פרק 2. HTML בסיסי</th><td style="width:20%;text-align:left"> <a accesskey="n" href="more-HTML-tags.xhtml">הבא</a></td></tr></table><hr/></div></header><section class="section"><div class="titlepage"><div><div><h2 id="writing-complete-HTML-documents" class="title">כתיבת מסמכי HTML מלאים.</h2></div></div></div><div class="toc"><ul class="toc"><li><span class="section"><a href="writing-complete-HTML-documents.xhtml#validate-your-documents">כדאי לאמת את המסמכים שלכם</a></span></li></ul></div><p>עד עכשיו, מסמכי ה-HTML שכתבנו לא היו מלאים וככאלה לא היו עוברים <span class="bold"><strong>אימות</strong></span>. כדי שמסמכי HTML יהיו תקינים הם צריכים להיות במבנה מוגדר, עם תחילית וסופית מתאימים. בו נראה וננתח דוגמה למסמך HTML מלא כזה:</p><pre xml:lang="en" class="programlisting">
+
+&lt;!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"&gt;
+&lt;head&gt;
+&lt;title&gt;Excerpt from the Three Musketeers&lt;/title&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Excerpt from the Three Musketeers&lt;/h1&gt;
+
+    &lt;p&gt;
+A young man--we can sketch his portrait at a dash. Imagine
+to yourself a Don Quixote of eighteen; a Don Quixote without
+his corselet, without his coat of mail, without his cuisses;
+a Don Quixote clothed in a woolen doublet, the blue color of
+which had faded into a nameless shade between lees of wine
+and a heavenly azure; face long and brown; high cheek bones,
+a sign of sagacity; the maxillary muscles enormously
+developed, an infallible sign by which a Gascon may always
+be detected, even without his cap--and our young man wore a
+cap set off with a sort of feather; the eye open and
+intelligent; the nose hooked, but finely chiseled. Too big
+for a youth, too small for a grown man, an experienced eye
+might have taken him for a farmer's son upon a journey had
+it not been for the long sword which, dangling from a
+leather baldric, hit against the calves of its owner as he
+walked, and against the rough side of his steed when he was
+on horseback.
+    &lt;/p&gt;
+
+    &lt;p&gt;
+    Taken from &lt;a
+        href="http://www.gutenberg.org/etext/1257"&gt;the
+    Project Gutenberg page&lt;/a&gt;.
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</pre><p>היא נראית כך:</p><div class="mediaobject"><img src="./images/complete-example-1.png" alt="דוגמה מלאה מספר 1"/></div><p>עכשיו למספר הסברים בנוגע לדוגמה:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>הצהרת ה-"DOCTYPE" בהתחלה מצהירה שסוג המסמך הוא "XHTML 1.0 Transitional". יש לשם הצהרה כזאת בהתחלה כדי שאפשר יהיה לזהות על פי איזה תקן המסמך נכתב.</p></li><li class="listitem"><p>ניתן להבחין שהמסמך מתחיל מתגית פתיחה <code xml:lang="en" class="code">&lt;html&gt;</code> ומסתיים בתגית <code xml:lang="en" class="code">&lt;/html&gt;</code> במסמך XML יש לכלול את כל התוכן בתוך תגית פתיחה ותגית סיום. במקרה של מסמך HTML מדובר בתגית <code xml:lang="en" class="code">&lt;html&gt;</code>.</p></li><li class="listitem"><p>לתגית <code xml:lang="en" class="code">&lt;html&gt;</code> מקבלת מספר תכונות. הראשונה שבהן היא "xmlns" המצהירה על מרחב-השמות של ברירת המחדל של המסמך. במסמכי XHTML ניתן לכלול מרחבי שמות אחרים, המאפשרים שילוב של תגיות של תחבירי XML אחרים. כרגע לא צריך להתעמק בזה יותר מדי.</p><p>התכונות האחרות ("lang") מצהירות על שפת המסמך, במקרה שלנו אנגלית אמריקאית. ראוי לציין שכדאי שהן lang והן xml:lang תקבענה ביחד.</p></li><li class="listitem"><p>האלמנט <code xml:lang="en" class="code">&lt;head&gt;</code> מכיל כותר למסמך ומכיל מעט מטה-מידה הקשור אליו.</p></li><li class="listitem"><p>האלמנט <code xml:lang="en" class="code">&lt;title&gt;</code> שחייב להימצא בתוך <code xml:lang="en" class="code">&lt;head&gt;</code> מכיל טקסט (מחוסר תיוג) המהווה כותרת למסמך - ניתן לראות שהוא מופיע בכותר החלון של הדפדפן.</p><p>רצוי מאוד לתת כותרת בעלת משמעות למסמך כדי שאנשים ותוכניות מחשב (כמו מנועי חיפוש) יוכלו לדעת מיד מה תכליתו.</p></li><li class="listitem"><p>מטרת תגית ה-<code xml:lang="en" class="code">&lt;meta&gt;</code> המסוימת הזאת היא להצהיר שקידוד המסמך הוא "utf-8". יש שימושים אחרים לתגיות "meta" ואת חלקם נראה בהמשך.</p><p>ניתן גם לראות שהקו הנטוי ("/") בסוף התגית אומר למפענח שהתגית סוגרת את עצמה. זה כמו לומר:</p><pre xml:lang="en" class="programlisting">
+
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;/meta&gt;
+
+</pre><p>אבל מאפשר תאימות טובה יותר לדפדפנים ישנים.</p></li><li class="listitem"><p>האלמנט <code xml:lang="en" class="code">&lt;body&gt;</code> מכיל את גוף הטקסט של המסמך ומה שיוצג למשתמש.</p></li><li class="listitem"><p>האלמנט <code xml:lang="en" class="code">&lt;h1&gt;</code> מכיל כותרת המוצגת בגוף הטקסט. יש גם את <code xml:lang="en" class="code">&lt;h2&gt;</code>, <code xml:lang="en" class="code">&lt;h3&gt;</code> עד <code xml:lang="en" class="code">&lt;h6&gt;</code>. מומלץ לחלק את המסמך לחלקים על-ידי הכותרות כך שידעו מה משמעות כל חלק.</p></li></ol></div><section class="section"><div class="titlepage"><div><div><h3 id="validate-your-documents" class="title">כדאי לאמת את המסמכים שלכם</h3></div></div></div><p>כדי לוודא שהמסמך שכתבתם (או חוללתם) הוא תקין, רצוי לבצע לו <span class="bold"><strong>אימות (Validation)</strong></span> באמצעות מאמתים מקוונים:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p><a class="link" href="http://validator.w3.org/">המאמת של ה-W3C</a></p></li><li class="listitem"><p><a class="link" href="http://htmlhelp.com/tools/validator/">המאמת של ה-Web Design Group</a></p></li></ol></div><p>חשוב לבצע אימות כדי לוודא שטעויות בדפים אינן גוררות התנהגות לא רצויה של הדפדפנים השונים. עוד על המוטיבציה לאימות, ניתן למצוא בדפים הבאים:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p><a class="link" href="http://www.shlomifish.org/philosophy/by-others/mashhoor--10-reasons--hebrew.html">10 סיבות שבגללן חברות צריכות לשקול ללכת לפי התקנים של הווב</a></p></li><li class="listitem"><p><a class="link" href="http://www.shlomifish.org/lecture/LAMP/slides/compatibility/">תכן לתאימות</a> - מהרצאה שכתבתי.</p></li></ol></div><p>במידה שדף ה-HTML זמין באינטרנט בפומבי, ניתן לשלוח קישור אליו למאמת. אחרת, ניתן להעלות את התוכן המקומי למאמת כדי לקבל עליו דו"ח.</p><p>ככה נראה אימות של דף כתקין בעזרת המאמת:</p><div class="mediaobject"><img src="./images/validates-screenshot.png" alt="אימות של הדף"/></div></section></section><footer><div class="navfooter"><hr/><table style="width:100%"><tr><td style="width:40%;text-align:right"><a accesskey="p" href="basic-HTML-tags.xhtml">הקודם</a> </td><td style="width:20%;text-align:center"><a accesskey="u" href="basic-html.xhtml">למעלה</a></td><td style="width:40%;text-align:left"> <a accesskey="n" href="more-HTML-tags.xhtml">הבא</a></td></tr><tr><td style="width:40%;text-align:right;vertical-align:top">תגיות HTML בסיסיות </td><td style="width:20%;text-align:center"><a accesskey="h" href="index.xhtml">ראשי</a></td><td style="width:40%;text-align:left;vertical-align:top"> תגי HTML נוספים</td></tr></table></div></footer></body></html>

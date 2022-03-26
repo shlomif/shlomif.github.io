@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><title>[untitled]</title><meta charset="utf-8"/><style>body{color:#000;background:#fff none}A:link{color:#00f;background:#fff none}A:visited{color:#909;background:#fff none}A:hover{color:red;background:#fff none}A:active{color:red;background:#fff none}.synComment{color:#00f}.synConstant{color:#f0f}.synIdentifier{color:#008b8b}.synStatement{color:brown;font-weight:700}.synPreProc{color:#a020f0}.synType{color:#2e8b57;font-weight:700}.synSpecial{color:#6a5acd}.synUnderlined{color:#000;text-decoration:underline}.synError{color:#fff;background:red none}.synTodo{color:#00f;background:#ff0 none}</style></head><body><pre><span class="synComment">; Common Language Constructs in Lambda Calculus</span>
+<span class="synComment">; ---------------------------------------------</span>
+
+
+<span class="synComment">; As you have seen an if-statement should be wrapped in lambdas while</span>
+<span class="synComment">; passing zero or other meaningless value as the argument to them. The</span>
+<span class="synComment">; reason for that is that otherwise both clauses will always be evaluated.</span>
+<span class="synComment">; (and we don't want that, do we?)</span>
+
+<span class="synComment">; The while loop can be defined as follows:</span>
+
+(<span class="synStatement">define</span> lc_while
+    (<span class="synStatement">lambda</span> (mycond)
+        (<span class="synStatement">lambda</span> (oper)
+            (<span class="synStatement">lambda</span> (initial_value)
+                ((Y (<span class="synStatement">lambda</span> (f)
+                    (<span class="synStatement">lambda</span> (x)
+                        ((((mycond x)
+                            (<span class="synStatement">lambda</span> (no_use)
+                                (f (oper x))
+                            ))
+                            (<span class="synStatement">lambda</span> (no_use)
+                                x
+                            )
+                        ) zero)
+                    )
+                )) initial_value)
+            )
+        )
+    )
+)
+
+<span class="synComment">; Scheme Example for the while loop:</span>
+(<span class="synStatement">define</span> (_cond x) (<span class="synStatement">if</span> (&gt; x <span class="synConstant">5</span>) lc_false lc_true))
+(<span class="synStatement">define</span> (_oper x)
+    (<span class="synIdentifier">display</span> x)
+    (<span class="synIdentifier">newline</span>)
+    (+ x <span class="synConstant">1</span>)
+)
+(((lc_while _cond) _oper) <span class="synConstant">0</span>)
+
+<span class="synComment">; Lambda Calculus example: finding the lowest power of 2 that is greater than 10.</span>
+
+(<span class="synStatement">define</span> _cond
+    (<span class="synStatement">lambda</span> (x)
+        ((less-or-equal x) (int-&gt;church <span class="synConstant">10</span>))
+    )
+)
+
+(<span class="synStatement">define</span> _oper
+    (<span class="synStatement">lambda</span> (x)
+        ((mult x) (int-&gt;church <span class="synConstant">2</span>))
+    )
+)
+
+(<span class="synStatement">define</span> a (((lc_while _cond) _oper) (int-&gt;church <span class="synConstant">1</span>)))
+
+(<span class="synIdentifier">display</span> <span class="synConstant">&quot;a = &quot;</span>)
+(<span class="synIdentifier">display</span> (church-&gt;int a))
+(<span class="synIdentifier">newline</span>)
+
+<span class="synComment">; Creating a sequence of operations</span>
+<span class="synComment">; --------------------------------</span>
+
+<span class="synComment">; Since functions are executed in order we can do operations according</span>
+<span class="synComment">; to the call order.</span>
+
+(<span class="synStatement">define</span> (f1 x) (<span class="synIdentifier">display</span> <span class="synConstant">5</span>) <span class="synConstant">0</span>)
+(<span class="synStatement">define</span> (f2 x) (<span class="synIdentifier">display</span> <span class="synConstant">&quot;+&quot;</span>) <span class="synConstant">0</span>)
+(<span class="synStatement">define</span> (f3 x) (<span class="synIdentifier">display</span> <span class="synConstant">6</span>) <span class="synConstant">0</span>)
+(<span class="synStatement">define</span> (f4 x) (<span class="synIdentifier">display</span> <span class="synConstant">&quot;=&quot;</span>) <span class="synConstant">0</span>)
+(<span class="synStatement">define</span> (f5 x) (<span class="synIdentifier">display</span> <span class="synConstant">11</span>) <span class="synConstant">0</span>)
+(<span class="synStatement">define</span> (f6 x) (<span class="synIdentifier">newline</span>) <span class="synConstant">0</span>)
+
+(<span class="synStatement">define</span> my_seq
+    (<span class="synStatement">lambda</span> (x)
+        (f6 (f5 (f4 (f3 (f2 (f1 x))))))
+    )
+)
+
+(my_seq <span class="synConstant">0</span>)
+<span class="synComment">; Displays &quot;5+6=11&quot;</span>
+
+<span class="synComment">; Notice that it is in reverse order from the reading order</span>
+
+
+
+<span class="synComment">; Using a value more than once</span>
+<span class="synComment">; ----------------------------</span>
+
+<span class="synComment">; To calculate a value once and use it more than once you can create a</span>
+<span class="synComment">; lambda and pass the calculated value as its argument.</span>
+
+(<span class="synStatement">define</span> hello
+    (<span class="synStatement">lambda</span> (tuple)
+        ((<span class="synStatement">lambda</span> (thecar)
+            <span class="synComment">; Do something with thecar and possibly tuple</span>
+        ) (lc_car tuple)) <span class="synComment">; Pass (lc_car tuple) as thecar.</span>
+    )
+)
+</pre></body></html>

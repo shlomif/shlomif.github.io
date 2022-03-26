@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><title>[untitled]</title><meta charset="utf-8"/><style>body{color:#000;background:#fff none}A:link{color:#00f;background:#fff none}A:visited{color:#909;background:#fff none}A:hover{color:red;background:#fff none}A:active{color:red;background:#fff none}.synComment{color:#00f}.synConstant{color:#f0f}.synIdentifier{color:#008b8b}.synStatement{color:brown;font-weight:700}.synPreProc{color:#a020f0}.synType{color:#2e8b57;font-weight:700}.synSpecial{color:#6a5acd}.synUnderlined{color:#000;text-decoration:underline}.synError{color:#fff;background:red none}.synTodo{color:#00f;background:#ff0 none}</style></head><body><pre><span class="synComment">;From shriram@cs.rice.edu Sat May 27 12:03:11 2000</span>
+<span class="synComment">;Date: Sat, 20 May 2000 15:01:54 -0500 (CDT)</span>
+<span class="synComment">;From: Shriram Krishnamurthi &lt;shriram@cs.rice.edu&gt;</span>
+<span class="synComment">;To: Shlomi Fish &lt;shlomif@shlomifish.org&gt;</span>
+<span class="synComment">;Subject: Re: www.schemers.org is dead</span>
+
+
+<span class="synComment">;For your amusement, I submit the following code, which my friend Mayer</span>
+<span class="synComment">;Goldberg (at BGU, whom you link to and may know) inspired me to write.</span>
+<span class="synComment">;(It's only a small step beyond the code in your LC lecture, and may</span>
+<span class="synComment">;suggest an amusing extension to it.)</span>
+
+(<span class="synStatement">define</span> zero
+  (<span class="synStatement">lambda</span> (f)
+    (<span class="synStatement">lambda</span> (x)
+      x ) ) )
+
+(<span class="synStatement">define</span> succ
+  (<span class="synStatement">lambda</span> (n)
+    (<span class="synStatement">lambda</span> (f)
+      (<span class="synStatement">lambda</span> (x)
+	(f ((n f) x)) ) ) ) )
+
+(<span class="synStatement">define</span> num-&gt;int
+  (<span class="synStatement">lambda</span> (n)
+    ((n (<span class="synStatement">lambda</span> (x) (+ x <span class="synConstant">1</span>))) <span class="synConstant">0</span>) ) )
+
+(<span class="synStatement">define</span> int-&gt;num
+  (<span class="synStatement">lambda</span> (n)
+    (<span class="synStatement">if</span> (zero? n)
+	zero
+	(succ (int-&gt;num (- n <span class="synConstant">1</span>))) ) ) )
+
+(<span class="synStatement">define</span> one (succ zero))
+(<span class="synStatement">define</span> two (succ one))
+(<span class="synStatement">define</span> three (succ two))
+(<span class="synStatement">define</span> four (succ three))
+(<span class="synStatement">define</span> five (succ four))
+
+(<span class="synStatement">define</span> add
+  (<span class="synStatement">lambda</span> (x)
+    (<span class="synStatement">lambda</span> (y)
+      ((y succ) x) ) ) )
+
+(<span class="synStatement">define</span> pred
+  (<span class="synStatement">lambda</span> (n)
+    (kdr ((n (<span class="synStatement">lambda</span> (p)
+	       ((kons (succ (kar p)))
+		(kar p) ) ))
+	  ((kons zero) zero) )) ) )
+
+(<span class="synStatement">define</span> mult
+  (<span class="synStatement">lambda</span> (x)
+    (<span class="synStatement">lambda</span> (y)
+      ((y (add x)) zero) ) ) )
+
+(<span class="synStatement">define</span> kons
+  (<span class="synStatement">lambda</span> (x)
+    (<span class="synStatement">lambda</span> (y)
+      (<span class="synStatement">lambda</span> (fun)
+	((fun x) y) ) ) ) )
+
+(<span class="synStatement">define</span> kar
+  (<span class="synStatement">lambda</span> (p)
+    (p (<span class="synStatement">lambda</span> (x)
+	 (<span class="synStatement">lambda</span> (y)
+	   x ) )) ) )
+
+(<span class="synStatement">define</span> kdr
+  (<span class="synStatement">lambda</span> (p)
+    (p (<span class="synStatement">lambda</span> (x)
+	 (<span class="synStatement">lambda</span> (y)
+	   y ) )) ) )
+
+(<span class="synStatement">define</span> fact
+  (<span class="synStatement">lambda</span> (n)
+    (kdr ((n (<span class="synStatement">lambda</span> (p)
+	       ((kons (succ (kar p)))
+		((mult (kar p)) (kdr p)) ) ))
+	  ((kons one) one) )) ) )
+
+(<span class="synStatement">define</span> <span class="synIdentifier">exp</span>-slow
+  (<span class="synStatement">lambda</span> (x)
+    (<span class="synStatement">lambda</span> (y)
+      ((y (mult x)) one) ) ) )
+
+(<span class="synStatement">define</span> <span class="synIdentifier">exp</span>-fast
+  (<span class="synStatement">lambda</span> (x)
+    (<span class="synStatement">lambda</span> (y)
+      (y x) ) ) )
+
+(<span class="synStatement">define</span> fibo
+  (<span class="synStatement">lambda</span> (n)
+    (kdr (kdr ((n (<span class="synStatement">lambda</span> (p)
+		    ((kons (succ (kar p)))
+		     ((kons (kdr (kdr p)))
+		      ((add (kar (kdr p))) (kdr (kdr p))) ) ) ))
+	       ((kons one) ((kons zero) one)) ))) ) )
+
+(<span class="synStatement">define</span> monus
+  (<span class="synStatement">lambda</span> (x)
+    (<span class="synStatement">lambda</span> (y)
+      ((y (<span class="synStatement">lambda</span> (z)
+	    (pred z) ))
+       x ) ) ) )
+
+(<span class="synStatement">define</span> <span class="synIdentifier">max</span>
+  (<span class="synStatement">lambda</span> (x)
+    (<span class="synStatement">lambda</span> (y)
+      ((add x)
+       (kdr ((x (<span class="synStatement">lambda</span> (p)
+		  ((kons (pred (kar p)))
+		   (pred (kdr p)) ) ))
+	     ((kons x) y) )) ) ) ) )
+
+(<span class="synStatement">define</span> <span class="synIdentifier">min</span>
+  (<span class="synStatement">lambda</span> (x)
+    (<span class="synStatement">lambda</span> (y)
+      ((monus y)
+       ((add (kar ((x (<span class="synStatement">lambda</span> (p)
+			((kons (pred (kar p)))
+			 (pred (kdr p)) ) ))
+		   ((kons x) y) )))
+	(kdr ((x (<span class="synStatement">lambda</span> (p)
+		   ((kons (pred (kar p)))
+		    (pred (kdr p)) ) ))
+	      ((kons x) y) )) ) ) ) ) )
+
+(<span class="synStatement">define</span> div
+  (<span class="synStatement">lambda</span> (x)
+    (<span class="synStatement">lambda</span> (y)
+      (kar ((x (<span class="synStatement">lambda</span> (p)
+		 ((kons
+		   ((add (kar p))
+		    ((<span class="synIdentifier">min</span> one) ((monus (kdr p)) y)) ) )
+		  ((monus (kdr p)) y) ) ))
+	    ((kons zero) (succ x)) )) ) ) )
+
+(<span class="synStatement">define</span> mod
+  (<span class="synStatement">lambda</span> (x)
+    (<span class="synStatement">lambda</span> (y)
+      ((monus x) ((mult y) ((div x) y))) ) ) )
+
+(<span class="synStatement">define</span> isnonzero
+  (<span class="synStatement">lambda</span> (n)
+    (kar ((n (<span class="synStatement">lambda</span> (p)
+	       ((kons (kdr p))
+		(pred (kdr p)) ) ))
+	  ((kons n) n) )) ) )
+
+(<span class="synStatement">define</span> iszero
+  (<span class="synStatement">lambda</span> (n)
+    ((monus one) (isnonzero n)) ) )
+
+(<span class="synStatement">define</span> <span class="synIdentifier">gcd</span>
+  (<span class="synStatement">lambda</span> (x)
+    (<span class="synStatement">lambda</span> (y)
+      (kar ((x (<span class="synStatement">lambda</span> (p)
+		 ((kons ((add
+			  ((mult (iszero (kdr p))) (kar p)) )
+			 ((mult (isnonzero (kdr p))) (kdr p)) ))
+		  ((add
+		    ((mult (iszero (kdr p))) zero) )
+		   ((mult (isnonzero (kdr p)))
+		    ((mod (kar p)) (kdr p)) ) ) ) ))
+	    ((kons x) y) )) ) ) )
+
+(<span class="synStatement">define</span> <span class="synIdentifier">sqrt</span>
+  (<span class="synStatement">lambda</span> (n)
+    (kdr ((n (<span class="synStatement">lambda</span> (p)
+	       ((kons (succ (kar p)))
+		((add
+		  ((mult (isnonzero
+			  ((monus ((mult (succ (kdr p))) (succ (kdr p))))
+			   n ) ))
+		   (kdr p) ) )
+		 ((mult (iszero
+			 ((monus ((mult (succ (kdr p))) (succ (kdr p))))
+			  n ) ))
+		  (kar p) ) ) ) ))
+	  ((kons one) zero) )) ) )
+
+(<span class="synStatement">define</span> divides
+  (<span class="synStatement">lambda</span> (x)
+    (<span class="synStatement">lambda</span> (y)
+      (iszero ((mod x) y)) ) ) )
+
+(<span class="synStatement">define</span> tau
+  (<span class="synStatement">lambda</span> (n)
+    (kdr ((n (<span class="synStatement">lambda</span> (p)
+	       ((kons (succ (kar p)))
+		((add (kdr p)) ((divides n) (kar p))) ) ))
+	  ((kons one) zero) )) ) )
+
+(<span class="synStatement">define</span> isprime
+  (<span class="synStatement">lambda</span> (n)
+    (iszero ((monus (tau n)) two)) ) )
+</pre></body></html>

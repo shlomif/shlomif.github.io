@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><title>Mathematical Analysis of the Toggle Squares Game - Shlomi Fish’s Homesite</title><meta charset="utf-8"/><meta name="author" content="Shlomi Fish"/><meta name="description" content="Mathematical Analysis of the Toggle Squares Game"/><meta name="keywords" content="Shlomi Fish,Shlomi,Fish,Perl,Humour,Israel,Programming,Open Source,Free Software,Presentations,Philosophy,Freecell,Freecell Solver,GIMP,Software,Shlomi Fish, Toggle Squares, Ken Housley, Linear Algebra, Mathematics"/><link rel="canonical" href="https://www.shlomifish.org/toggle.html"/><link rel="stylesheet" href="style.css" media="screen" title="Normal"/><link rel="stylesheet" href="print.css" media="print"/><link rel="shortcut icon" href="favicon.png" type="image/png"/><link rel="next" href="./"/><meta name="viewport" content="width=device-width,initial-scale=1"/><script src="js/main_all.js"></script></head><body><div id="header"><div class="leading_path"><a href="./">Shlomi Fish’s Homepage</a> → <a href="puzzles/" title="Puzzles, Riddles and Brain-teasers">Puzzles</a> → <a href="MathVentures/" title="Adventures in Mathematics, usually with some real-life application">Math-Ventures</a> → <a href="MathVentures/toggle_squares.html">Toggling Squares is not that Trivial</a> → <a href="toggle.html">Mathematical Analysis</a></div></div><div id="faux"><p class="invisible"><a href="#main">Go to main content</a></p><p class="invisible"><a href="#navbar">Go to the navigation</a></p><div id="container-all"><button id="show_navbar" class="on">Hide NavBar ⬈</button><main class="main" id="main"><p class="invisible"><a href="#aft_sub_menu">Skip the sub-menu.</a></p><div class="sub_menu"><h2>Puzzles Section Menu</h2><ul class="nav_links"><li><a href="MathVentures/toggle-squares/" title="Previous Page (Alt+P)"><img src="./images/sect-arr-left.svg" alt="Previous Page" class="bless"/></a></li><li><a href="MathVentures/toggle_squares.html" title="Up in the Site (Alt+U)"><img src="./images/sect-arr-up.svg" alt="Up in the Site" class="bless"/></a></li><li><a href="MathVentures/bugs-in-square-mathml.xhtml" title="Next Page (Alt+N)"><img src="./images/sect-arr-right.svg" alt="Next Page" class="bless"/></a></li></ul><button id="toggle_sect_menu" class="toggle_sect_menu off" title="Show or Hide the Section Navigation Menu">Show</button><div id="sect_menu_wrapper" class="novis"><ul class="nm_main"><li><a href="MathVentures/" title="Adventures in Mathematics, usually with some real-life application">Math-Ventures</a><br/><ul><li><a href="MathVentures/3d-outof-4d-mathml.xhtml" title="The 3 Maximal Dice out of 4 Dice">Combinatorics and the Art of D&amp;D</a></li><li><a href="MathVentures/repeating_code.html" title="How many Combinations are for a Repeating Code">On and on it Seems to go</a></li><li><a href="MathVentures/dodeca.html">Dodecahedron Volume</a></li><li><a href="MathVentures/disco_circle.html">A Solidarian Disco Circle</a></li><li><a href="MathVentures/toggle_squares.html">Toggling Squares is not that Trivial</a><br/><ul><li><a href="MathVentures/toggle-squares/">The Toggle Squares Game</a></li><li><b>Mathematical Analysis</b></li></ul></li><li><a href="MathVentures/bugs-in-square-mathml.xhtml">Bugs in a Square</a></li><li><a href="MathVentures/sequence-4-8-7-5.html">What is this Sequence?</a></li><li><a href="MathVentures/two-angels-and-two-gates.html">Two Gates and Two Angels - with a Twist</a></li></ul></li><li><a href="puzzles/logic/" title="Various Logic Puzzles I came up with.">Logic Puzzles</a><br/><ul><li><a href="puzzles/logic/between-the-screws/" title="Which are the 4 different Screws Used to build an Aeroplane?">Between the Screws</a></li><li><a href="puzzles/logic/ravensborgs-guild/" title="5 members of a guild with different profession, one of them is the leader.">Ravensborg’s Guild</a></li><li><a href="puzzles/logic/tip-of-the-sword/" title="5 swords of different types. Which is which?">On the Tip of the Sword</a></li></ul></li><li><a href="puzzles/situation/" title="Puzzles where one has to guess what caused the situation using Yes/No questions">Situation Puzzles</a><br/><ul><li><a href="puzzles/situation/book-under-rock.html">A Book Under a Rock</a></li></ul></li><li><a href="puzzles/maths/">Maths</a><br/><ul><li><a href="puzzles/maths/n5-riddle/">Modulo 5^n Riddle</a></li></ul></li><li><a href="puzzles/cs/">Computer Science</a><br/><ul><li><a href="puzzles/cs/lotg/" title="A minimalistic programming language that I came up with">The “Lotg” Code</a></li></ul></li></ul></div></div><div id="aft_sub_menu"></div><header><h1>Mathematical Analysis of the Toggle Squares Game</h1></header><p>Dr. Ken Housley,</p><p>Most of this page is in ASCII, because I sent it to myself from home as an email message and some diagrams are less complicated to write in ASCII than in HTML. However, I will try to emphasize some stuff in the text with HTML formatting.</p><p>I hope everything is clear to you. If you want clarification on something, send a message to me and I’ll place the clarification on this page.</p><p>— Shlomi Fish</p><p><b>Recent Note:</b> I managed to prove that the two-way algorithm works for 3k and 3k+1 square boards. It was added as theorems 4 and 5.</p><p><b>More Recent Note:</b> Added section about the dimension of solutions space in 3k+2 boards and a note about the efficiency of the algorithms.</p><h2>Table of Contents</h2><ul><li><a href="#One_Dimensional_Board">Analysis of a 1-D Toggle-board</a><br/><ul><li><a href="#lemma1">Lemma 1: 1D is always solvable if vector 100..00 can be formed.</a></li><li><a href="#lemma2">Lemma 2: 1D is always solvable only for N=3k and 3k+1</a></li></ul></li><li><a href="#Two-Dimensional-Board">Main (2-D) Theorems</a><br/><ul><li><a href="#theorem1">Theorem 1: (3k+2)^2 boards are not solvable for every state.</a></li><li><a href="#theorem2">Theorem 2: 3k and 3k+1 2-D boards are solvable for every state.</a></li><li><a href="#theorem3">Theorem 3: Solvable 3k+2 boards can be solved by the one way algorithm.</a></li><li><a href="#theorem4">Theorem 4: Solving 3k boards.</a></li><li><a href="#theorem5">Theorem 5: Solving 3k+1 boards.</a></li></ul></li><li><a href="#dim_press_span">The Dimension of the Presses Span of 3k+2 boards</a></li><li><a href="#efficiency">A Note about Efficiency</a><br/></li></ul><section class="h2"><header><h2 id="One_Dimensional_Board">Analysis of a 1-D Toggle-board</h2></header><pre>
+First, I’ll prove some analogous statements about a one-dimensional
+toggle-squares board, i.e: conjectures that apply to the set of rows of size
+1*n and in which the presses are:
+110000 ,
+111000 ,
+011100 ,
+001110 ,
+000111 ,
+000011 (n=6 was given as an example).
+
+Mathematically, it can be treated as vectors that belong to the linear
+space (or vector field) {0,1}^n where the operations in the set {0,1} are
+XOR for ‘+’ and AND for ‘*’.
+</pre><section class="h3"><header><h3 id="lemma1">Lemma 1</h3></header><p>A 1-D toggle field is solvable for every state if (and only if) the vector 100...000 can be formed as combination of the presses.</p><pre>
+Proof:
+If 1000000 can be solved then along with the press 110000...00 than
+010000000 can be solved too. Furthermore:
+100000...00   + (xor)
+010000...00   +
+111000...00 =
+-------------
+001000...00
+and from here it can be proved inductively that the vectors with all 0s
+and one 1, are solvable. Since this is a basis of {1,0}^N then every state
+is solvable. (i.e contained in Sp{Presses} )
+</pre></section><section class="h3"><header><h3 id="lemma2">Lemma 2</h3></header><p>A 1-D toggle field of size N is solvable for every state if N = 3k or N = 3k+1 and isn’t if N = 3k+2 for some non-negative integer k.</p><pre>
+Proof:
+One way to show it is by inspecting the matrixes of the presses set:
+1
+,
+11
+11
+,
+110
+111
+011
+,
+1100
+1110
+0111
+0011
+
+and calculate their determinants (according to the boolean operations).
+After calculating the determinants of the first three by hand: 1, 0 and 1
+respectively, we can show that the determinant of every matrix where N &gt; 3 is:
+
+based on the first row: det (Presses Matrix (N-1)) XOR - det(Matrix that
+contains 1 at the top-left cell and below a Presses Matrix of size N-2) =
+det (PM(N-1)) XOR det(1 * PM(N-2)) = det(PM(N-1)) XOR det(PM(N-2)).
+
+Hence, it’s a XOR of the determinants of the two previous matrixes. (A
+boolean Fibonacci series :-) )
+
+Recursively, we get a repeating sequence of
+N    | 1 2 3 4 5 6 7 8 9 ...
+det  | 1 0 1 1 0 1 1 0 1 ...
+
+Matrixes with a zero determinant cannot form every vector, and vice versa.
+
+It can also be proved (at least for the solvable cases) using Lemma 1.
+For N=3k 1000....000 can be formed by:
+1110000...0000         XOR
+0001110...0000         XOR
+.
+.
+0000000...0111  =
+---------------
+1111111...11111111     XOR
+0000000...00000011     XOR
+0000000...00011100     XOR
+0000000...11100000     XOR
+011100000000000000     =     (3k = 2 + (k-1)*3 + 1)
+------------------
+100000000000000000    (Q.E.D)
+
+and likewise for 3k+1. For 3k+2, we can show that the vector 11111...111 can
+be formed in two different ways:
+11000000...000000    XOR
+00111000...000000    XOR
+00000111...000000    XOR
+.
+.
+00000000...000111   =
+-----------------
+11111111111111111
+
+and
+
+11100000...000000 XOR
+00011100...000000 XOR
+.
+.
+00000000...011100 XOR
+00000000...000011 =
+-----------------
+11111111111111111
+
+and thus the dimension of the span is less than n, and so not every state is
+included in it, and is solvable.
+</pre></section></section><section class="h2"><header><h2 id="Two-Dimensional-Board">Analysis of 2-D Boards</h2></header><p>Now for the actual proofs:</p><section class="h3"><header><h3 id="theorem1">Theorem 1</h3></header><p>2-D (3k+2) * (3k+2) boards are not solvable for every state.</p><pre>
+Proof:
+If we take a look at the topmost row - it is affected only by the presses
+on the two topmost rows. The effective portions of all the presses on that
+row is the set:
+11000..00
+11100..00
+.
+.
+00000.111
+00000.011
+
+and Lemma 2 proved that for N=3k+2 it has unsolvable states. If some
+formations of the first row cannot be solved by any combination of the
+presses on the block, much less the entire board can be solved for every
+state.
+</pre></section><section class="h3"><header><h3 id="theorem2">Theorem 2</h3></header><p>2-D boards of size 3k * 3k or (3k+1) * (3k+1) are solvable for every state.</p><pre>
+Proof:
+If we restrict ourselves to the presses on cells of one column, then we get
+an array of rectangular vectors with a fixed horizontal position and width
+and some y-dimensions that resemble the 1-D toggle-squares vector set. e.g:
+110000
+110000
+000000
+000000
+000000
+000000  ,
+
+110000
+110000
+110000
+000000
+000000
+000000  ,
+
+000000
+110000
+110000
+110000
+000000
+000000  ,
+.
+.
+According to Lemma 2, with 1-D presses sets with size 3k and 3k+1 every
+vector can be formed. Thus we can achieve the following rectangles, with
+the presses of one column:
+110000
+000000
+000000
+000000
+000000
+000000
+
+000000
+110000
+000000
+000000
+000000
+000000
+
+000000
+000000
+110000
+000000
+000000
+000000
+
+.
+.
+000000
+000000
+000000
+000000
+000000
+110000
+
+and the same for every other column. Now, if we look on any row of cells,
+we will see that the “sticks” that were generated from the various columns
+in that row are also the 1-D TogSqrs sequence. Because N=3k,3k+1 again,
+every row is solvable for all states, and therefore, the entire board is
+solvable for all states.
+
+Diagram:
+110000 , 111000 , 011100 , 001110 , 000111 , 000011
+000000   .        .        .        .        .
+.        .        .        .        .        .
+</pre></section><section class="h3"><header><h3 id="theorem3">Theorem 3</h3></header><p>Solvable states of 3k+2 boards can be solved by the one-way algorithm.</p><pre>
+The one way algorithm is described as follows:
+Scan every row from top to bottom. For every row, scan every cell from right
+to left, and for every filled cell, click the cell to the bottom-left of it.
+
+Proof:
+Every row can be cleared by pressing a cell to the left or the bottom-left
+of every filled cell, because that way one consistently regress the
+right-most filled cell. Moreover, it’s impossible that only the left-most
+cell will be filled in a solved state (Lemma 1).
+By going down, we ensure that no new cells will be filled instead of the
+new one, and we can clear that way the first N-1 rows. After the iteration
+when the first N-1 rows are cleared, the last row cannot be partially
+filled because it’s a column-wise contradiction of Lemma 1. Therefore, it
+will also be cleared.
+</pre></section><section class="h3"><header><h3 id="theorem4">Theorem 4:</h3></header><p>A 2-D board of size (3k) * (3k) can be solved by using the two-way - two-way algorithm.</p><pre>
+
+The two way algorithm is described as follows:
+Scan the rows from top to bottom. For every row, scan the cells from right
+to left, and for every filled cell click the cell to the bottom-left of it.
+Then scan the cells in that row, from right to left and for every filled
+cell click the cell to the bottom-right of it.
+After you reached the bottom, do the same thing from bottom to top, but with
+pressing the cell to the top-right or top-left instead.
+
+Proof:
+One can show that the two-way algorithm works for N=3k in a one-dimensional
+board. Even if there is a state of 100...000000000 ,  by pressing to the
+right of the filled squares one eventually gets to a 000...000000011 state
+which is soon cleared to 000...000000000.
+
+This provides us with a method to clear rows by pressing cells in the row
+beneath them, and we can use it to clear all rows except the bottom one.
+Now, let’s take a look at a situation in which there is a partially filled
+row, and above it, at least two empty ones. I will prove that clearing it
+by pressing the cells in the row above it, will make the two rows above it
+a duplicate of its original state. For example if the status was:
+
+000000
+000000       &lt;- I am pressing this row
+011010
+
+then it will turn into
+
+011010
+011010
+000000
+
+The proof is quite simple. If we take a look at one of a cells above an
+initially filled cell, then the cells that affect it and the bottom cell
+were pressed an uneven number of times, during the clearing process. (or else
+the state of the bottom cell would have remained filled).
+
+Thus, it will also change its state and become filled. Likewise, a cell above
+an unfilled cell in the bottom row, was switched an even number of times and
+will be unchanged at the end.
+
+With the same deduction it can be shown that two duplicate rows once cleared
+will fill the row above them in the same formation (provided it was initially
+blank). E.g:
+
+000000
+110011
+110011
+
+will become
+
+110011
+000000
+000000
+
+Since N is equal to 3k, then after the bottom-to-top iteration we will end up
+with the two topmost rows filled in the same formation. Then, the topmost
+row will be cleared along with the lower one.
+
+
+Now, for the remaining modules:
+In a 1-D board where N=3k+1 the two-way method as is, will ping the
+possible remaining 1 back and forth between the two edges. Therefore if
+there is a state of 1000...0 than one should use the leftmost press to
+change it into 0100...000. Then, by repetitive pressing to the right
+of the leftmost filled square, one gets to the 0...11 state, which is
+afterwards cleared.
+</pre></section><section class="h3"><header><h3 id="theorem5">Theorem 5:</h3></header><p>A 2-D board of size (3k+1)*(3k+1) can be cleared by an down-(edge)-up iteration of left-(edge)-right row clearing scheme.</p><pre>
+
+This algorithm is similar to the two-way algorithm, except that if a at the
+end of the left iteration, there is a single filled cell, one has to press
+on its lower or upper cell, before moving on. Likewise, if at the end of the
+down scanning, you have filled cells in bottom row, you have to clear them
+by pressing cells of the bottom row.
+
+Proof:
+Very similar to Theorem 4 except those notes:
+
+1. In N=3k+1 the two-way method as is, will ping the possible remaining
+1 back and forth between the two edges. Therefore if there is a state
+of 1000...0 than one should use the leftmost press to change it into
+0100...000. Then, by repetitive pressing to the right of the leftmost
+filled square, one gets to the 0...11 state, which is afterwards
+cleared.
+
+To clear the rows in a 3k+1 board one should use this method.
+
+2. The bottom row (if still partially filled) should be moved to the
+row above it, by clearing it by presses of cells of the bottom row.
+Then it can be transposed in the same manner described in Theorem 4 to
+the the two topmost rows and then cleared.
+
+For example, if the status is
+0000000
+0000000
+0110110
+  | |
+press those cells and it will be be moved to
+
+0000000
+0110110
+0000000
+</pre></section></section><section class="h2"><header><h2 id="dim_press_span">The Dimension of the Presses Span in 3k+2 boards</h2></header><pre>
+(3k+2)*(3k+2) boards are not solvable for every state. The solvable
+states form a vector field which is formed by the spanning all the
+presses. Since, in this case it does not include all the states, I
+wondered if we can calculate its dimension or characterize it somehow.
+I think I know the answer.
+
+First in 1-D: the presses of {0,1}*(3k+2) span a field of size 3k+1
+because it takes only one extra vector - 100...000, so they will form
+every possible state (Lemma 1).
+
+Since the 1-D clearing mechanism for 3k+2 uses only the leftmost 3k+1
+cells to clear every solvable state (part of Theorem 3), then
+their presses are a valid basis for this linear space.
+
+The one-way - one-way clearing algorithm which was proved in Theorem 3,
+uses only a (3k+1)*(3k+1) square of presses to solve the entire board.
+Ergo, the dimension is (3k+1)^2 or less. I believe it _is_ (3k+1)^2 and
+I think I can prove it by showing that the presses of a corner
+(3k+1)*(3k+1) are linearly independent. In the boolean field the
+meaning is that any number of them other than zero XORed together will
+not generate the clear state.
+
+I’ll demonstrate on a 5*5 board:
+
+    |  |
+  - 00000
+    00000
+    00000
+  - 00000
+    00000
+
+The ‘-’s and ‘|’s mark the relevant presses. Let’s assume that a
+certain number of presses in the square can form the clear state. If
+so, then Pr(4,4) cannot be one of them because it is the only press
+that can affect square (5,5). Moreover, Pr(3,4) and Pr(4,3) cannot be
+included either, because, once Pr(4,4) is eliminated they are the only
+ones that can affect (4,5) and (5,4) respectively. And so forth,
+proving that that all the presses of cells (1,4)-(4,4) and (4,1)-(4,4)
+cannot be part of the zero sum.
+
+The same can be deduced for the next layer starting from Pr(3,3), which
+is the only vector left that can affect square (4,4). And so-on for the
+other layers, proving that they are a linearly independent set of
+vectors. In conclusion, there cannot be less than (3k+1)^2 vectors that
+span the space of the solvable states of (3k+2) boards.
+</pre></section><section class="h2"><header><h2 id="efficiency">A Note about Efficiency</h2></header><pre>
+I believe the previous section showed that the 1w-1w algorithm for
+clearing (3k+2) boards is as efficient as it could be, i.e. requires
+the minimal number of presses.
+
+As for boards of other sizes: the 2w-2w algorithm is not the most
+efficient one in relevance to the number of presses it takes to solve
+the board. I noticed that when I solved a couple of boards and realized
+that the number of moves it took me with it was greater than the number
+which was returned from my matrix-canonization program.
+
+However, I believe it is agreeable that it is the simplest algorithm
+(yet) regarding “CPU” requirement and growing complexity, and has the
+advantage that it can be utilized without the aid of a computer.
+</pre></section><script>shlomif_load_nav("toggle.html");</script><p class="share"><a href="http://www.addtoany.com/share_save?linkurl=https%3A%2F%2Fwww.shlomifish.org%2Ftoggle.html&amp;linkname="><img src="images/share_save_171_16.png" width="171" height="16" class="bless" alt="Share/Bookmark"/></a><br/></p></main><nav class="navbar" id="navbar"><div class="center"><a href="./" title="Shlomi Fish’s Homepage"><img src="images/evilphish-svg.min.svg" alt="EvilPHish by Illiad" class="highlight" style="border:0;margin-bottom:.5em"/></a></div><ul class="nav_links"><li><a href="MathVentures/toggle-squares/" title="Previous Page (Alt+P)" accesskey="p"><img src="images/arrow-2-left.png" alt="Previous Page" class="bless"/></a></li><li><a href="MathVentures/toggle_squares.html" title="Up in the Site (Alt+U)" accesskey="u"><img src="images/arrow-2-up.png" alt="Up in the Site" class="bless"/></a></li><li><a href="MathVentures/bugs-in-square-mathml.xhtml" title="Next Page (Alt+N)" accesskey="n"><img src="images/arrow-2-right.png" alt="Next Page" class="bless"/></a></li></ul><div id="nav_menu"><ul><li><a href="./">Shlomi Fish’s Homepage</a></li><li class="open"><a href="me/">About Myself</a><br/><ul><li><a href="personal.html" title="A Short Biography of Myself">Bio</a><br/><ul><li><a href="me/intros/" title="Introductions of Me to Various Forums">Intros</a><br/><ul><li><a href="me/intros/writers/" title="My Intro to the MIT Writers Mailing List">MIT Writers</a></li></ul></li></ul></li><li><a href="me/contact-me/" title="How to Contact Me">Contact Me</a></li><li><a href="me/rindolf/" title="The history and etymology of “Rindolf”, Shlomi Fish’s Nickname">“Rindolf” - my nickname</a><br/><ul><li><a href="me/rindolfism/" title="Shlomi Fish’s Personal, dynamic, open / free / geeky / share / hacky philosophy">“Rindolfism” - my personal, dynamic, philosophy</a></li></ul></li><li><a href="me/resumes/">My Résumés</a><br/><ul><li><a href="me/resumes/Shlomi-Fish-Resume-as-Software-Dev.html">Résumé as a Software Dev</a></li><li><a href="SFresume.html">English Résumé</a></li><li><a href="SFresume_detailed.html">Detailed English Résumé</a></li><li><a href="me/resumes/Shlomi-Fish-Resume-as-Writer-Entertainer.html">Résumé as a Writer and Entertainer</a></li></ul></li><li><a href="me/business-card/">My Business Card</a></li><li><a href="me/personal-ad.html" title="My Personal Ad: what I’m looking for in a prospective girlfriend and what I can add to the relationship.">Personal Ad</a></li><li><a href="me/blogs/" title="Links to my online journals.">My Weblogs</a></li><li><a href="me/interviews/" title="Interviews that were conducted with me">Interviews</a><br/><ul><li><a href="me/interviews/reddit-AMA/">Reddit “Ask Me Anything”</a></li></ul></li><li><a href="me/relicensing-my-entire-portfolio-under-cc-by/" title="Offer to relicense my whole body of creative works under CC-by if I get enough money">Relicensing my Creative Works Portfolio</a></li></ul></li><li><a href="humour/" title="My Humorous Creations">Humour</a><br/><ul><li><a href="humour/stories/" title="Large-Scale Stories I Wrote">Stories</a><br/><ul><li><a href="humour/stories/usable/">Usable</a><br/><ul><li><a href="humour/TheEnemy/" title="The Enemy and How I Helped to Fight It">The Enemy</a></li><li><a href="humour/TOneW-the-Fountainhead/" title="The One with the Fountainhead">TOW The Fountainhead</a></li><li><a href="humour/human-hacking/" title="The Human Hacking Field Guide">Human Hacking Field Guide</a></li><li><a href="humour/Star-Trek/We-the-Living-Dead/">We, the Living Dead</a></li><li><a href="humour/humanity/" title="Parody of Humanity and Modern Life in Particular">Humanity - The Movie</a></li></ul></li></ul></li><li><a href="humour/aphorisms/">Aphorisms and Quotes</a><br/><ul><li><a href="humour.html" title="Collection of Funny or Insightful Quotes or Aphorisms I came up with">My Quotes Collection</a></li><li><a href="humour/fortunes/" title="Collection of Files for Input to the UNIX ‘fortune’ Program">Fortune Cookies Collection</a></li><li><a href="humour/bits/facts/" title="“Facts” about Chuck Norris and other things">Factoids</a></li></ul></li><li><a href="humour/bits/" title="Small Scale Funny Works of Mine">Small Scale</a></li><li><a href="humour/by-others/" title="Humorous Works by Other People">By Others</a></li></ul></li><li><a href="philosophy/" title="Various Essays and Articles about Technology and Philosophy in General">Essays</a><br/><ul><li><a href="philosophy/philosophy/">General Philosophy</a></li><li><a href="philosophy/computers/" title="Computing-related Essays and Articles">Computing</a><br/><ul><li><a href="philosophy/computers/open-source/" title="Essays about Free and Open Source Software (FOSS)">Open Source</a></li><li><a href="philosophy/computers/software-management/" title="Essays about how to manage software workplaces, projects and teams">Software Management</a></li><li><a href="philosophy/computers/perl/" title="Essays about the Perl programming language">Perl</a></li><li><a href="philosophy/computers/web/" title="About the World-Wide-Web">The Web (WWW)</a></li><li><a href="philosophy/computers/education/" title="About Computer and Technical Education">Education</a></li></ul></li><li><a href="philosophy/politics/" title="Essays about Politics and Philosophical Politics">Political Essays</a></li><li><a href="philosophy/Index/" title="Index to Essays and Articles I wrote.">Index to Essays</a></li></ul></li><li class="open"><a href="puzzles/" title="Puzzles, Riddles and Brain-teasers">Puzzles</a><br/><ul><li><a href="MathVentures/" title="Mathematical Riddles and their Solutions">Math-Ventures</a></li><li><a href="puzzles/logic/">Logic Puzzles</a></li></ul></li><li><a href="art/" title="Computer art I created while explaining how.">Art</a><br/><ul><li><a href="art/original-graphics/">Original Graphics</a></li><li><a href="art/by-others/">By others</a></li><li><a href="art/recommendations/">Recommendations</a><br/><ul><li><a href="art/recommendations/music/">Music</a><br/><ul><li><a href="art/recommendations/music/online-artists/" title="Some of my favourite online musicians">Online Artists</a></li></ul></li></ul></li></ul></li><li><a href="open-source/" title="Pages related to Software (mostly Open-Source)">Software</a><br/><ul><li><a href="open-source/projects/">Projects</a><br/><ul><li><a href="open-source/projects/freecell-solver/">Freecell Solver</a></li><li><a href="open-source/projects/pysol/" title="A suite of Solitaire games">PySol FC</a></li></ul></li><li><a href="open-source/resources/" title="Various Software Resources Pages">Resources Pages</a><br/><ul><li><a href="open-source/resources/sw-lists/">Curated Lists</a></li><li><a href="open-source/favourite/" title="Favourite Open-Source Software">Favourite OSS</a></li><li><a href="open-source/interviews/" title="Interviews with Open-Source People">Interviews</a></li><li><a href="open-source/resources/israel/" title="Israel-Related FOSS Resources">Israel-Related</a></li></ul></li><li><a href="open-source/contributions/" title="Contributions to Other Projects, that I did not Start">Contributions</a></li></ul></li><li><a href="lecture/" title="Presentations I Wrote (Mostly Technical)">Lectures</a><br/><ul><li><a href="lecture/Perl/Newbies/">Perl for Newbies</a></li><li><a href="lecture/LAMP/" title="Web Publishing using Linux, Apache, MySQL, and Perl/PHP/Python (or equivalents)">Web Publishing using LAMP</a></li><li><a href="lecture/CatB/">The Cathedral and the Bazaar</a></li><li><a href="lecture/cat/programming-languages/" title="Presentations about Programming Languages">Prog. Languages</a></li><li><a href="lecture/cat/various-tools/" title="Presentations about Various Tools">Various Tools</a></li><li><a href="lecture/W2L/" title="Presentations for the Israeli series for Linux Newcomers">Welcome to Linux</a></li><li><a href="lecture/cat/projects/" title="Presentations about my Open Source Projects">About My Projects</a></li><li><a href="lecture/cat/lightning-talks/" title="Short (5-15 minutes) Presentations">Lightning Talks</a></li></ul></li><li class="open"><a href="work/" title="Work-Related Pages">Work</a><br/><ul><li><a href="work/hire-me/" title="I’m a Geek for Hire">Hire Me!</a><br/><ul><li><a href="work/private-lessons/" title="I’m Giving Private Lessons for High School Subjects and Computing.">Private Lessons</a></li></ul></li></ul></li></ul><ul><li><a href="links.html" title="An incomplete list of links I find cool and/or useful.">Cool Links</a></li><li><a href="recommendations/" title="Recommendations of Books, Music Albums, Films, etc.">Recommendations</a></li></ul><ul><li class="open"><a href="site-map/" title="A site map showing all of the main pages.">Site Map</a><br/><ul><li class="open"><a href="site-map/hebrew/" title="מפת העמודים העבריים באתר">עמודים בעברית</a></li></ul></li></ul><ul><li class="open"><a href="meta/" title="Information about this Site">Meta Info</a><br/><ul><li class="open"><a href="meta/FAQ/" title="Frequently Asked Questions and Answers List (FAQ)">FAQ</a></li><li class="open"><a href="meta/privacy-policy/">Privacy Policy</a></li><li class="open"><a href="meta/site-source/" title="The source code used to generate this site">Site’s Source</a></li><li class="open"><a href="meta/how-to-help/" title="How you can help promote this site">How to Help</a><br/><ul><li class="open"><a href="meta/donate/">Please Donate</a></li></ul></li><li class="open"><a href="meta/hosting/" title="About this site’s hosting provider.">Hosting</a></li><li class="open"><a href="meta/old-site-snapshots/" title="The site as it looked like many years ago.">Old Site Snapshots (Nostalgia)</a></li></ul></li></ul></div><div class="about_author"><div class="center"><img src="images/shlomif-cutethulhu-small.webp" alt="Photo of Shlomi Fish" title="Head shot of Shlomi Fish"/></div><p><a href="#about_site">Shlomi Fish</a> (שלומי פיש), also known as <a href="me/rindolf/">“Rindolf”</a>, is an Israeli humorist, writer, and software geek.</p><p>He is passionate about open content, open source, and freedom and openness in general.</p><p class="sep">It is easy to reach Shlomi using a large number of <a href="me/contact-me/">online means</a>, including <a href="mailto:shlomif@shlomifish.org">E-mail</a>.</p></div><h2 id="site-google-search">Google Search</h2><form method="get" action="https://www.google.com/search"><div class="search"><input type="hidden" name="ie" value="UTF-8"/> <input type="hidden" name="oe" value="UTF-8"/> <input type="text" name="q" size="15" maxlength="255"/> <input type="hidden" name="domains" value="www.shlomifish.org"/><br/><input type="radio" name="sitesearch"/> WWW<br/><input type="radio" name="sitesearch" value="www.shlomifish.org" checked="checked"/> shlomifish.org<br/><input type="submit" name="btnG" value="Google Search"/></div></form><h2 id="site-ddg-search">Duck Duck Go Search</h2><div class="search"><!-- DuckDuckGo Search --><object data="https://duckduckgo.com/search.html?width=100&amp;site=shlomifish.org&amp;prefill=SearchDuckDuckGo" type="text/html" style="overflow:hidden;margin:0;padding:0;width:160px;height:40px"></object></div><ul class="relevant_links"><li><a href="http://shlomifishswiki.branchable.com/">Shlomi Fish’s Wiki</a></li></ul><p><a href="https://www.mozilla.org/firefox/new/" class="bless"><img class="bless" alt="Get Firefox!" title="Get Firefox! A safer, faster, better web-browser." src="images/get-firefox.png"/></a></p><p><a href="http://perl-begin.org/" title="The Perl Beginners' Site" class="bless"><img src="images/perl-begin.png" alt="The Perl Beginners' Site" class="bless"/></a></p><p><a href="http://validator.w3.org/check/referer" title="Valid XHTML5!" class="bless"><img class="highlight bless" src="images/xh11-btn.png" alt="Valid XHTML5!"/></a></p><p><a href="http://jigsaw.w3.org/css-validator/" title="Valid CSS!" class="bless"><img class="highlight bless" src="images/css-btn.png" alt="Valid CSS!"/></a></p><h2 id="shlomif_on_the_web">Shlomi Fish elsewhere on the Web</h2><div class="elsew_on_web"><ul><li><p><a href="http://twitter.com/shlomif"><img src="images/twitter-bird-light-bgs-20.png" alt="Twitter Logo"/> Twitter</a></p></li><li><p><a href="https://plus.google.com/+ShlomiFish/posts"><img src="images/google-plus-icon-30x30.png" alt="Google+ Logo"/> Google+</a></p></li><li><p><a href="http://www.facebook.com/shlomi.fish"><img src="images/facebook-icon-30x30.png" alt="Facebook Logo"/> Facebook</a></p></li><li><p><a href="http://unarmed.shlomifish.org/"><i>Unarmed but still Dangerous</i> Blog</a></p></li><li><p><a href="http://www.reddit.com/user/shlomif"><img src="images/Reddit_30x30.png" alt="Reddit Logo"/> Reddit</a></p></li><li><p><a href="http://en.wikipedia.org/wiki/User:Shlomif"><img src="images/wikipedia-logo-20.png" alt="Wikipedia Logo"/> Wikipedia</a></p></li><li><p><a href="http://www.flickr.com/photos/shlomif/"><img src="images/flickr-32x32.png" alt="Flickr Logo"/> Flickr</a></p></li><li><p><a href="http://shlomif.deviantart.com/"><img src="images/deviantart-30x30.png" alt="deviantART Logo"/> deviantART</a></p></li><li><p><a href="http://www.youtube.com/user/ShlomiFish"><img src="images/youtube-30x30.png" alt="YouTube Logo"/> YouTube</a></p></li><li><p><a href="http://github.com/shlomif"><img src="images/github-24-black.png" alt="GitHub Logo"/> GitHub</a></p></li></ul></div></nav><div id="container-footer"></div></div></div><footer id="footer"><hr/><ul class="bt_nav"><li><a href="https://www.patreon.com/shlomif"><img class="patreon" src="images/patreon.svg" alt="Patreon account" title="Support me using Patreon"/></a></li><li><a href="./">Home</a></li><li><a href="me/">About</a></li><li><a href="me/contact-me/">Contact Us</a></li><li><a href="meta/privacy-policy/">Privacy Policy</a></li><li><a href="meta/anti-spam-policy/">Anti-Spam Policy</a></li><li><a href="meta/FAQ/" title="Frequently asked questions list">FAQ</a></li><li><a href="me/blogs/">RSS/Atom Feeds</a></li></ul><p>Written, designed, and maintained by Shlomi Fish, <a href="mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a>.</p><div id="footer_donate"><p><b>Note:</b> Given that I am under pressure to be less generous, and spend my money on activities that bring me joy, and make me a little poorer financially, I'd appreciate <a href="https://www.shlomifish.org/meta/donate/">donations</a>.</p></div><p>If you like what you see here, or have any comments, suggestions, or corrections, feel free to E-mail me about it. I’d love to hear from you. If you have found what I did helpful or entertaining, please consider <a href="meta/how-to-help/">helping</a>.</p><p>Style and look based on the <a href="http://wordpress.org/extend/themes/smoked">Smoked WordPress Theme</a> by <a href="http://wordpress.org/extend/themes/profile/iconstantin">iconstantin</a>.</p><p><a href="meta/FAQ/#evilphish-emblem">Fish emblem</a> taken from the <a href="http://ars.userfriendly.org/cartoons/?id=20030803">“Anatomy of an EvilPHish”</a> cartoon of <a href="http://www.userfriendly.org/">UserFriendly.org</a>.</p><a href="./"><img src="images/bk2hp-v2.min.svg" class="bk2hp" alt="Back to my Homepage"/></a></footer></body></html>

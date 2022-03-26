@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="grid.html"/><title>toc</title></head><body><main><header><h1>10.2. toc</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="grid.html" class="nav" accesskey="p">Prev</a></td><td><b>Next</b></td></tr></table><div class="bread"><a href="../">WebMetaLecture - a lecture about Website Meta Language</a> → <a href="./">Demonstrating Some APIs</a> → <a href="toc.html">toc</a></div></nav><ul class="point"><li><code>toc</code> automatically creates a table of contents from the <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc. headers found in the HTML.</li></ul><div class="code_block"><pre>
+<span class="PreProc">#use</span><span class="Constant"> wml::std::toc</span>
+<span class="PreProc">#use</span><span class="Constant"> wml::std::page</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">page</span><span class="Identifier"> /&gt;</span>
+<span class="Identifier">&lt;</span><span class="Statement">h1</span><span class="Identifier">&gt;</span>My Page<span class="Identifier">&lt;/</span><span class="Statement">h1</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+This is my page
+<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">h2</span><span class="Identifier">&gt;</span>Section 1<span class="Identifier">&lt;/</span><span class="Statement">h2</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+This is section 1
+<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">h2</span><span class="Identifier">&gt;</span>Section 2<span class="Identifier">&lt;/</span><span class="Statement">h2</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+This is section 2
+<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">h3</span><span class="Identifier">&gt;</span>Sub-section 2.1<span class="Identifier">&lt;/</span><span class="Statement">h3</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+This is a subsection
+<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">toc</span><span class="Identifier"> /&gt;</span>
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="grid.html" class="nav">Prev</a></td><td><b>Next</b></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

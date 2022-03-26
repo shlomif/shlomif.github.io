@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="he-IL" lang="he-IL"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="goodies.html"/><link rel="next" href="common_cmds.html"/><script src="https://www.shlomifish.org/js/jq.js"></script><script src="../slidy.js"></script><title>מאפיינים בסיסיים של מערכת הקבצים</title></head><body dir="rtl"><main><header><h1>4.5. מאפיינים בסיסיים של מערכת הקבצים</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">תוכן</a></td><td><a href="./" class="nav" accesskey="u">למעלה</a></td><td><a href="goodies.html" class="nav" accesskey="p">הקודם</a></td><td><a href="common_cmds.html" class="nav" accesskey="n">הבא</a></td></tr></table><div class="bread"><a href="../">מבוא ללינוקס</a> ← <a href="./">חלון הפקודות של לינוקס</a> ← <a href="filesystem.html">מאפיינים בסיסיים של מערכת הקבצים</a></div></nav><div class="help"><p>כדי לעבור לנקודה הבאה או הקודמת בשקף יש ללחוץ במקלדת על החיצים שמאלה וימינה.</p><p>ניתן לעבור לשקף הבא על-ידי המקשים "N" ו-"P".</p></div><script>rtl_keys = true;</script><ul class="point"><li>לינוקס מארגנת את הקבצים שלה ב-<b>מדריכים</b> (<b>directories</b>), כאשר כל מדריך יכול להכיל קבצים או מדריכים אחרים.</li><li>קיים מדריך עליון שנקרא מדריך השורש <span dir="ltr">(root directory)</span> והוא מסומן כ-<code>/</code>.</li><li>המדריך "<code>.</code>" מסמן את המדריך הנוכחי. "<code>..</code>" הנו המדריך מעליו.</li><li>אם לפני הכל בא <code>/</code> אז המסלול יהיה אבסולוטי יחסית לשורש.</li><li>הפקודה <code>cd</code> משנה את מדריך העבודה הנוכחי למדריך אחר. הפקודה <code>pwd</code> מדפיסה את המסלול של מדריך העבודה הנוכחי.</li><li>הנה הפעלה לדוגמה של שורת הפקודה:</li></ul><pre>
+shlomi:~$ cd /usr
+shlomi:/usr$ pwd
+/usr
+shlomi:/usr$ cd local/bin
+shlomi:/usr/local/bin$ pwd
+/usr/local/bin
+shlomi:/usr/local/bin$ cd ../../share
+shlomi:/usr/share$ pwd
+/usr/share
+shlomi:/usr/share$ cd /usr/share/doc/
+shlomi:/usr/share/doc$ pwd
+/usr/share/doc
+shlomi:/usr/share/doc$ cd ./vim-X11-6.1/
+shlomi:/usr/share/doc/vim-X11-6.1$ pwd
+/usr/share/doc/vim-X11-6.1
+shlomi:/usr/share/doc/vim-X11-6.1$ cd ..
+shlomi:/usr/share/doc$ cd rsync-2.5.6/
+shlomi:/usr/share/doc/rsync-2.5.6$ pwd
+/usr/share/doc/rsync-2.5.6
+shlomi:/usr/share/doc/rsync-2.5.6$
+</pre><p style="clear:both"></p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">תוכן</a></td><td><a href="./" class="nav">למעלה</a></td><td><a href="goodies.html" class="nav">הקודם</a></td><td><a href="common_cmds.html" class="nav">הבא</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

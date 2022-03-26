@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="hanoi.html"/><link rel="next" href="square_brackets.html"/><title>\ - Taking a Reference to an Existing Variable</title></head><body><main><header><h1>10.2. \ - Taking a Reference to an Existing Variable</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="hanoi.html" class="nav" accesskey="p">Prev</a></td><td><a href="square_brackets.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">References</a> → <a href="backslash.html">\ - Taking a Reference to an Existing Variable</a></div></nav><p>In Perl the backslash (<code>\</code>) is an operator that returns the reference to an existing variable. It can also return a dynamic reference to a constant.</p><p>Here is an example that uses a reference to update a sum:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$sum</span> = <span class="Constant">0</span>;
+
+<span class="Statement">sub </span><span class="Identifier">update_sum</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$ref_to_sum</span> = <span class="Statement">shift</span>;
+    <span class="Statement">foreach</span> <span class="Statement">my</span> <span class="Identifier">$item</span> (<span class="Identifier">@_</span>)
+    &#x7B;
+        <span class="Comment"># The $&#x7B; ... &#x7D; dereferences the variable</span>
+        <span class="Identifier">$&#x7B;$ref_to_sum&#x7D;</span> += <span class="Identifier">$item</span>;
+    &#x7D;
+&#x7D;
+
+update_sum(\<span class="Identifier">$sum</span>, <span class="Constant">5</span>, <span class="Constant">4</span>, <span class="Constant">9</span>, <span class="Constant">10</span>, <span class="Constant">11</span>);
+update_sum(\<span class="Identifier">$sum</span>, <span class="Constant">100</span>, <span class="Constant">80</span>, <span class="Constant">7</span>, <span class="Constant">24</span>);
+
+<span class="Statement">print</span> <span class="Constant">&quot;</span><span class="Special">\$</span><span class="Constant">sum is now &quot;</span>, <span class="Identifier">$sum</span>, <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>As can be seen, because the reference to <code>$sum</code> was used, its value changes throughout the program.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="hanoi.html" class="nav">Prev</a></td><td><a href="square_brackets.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="api.html"/><title>questions.wml - the data</title></head><body><main><header><h1>9.1. questions.wml - the data</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="api.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">WebMetaLecture - a lecture about Website Meta Language</a> → <a href="./">Example 5 : An FAQ List</a> → <a href="questions.html">questions.wml - the data</a></div></nav><div class="code_block"><pre>
+<span class="Identifier">&lt;</span><span class="Statement">define-tag</span><span class="Identifier"> mytitle&gt;</span>
+The Pi FAQ - <span class="Identifier">&lt;</span>if<span class="Identifier"> </span><span class="Error">&lt;</span><span class="Identifier">get-var render-body /&gt;</span> &quot;Answers&quot; &quot;Table of Contents&quot; /<span class="Error">&gt;</span>
+<span class="Identifier">&lt;/</span><span class="Statement">define-tag</span><span class="Identifier">&gt;</span>
+<span class="Identifier">&lt;?xml </span><span class="Type">version</span><span class="Identifier">=</span><span class="Constant">&quot;1.0&quot;</span><span class="Identifier"> encoding=</span><span class="Constant">&quot;utf-8&quot;</span><span class="Identifier">?&gt;</span>
+<span class="Identifier">&lt;!DOCTYPE html&gt;</span>
+<span class="Identifier">&lt;</span><span class="Statement">html</span><span class="Identifier"> xmlns=</span><span class="Constant">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="Identifier"> xml:</span><span class="Type">lang</span><span class="Identifier">=</span><span class="Constant">&quot;en-US&quot;</span><span class="Identifier">&gt;</span>
+<span class="Identifier">&lt;</span><span class="Statement">head</span><span class="Identifier">&gt;</span>
+<span class="Identifier">&lt;</span><span class="Statement">title</span><span class="Identifier">&gt;&lt;</span>mytitle<span class="Identifier"> /&gt;&lt;/</span><span class="Statement">title</span><span class="Identifier">&gt;</span>
+<span class="Identifier">&lt;</span><span class="Statement">meta</span><span class="Identifier"> </span><span class="Type">charset</span><span class="Identifier">=</span><span class="Constant">&quot;utf-8&quot;</span><span class="Identifier"> /&gt;</span>
+<span class="Identifier">&lt;</span><span class="Statement">link</span><span class="Identifier"> </span><span class="Type">rel</span><span class="Identifier">=</span><span class="Constant">&quot;stylesheet&quot;</span><span class="Identifier"> </span><span class="Type">href</span><span class="Identifier">=</span><span class="Constant">&quot;$(ROOT)/style.css&quot;</span><span class="Identifier"> </span><span class="Type">type</span><span class="Identifier">=</span><span class="Constant">&quot;text/css&quot;</span><span class="Identifier"> /&gt;</span>
+<span class="Identifier">&lt;/</span><span class="Statement">head</span><span class="Identifier">&gt;</span>
+<span class="Identifier">&lt;</span><span class="Statement">body</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">h1</span><span class="Identifier">&gt;&lt;</span>mytitle<span class="Identifier"> /&gt;&lt;/</span><span class="Statement">h1</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span>if<span class="Identifier"> </span><span class="Constant">&quot;&lt;get-var render-body /&gt;&quot;</span>
+<span class="Identifier">    </span><span class="Constant">&quot;&quot;</span>
+<span class="Identifier">    </span><span class="Constant">&quot;&lt;p&gt;&quot;</span>
+<span class="Identifier">    /&gt;</span>
+
+<span class="Identifier">&lt;</span>question<span class="Identifier"> anchor=</span><span class="Constant">&quot;what_is&quot;</span><span class="Identifier"> </span><span class="Type">title</span><span class="Identifier">=</span><span class="Constant">&quot;What is Pi?&quot;</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+Pi is the sum of the infinite series 1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11...
+multiplied by 4.
+<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;/</span>question<span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span>question<span class="Identifier"> anchor=</span><span class="Constant">&quot;how_much&quot;</span><span class="Identifier"> </span><span class="Type">title</span><span class="Identifier">=</span><span class="Constant">&quot;How much is Pi, approximately?&quot;</span><span class="Identifier">&gt;</span>
+<span class="Identifier">&lt;</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+The value of Pi varies according to the radius of the circle, so it's
+hard to tell.
+<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+<span class="Identifier">&lt;/</span>question<span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span>question<span class="Identifier"> anchor=</span><span class="Constant">&quot;approx&quot;</span><span class="Identifier"> </span><span class="Type">title</span><span class="Identifier">=</span><span class="Constant">&quot;Approximating Pi&quot;</span><span class="Identifier">&gt;</span>
+<span class="Identifier">&lt;/</span>question<span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span>promote<span class="Identifier"> /&gt;</span>
+
+<span class="Identifier">&lt;</span>question<span class="Identifier"> anchor=</span><span class="Constant">&quot;when_zeroes&quot;</span>
+<span class="Identifier">          </span><span class="Type">title</span><span class="Identifier">=</span><span class="Constant">&quot;How many digits will I have to produce to reach a state of all-zeroes?&quot;</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+It was proven that after a number between 1.345698 and 1.74 times 10 ** 12
+digits, Pi is all zeros.
+<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;/</span>question<span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span>question<span class="Identifier"> anchor=</span><span class="Constant">&quot;complexity&quot;</span><span class="Identifier"> </span><span class="Type">title</span><span class="Identifier">=</span><span class="Constant">&quot;What is the fastest algorithm for approximating Pi?&quot;</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+Approximating Pi was found to be NP-Complete.
+<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;/</span>question<span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span>demote<span class="Identifier"> /&gt;</span>
+
+<span class="Identifier">&lt;</span>question<span class="Identifier"> anchor=</span><span class="Constant">&quot;Uses&quot;</span><span class="Identifier"> </span><span class="Type">title</span><span class="Identifier">=</span><span class="Constant">&quot;What can I do with Pi?&quot;</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+The most common use of Pi is to generate random sequences. A far less common
+use is for geometrical and trigonometrical calculations.
+<span class="Identifier">&lt;/</span><span class="Statement">p</span><span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;/</span>question<span class="Identifier">&gt;</span>
+
+<span class="Identifier">&lt;</span>if<span class="Identifier"> </span><span class="Constant">&quot;&lt;get-var render-body /&gt;&quot;</span>
+<span class="Identifier">    </span><span class="Constant">&quot;&quot;</span>
+<span class="Identifier">    </span><span class="Constant">&quot;&lt;/p&gt;&quot;</span>
+<span class="Identifier">    /&gt;</span>
+
+<span class="Identifier">&lt;/</span><span class="Statement">body</span><span class="Identifier">&gt;</span>
+<span class="Identifier">&lt;/</span><span class="Statement">html</span><span class="Identifier">&gt;</span>
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="api.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?><!-- BEGIN slide --><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><title>Front-end and Back-end</title><meta charset="utf-8"/><link rel="icon" href="favicon.png"/><style>a:link{color:#123422;text-decoration:none}a:visited{color:#123333;text-decoration:none}a:hover{text-decoration:underline}p{font-size:24pt;margin:6pt}div p{font-size:18pt;margin-top:12pt;margin-bottom:12pt;margin-left:6pt;margin-right:6pt}small{font-size:9pt;font-style:italic}#topbar{background:#ffeed3;color:#00f;position:absolute;right:5px;left:5px;top:5px;height:50px}#bottombar{background:#ffeed3;color:#00f;position:fixed;right:5px;left:5px;bottom:5px;height:50px;z-index:0}.top_spacer{height:0;margin:0;padding:1px 0 0 0}.spacer{bottom:5px;height:50px}#content{background:#fff;margin-left:20px;margin-right:20px;margin-top:80px}#logo{position:fixed;right:40px;bottom:51px;width:130px;height:150px;z-index:3;background-image:url(/logo.png);background-repeat:no-repeat}</style><script><![CDATA[
+// BEGIN controls.js
+function nextSlide() {
+    window.location = 'slide6c.html#end';
+}
+
+function prevSlide() {
+    window.location = 'slide6a.html';
+}
+
+function indexSlide() {
+    window.location = 'index.html';
+}
+
+function startSlide() {
+    window.location = 'start.html';
+}
+
+function closeSlide() {
+    window.close();
+}
+
+function handleKey(e) {
+    const key = e.code;
+    switch(key) {
+        case 'ArrowLeft': prevSlide(); break;
+        case 'Enter': nextSlide(); break;
+        case 'Space': nextSlide(); break;
+        // case 81: closeSlide(); break;
+        case 'ArrowUp': indexSlide(); break;
+        case 'PageDown': nextSlide(); break;
+        case 'PageUp': prevSlide(); break;
+        case 'Home': startSlide(); break;
+        default: break; //xxx(e.which)
+    }
+}
+
+document.addEventListener('keydown', handleKey);
+// END controls.js
+
+]]></script></head><body><div id="topbar"><table><tr><td style="width:13%">Test::Run</td><td style="width:73%;text-align:center"><a accesskey="s" href="start.html">Test::Run - a New and Improved Test Harness</a></td><td style="width:13%;text-align:right">#6</td></tr></table></div><!-- END top --><div id="content"><div class="top_spacer"></div><h2>Front-end and Back-end</h2><ul><li>Test::Run is the back-end that does all the testing.</li><li>Test::Run::CmdLine processes environment variables, and feeds them into Test::Run as constructor arguments.</li></ul><small>continued...</small></div><!-- BEGIN bottom --><div id="bottombar"><table style="width:100%"><tr><td style="text-align:left;vertical-align:middle"><div><a accesskey="p" href="slide6a.html">← Previous</a> | <a accesskey="i" href="index.html">Index</a> | <a accesskey="n" href="slide6c.html#end">Next →</a></div></td><td style="text-align:right;vertical-align:middle">Copyright © 2005 Shlomi Fish</td></tr></table></div><div id="logo"></div><div id="end" class="spacer"></div><!-- END slide --></body></html>

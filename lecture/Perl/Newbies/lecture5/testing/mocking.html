@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="types.html"/><link rel="next" href="../version-control/"/><title>Mocking</title></head><body><main><header><h1>2.4. Mocking</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="types.html" class="nav" accesskey="p">Prev</a></td><td><a href="../version-control/" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 5 - Good Programming Practices</a> → <a href="./">Automated Testing</a> → <a href="mocking.html">Mocking</a></div></nav><p>When testing certain parts of the application, it is sometimes desirable to mimic the functionality of different parts, so the testing will be isolated. For example, if we're testing a server-side script (such as a CGI script), we may wish to provide a server-emulating object that's completely under our control and that inputs the script with our own parameters. This is called <b>mocking</b> (see <a href="http://en.wikipedia.org/wiki/Mock_object">the Wikipedia article about Mock objects</a>), and there are several mechanisms for doing so for Perl facilities:</p><ul><li><a href="http://metacpan.org/release/Test-MockObject/">Test-MockObject</a></li><li><a href="http://metacpan.org/release/Test-MockModule/">Test-MockModule</a></li><li><a href="http://metacpan.org/release/DBD-Mock/">DBD-Mock</a> - mock databases for testing.</li></ul><p>With regard to mocking modules, one may opt to simulate loading a module using the Perl <code>%INC</code> variable (see <a href="http://perldoc.perl.org/perlvar.html">perlvar</a>) by doing something like:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">package</span><span class="Type"> CGI</span>;
+
+<span class="Comment"># .</span>
+<span class="Comment"># .</span>
+<span class="Comment"># .</span>
+
+<span class="PreProc">BEGIN</span>
+&#x7B;
+    <span class="Identifier">$INC&#x7B;</span><span class="Constant">'CGI.pm'</span><span class="Identifier">&#x7D;</span> = <span class="Constant">&quot;/usr/lib/perl5/site_perl/5.10.0/CGI.pm&quot;</span>;
+&#x7D;
+
+<span class="Constant">1</span>;
+</pre></div><p>After doing this, the tested code can do <code>use CGI;</code> and still think it loaded the original module, while actually it is using our own mocked version.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="types.html" class="nav">Prev</a></td><td><a href="../version-control/" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

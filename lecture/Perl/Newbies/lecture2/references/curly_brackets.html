@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="square_brackets.html"/><link rel="next" href="arrow.html"/><title>{ %hash } - a Dynamic Reference to a Hash</title></head><body><main><header><h1>10.4. { %hash } - a Dynamic Reference to a Hash</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="square_brackets.html" class="nav" accesskey="p">Prev</a></td><td><a href="arrow.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">References</a> → <a href="curly_brackets.html">{ %hash } - a Dynamic Reference to a Hash</a></div></nav><p>In a similar way to the square brackets, putting a hash inside a pair of curly braces (<code>{ ... }</code>) will make it into a reference to a hash. Like an array reference, this reference is a scalar and can be used as an array element or a hash value. Plus, its own values can be references to other arrays or hashes.</p><p>To demonstrate this let's see the code of part of the contents table of this very lecture, to demonstrate the multi-level data structure capabilities of perl:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$contents</span> =
+&#x7B;
+    <span class="Constant">'title'</span> =&gt; <span class="Constant">&quot;Contents&quot;</span>,
+    <span class="Constant">'subs'</span> =&gt;
+    [
+        &#x7B;
+            <span class="Constant">'url'</span> =&gt; <span class="Constant">&quot;for&quot;</span>,
+            <span class="Constant">'title'</span> =&gt; <span class="Constant">&quot;The for loop&quot;</span>,
+            <span class="Constant">'subs'</span> =&gt;
+            [
+                &#x7B;
+                    <span class="Constant">'url'</span> =&gt; <span class="Constant">&quot;next.html&quot;</span>,
+                    <span class="Constant">'title'</span> =&gt; <span class="Constant">&quot;Behaviour of next in the for loop&quot;</span>,
+                &#x7D;,
+                &#x7B;
+                    <span class="Constant">'url'</span> =&gt; <span class="Constant">&quot;whence_for.html&quot;</span>,
+                    <span class="Constant">'title'</span> =&gt; <span class="Constant">&quot;Whence for?&quot;</span>,
+                &#x7D;,
+            ],
+        &#x7D;,
+        &#x7B;
+            <span class="Constant">'url'</span> =&gt; <span class="Constant">&quot;hashes&quot;</span>,
+            <span class="Constant">'title'</span> =&gt; <span class="Constant">&quot;Hashes&quot;</span>,
+            <span class="Constant">'subs'</span> =&gt;
+            [
+                &#x7B;
+                    <span class="Constant">'url'</span> =&gt; <span class="Constant">&quot;functions.html&quot;</span>,
+                    <span class="Constant">'title'</span> =&gt; <span class="Constant">&quot;Hash Functions&quot;</span>,
+                &#x7D;,
+            ],
+        &#x7D;,
+        &#x7B;
+            <span class="Constant">'url'</span> =&gt; <span class="Constant">&quot;my&quot;</span>,
+            <span class="Constant">'title'</span> =&gt; <span class="Constant">&quot;Declaring Local Variables with </span><span class="Special">\&quot;</span><span class="Constant">my</span><span class="Special">\&quot;</span><span class="Constant">&quot;</span>,
+            <span class="Constant">'subs'</span> =&gt;
+            [
+                &#x7B;
+                    <span class="Constant">'url'</span> =&gt; <span class="Constant">&quot;use_strict.html&quot;</span>,
+                    <span class="Constant">'title'</span> =&gt; <span class="Constant">&quot;</span><span class="Special">\&quot;</span><span class="Constant">use strict</span><span class="Special">\&quot;</span><span class="Constant">, Luke!&quot;</span>,
+                &#x7D;,
+            ],
+        &#x7D;,
+        &#x7B;
+            <span class="Constant">'url'</span> =&gt; <span class="Constant">&quot;argv.html&quot;</span>,
+            <span class="Constant">'title'</span> =&gt; <span class="Constant">&quot;The </span><span class="Special">\@</span><span class="Constant">ARGV array&quot;</span>,
+        &#x7D;,
+    ],
+    <span class="Constant">'images'</span> =&gt;
+    [
+        &#x7B;
+            <span class="Constant">'url'</span> =&gt; <span class="Constant">'style.css'</span>,
+            <span class="Constant">'type'</span> =&gt; <span class="Constant">'text/css'</span>,
+        &#x7D;
+    ],
+&#x7D;;
+
+<span class="Statement">sub </span><span class="Identifier">get_contents</span>
+&#x7B;
+    <span class="Statement">return</span> <span class="Identifier">$contents</span>;
+&#x7D;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="square_brackets.html" class="nav">Prev</a></td><td><a href="arrow.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

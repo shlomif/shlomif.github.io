@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="setting-up.html"/><link rel="next" href="page.html"/><title>The Contents.pm File</title></head><body><main><header><h1>4.2. The Contents.pm File</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="setting-up.html" class="nav" accesskey="p">Prev</a></td><td><a href="page.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">QuaD-Pres - A Perl-based Tool for Presentation</a> → <a href="./">Usage</a> → <a href="Contents.pm.html">The Contents.pm File</a></div></nav><ul class="point"><li>The file <code>Contents.pm</code> in the top directory contains the layout of the presentation into sections and sub-sections.</li><li>It is a Perl Module which contains a data-structure with a specific syntax.</li><li>Every hash reference is a node and contains two fields: <code>url</code> which is the URL relative to the upper node, and <code>title</code> which is the title of the node.</li><li>It may optionally contain a <code>subs</code> field that has a reference to an array of sub-nodes as a value. If it does it will be treated as a directory; else as a normal HTML file.</li><li>The <code>images</code> field may be specified to refer to an array of files to be copied to the destination directory as is, without being processed.</li><li>An example is worth a thousand words! Here is the <code>Contents.pm</code> file of this very lecture.</li></ul><table class="mycode"><tr class="mycode"><td class="mycode"><pre class="mycode">
+<span style="color:brown"><b>package</b></span><span style="color:#2e8b57"><b> Contents;</b></span>
+
+<span style="color:brown"><b>use strict</b></span>;
+
+<span style="color:brown"><b>my</b></span> <span style="color:#008b8b">$contents</span> =
+{
+    <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">QuaD-Pres - A Perl-based Tool for Presentation</span><span style="color:#f0f">&quot;</span>,
+    <span style="color:#f0f">'</span><span style="color:#f0f">subs</span><span style="color:#f0f">'</span> =&gt;
+    [
+        {
+            <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">intro.html</span><span style="color:#f0f">&quot;</span>,
+            <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">Introduction</span><span style="color:#f0f">&quot;</span>,
+        },
+        {
+            <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">history.html</span><span style="color:#f0f">&quot;</span>,
+            <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">The History of QuaD-Pres</span><span style="color:#f0f">&quot;</span>,
+        },
+        {
+            <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">features.html</span><span style="color:#f0f">&quot;</span>,
+            <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">Quad-Pres Features</span><span style="color:#f0f">&quot;</span>,
+        },
+        {
+            <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">usage</span><span style="color:#f0f">&quot;</span>,
+            <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">Usage</span><span style="color:#f0f">&quot;</span>,
+            <span style="color:#f0f">'</span><span style="color:#f0f">subs</span><span style="color:#f0f">'</span> =&gt;
+            [
+                {
+                    <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">setting-up.html</span><span style="color:#f0f">&quot;</span>,
+                    <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">Setting Up</span><span style="color:#f0f">&quot;</span>,
+                },
+                {
+                    <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">Contents.pm.html</span><span style="color:#f0f">&quot;</span>,
+                    <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">The Contents.pm File</span><span style="color:#f0f">&quot;</span>,
+                },
+                {
+                    <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">page.html</span><span style="color:#f0f">&quot;</span>,
+                    <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">An Individual Page</span><span style="color:#f0f">&quot;</span>,
+                },
+                {
+                    <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">images.html</span><span style="color:#f0f">&quot;</span>,
+                    <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">Including Images</span><span style="color:#f0f">&quot;</span>,
+                },
+            ],
+            <span style="color:#f0f">'</span><span style="color:#f0f">images</span><span style="color:#f0f">'</span> =&gt; [ <span style="color:#f0f">'</span><span style="color:#f0f">logo-wml.png</span><span style="color:#f0f">'</span> ],
+        },
+        {
+            <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">no_wml</span><span style="color:#f0f">&quot;</span>,
+            <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">Using QuaD-Pres without Website Meta Language</span><span style="color:#f0f">&quot;</span>,
+            <span style="color:#f0f">'</span><span style="color:#f0f">subs</span><span style="color:#f0f">'</span> =&gt;
+            [
+                {
+                    <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">page.html</span><span style="color:#f0f">&quot;</span>,
+                    <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">An Individual Page</span><span style="color:#f0f">&quot;</span>,
+                },
+                {
+                    <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">render-modes.html</span><span style="color:#f0f">&quot;</span>,
+                    <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">The Render Modes</span><span style="color:#f0f">&quot;</span>,
+                },
+            ],
+        },
+        {
+            <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">finale</span><span style="color:#f0f">&quot;</span>,
+            <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">Finale</span><span style="color:#f0f">&quot;</span>,
+            <span style="color:#f0f">'</span><span style="color:#f0f">subs</span><span style="color:#f0f">'</span> =&gt;
+            [
+                {
+                    <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">samples.html</span><span style="color:#f0f">&quot;</span>,
+                    <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">Sample Presentations</span><span style="color:#f0f">&quot;</span>,
+                },
+                {
+                    <span style="color:#f0f">'</span><span style="color:#f0f">url</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">links.html</span><span style="color:#f0f">&quot;</span>,
+                    <span style="color:#f0f">'</span><span style="color:#f0f">title</span><span style="color:#f0f">'</span> =&gt; <span style="color:#f0f">&quot;</span><span style="color:#f0f">Links</span><span style="color:#f0f">&quot;</span>,
+                },
+            ],
+        }
+    ],
+    <span style="color:#f0f">'</span><span style="color:#f0f">images</span><span style="color:#f0f">'</span> =&gt;
+    [
+        <span style="color:#f0f">'</span><span style="color:#f0f">style.css</span><span style="color:#f0f">'</span>,
+    ],
+};
+
+<span style="color:brown"><b>sub</b></span><span style="color:#008b8b"> </span><span style="color:#008b8b">get_contents</span>
+{
+    <span style="color:brown"><b>return</b></span> <span style="color:#008b8b">$contents</span>;
+}
+</pre></td></tr></table><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="setting-up.html" class="nav">Prev</a></td><td><a href="page.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

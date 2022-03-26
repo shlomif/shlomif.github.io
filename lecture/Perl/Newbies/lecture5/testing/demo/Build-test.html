@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../style.css" type="text/css"/><link rel="prev" href="test-more.html"/><link rel="next" href="../types.html"/><title>./Build test</title></head><body><main><header><h1>2.2.2. ./Build test</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="test-more.html" class="nav" accesskey="p">Prev</a></td><td><a href="../types.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../">"Perl for Perl Newbies" - Part 5 - Good Programming Practices</a> → <a href="../">Automated Testing</a> → <a href="./">Demo</a> → <a href="Build-test.html">./Build test</a></div></nav><p>Standard CPAN and CPAN-like Perl packages contain their tests as a group of <code>*.t</code> under the sub-directory <code>t/</code>, and allow running them by invoking the <code>make test</code> or <code>./Build test</code> commands.</p><p>Using the CPAN package <a href="http://metacpan.org/release/Module-Starter/">Module-Starter</a> one can generate a skeleton for one’s own CPAN-like package, which can also afterwards contain tests. Keeping your code organised in such packages, allows one to make use of a convenient build-system such as <a href="http://metacpan.org/release/Module-Build/">Module-Build</a>. It also allows one to package it as operating-system-wide packages, which can be removed easily using the system's package manager. Finally, these packages can later be uploaded to CPAN for sharing with other users and developers.</p><p>Here’s an example of testing a CPAN distribution from CPAN using <code>./Build test</code>:</p><div class="code_block"><pre>
+shlomi:~/TEMP$ ls
+shlomi:~/TEMP$ mv ~/Test-Count-0.0500.tar.gz .
+shlomi:~/TEMP$ ls
+Test-Count-0.0500.tar.gz
+shlomi:~/TEMP$ ls -l
+total 16
+-rw-r--r-- 1 shlomi shlomi 12933 2009-08-02 20:52 Test-Count-0.0500.tar.gz
+shlomi:~/TEMP$ tar -xvf Test-Count-0.0500.tar.gz
+Test-Count-0.0500
+Test-Count-0.0500/Changes
+Test-Count-0.0500/MANIFEST
+Test-Count-0.0500/META.yml
+Test-Count-0.0500/Build.PL
+Test-Count-0.0500/Makefile.PL
+Test-Count-0.0500/README
+Test-Count-0.0500/t
+Test-Count-0.0500/t/boilerplate.t
+Test-Count-0.0500/t/03-filter.t
+Test-Count-0.0500/t/01-parser.t
+Test-Count-0.0500/t/pod-coverage.t
+Test-Count-0.0500/t/02-main.t
+Test-Count-0.0500/t/00-load.t
+Test-Count-0.0500/t/pod.t
+Test-Count-0.0500/t/sample-data
+Test-Count-0.0500/t/sample-data/test-scripts
+Test-Count-0.0500/t/sample-data/test-scripts/arithmetics.t
+Test-Count-0.0500/t/sample-data/test-scripts/01-parser.t
+Test-Count-0.0500/t/sample-data/test-scripts/basic.arc
+Test-Count-0.0500/examples
+Test-Count-0.0500/examples/perl-test-manage-helper.pl
+Test-Count-0.0500/examples/perl-test-manage.vim
+Test-Count-0.0500/lib
+Test-Count-0.0500/lib/Test
+Test-Count-0.0500/lib/Test/Count.pm
+Test-Count-0.0500/lib/Test/Count
+Test-Count-0.0500/lib/Test/Count/Base.pm
+Test-Count-0.0500/lib/Test/Count/Parser.pm
+Test-Count-0.0500/lib/Test/Count/Filter.pm
+Test-Count-0.0500/lib/Test/Count/Filter
+Test-Count-0.0500/lib/Test/Count/Filter/ByFileType
+Test-Count-0.0500/lib/Test/Count/Filter/ByFileType/App.pm
+Test-Count-0.0500/inc
+Test-Count-0.0500/inc/Test
+Test-Count-0.0500/inc/Test/Run
+Test-Count-0.0500/inc/Test/Run/Builder.pm
+shlomi:~/TEMP$ cd Test
+Test-Count-0.0500/        Test-Count-0.0500.tar.gz
+shlomi:~/TEMP$ cd Test-Count-0.0500
+shlomi:~/TEMP/Test-Count-0.0500$ ls
+Build.PL  examples  lib          MANIFEST  README
+Changes   inc       Makefile.PL  META.yml  t
+shlomi:~/TEMP/Test-Count-0.0500$ perl Build.PL
+Checking whether your kit is complete...
+Looks good
+
+Checking prerequisites...
+Looks good
+
+Creating new 'Build' script for 'Test-Count' version '0.0500'
+shlomi:~/TEMP/Test-Count-0.0500$ ./Build
+Copying lib/Test/Count/Filter/ByFileType/App.pm -&gt; blib/lib/Test/Count/Filter/ByFileType/App.pm
+Copying lib/Test/Count/Base.pm -&gt; blib/lib/Test/Count/Base.pm
+Copying lib/Test/Count/Filter.pm -&gt; blib/lib/Test/Count/Filter.pm
+Copying lib/Test/Count/Parser.pm -&gt; blib/lib/Test/Count/Parser.pm
+Copying lib/Test/Count.pm -&gt; blib/lib/Test/Count.pm
+Manifying blib/lib/Test/Count/Parser.pm -&gt; blib/libdoc/Test::Count::Parser.3pm
+Manifying blib/lib/Test/Count/Base.pm -&gt; blib/libdoc/Test::Count::Base.3pm
+Manifying blib/lib/Test/Count.pm -&gt; blib/libdoc/Test::Count.3pm
+Manifying blib/lib/Test/Count/Filter/ByFileType/App.pm -&gt; blib/libdoc/Test::Count::Filter::ByFileType::App.3pm
+Manifying blib/lib/Test/Count/Filter.pm -&gt; blib/libdoc/Test::Count::Filter.3pm
+shlomi:~/TEMP/Test-Count-0.0500$ ./Build test
+t/00-load.t ....... 1/3 # Testing Test::Count 0.0500, Perl 5.010000, /usr/bin/perl5.10.0
+t/00-load.t ....... ok
+t/01-parser.t ..... ok
+t/02-main.t ....... ok
+t/03-filter.t ..... ok
+t/boilerplate.t ... ok
+t/pod-coverage.t .. ok
+t/pod.t ........... ok
+All tests successful.
+Files=7, Tests=30,  4 wallclock secs ( 0.12 usr  0.03 sys +  2.59 cusr  0.19 csys =  2.93 CPU)
+Result: PASS
+shlomi:~/TEMP/Test-Count-0.0500$
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="test-more.html" class="nav">Prev</a></td><td><a href="../types.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

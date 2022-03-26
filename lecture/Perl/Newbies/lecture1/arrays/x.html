@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="functions.html"/><title>The x operator</title></head><body><main><header><h1>9.5. The x operator</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="functions.html" class="nav" accesskey="p">Prev</a></td><td><b>Next</b></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 1</a> → <a href="./">Arrays</a> → <a href="x.html">The x operator</a></div></nav><p>The expression <code>(@array) x $num_times</code> returns an array that is composed of <code>$num_times</code> copies of <code>@array</code> one after the other. The expression <code>$scalar x $num_times</code>, on the other hand, returns a string containing <code>$num_times</code> copies of <code>$scalar</code> concatenated together string-wise.</p><p>Therefore it is important whether the left operand is wrapped in parenthesis or not. It is usually a good idea to assign the left part to a variable before using x so you'll have the final expression ready.</p><p>Here's an example to illustrate the use:</p><div class="code_block"><pre>
+<span class="Statement">print</span> <span class="Constant">&quot;Test 1:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Identifier">@myarray</span> = (<span class="Constant">&quot;Hello&quot;</span>, <span class="Constant">&quot;World&quot;</span>);
+<span class="Identifier">@array2</span> = ((<span class="Identifier">@myarray</span>) x <span class="Constant">5</span>);
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;, &quot;</span>, <span class="Identifier">@array2</span>), <span class="Constant">&quot;</span><span class="Special">\n\n</span><span class="Constant">&quot;</span>;
+
+<span class="Statement">print</span> <span class="Constant">&quot;Test 2:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Identifier">@array3</span> = (<span class="Identifier">@myarray</span> x <span class="Constant">5</span>);
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;, &quot;</span>, <span class="Identifier">@array3</span>), <span class="Constant">&quot;</span><span class="Special">\n\n</span><span class="Constant">&quot;</span>;
+
+<span class="Statement">print</span> <span class="Constant">&quot;Test 3:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Identifier">$string</span> = <span class="Constant">&quot;oncatc&quot;</span>;
+<span class="Statement">print</span> ((<span class="Identifier">$string</span> x <span class="Constant">6</span>), <span class="Constant">&quot;</span><span class="Special">\n\n</span><span class="Constant">&quot;</span>);
+
+<span class="Statement">print</span> <span class="Constant">&quot;Test 4:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>, ((<span class="Constant">&quot;hello&quot;</span>) x <span class="Constant">5</span>)), <span class="Constant">&quot;</span><span class="Special">\n\n</span><span class="Constant">&quot;</span>;
+
+<span class="Statement">print</span> <span class="Constant">&quot;Test 5:</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+<span class="Statement">print</span> <span class="Statement">join</span>(<span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>, (<span class="Constant">&quot;hello&quot;</span> x <span class="Constant">5</span>)), <span class="Constant">&quot;</span><span class="Special">\n\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>Can you guess what the output of this program will be?</p><p>Here's a spoiler</p><div class="code_block"><pre>
+Test 1:
+Hello, World, Hello, World, Hello, World, Hello, World, Hello, World
+
+Test 2:
+22222
+
+Test 3:
+oncatconcatconcatconcatconcatconcatc
+
+Test 4:
+hello
+hello
+hello
+hello
+hello
+
+Test 5:
+hellohellohellohellohello
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="functions.html" class="nav">Prev</a></td><td><b>Next</b></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

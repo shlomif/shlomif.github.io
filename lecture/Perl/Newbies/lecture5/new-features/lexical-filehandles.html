@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="use-base.html"/><link rel="next" href="../local-keyword/"/><title>Lexical Filehandles</title></head><body><main><header><h1>5.2. Lexical Filehandles</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="use-base.html" class="nav" accesskey="p">Prev</a></td><td><a href="../local-keyword/" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 5 - Good Programming Practices</a> → <a href="./">Useful Features in Recent Perls</a> → <a href="lexical-filehandles.html">Lexical Filehandles</a></div></nav><p>Traditionally Perl filehandles had been "typeglobs" - global names - normally starting with an uppercase letter that were not scope safe. While they could have been localised using "local", this was still a far cry from true lexical scoping. perl-5.6.x, however, <a href="http://perldoc.perl.org/perl56delta.html#File-and-directory-handles-can-be-autovivified">introduced</a> lexical filehandles for both file handles and directory handles.</p><p>Here is an example for a program implementing a directory listing.</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">sub </span><span class="Identifier">get_entries</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$dir_path</span> = <span class="Statement">shift</span>;
+
+    <span class="Statement">opendir</span> <span class="Statement">my</span> <span class="Identifier">$dir_handle</span>, <span class="Identifier">$dir_path</span>
+        <span class="Statement">or</span> <span class="Statement">die</span> <span class="Constant">&quot;Cannot open '</span><span class="Identifier">$dir_path</span><span class="Constant">' as a directory - </span><span class="Identifier">$!</span><span class="Constant">.&quot;</span>;
+
+    <span class="Statement">my</span> <span class="Identifier">@entries</span> = <span class="Statement">readdir</span>(<span class="Identifier">$dir_handle</span>);
+
+    <span class="Statement">closedir</span>(<span class="Identifier">$dir_handle</span>);
+
+    <span class="Statement">return</span> [ <span class="Statement">sort</span> <span class="Statement">&#x7B;</span> <span class="Identifier">$a</span> <span class="Statement">cmp</span> <span class="Identifier">$b</span> <span class="Statement">&#x7D;</span> <span class="Identifier">@entries</span> ];
+&#x7D;
+
+<span class="Statement">foreach</span> <span class="Statement">my</span> <span class="Identifier">$arg</span> (<span class="Identifier">@ARGV</span>)
+&#x7B;
+    <span class="Statement">print</span> <span class="Constant">&quot;== Listing for </span><span class="Identifier">$arg</span><span class="Constant"> ==</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+    <span class="Statement">foreach</span> <span class="Statement">my</span> <span class="Identifier">$entry</span> (<span class="Identifier">@&#x7B;</span>get_entries(<span class="Identifier">$arg</span>)<span class="Identifier">&#x7D;</span>)
+    &#x7B;
+        <span class="Statement">print</span> <span class="Identifier">$entry</span>, <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+    &#x7D;
+&#x7D;
+</pre></div><p>And here is an example that copies a file:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Comment"># This is just for demonstration. A better way would be to use File::Copy :</span>
+<span class="Comment">#</span>
+<span class="Comment"># http://perldoc.perl.org/File/Copy.html</span>
+<span class="Comment">#</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$source_fn</span> = <span class="Statement">shift</span>(<span class="Identifier">@ARGV</span>);
+<span class="Statement">my</span> <span class="Identifier">$dest_fn</span> = <span class="Statement">shift</span>(<span class="Identifier">@ARGV</span>);
+
+<span class="Statement">if</span> ( (!<span class="Statement">defined</span>(<span class="Identifier">$source_fn</span>)) || (!<span class="Statement">defined</span>(<span class="Identifier">$dest_fn</span>)) )
+&#x7B;
+    <span class="Statement">die</span> <span class="Constant">&quot;You must specify two arguments - source and destination.&quot;</span>
+&#x7D;
+
+<span class="Statement">open</span> <span class="Statement">my</span> <span class="Identifier">$source_handle</span>, <span class="Constant">&quot;&lt;&quot;</span>, <span class="Identifier">$source_fn</span>
+    <span class="Statement">or</span> <span class="Statement">die</span> <span class="Constant">&quot;Could not open '</span><span class="Identifier">$source_fn</span><span class="Constant">' - </span><span class="Identifier">$!</span><span class="Constant">.&quot;</span>;
+<span class="Statement">open</span> <span class="Statement">my</span> <span class="Identifier">$dest_handle</span>, <span class="Constant">&quot;&gt;&quot;</span>, <span class="Identifier">$dest_fn</span>
+    <span class="Statement">or</span> <span class="Statement">die</span> <span class="Constant">&quot;Could not open '</span><span class="Identifier">$dest_fn</span><span class="Constant">' - </span><span class="Identifier">$!</span><span class="Constant">.&quot;</span>;
+
+<span class="Statement">while</span> (<span class="Statement">my</span> <span class="Identifier">$line</span> = &lt;<span class="Identifier">$source_handle</span>&gt;)
+&#x7B;
+    <span class="Statement">print</span> <span class="Statement">&#x7B;</span><span class="Identifier">$dest_handle</span><span class="Statement">&#x7D;</span> <span class="Identifier">$line</span>;
+&#x7D;
+
+<span class="Statement">close</span>(<span class="Identifier">$source_handle</span>);
+<span class="Statement">close</span>(<span class="Identifier">$dest_handle</span>);
+</pre></div><h2>IO::Handle and Friends</h2><p>Perl provides a set of lexical and object-oriented abstractions for file handles called IO::Handle. Starting from recent versions of Perl, one can use them with the built-in perlfunc mechanisms. You can find more information about them here:</p><ul><li><a href="http://perldoc.perl.org/IO/Handle.html">IO::Handle's Documentation</a></li><li><a href="http://perldoc.perl.org/IO/File.html">IO::File's Documentation</a></li><li><a href="http://perldoc.perl.org/IO/Socket.html">IO::Socket's Documentation</a></li></ul><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="use-base.html" class="nav">Prev</a></td><td><a href="../local-keyword/" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../style.css" type="text/css"/><link rel="prev" href="../motivation.html"/><link rel="next" href="test-more.html"/><title>Demo</title></head><body><main><header><h1>2.2. Demo</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../" class="nav" accesskey="c">Contents</a></td><td><a href="../" class="nav" accesskey="u">Up</a></td><td><a href="../motivation.html" class="nav" accesskey="p">Prev</a></td><td><a href="test-more.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../">"Perl for Perl Newbies" - Part 5 - Good Programming Practices</a> → <a href="../">Automated Testing</a> → <a href="./">Demo</a></div></nav><p>Let's suppose we want to test a function that adds two numbers. (This is a classic example.) We have the following function in the module Add1.pm:</p><div class="code_block"><pre>
+<span class="Statement">package</span><span class="Type"> Add1</span>;
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">use vars</span> <span class="Constant">qw(@EXPORT_OK @ISA)</span>;
+
+<span class="Statement">use </span>Exporter;
+
+<span class="Identifier">@ISA</span> = (<span class="Constant">qw(Exporter)</span>);
+
+<span class="Identifier">@EXPORT_OK</span> = (<span class="Constant">qw(add)</span>);
+
+<span class="Statement">sub </span><span class="Identifier">add</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$x</span> = <span class="Statement">shift</span>;
+    <span class="Statement">my</span> <span class="Identifier">$y</span> = <span class="Statement">shift</span>;
+
+    <span class="Statement">return</span> <span class="Constant">4</span>;
+&#x7D;
+
+<span class="Constant">1</span>;
+</pre></div><p>One way to write a rudimentary script to test it, would be the following:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">use </span>Add1 (<span class="Constant">qw(add)</span>);
+
+<span class="Statement">if</span> (!(add(<span class="Constant">2</span>,<span class="Constant">2</span>) == <span class="Constant">4</span>))
+&#x7B;
+    <span class="Statement">die</span> <span class="Constant">&quot;add(2,2) failed&quot;</span>;
+&#x7D;
+<span class="Statement">exit</span>(<span class="Constant">0</span>);
+</pre></div><p>This script will die with an ugly exception if adding 2 and 2 failed and quietly exit with a success code if everything is OK. Let's run it:</p><div class="code_block"><pre>
+$ perl add1-test.pl
+$
+</pre></div><p>Everything is OK. Now let's write another test:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">use </span>Add1 (<span class="Constant">qw(add)</span>);
+
+<span class="Statement">if</span> (!(add(<span class="Constant">2</span>,<span class="Constant">2</span>) == <span class="Constant">4</span>))
+&#x7B;
+    <span class="Statement">die</span> <span class="Constant">&quot;add(2,2) failed&quot;</span>;
+&#x7D;
+
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$result</span> = add(<span class="Constant">1</span>,<span class="Constant">1</span>);
+
+    <span class="Statement">if</span> (<span class="Identifier">$result</span> != <span class="Constant">2</span>)
+    &#x7B;
+        <span class="Statement">die</span> <span class="Constant">&quot;add(1,1) resulted in '</span><span class="Identifier">$result</span><span class="Constant">' instead of 2.&quot;</span>
+    &#x7D;
+&#x7D;
+
+<span class="Statement">exit</span>(<span class="Constant">0</span>);
+</pre></div><p>This time the test fails:</p><div class="code_block"><pre>
+$ perl add1-test-2.pl
+add(1,1) resulted in '4' instead of 2. at add1-test-2.pl line 18.
+$
+</pre></div><p>As a result, we need to fix the production code:</p><div class="code_block"><pre>
+<span class="Statement">package</span><span class="Type"> Add2</span>;
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">use vars</span> <span class="Constant">qw(@EXPORT_OK @ISA)</span>;
+
+<span class="Statement">use </span>Exporter;
+
+<span class="Identifier">@ISA</span> = (<span class="Constant">qw(Exporter)</span>);
+
+<span class="Identifier">@EXPORT_OK</span> = (<span class="Constant">qw(add)</span>);
+
+<span class="Statement">sub </span><span class="Identifier">add</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$x</span> = <span class="Statement">shift</span>;
+    <span class="Statement">my</span> <span class="Identifier">$y</span> = <span class="Statement">shift</span>;
+
+    <span class="Statement">return</span> <span class="Identifier">$x</span>+<span class="Identifier">$y</span>;
+&#x7D;
+
+<span class="Constant">1</span>;
+</pre></div><p>And the equivalent test script is successful:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">use </span>Add2 (<span class="Constant">qw(add)</span>);
+
+<span class="Statement">if</span> (!(add(<span class="Constant">2</span>,<span class="Constant">2</span>) == <span class="Constant">4</span>))
+&#x7B;
+    <span class="Statement">die</span> <span class="Constant">&quot;add(2,2) failed&quot;</span>;
+&#x7D;
+
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$result</span> = add(<span class="Constant">1</span>,<span class="Constant">1</span>);
+
+    <span class="Statement">if</span> (<span class="Identifier">$result</span> != <span class="Constant">2</span>)
+    &#x7B;
+        <span class="Statement">die</span> <span class="Constant">&quot;add(1,1) resulted in '</span><span class="Identifier">$result</span><span class="Constant">' instead of 2.&quot;</span>
+    &#x7D;
+&#x7D;
+
+<span class="Statement">exit</span>(<span class="Constant">0</span>);
+</pre></div><p>Now we can continue writing more tests, and see that they passed.</p><ul class="contentsmain"><li><a href="test-more.html" class="contents">2.2.1. Test::More</a></li><li><a href="Build-test.html" class="contents">2.2.2. ./Build test</a></li></ul><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../" class="nav">Contents</a></td><td><a href="../" class="nav">Up</a></td><td><a href="../motivation.html" class="nav">Prev</a></td><td><a href="test-more.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

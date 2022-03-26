@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="commands.html"/><link rel="next" href="boilerplate.html"/><title>Adding meaningful code</title></head><body><main><header><h1>8.3. Adding meaningful code</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="commands.html" class="nav" accesskey="p">Prev</a></td><td><a href="boilerplate.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 5 - Good Programming Practices</a> → <a href="./">Module-Build and Module-Starter</a> → <a href="coding.html">Adding meaningful code</a></div></nav><p>If we look at the code of the <code>lib/…*.pm</code> file, we'll see that there's practically nothing there. So now it's time that we add some meaningful code to the modules. But first we need to add some tests. Let's add this test script under <code>t/add.t</code></p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">use </span>Test::More <span class="Constant">tests</span> =&gt; <span class="Constant">2</span>;
+
+<span class="Statement">use </span>MyMath::Ops::Add;
+
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$adder</span> = MyMath::Ops::Add-&gt;new();
+
+    <span class="Comment"># TEST</span>
+    ok (<span class="Identifier">$adder</span>, <span class="Constant">&quot;Adder was initialised&quot;</span>);
+
+    <span class="Comment"># TEST</span>
+    is (<span class="Identifier">$adder-&gt;add</span>(<span class="Constant">2</span>,<span class="Constant">3</span>), <span class="Constant">5</span>, <span class="Constant">&quot;2+3 == 5&quot;</span>);
+&#x7D;
+</pre></div><p>Now we need to add it to the <code>MANIFEST</code>, so it will be included in future versions of Perl. After we did it, let's run <code>./Build test</code> to see the tests fail:</p><div class="code_block"><pre>
+$ perl Build.PL
+Creating new 'MYMETA.yml' with configuration results
+Creating new 'Build' script for 'MyMath-Ops' version '0.01'
+$ ./Build test
+t/00-load.t ....... 1/5 # Testing MyMath::Ops 0.01, Perl 5.012003, /usr/bin/perl5.12.3
+t/00-load.t ....... ok
+t/add.t ........... Can't locate object method "new" via package "MyMath::Ops::Add" at t/add.t line 11.
+\# Looks like your test exited with 255 before it could output anything.
+t/add.t ........... Dubious, test returned 255 (wstat 65280, 0xff00)
+Failed 2/2 subtests
+t/boilerplate.t ... ok
+t/pod-coverage.t .. ok
+t/pod.t ........... ok
+
+Test Summary Report
+-------------------
+t/add.t         (Wstat: 65280 Tests: 0 Failed: 0)
+  Non-zero exit status: 255
+  Parse errors: Bad plan.  You planned 2 tests but ran 0.
+Files=5, Tests=22,  1 wallclock secs ( 0.14 usr  0.04 sys +  0.56 cusr  0.11 csys =  0.85 CPU)
+Result: FAIL
+Failed 1/5 test programs. 0/22 subtests failed.
+</pre></div><p>So now we need to fix the tests. Open <code>lib/MyMath/Ops/Add.pm</code> and write that:</p><div class="code_block"><pre>
+<span class="Statement">package</span><span class="Type"> MyMath::Ops::Add</span>;
+
+<span class="Statement">use warnings</span>;
+<span class="Statement">use strict</span>;
+
+<span class="Statement">=head1</span><span class="Constant"> NAME</span>
+
+MyMath::Ops::Add - The great new MyMath::Ops::Add!
+
+<span class="Statement">=head1</span><span class="Constant"> VERSION</span>
+
+Version 0.01
+
+<span class="Statement">=cut</span>
+
+<span class="Statement">our</span> <span class="Identifier">$VERSION</span> = <span class="Constant">'0.01'</span>;
+
+<span class="Statement">=head1</span><span class="Constant"> SYNOPSIS</span>
+
+Quick summary of what the module does.
+
+Perhaps a little code snippet.
+
+<span class="PreProc">    use MyMath::Ops::Add;</span>
+
+<span class="PreProc">    my $foo = MyMath::Ops::Add-&gt;new();</span>
+<span class="PreProc">    ...</span>
+
+<span class="Statement">=head1</span><span class="Constant"> EXPORT</span>
+
+A list of functions that can be exported.  You can delete this section
+if you don't export anything, such as for a purely object-oriented module.
+
+<span class="Statement">=head1</span><span class="Constant"> FUNCTIONS</span>
+
+<span class="Statement">=head2</span><span class="Constant"> new</span>
+
+Construct a new object.
+
+<span class="Statement">=cut</span>
+
+<span class="Statement">sub </span><span class="Identifier">new</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$class</span> = <span class="Statement">shift</span>;
+
+    <span class="Statement">my</span> <span class="Identifier">$self</span> = <span class="Statement">bless</span> &#x7B;&#x7D;, <span class="Identifier">$class</span>;
+
+    <span class="Identifier">$self-&gt;_init</span>(<span class="Identifier">@_</span>);
+
+    <span class="Statement">return</span> <span class="Identifier">$self</span>;
+&#x7D;
+
+<span class="Statement">sub </span><span class="Identifier">_init</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$self</span> = <span class="Statement">shift</span>;
+
+    <span class="Statement">return</span>;
+&#x7D;
+
+<span class="Statement">=head2</span><span class="Constant"> $self-&gt;add($x, $y)</span>
+
+Adds two numbers.
+
+<span class="Statement">=cut</span>
+
+<span class="Statement">sub </span><span class="Identifier">add</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$self</span> = <span class="Statement">shift</span>;
+
+    <span class="Statement">my</span> (<span class="Identifier">$x</span>, <span class="Identifier">$y</span>) = <span class="Identifier">@_</span>;
+    <span class="Statement">return</span> <span class="Identifier">$x</span>+<span class="Identifier">$y</span>;
+&#x7D;
+
+<span class="Statement">=head2</span><span class="Constant"> function1</span>
+
+<span class="Statement">=cut</span>
+
+<span class="Statement">sub </span><span class="Identifier">function1 </span>&#x7B;
+&#x7D;
+
+<span class="Statement">=head2</span><span class="Constant"> function2</span>
+
+<span class="Statement">=cut</span>
+
+<span class="Statement">sub </span><span class="Identifier">function2 </span>&#x7B;
+&#x7D;
+
+<span class="Statement">=head1</span><span class="Constant"> AUTHOR</span>
+
+Perl Newbie, <span class="Identifier">C&lt;&lt; &lt;perl-newbie at perl-begin.org&gt; &gt;&gt;</span>
+
+<span class="Statement">=head1</span><span class="Constant"> BUGS</span>
+
+Please report any bugs or feature requests to <span class="Identifier">C&lt;bug-mymath::ops at rt.cpan.org&gt;</span>, or through
+the web interface at <span class="Identifier">L&lt;http://rt.cpan.org/NoAuth/ReportBug.html?Queue=MyMath::Ops&gt;</span>.  I will be notified, and then you'll
+automatically be notified of progress on your bug as I make changes.
+
+
+
+
+<span class="Statement">=head1</span><span class="Constant"> SUPPORT</span>
+
+You can find documentation for this module with the perldoc command.
+
+<span class="PreProc">    perldoc MyMath::Ops::Add</span>
+
+
+You can also look for information at:
+
+<span class="Statement">=over</span> <span class="Constant">4</span>
+
+<span class="Statement">=item</span><span class="Constant"> * RT: CPAN's request tracker</span>
+
+<span class="Identifier">L&lt;http://rt.cpan.org/NoAuth/Bugs.html?Dist=MyMath::Ops&gt;</span>
+
+<span class="Statement">=item</span><span class="Constant"> * CPAN Ratings</span>
+
+<span class="Identifier">L&lt;http://cpanratings.perl.org/d/MyMath::Ops&gt;</span>
+
+<span class="Statement">=item</span><span class="Constant"> * Search CPAN</span>
+
+<span class="Identifier">L&lt;http://metacpan.org/release/MyMath::Ops/&gt;</span>
+
+<span class="Statement">=back</span>
+
+
+<span class="Statement">=head1</span><span class="Constant"> ACKNOWLEDGEMENTS</span>
+
+
+<span class="Statement">=head1</span><span class="Constant"> COPYRIGHT &amp; LICENSE</span>
+
+Copyright 2009 Perl Newbie.
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See http://dev.perl.org/licenses/ for more information.
+
+
+<span class="Statement">=cut</span>
+
+<span class="Constant">1</span>; <span class="Comment"># End of MyMath::Ops::Add</span>
+</pre></div><p>And now let's run "./Build test" again:</p><div class="code_block"><pre>
+$ ./Build test
+t/00-load.t ....... 1/5 # Testing MyMath::Ops 0.01, Perl 5.014002, /usr/bin/perl5.14.2
+t/00-load.t ....... ok
+t/add.t ........... ok
+t/boilerplate.t ... ok
+t/pod-coverage.t .. ok
+t/pod.t ........... ok
+All tests successful.
+</pre></div><p>Since all tests are successful, we can commit the changes to the repository.</p><h3>Moving on</h3><p>Now we can continue to add more tests, and then fix the failing ones. If the code becomes too convoluted, due to modifications, we can <a href="http://en.wikipedia.org/wiki/Code_refactoring">refactor it</a> and improve its modularity. Running the existing automated tests after such a change will better make sure that we didn't break something.</p><p>This "write more tests", "get tests to pass", "refactor" is the cycle of development and maintenance, and Perl tools such as <code>Module-Build</code> facilitate it.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="commands.html" class="nav">Prev</a></td><td><a href="boilerplate.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

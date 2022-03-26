@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>What Makes Software High-Quality? (Revision 2) - Security</title>
+<meta charset="utf-8"/>
+<meta name="description" content=
+"What Makes Software High-Quality? (Revision 2) - Security"/>
+<link rel="stylesheet" href="../../../../../faq-indiv.css" media="screen"/>
+<link rel="stylesheet" href="../../../../../screenplay.css" media="screen"
+title="Normal"/>
+<link rel="stylesheet" href="../../../../../print.css" media="print"/>
+<link rel="shortcut icon" href="../../../../../favicon.ico" type=
+"image/x-icon"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
+<body class="fancy_sects faq_indiv_entry limit_imgs_width screenplay_indiv_entry">
+<div class="header" id="header">
+<a href="../../../../../"><img src="../../../../../images/evilphish-flipped.png"
+alt="EvilPHish site logo"/></a>
+<div class="leading_path"><a href="../../../../../">Shlomi Fish’s
+Homepage</a> →
+<a href="../" title="What Makes Software High-Quality? (Revision 2)">What Makes Software High-Quality? (Revision 2)</a>
+ → <a href="parameters-of-quality.xhtml">Parameters of Quality</a>
+→ <b>Security</b>
+</div>
+</div>
+<div id="faux">
+<main class="main faq screenplay">
+<section xmlns="http://www.w3.org/1999/xhtml" class="section"><header xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="titlepage"><h4 id="security" class="title">Security</h4><h:a class="back_to_faq" href="../#security">Node Link</h:a></header><p>A high-quality program is secure. It has a relatively small number of security issues, and bugs are fixed there as soon as possible.</p><p>Some people believe that security is the most important aspect of software, but it&#8217;s only one factor that affects its quality. For example, once I was talking with a certain UNIX expert, and he argued that the Win32 <a class="link" href="http://msdn2.microsoft.com/en-us/library/ms682425.aspx">CreateProcess() system call</a> was superior to the UNIX combination of <a class="link" href="http://en.wikipedia.org/wiki/Fork-exec">Fork() and Exec()</a>, just because it made some bugs harder to code. However, some multitasking paradigms are not possible, without the fork() system call, which is not present in the Win32 API at all, and needs to be emulated (at a high run-time cost) or replaced with thread-based multitasking, which is not identical. Finally, it is still possible to get fork()+exec() right, and there&#8217;s a spawn() abstraction on many modern UNIXes.</p><p>While I don&#8217;t mean you shouldn&#8217;t pay attention to security, or keep good security practices in mind when coding, I&#8217;m saying that it shouldn&#8217;t slow down the process by much, or prevent too many exciting features from being added, or cause the development to stagnate.</p></section></main>
+</div>
+<footer>
+<div class="foot_left">
+<ul class="bt_nav">
+<li><a href="../../../../../">Home</a></li>
+<li><a href="../../../../../me/">About</a></li>
+<li><a href="../../../../../me/contact-me/">Contact Us</a></li>
+<li><a href="../../../../../meta/privacy-policy/">Privacy Policy</a></li>
+<li><a href="../../../../../meta/anti-spam-policy/">Anti-Spam
+Policy</a></li>
+<li><a href="../../../../../meta/FAQ/" title=
+"Frequently asked questions list">FAQ</a></li>
+<li><a href="../../../../../me/blogs/">RSS/Atom Feeds</a></li>
+</ul>
+<p>Written, designed, and maintained by Shlomi Fish, <a href=
+"mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a>.</p>
+</div>
+<a href="../../../../../"><img src="../../../../../images/bk2hp-v2.min.svg" class=
+"bk2hp" alt="Back to my Homepage"/></a></footer>
+</body>
+</html>

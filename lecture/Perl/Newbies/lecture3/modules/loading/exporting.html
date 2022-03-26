@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../style.css" type="text/css"/><link rel="prev" href="accessing.html"/><link rel="next" href="variables.html"/><title>Exporting and Importing Functions</title></head><body><main><header><h1>3.2.2. Exporting and Importing Functions</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="accessing.html" class="nav" accesskey="p">Prev</a></td><td><a href="variables.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../">Perl for Newbies - Part 3 - Modules and Objects</a> → <a href="../">Perl Modules</a> → <a href="./">Loading Modules and Importing their Functions</a> → <a href="exporting.html">Exporting and Importing Functions</a></div></nav><p>It is possible to make a functions of your module automatically available in any other namespace or script that uses it. To do so one needs to type the following code fragment near the beginning of the module:</p><div class="code_block"><pre>
+<span class="Statement">use </span>Exporter;
+
+<span class="Statement">use vars</span> <span class="Constant">qw(@ISA @EXPORT)</span>;
+
+<span class="Identifier">@ISA</span>=<span class="Constant">qw(Exporter)</span>;
+
+<span class="Identifier">@EXPORT</span>=(<span class="Constant">&quot;function1&quot;</span>, <span class="Constant">&quot;function2&quot;</span>, <span class="Constant">&quot;function3&quot;</span>);
+</pre></div><p>What this fragment does is make the module inherit the <code>Exporter</code> module which is a special Perl module that can export symbols. Then it declares the special variable <code>@EXPORT</code> which should be filled with all the functions that one wishes to export.</p><p>Here is an example which has a module called "Calc" and a script that uses it:</p><div class="code_block"><pre>
+<span class="Comment"># File: Calc.pm</span>
+<span class="Comment">#</span>
+<span class="Statement">package</span><span class="Type"> Calc</span>;
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">use </span>Exporter;
+
+<span class="Statement">use vars</span> <span class="Constant">qw(@ISA @EXPORT)</span>;
+
+<span class="Identifier">@ISA</span>=<span class="Constant">qw(Exporter)</span>;
+
+<span class="Identifier">@EXPORT</span>=(<span class="Constant">&quot;gcd&quot;</span>);
+
+<span class="Comment"># This function calculates the greatest common divisor of two integers</span>
+<span class="Statement">sub </span><span class="Identifier">gcd</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$m</span> = <span class="Statement">shift</span>;
+    <span class="Statement">my</span> <span class="Identifier">$n</span> = <span class="Statement">shift</span>;
+
+    <span class="Statement">if</span> (<span class="Identifier">$n</span> &gt; <span class="Identifier">$m</span>)
+    &#x7B;
+        (<span class="Identifier">$m</span>, <span class="Identifier">$n</span>) = (<span class="Identifier">$n</span> , <span class="Identifier">$m</span>);
+    &#x7D;
+
+    <span class="Statement">while</span> (<span class="Identifier">$m</span> % <span class="Identifier">$n</span> &gt; <span class="Constant">0</span>)
+    &#x7B;
+        (<span class="Identifier">$m</span>, <span class="Identifier">$n</span>) = (<span class="Identifier">$n</span>, <span class="Identifier">$m</span> % <span class="Identifier">$n</span>);
+    &#x7D;
+
+    <span class="Statement">return</span> <span class="Identifier">$n</span>;
+&#x7D;
+
+<span class="Constant">1</span>;
+</pre></div><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">use </span>Calc;
+
+<span class="Statement">my</span> <span class="Identifier">$m</span> = <span class="Constant">200</span>;
+<span class="Statement">my</span> <span class="Identifier">$n</span> = <span class="Constant">15</span>;
+
+<span class="Statement">print</span> <span class="Constant">&quot;gcd(</span><span class="Identifier">$m</span><span class="Constant">,</span><span class="Identifier">$n</span><span class="Constant">) == &quot;</span> , gcd(<span class="Identifier">$m</span>,<span class="Identifier">$n</span>), <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><p>As you can see, the script invokes the "gcd" function of the "Calc" module without having to invoke it with <code>Calc::gcd()</code>. Exporting functions like that should be used with care, as the function names may conflict with those of the importing namespace.</p><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="accessing.html" class="nav">Prev</a></td><td><a href="variables.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

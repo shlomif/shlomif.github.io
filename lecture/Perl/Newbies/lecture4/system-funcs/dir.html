@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="random_io.html"/><title>Directory Input Routines</title></head><body><main><header><h1>7.1. Directory Input Routines</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="random_io.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 4</a> → <a href="./">More System Functions</a> → <a href="dir.html">Directory Input Routines</a></div></nav><p>The <code>opendir DIRHANDLE, EXPR</code> function can be used to open the directory <code>EXPR</code> for reading its file and sub-directory entries. Afterwards <code>readdir(DIRHANDLE)</code> can be used to read one entry from there, or all the entries if used in list context.</p><p>Use <code>closedir()</code> to close an opened directory.</p><p>Here's an example that counts the number of mp3s in a directory:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+
+<span class="Statement">sub </span><span class="Identifier">get_dir_files</span>
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$dir_path</span> = <span class="Statement">shift</span>;
+
+    <span class="Statement">opendir</span> <span class="Identifier">D</span>, <span class="Identifier">$dir_path</span>
+        <span class="Statement">or</span> <span class="Statement">die</span> <span class="Constant">&quot;Cannot open the directory </span><span class="Identifier">$dir_path</span><span class="Constant">&quot;</span>;
+
+    <span class="Statement">my</span> <span class="Identifier">@entries</span>;
+    <span class="Identifier">@entries</span> = <span class="Statement">readdir</span>(<span class="Identifier">D</span>);
+    <span class="Statement">closedir</span>(<span class="Identifier">D</span>);
+
+    <span class="Statement">return</span> \<span class="Identifier">@entries</span>;
+&#x7D;
+
+<span class="Statement">my</span> <span class="Identifier">$dir_path</span> = <span class="Statement">shift</span> || <span class="Constant">&quot;.&quot;</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$entries</span> = get_dir_files(<span class="Identifier">$dir_path</span>);
+<span class="Statement">my</span> <span class="Identifier">@mp3s</span> = (<span class="Statement">grep</span> <span class="Statement">&#x7B;</span> <span class="Statement">/</span><span class="Special">\.</span><span class="Constant">mp3$</span><span class="Statement">/</span> <span class="Statement">&#x7D;</span> <span class="Identifier">@$entries</span>);
+
+<span class="Statement">print</span> <span class="Constant">&quot;You have &quot;</span> . <span class="Statement">scalar</span>(<span class="Identifier">@mp3s</span>) . <span class="Constant">&quot; mp3s in </span><span class="Identifier">$dir_path</span><span class="Constant">.</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="random_io.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

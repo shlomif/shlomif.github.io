@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="lists.html"/><title>Recursion</title></head><body><main><header><h1>2.1. Recursion</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="lists.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">Haskell for Perl Programmers</a> → <a href="./">Basic Examples</a> → <a href="recursion.html">Recursion</a></div></nav><h2>Length</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+<span class="Comment">--  Type declaration : </span>
+<span class="Comment">--      [a] - a linked list of any type</span>
+<span class="Comment">--      x -&gt; y - function that accepts x and returns y</span>
+mylen <span class="Statement">::</span> [a] <span class="Statement">-&gt;</span> Integer
+<span class="Comment">-- Declare the length of the empty list to be 0</span>
+mylen [] <span class="Statement">=</span> <span class="Constant">0</span>
+<span class="Comment">-- x:xs == the list whose first item (the head) is x and the rest (the tail)</span>
+<span class="Comment">-- is xs.</span>
+mylen (x<span class="Statement">:</span>xs) <span class="Statement">=</span> <span class="Constant">1</span> <span class="Statement">+</span> (mylen xs)
+</pre></td></tr></table><h2>Fibonacci (Braindead)</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+fib <span class="Statement">::</span> Integer <span class="Statement">-&gt;</span> Integer
+fib <span class="Constant">0</span> <span class="Statement">=</span> <span class="Constant">0</span>
+fib <span class="Constant">1</span> <span class="Statement">=</span> <span class="Constant">1</span>
+fib a <span class="Statement">=</span> (fib (a<span class="Statement">-</span><span class="Constant">1</span>)) <span class="Statement">+</span> (fib (a<span class="Statement">-</span><span class="Constant">2</span>))
+</pre></td></tr></table><h2>Fibonacci (Less Braindead)</h2><table class="mycode"><tr class="mycode"><td class="mycode"><pre>
+<span class="Comment">-- (a,b) is a tuple whose first element is a and its second is b</span>
+fibo_helper <span class="Statement">::</span> Integer <span class="Statement">-&gt;</span> (Integer,Integer)
+
+fibo_helper <span class="Constant">0</span> <span class="Statement">=</span> (<span class="Constant">0</span>,<span class="Constant">1</span>)
+<span class="Comment">-- Notice the use of the closure (where) to assign two temporary values</span>
+fibo_helper n <span class="Statement">=</span> (b,a<span class="Statement">+</span>b) <span class="Type">where</span>
+    (a,b) <span class="Statement">=</span> fibo_helper (n<span class="Statement">-</span><span class="Constant">1</span>)
+
+<span class="Comment">-- (fst (a,b)) = a</span>
+fibo n <span class="Statement">=</span> (fst (fibo_helper n))
+</pre></td></tr></table><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="lists.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

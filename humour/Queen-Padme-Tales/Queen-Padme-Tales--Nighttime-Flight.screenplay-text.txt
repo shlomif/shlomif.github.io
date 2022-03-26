@@ -1,0 +1,141 @@
+<s id="Padme--Nighttime-Flight" lang="en" title="Queen Padmé Tales: Nighttime Flight">
+
+<s id="about" title="About this screenplay">
+
+<s id="about-objective" title="Objective">
+
+[
+
+An illustrated screenplay crossing <a href="https://en.wikipedia.org/wiki/Star_Wars%3A_Episode_I_%E2%80%93_The_Phantom_Menace">Star Wars Ep. I</a>,
+the <a href="https://buffyfanfiction.fandom.com/wiki/Selinaverse">Selinaverse</a> (itself
+crossing Star Trek TNG/DS9, Buffy, Judaism, Israel, <a href="https://en.wikipedia.org/wiki/Objectivism_(Ayn_Rand)">Objectivism</a>, etc.)
+the real world online/offline life in 2010s/2020s,
+and <a href="https://en.wikipedia.org/wiki/Spaceballs">Spaceballs</a>.
+
+This screenplay <b>is not</b> written in the Hollywood blessed format because
+<a href="https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/putting-cards-on-the-table-2019-2020/hacking-heroism.xhtml">good
+hackers (= resourceful and rule bending heroes)</a>
+which include the talented actors and actresses in this film can
+withstand reading a raw and non-CSS-styled XHTML5 file. That - and hackers like me
+do not have the time to massage a screenplay into Hollywood's whimsical
+format only to be rejected, rinse and repeat.
+
+]
+
+</s>
+
+<s id="license" title="Licence">
+
+[
+
+Emblem: <img src="images/evilphish-svg--facing-right.min.svg.png" alt="Shlomi Fish’s EvilPHish Emblem" />
+
+This text is Copyright by <a href="https://www.shlomifish.org/">Shlomi Fish</a> , 2020 and is
+made available under the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 Unported Licence (CC-by)</a>
+(or at your option - any later version).
+
+]
+
+</s>
+
+<s id="dedication" title="Dedication">
+
+[
+
+The <b>Dedication</b>:
+
+]
+
+</s>
+
+</s>
+
+<s id="nighttime-flight--main" title="Nighttime Flight">
+
+[Black screen.
+
+Logo: <img src="images/tacos6306095903_a5c92746ba_o--tacos-reduced-by-jeffreyw--small-400px.webp" alt="Tacos with many toppings" />
+
+Initial Credits.
+
+<b>Note:</b> it seems likely this screenplay was inspired by
+the Muslim
+<a href="https://en.wikipedia.org/wiki/Isra_and_Mi%27raj">ascension to heaven</a>
+story, but note that it is not meant to be Islamic canon, and
+may be a parody. Assuming the <a href="https://en.wikipedia.org/wiki/Salman_Rushdie">Salman Rushdie</a> story about death threats against him is correct,
+please both cancel them and don't issue ones against me or anyone else.
+
+]
+
+[
+
+Padmé is sleeping in her bed. <a href="https://mlp.fandom.com/wiki/Fluttershy">Fluttershy</a>,
+<a href="https://mlp.fandom.com/wiki/Rainbow_Dash">Rainbow Dash</a>,
+and <a href="https://mlp.fandom.com/wiki/Twilight_Sparkle">Twilight Sparkle</a>
+materialize.
+
+]
+
+Twilight Sparkle: hey Padmé! Wake up!
+
+Padmé: Hey guys!
+
+Twilight Sparkle: Hop on Fluttershy and let's ride.
+
+Padmé: She is far too small for that.
+
+Twilight Sparkle: no worries.
+
+[ Twilight Sparkle uses her magic horn to make Fluttershy larger,
+not unlike <a href="https://disney.fandom.com/wiki/Pegasus">Disney's Hercules Pegasus</a>.
+
+Padmé mounts Fluttershy and the quartet flies away.
+
+Twilight Sparkle opens a portal vortex and they fly through it
+into north-central
+<a href="https://en.wikipedia.org/wiki/Tel_Aviv">Tel Aviv</a>
+at daytime.
+
+After flying for a while,
+<a href="https://mlp.fandom.com/wiki/Discord">Discord</a>
+materialises.
+
+]
+
+Discord: unicorn pony magic does not work in the real world… [ he snaps
+his fingers and Fluttershy returns to her normal, smaller, size again]
+hah hah hah [ he dematerialises. ]
+
+[
+
+The three winged ponies fumble to prevent Padmé from falling to death.
+Eventually she falls onto a tent in <a href="https://www.shlomifish.org/humour/Terminator/Liberation/">Olamot Con</a>, and descends to the ground unkempt,
+but mostly unharmed.
+
+Padmé gets up only to see <a href="https://www.shlomifish.org/">Shlomi Fish</a>
+looking at her and the three ponies with interest.
+
+]
+
+Shlomi Fish: Padmé? How did you get from the Selinaverse to the real world?
+Anyway, nice to meet you [he extends his hand].
+
+[
+
+Padmé wakes up only to see Discord in front of her eyes.
+
+]
+
+Discord: boo!
+
+[
+
+Padmé screams and then wakes up again.
+
+]
+
+Padmé: oh shit!
+
+</s>
+
+</s>

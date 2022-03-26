@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="substitute/ungreedy.html"/><link rel="next" href="esc_seqs.html"/><title>Useful Flags</title></head><body><main><header><h1>7.8. Useful Flags</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="substitute/ungreedy.html" class="nav" accesskey="p">Prev</a></td><td><a href="esc_seqs.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 2</a> → <a href="./">Regular Expressions</a> → <a href="flags.html">Useful Flags</a></div></nav><p>There are other flags than <code>e</code> that can be appended to the end of the match or substitution.</p><p>An <code>i</code> following the regular expression call, causes a case-insensitive operation on the string. Thus, for example, an "A" will match both "a" and "A". Note that the strings placed in <code>$1</code>, <code>$2</code> and friends will still retain their original case.</p><p>A <code>g</code> causes the match or substitution to match <b>all</b> occurrences, not just one. If used with a match in an array context (e.g: <code>@occurrences = ($string =~ /$regexp/g);</code>) it retrieves all the matches and if used with a substitution it substitutes all the occurrences with the string.</p><p>This example replaces all the occurrences of the word "hello" by the index of their occurrence:</p><div class="code_block"><pre>
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">my</span> <span class="Identifier">$index</span> = <span class="Constant">0</span>;
+<span class="Statement">sub </span><span class="Identifier">put_index</span>
+&#x7B;
+    <span class="Identifier">$index</span>++;
+    <span class="Statement">return</span> <span class="Identifier">$index</span>;
+&#x7D;
+
+<span class="Statement">my</span> <span class="Identifier">$string</span> = <span class="Statement">shift</span>;
+
+<span class="Identifier">$string</span> =~ <span class="Statement">s/</span><span class="Constant">hello</span><span class="Statement">/</span><span class="Constant">put_index()</span><span class="Statement">/gei</span>;
+
+<span class="Statement">print</span> <span class="Identifier">$string</span>, <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="substitute/ungreedy.html" class="nav">Prev</a></td><td><a href="esc_seqs.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

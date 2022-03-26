@@ -1,0 +1,2008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Shlomi Fish's Fortune Feeds</title>
+  <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/" type="text/html"/>
+  <subtitle>Shlomi Fish's Fortune Feeds</subtitle>
+  <author>
+    <name>shlomif@cpan.org (Shlomi Fish)</name>
+  </author>
+  <link rel="self" href="http://www.shlomifish.org/humour/fortunes/fortunes-shlomif-all.atom" type="application/atom+xml"/>
+  <id>http://www.shlomifish.org/humour/fortunes/fortunes-shlomif-all.atom</id>
+  <entry>
+    <title>Joel on Software - Why People Buy Operating Systems</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Joel on Software - Why People Buy Operating Systems</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/joel-on-software.html#joel-why-people-buy-OSes" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/joel-on-software.html#joel-why-people-buy-OSes</id>
+    <published>2021-10-13T04:46:31Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="joel-why-people-buy-OSes">Joel on Software - Why People Buy Operating Systems</h3>
+      <blockquote>
+        <p>Remember the definition of an operating system? It’s the
+                thing that manages a computer’s resources so that application
+                programs can run.  People don’t really care much about
+                operating systems; they care about those application programs
+                that the operating system makes possible.  Word Processors.
+                Instant Messaging. Email. Accounts Payable. Web sites with
+                pictures of Paris Hilton. By itself, an operating system is not
+                that useful. People buy operating systems because of the useful
+                applications that run on it. And therefore the most useful
+                operating system is the one that has the most useful
+                applications.</p>
+        <p>The logical conclusion of this is that if you’re trying to
+                sell operating systems, the most important thing to do is make
+                software developers want to develop software for your operating
+                system. That’s why Steve Ballmer <a href="http://www.ntk.net/ballmer/mirrors.html">was jumping
+                around the stage</a> shouting “Developers, developers,
+                developers, developers.” It’s so important for Microsoft that
+                the only reason they don’t outright <em>give away
+                </em>development tools for Windows is because they don’t want
+                to inadvertently cut off the oxygen to competitive development
+                tools vendors (well, those that are left) because having a
+                variety of development tools available for their platform makes
+                it that much more attractive to developers. But they really
+                <em>want</em> to give away the development tools. Through their
+                <a href="http://members.microsoft.com/partner/competency/isvcomp/empower/default.aspx">Empower
+                ISV</a> program you can get five complete sets of MSDN
+                Universal (otherwise known as “<em>basically every Microsoft
+                product except Flight Simulator</em>“) for about $375. Command
+                line compilers for the .NET languages are included with the
+                free .NET runtime… also free. The C++ compiler is now <a href="http://msdn.microsoft.com/visualc/vctoolkit2003/">free</a>.
+                Anything to encourage developers to build for the .NET
+                platform, and holding just short of wiping out companies like
+                Borland.</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Joel Spolsky</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="http://www.joelonsoftware.com/articles/APIWar.html">How Microsoft Lost the API War</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>"When I hear SASL"</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">"When I hear SASL"</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/sharp-perl.html#sharp-perl-when-I-hear-SASL" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/sharp-perl.html#sharp-perl-when-I-hear-SASL</id>
+    <published>2021-10-13T12:45:07Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="sharp-perl-when-I-hear-SASL">"When I hear SASL"</h3>
+      <table class="irc-conversation">
+        <tbody>
+          <tr class="saying">
+            <td class="who">Altreus</td>
+            <td class="text">oh, SASL actually works here</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Altreus</td>
+            <td class="text">nice to not have to /nick and reauth</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">El_Che</td>
+            <td class="text">when I hear SASL, I think LDAP and pain</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">El_Che: when I hear SASL, I think of you… ;)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rbraun</td>
+            <td class="text">LOL</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Altreus</td>
+            <td class="text">as long as it's other people's pain</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="info">
+        <tbody>
+          <tr class="channel">
+            <td class="field">
+              <b>Channel</b>
+            </td>
+            <td class="value">#perl</td>
+          </tr>
+          <tr class="network">
+            <td class="field">
+              <b>Network</b>
+            </td>
+            <td class="value">Freenode</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>"3 to 1"</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">"3 to 1"</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#three-to-one-rabbis" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#three-to-one-rabbis</id>
+    <published>2021-10-20T05:11:47Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="three-to-one-rabbis">"3 to 1"</h3>
+      <blockquote>
+        <p>
+Seems like these four rabbis had a series of theological arguments, and three
+were always in accord against the fourth.  One day, the odd rabbi out, with
+the usual "3 to 1, majority rules" statement that signified that he had lost
+again, decided to appeal to a higher authority.  "Oh, God!" he cried.  "I
+know in my heart that I am right and they are wrong!  Please show me a sign,
+so they too will know that I understand Your laws."
+</p>
+        <p>
+	It was a beautiful, sunny day.  As soon as the rabbi finished his
+plaint, a storm cloud moved across the sky above the four.  It rumbled once
+and dissolved.  "A sign from God!  See, I'm right, I knew it!"  But the other
+three disagreed, pointing out that stormclouds form on hot days.
+</p>
+        <p>
+So he asked again: "Oh, God, I need a bigger sign to show that I am
+right and they are wrong.  So please, God, a bigger sign."
+</p>
+        <p>
+This time four stormclouds appeared, rushed toward each other to form
+one big cloud, and a bolt of lightning knocked down a tree ten feet away from
+the rabbis.  The cloud dispersed at once.  "I told you I was right!" insisted
+the loner, but the others insisted that nothing had happened that could not
+be explained by natural causes.
+</p>
+        <p>
+The insisting rabbi is all ready to ask for a *very big* sign when
+just as he says "Oh God..." the sky turns pitch black, the earth shakes, and
+a deep, booming voice intones, "HEEEEEEEE'S RIIIIIIIGHT!"
+</p>
+        <p>
+The sky returns to normal.  The one rabbi puts his hands on his hips
+and snarls, "Well?"  "Okay, okayyyy," replied another, "so now it's 3 to 2!"
+</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">via fortune-mod</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://github.com/shlomif/fortune-mod/blob/bd50022492379436a8b219112ef537b112f2e397/fortune-mod/datfiles/off/unrotated/religion#L860">fortune</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Third Cousin</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Third Cousin</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#trashlord-third-cousin" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#trashlord-third-cousin</id>
+    <published>2021-10-20T11:57:03Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="trashlord-third-cousin">Third Cousin</h3>
+      <blockquote>
+        <p>
+I had sex with my third cousin. My sister told me to stop counting.
+</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Trashlord</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">#perlcafe conversation.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Quote from "Steal Like an Artist"</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Quote from "Steal Like an Artist"</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#steal-like-an-artist-1" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#steal-like-an-artist-1</id>
+    <published>2021-11-07T15:29:32Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="steal-like-an-artist-1">Quote from "Steal Like an Artist"</h3>
+      <blockquote>
+        <p>
+As the French writer André Gide put it, “Everything that needs to be said
+has already been said. But, since no one was listening, everything must be
+said again.” If we’re free from the burden of trying to be completely
+original, we can stop trying to make something out of nothing, and we can
+embrace influence instead of running away from it.
+</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Austin Kleon</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://austinkleon.com/steal/">Steal Like an Artist</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Stop eating for one year</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Stop eating for one year</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#stop_eating_for_a_year" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#stop_eating_for_a_year</id>
+    <published>2021-11-13T07:49:08Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="stop_eating_for_a_year">Stop eating for one year</h3>
+      <blockquote>
+        <p>
+<b>Jack:</b> I suggest we stop eating for one year and thus save a lot of money. But what will we buy with all the money we save?
+</p>
+        <p>
+<b>Sophie:</b> we'll buy food!
+</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="http://www.shlomifish.org/humour.html#taking_good_care_of_a_book">Aphorisms Collection</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Shlomi Fish’s Chuck Norris Fact #162</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Shlomi Fish’s Chuck Norris Fact #162</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-162" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-162</id>
+    <published>2021-12-22T18:35:24Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-fact-chuck-162">Shlomi Fish’s Chuck Norris Fact #162</h3>
+      <blockquote>
+        <p>
+                    Captain Picard told Chuck Norris to
+                    <a href="https://scifi.stackexchange.com/questions/9695/whats-the-origin-of-picards-signature-phrase-make-it-so">"make it so"</a>.
+                    Chuck made it so much better.
+                    </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="http://www.shlomifish.org/humour/bits/facts/Chuck-Norris/">Chuck Norris Facts by Shlomi Fish and Friends</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Shlomi Fish’s Chuck Norris Fact #163</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Shlomi Fish’s Chuck Norris Fact #163</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-163" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-chuck-163</id>
+    <published>2021-12-28T10:42:25Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-fact-chuck-163">Shlomi Fish’s Chuck Norris Fact #163</h3>
+      <blockquote>
+        <p>
+                    Chuck Norris coerced God into giving him the source code of
+                    the universe, but then destroyed it because real
+                    programmers can alter binaries directly.
+                    </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="http://www.shlomifish.org/humour/bits/facts/Chuck-Norris/">Chuck Norris Facts by Shlomi Fish and Friends</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Shlomi Fish’s Summer Glau Fact #33</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Shlomi Fish’s Summer Glau Fact #33</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-sglau-33" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-sglau-33</id>
+    <published>2022-01-17T04:22:26Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-fact-sglau-33">Shlomi Fish’s Summer Glau Fact #33</h3>
+      <blockquote>
+        <p>
+                    If Chuck Norris were to screw hot babes (ex. Jessica Alba,
+                    Jessica Simpson, Jennifer Garner, Jennifer Aniston, and
+                    Paris Hilton.) I can assure you that that their acting
+                    careers will no longer prosper due to the fact that they
+                    will spend the rest of their lives in wheelchairs.
+                    </p>
+        <p>
+                    On the other hand, if he <b>tried</b> to “screw” Summer
+                    Glau, he'd be the one in the wheelchair.
+                    </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="http://www.shlomifish.org/humour/bits/facts/Summer-Glau/">Summer Glau Facts by Shlomi Fish and Friends</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Men being attracted to physically strong women</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Men being attracted to physically strong women</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/sharp-perl.html#sharp-perl-physically-strong-women" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/sharp-perl.html#sharp-perl-physically-strong-women</id>
+    <published>2022-01-26T16:19:37Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="sharp-perl-physically-strong-women">Men being attracted to physically strong women</h3>
+      <table class="irc-conversation">
+        <tbody>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">wow! the chicks here are so beautiful and physically strong: https://www.youtube.com/channel/UCZF1RB5xiirFDb2nPhoh36A . I don't recall ever being so aroused.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Paperbot</td>
+            <td class="text">Link title(s): [ GYM GIRLS CLUB - YouTube ]</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">rindolf: it's the gaslighting of society</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">and it's fucking hilarious and sad at the same time</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">men, deep down, prefer to have strong capable women that can actually guard the household and protect the kids while the man is off doing man things (like, going on hunting things for months on end, or laying siege to nations, or w/e)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">modern third wave feminism is this weird hijacking of the attempt to reset things to normal</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">like, they started out well, I even agree with their ideals, but it just got fucked over and subverted to help the nation/state/corporation machine</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">this</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">men should be aroused by women that show physically healthy traits</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: ah</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">"oh, but if you like women like that, you're a closet homosexual" -- gaslighters</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">"oh, if you like women like that, you hate women" -- gaslighters</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">"oh, if you like that and not docile little women, you hate femininity" -- gaslighting from the ridiculous right and their trad obsession</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: https://www.shlomifish.org/meta/FAQ/are_you_a_sexist__are_you_a_feminist.xhtml</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Paperbot</td>
+            <td class="text">Link title(s): [ Shlomi Fish’s FAQ - Are you a sexist? Are you a Feminist? ]</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">yeah, I've seen your shit :P</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">but yeah, no, dude, you're fine</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">women like that are somewhere on the healthy image scale</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">maybe a little *too* healthy, but I don't judge</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: heh. people need to be wellrounded</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">they need to be in shape, and no, round isn't a shape</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">badass fluttershy: https://www.shlomifish.org/humour/Terminator/Liberation/ongoing-text.html#hannah-using-a-tank</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Paperbot</td>
+            <td class="text">Link title(s): [ “Terminator: Liberation” - An Illustrated Screenplay for a Terminator parody - Ongoing Text - ]</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: heh. nice pun</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3++</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">https://twitter.com/shlomif/status/1480050133014388736</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Paperbot</td>
+            <td class="text">Shlomi Fish (@shlomif) 17d4h ago: https://classics.mit.edu/Aristotle/poetics.1.1.html - like Aristotle notes about Homer, the characters in my fics are confident, open, forgiving, competent, funny [I hope], greedy, generous, passionate, and sexy. https://www.shlomifish.org/humour/</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: https://github.com/shlomif/shlomif-tech-diary/blob/master/multiverse-cosmology-v0.4.x.asciidoc#user-content-about-sex</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Paperbot</td>
+            <td class="text">Link title(s): [ shlomif-tech-diary/multiverse-cosmology-v0.4.x.asciidoc at master · shlomif/shlomif-tech-diary · ... ]</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">rindolf: you write weird shit man :P</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: I knowz</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: https://www.shlomifish.org/humour/fortunes/show.cgi?id=doing-hot-celebs--2021-edition</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Paperbot</td>
+            <td class="text">Link title(s): [ Doing Hot Celebs - Fortune ]</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">stop hitting on all the poly polymaths</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: heh :D</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">I'm just flirting</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: can I publish this conversation?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Trashlord</td>
+            <td class="text">I think technically it's allowed since it's a public forum</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Trashlord</td>
+            <td class="text">legally, at least</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Trashlord: true, but I don't want Diablo-D3 to get hurt</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Trashlord: https://www.shlomifish.org/humour/fortunes/show.cgi?id=sharp-perl-jobs-EmWatson-Saladin-knights-Templar - I changed johndoemer's name</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Paperbot</td>
+            <td class="text">Link title(s): [ Jobs, Emma Watson, Saladin &amp; Knights Templar - Fortune ]</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Trashlord: hi, sup?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">I can't stop you from publishing, but I'm certainly not saying anything new</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">entire books are written about the subject by better writers</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: TL;DR ;]</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: https://www.youtube.com/watch?v=FFrag8ll85w</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Paperbot</td>
+            <td class="text">YouTube video linked by rindolf: Show Me the Money!   Jerry Maguire 1 8) Movie CLIP (1996) HD - published by itsathwv</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: here?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">yes?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: sup?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: re women - i think both sexes covet competence</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Trashlord: #gamedev 'aleyhum' me so i ran away</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Trashlord: also https://twitter.com/shlomif/status/1477951381248122881</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Paperbot</td>
+            <td class="text">Shlomi Fish (@shlomif) 26d8h ago: https://mlp.fandom.com/wiki/Discord used to insist that his pronouns are "it/its". Transilliness. #mylittlepony</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">[05:39:39] &lt;rindolf&gt; Diablo-D3: re women - i think both sexes covet competence</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">they do.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">guys want to surround themselves with competence but not more competent than themselves (else they have to vie for the same head of the alpha local maximum)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">women want to bang the alpha</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: hi, i'm thinking</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Diablo-D3</td>
+            <td class="text">hi thinking, I'm dad</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Diablo-D3: thing is: i want a seesaw battle-of-wits, like in https://www.shlomifish.org/humour/Queen-Padme-Tales/Queen-Padme-Tales--The-Fifth-Sith.html#after-the-date .</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">e.g. in TBBT, https://bigbangtheory.fandom.com/wiki/Penny is the leader, or on #perl it's mst, but they win arguments much less than 50% of the time.</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="info">
+        <tbody>
+          <tr class="channel">
+            <td class="field">
+              <b>Channel</b>
+            </td>
+            <td class="value">#perlcafe</td>
+          </tr>
+          <tr class="network">
+            <td class="field">
+              <b>Network</b>
+            </td>
+            <td class="value">Freenode</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>#typescript - Programming Languages and Tools</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">#typescript - Programming Languages and Tools</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-typescript-discussion-about-programming-languages-and-tools" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-typescript-discussion-about-programming-languages-and-tools</id>
+    <published>2022-01-28T05:30:24Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="sharp-typescript-discussion-about-programming-languages-and-tools">#typescript - Programming Languages and Tools</h3>
+      <table class="irc-conversation">
+        <tbody>
+          <tr class="saying">
+            <td class="who">trampi</td>
+            <td class="text">Hi! Where can I find the TypeScript language spec? It was previously available here, but it has been archived: https://github.com/microsoft/TypeScript/tree/main/doc</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">trampi: There's no spec, they stopped caring about it a few years ago</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">systemfault++</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">IRC karma &gt; gold</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">;)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">I think specs can often be useful for design, though.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">sometimes they can be pointless.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">:)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">I don't believe anyone would write another complete TypeScript compiler (I'm not talking about a TS stripper, there are already a lot of them)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">systemfault: "believe it." -- http://www.earthstar.co.uk/deep1.htm</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">or https://www.shlomifish.org/humour/bits/facts/Taylor-Swift/  …</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">or Chuck for that matter: https://en.wikipedia.org/wiki/Chuck_Norris_facts</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">;)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">Haha :)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">systemfault: \o/</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">systemfault: my sites/blogs have many other jokes</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">systemfault: do you have WWW presence?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">I've browsed through your website, it's fine.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">jadew</td>
+            <td class="text">hey guys, I have a generic class &lt;T&gt;, and a method that takes &lt;O&gt;, is there a way to constrain O to extend T?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">jadew</td>
+            <td class="text">hmm, there might be</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">systemfault: http://old-1998-site.shlomifish.org/ - humble start</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">I don't, I bought my domain name but only use it for my Google email account</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">jadew: have you tried &lt;O extends T&gt; ?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">jadew</td>
+            <td class="text">yeah, doesn't work</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">Can you write a small repro on the TS playground?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">systemfault: ah. :|</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">jadew</td>
+            <td class="text">wait, that's not what I want</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">jadew</td>
+            <td class="text">I want T extends O</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">jadew</td>
+            <td class="text">nevermind, this is a non-issue</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">Good :)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">rindolf: simple websites like that age well, it looks fine on my phone</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">jadew++ # updating us</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">systemfault: true, but I want a navigation menu, a breadcrumbs trail/etc</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">https://everybootstrap.site/ ;)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">hey philosophical question. I think I saw an answer somewhere but forgot it. Why do programming languages have statements? I know the historical reason: FORTRAN had statements and expressions, and then the division just kind of was inherited on to other languages. But is there some tangible BENEFIT from saying "this here is not an expression, it doesn't return a value you can assign or use elsewhere"?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">I don't know, my guess is simply because of how programming started.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">maybe something to do with sequence points?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">but it's such an "obvious" thing that you might always want to potentially have a value back from any kind of expression; and, like, why not? It can always be ignored if it's not needed</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">and I mean, new languages get designed all the time. Why does TypeScript have statements (ok, because js). Why does rust have statements?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">https://doc.rust-lang.org/reference/statements.html seems it's declarations mostly</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">There's a classic old paper that could be relevant… "Can Programming Be Liberated from the von Neumann Style? A Functional Style and Its Algebra of Programs"</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">By John Bacus</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">https://www.cs.cmu.edu/~crary/819-f09/Backus78.pdf</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">systemfault: https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">sig: https://twitter.com/shlomif/status/1479822015464976389</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">sig: https://duckduckgo.com/?q=lambda+calculus&amp;atb=v140-1&amp;ia=web , Lambda Calculus, is cool, but gets tedious</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">https://www.shlomifish.org/humour/fortunes/show.cgi?id=sharp-programming-German-as-he-is-spoke</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">rindolf: Lambda Calculus is tedious because there aren't good tools; there aren't good tools because there hasn't been a billion dollar demand</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">systemfault: cool paper. Reminds of Ryan Dahl lamenting how broken NPM and node.js is</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">sig: Then he went on to create Deno… which isn't that much better…</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">sig: perl is not tedious</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">sig: What will be his next project? Oden? Done? Nedo? Edon? What combination of "Node" is he going to use? ;)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">rindolf: perl also has absolutely nothing to do with lambda calculus :D</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">Anyway, TL;DR… programming started really close to the machine which is imperative</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">systemfault: I don't know enough history to know if Backus ever got a chance to have a stab at (more) functional languages than fortran and algol…</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">I used to write Perl in https://en.wikipedia.org/wiki/Joe's_Own_Editor</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">The first programming languages were very simple abstractions on top of assembly… because well, CPU and RAM were very limited</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">sig: my point was that Perl lacks good tools and yet</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">Perl is dead :P</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">ahum, ok</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">I was actually super impressed with Perl when I once tried it</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">I had this list of files and I wanted to generate an album HTML page</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">It's like COBOL, existing codebases will keep being maintained… but I'm not sure that anyone is going to start a new Perl 5 project in 2022</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">@files = `ls`   # holy shit did I just parse the filenames in current directory into a list?!</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">systemfault</td>
+            <td class="text">And Perl 6… was renamed Raku.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">sig: heh, I did an HTML album too</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">avu</td>
+            <td class="text">sig: you did just parse the filenames in the current directory in a broken way that at best works most of the time, yes :)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">avu: scripting only needs to work for me, right now</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">TypeScript is an okay scripting language  ";D"</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">hey is it true btw that ts-node isn't "production quality"? You can't actually spawn lots of workers using it or whatever</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">avu</td>
+            <td class="text">using ls in scripts is just as wrong in perl as it is in bash</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">sig</td>
+            <td class="text">not if it works  &gt;:3</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">systemfault: https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f ;)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">sig: I find tsc/ts better than raw js.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">I also use https://emscripten.org/</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Night all. Try dreaming of something more pleasant than COBOL…</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="info">
+        <tbody>
+          <tr class="channel">
+            <td class="field">
+              <b>Channel</b>
+            </td>
+            <td class="value">#typescript</td>
+          </tr>
+          <tr class="network">
+            <td class="field">
+              <b>Network</b>
+            </td>
+            <td class="value">Freenode</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Shlomi Fish’s Windows Update Fact #10</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Shlomi Fish’s Windows Update Fact #10</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-win-update-10" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html#shlomif-fact-win-update-10</id>
+    <published>2022-02-24T08:58:44Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-fact-win-update-10">Shlomi Fish’s Windows Update Fact #10</h3>
+      <blockquote>
+        <p>
+                    If the Hare in <a href="https://en.wikipedia.org/wiki/The_Tortoise_and_the_Hare">the
+                    "Tortoise and the Hare"</a> was pitted against Windows
+                    Update, he could have taken a two weeks-long vacation in
+                    the Caribbean and still win.
+                    </p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="http://www.shlomifish.org/humour/bits/facts/Windows-Update/">Windows Update Facts by Shlomi Fish and Friends</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Let's just kill prejudice</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Let's just kill prejudice</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#lets-just-kill-prejudice" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#lets-just-kill-prejudice</id>
+    <published>2022-03-03T13:26:12Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="lets-just-kill-prejudice">Let's just kill prejudice</h3>
+      <blockquote>
+        <p>
+First people were prejudiced about new vs. old. Then about popularity. Now they are about "mainstream"ness. <a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=two-kinds-of-fools">"Two kinds of fools"</a>.
+</p>
+        <p>
+Let's just kill prejudice once and for all! When I described Kate in my <a href="https://www.shlomifish.org/humour/Selina-Mandrake/"><i>Selina Mandrake</i></a> story as a socialite, I was attacked, but what's wrong with being one?
+</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://twitter.com/shlomif/status/1364839109068541958">Tweet</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>##writing - Pluralistic Tooling</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">##writing - Pluralistic Tooling</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-writing-pluralistic-tooling" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-writing-pluralistic-tooling</id>
+    <published>2022-03-07T04:24:14Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="sharp-writing-pluralistic-tooling">##writing - Pluralistic Tooling</h3>
+      <table class="irc-conversation">
+        <tbody>
+          <tr class="saying">
+            <td class="who">bomb</td>
+            <td class="text">nothing rindolf</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">bomb</td>
+            <td class="text">how was your day?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">bomb: productive</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">bomb: hacked on xhtml5, css, tt2, perl5, py3, etc. codes</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">bomb</td>
+            <td class="text">that's cool rindolf but what is tt2</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">bomb</td>
+            <td class="text">rindolf aye template toolkit</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">bomb: yes. jinja2's scoping confuses me :[</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">bomb</td>
+            <td class="text">I liked jinja2 when I was using Flask, but it's smarter that it should be. gotta keep the template dumb</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">bomb: yes</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">i  used bottle.py for this script: https://www.shlomifish.org/humour/fortunes/show.cgi?id=shlomif-beauty-products-as-the-stone-soup-effect</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">bomb</td>
+            <td class="text">ah, good ol' bottle.py, I remember it was way faster than Flask</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">also used sqlite</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">bomb</td>
+            <td class="text">do you run it on Gunicorn?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">bomb: it is shared hosting - https://www.shlomifish.org/meta/hosting/</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">bomb</td>
+            <td class="text">rindolf hmm, uses CGI then?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">https://www.shlomifish.org/meta/FAQ/site_loads_quickly.xhtml</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">bomb: maybe. i dont care as long as it's fast</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">bomb</td>
+            <td class="text">just make sure you don't write a popular article :)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">bomb: https://www.buzzfeed.com/rossalynwarren/emma-watson-crashed-the-un-website - new age slashdot effect</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">most of my site is static</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Roey: shabbath shalosh</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Roey: i hacked on xhtml5, css, tt2, perl5, py3, etc. codes</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Roey</td>
+            <td class="text">rindolf: shabbat shalom :)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Roey</td>
+            <td class="text">yeah? what di dyou make with them/</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Roey</td>
+            <td class="text">?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Roey: web-pages. eg: https://www.shlomifish.org/humour/So-Who-The-Hell-Is-Qoheleth/ongoing-text.html</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="info">
+        <tbody>
+          <tr class="channel">
+            <td class="field">
+              <b>Channel</b>
+            </td>
+            <td class="value">##writing</td>
+          </tr>
+          <tr class="network">
+            <td class="field">
+              <b>Network</b>
+            </td>
+            <td class="value">Freenode</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>#security - Tanking Tanks</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">#security - Tanking Tanks</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-security-tanks" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-security-tanks</id>
+    <published>2022-03-11T15:14:13Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="sharp-security-tanks">#security - Tanking Tanks</h3>
+      <table class="irc-conversation">
+        <tbody>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">Russia cutting off internet march11!</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">what can we do</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">operational</td>
+            <td class="text">talk to elon</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">u mean starlink?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">ajak</td>
+            <td class="text">right, because #security is who should be doing things</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">can we bypass this?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">ajak</td>
+            <td class="text">...?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">still get access</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">ajak</td>
+            <td class="text">???</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">HAM radio + email repeaters</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">you can send basic HTML over it</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">They're still gonna need internet for their own local shit</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">so realistically it's gonna be some BGP block or DNS fuckery</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">i'm sure if the Chinese can bypass the GFW so can the russians</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">ooh</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">.onion proxies and etc etc will help</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">so i simply continue to use .ru urls?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">what's GFW?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">great firewall of china</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">GFW</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">ohhh</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">i need to get myself a HAM radio</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">are there .onion proxies for every possible url?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">ajak</td>
+            <td class="text">what does that mean</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">no</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">.onions must be set up by the site admin</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">you don't need a HAM radio to access Tor</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">but a HAM radio can help access other parts of the internet</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">BoBeR182</td>
+            <td class="text">even if it's just downloading an RSS feed</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">oh awesome that's neat</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">idk the ru sites' admins</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">godSend23: see #linux</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">ok rindolf</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">why there?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">godSend23: i noted that i suspect russia will be egypt 2</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">godSend23</td>
+            <td class="text">hmm</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">.ru-ers are crazy</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Apachez</td>
+            <td class="text">https://twitter.com/UAWeapons/status/1501288850055995396  "The Ukrainian John Deere Brigade apparently found another abandoned T-80U tank." :D</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">ajak</td>
+            <td class="text">yes, everyone following the war knows Ukraine has captured at least several heavy vehicles a day</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">CombatVet</td>
+            <td class="text">savage</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Apachez</td>
+            <td class="text">https://pbs.twimg.com/media/FNW200nVQAAqWxR?format=jpg&amp;name=large</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Apachez</td>
+            <td class="text">CombatVet: the next expansion pack for farming simulator? ;)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Apachez</td>
+            <td class="text">how to tow a tank =)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">CombatVet</td>
+            <td class="text">that thing is pulling like 20x+ its weight</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">ajak: reallife tanks are hateful - https://www.shlomifish.org/humour/Terminator/Liberation/indiv-nodes/hannah-using-a-tank.xhtml</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">ajak</td>
+            <td class="text">what are you on about</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">Apachez: heh</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">ajak: tanks are big, heavy, unagile &amp; vulnerable</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">and an environmental menace</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">ajak</td>
+            <td class="text">i think this is a bit orthogonal to the issue</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">ajak: maybe,...</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">ajak: it tends2get stuffy inside tanks</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">cockatoodude</td>
+            <td class="text">death in a tank, is horrible</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">cockatoodude</td>
+            <td class="text">generally the tank becomes impossible to exit, and on fire, and you burn to death usually fairly slowly as the fuel leaks and spreads and ignites</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">That put aside, despite common belief, NASA astronauts did use pencils in space at first ( https://www.scientificamerican.com/article/fact-or-fiction-nasa-spen/ ), just like their Soviet peers.  However, this solution was found to be lacking. As a result, space-friendly pens were developed (within budget) and used (including by the USSR cosmonauts).</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">cockatoodude: :[</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mats1</td>
+            <td class="text">https://www.theguardian.com/world/2022/mar/08/kyiv-deadlock-contrasts-russia-worrying-south-ukraine-war-progress</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">websec</td>
+            <td class="text">^ Focus on Kyiv deadlock obscures Russia’s success in south Ukraine | Ukraine | The Guardian</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="info">
+        <tbody>
+          <tr class="channel">
+            <td class="field">
+              <b>Channel</b>
+            </td>
+            <td class="value">#security</td>
+          </tr>
+          <tr class="network">
+            <td class="field">
+              <b>Network</b>
+            </td>
+            <td class="value">Freenode</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Good Luck, Bad Luck</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Good Luck, Bad Luck</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#good-luck-bad-luck" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#good-luck-bad-luck</id>
+    <published>2022-03-12T06:15:29Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="good-luck-bad-luck">Good Luck, Bad Luck</h3>
+      <blockquote>
+        <p>
+ There is a Chinese story of a farmer who used an old horse to till his fields. One day, the horse escaped into the hills and when the farmer's neighbors sympathized with the old man over his bad luck, the farmer replied, "Bad luck? Good luck? Who knows?" A week later, the horse returned with a herd of horses from the hills and this time the neighbors congratulated the farmer on his good luck. His reply was, "Good luck? Bad luck? Who knows?"
+</p>
+        <p>
+Then, when the farmer's son was attempting to tame one of the wild horses, he fell off its back and broke his leg. Everyone thought this very bad luck. Not the farmer, whose only reaction was, "Bad luck? Good luck? Who knows?"
+</p>
+        <p>
+Some weeks later, the army marched into the village and conscripted every able-bodied youth they found there. When they saw the farmer's son with his broken leg, they let him off. Now was that good luck or bad luck?
+</p>
+        <p>
+Who knows?
+</p>
+        <p>
+Everything that seems on the surface to be an evil may be a good in disguise. And everything that seems good on the surface may really be an evil. So we are wise when we leave it to God to decide what is good fortune and what misfortune, and thank him that all things turn out for good with those who love him.
+</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Unknown</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="http://www.naute.com/inspiration/luck.phtml">Web page</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>#web - Lesbianism, heterosexuality, and Sappho</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">#web - Lesbianism, heterosexuality, and Sappho</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-web--lesbian-straight-and-Sappho" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#sharp-web--lesbian-straight-and-Sappho</id>
+    <published>2022-03-20T04:30:49Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="sharp-web--lesbian-straight-and-Sappho">#web - Lesbianism, heterosexuality, and Sappho</h3>
+      <table class="irc-conversation">
+        <tbody>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">kee++</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">i think hiding info from 'hackers' is futile and nonconstructive - https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/indiv-nodes/fear-is-path-to-dark-side.xhtml</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Natasha</td>
+            <td class="text">&gt;&gt; Putting Cards on the Table (2019-2022) - "Fear is the path to the dark side"</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">K4rMa</td>
+            <td class="text">i wonder if most muscular women are lesbians</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">Statistically speaking, it's unlikely.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">Most women aren't lesbians, so there'd have to be a high correlation between muscle-building exercise and sexuality, and I don't see why there should be.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">K4rMa: there was https://friends.fandom.com/wiki/The_One_With_The_Male_Nanny</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Natasha</td>
+            <td class="text">&gt;&gt; The One With The Male Nanny | Friends Central | Fandom</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">and i cried recently too when listening to songs</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">K4rMa</td>
+            <td class="text">friends is great</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">kee: i suspect https://en.wikipedia.org/wiki/Sappho wasn't really homosexual just playful and parodical, not unlike Ezekiel</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">K4rMa: yes. i also like TBBT, which is similar</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">K4rMa</td>
+            <td class="text">the big bang theory is the worst</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">https://en.wikipedia.org/wiki/The_Big_Bang_Theory</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">rindolf: Ah yes. Sappho and her very good friend.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">What next? JavaScript was satire all along?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">To be honest, JavaScript being satire makes a lot more sense.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">In Java, Object types can be null, therefore typeof null == "object".</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">And so on. Decisions that made some sense in other languages are satirised by JavaScript implementing them identically, or worse, and revealing them for the mistakes they are.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">kee: there are many straight male combat soldiers who are fond of https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic . i dislike stigma and prejudice… :[</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">This is true, but Sappho wrote quite a lot of quite personal lesbian romantic poetry.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">It's possible she was just that good a poet, but I think it's an unlikely choice of topic for a heterosexual classical Greek.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">Most of her surviving poetry is about her own life in some way.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">kee: there may have been fanfic of her, not unlike Aesop</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">No, most later commentators insisted she was only attracted to men.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">They wrote quite a lot on the topic, with their interpretations. (Quotes in such documents are the only known surviving copy of some bits of her poems.)</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">many people made up Aesop fables on the spot - https://www.shlomifish.org/meta/FAQ/factoids_obsession.xhtml</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Natasha</td>
+            <td class="text">&gt;&gt; Shlomi Fish’s FAQ - Why are you so obsessed with “facts”/factoids about Chuck Norris/etc.?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">kee: i am only mostly straight. i am attracted a little to men [and suspect every pleasure is sexual, creative, conceptual, and educational]</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">I don't think "straight" is even a particularly useful concept. (Nor "lesbian".) But it's one of the concepts in our culture, for good or for ill.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">We shouldn't really try to attach modern conceptions of sexuality or whatever to Sappho.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">kee: “Do note, however that I kindof am attracted to the bitch type. One of my many kinks. While my friends are attracted to everything that moves, I see no reason to limit myself ( Reference: https://www.amazon.com/Best-Things-Anybody-Ever-Said/dp/0743235797/ref=sr_1_1 ).”</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">Tbh, most historians are too obsessed with her sexuality. She wrote plenty of other poems! Just because we only have one-and-a-bit of those, doesn't mean we should pretend they don't exist.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">kee: yes.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">kee: i haven't studied ancient greek philosophy / culture closely, but OTOH haven't watched most sesame street skits either</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">Sappho wrote in a regional dialect of Greek.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">Since it was a different dialect to the one that later became Standard Classical Greek, many classicists decided her poems were trash, because they couldn't understand them easily.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">kee</td>
+            <td class="text">So they just didn't copy them off the original papyrus.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">we will always play catchup</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">kee: ah</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">kee: BTW, did you hear about https://www.shlomifish.org/philosophy/fan-pages/samantha-smith/ ?</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Natasha</td>
+            <td class="text">&gt;&gt; Fan page for Samantha Smith - Shlomi Fish’s Homesite</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="info">
+        <tbody>
+          <tr class="channel">
+            <td class="field">
+              <b>Channel</b>
+            </td>
+            <td class="value">#web</td>
+          </tr>
+          <tr class="network">
+            <td class="field">
+              <b>Network</b>
+            </td>
+            <td class="value">Freenode</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>The story of Gideon Seyetik the Terraformer in the Selinaverse</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">The story of Gideon Seyetik the Terraformer in the Selinaverse</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-story-of-Gideon-Seyetik-in-the-Selinaverse" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif.html#shlomif-story-of-Gideon-Seyetik-in-the-Selinaverse</id>
+    <published>2022-03-22T06:54:49Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="shlomif-story-of-Gideon-Seyetik-in-the-Selinaverse">The story of Gideon Seyetik the Terraformer in the Selinaverse</h3>
+      <blockquote>
+        <p>
+After <a href="https://memory-alpha.fandom.com/wiki/Gideon_Seyetik">Gideon Seyetik</a>
+tried to commit suicide, he and Q materialised on the bridge of The Defiant, and
+Q said:
+</p>
+        <blockquote>
+
+<p>
+What you did was brave, but not brave enough. See, the right to divorce is
+upheld by the constitution of the Q Continuum and all other known continuums
+as well as The-Codex™. I divorced <a href="https://www.shlomifish.org/humour/Star-Trek/We-the-Living-Dead/indiv-nodes/Qs-wife.xhtml">my share of wives</a> and
+some organisms divorced after milliards of years of marriage.
+</p>
+
+<p>
+Your wife's race's reluctance for separation is unlikely to be biological.
+</p>
+
+</blockquote>
+        <p>
+So Prof. Seyetik and his wife started a political / religious struggle
+to allow them and other unhappy couples to divorce. It was successful
+eventually, but ironically Mrs. Seyetik was so impressed by her husband's
+perseverence, that she fell in love with him again, and they remained
+together.
+</p>
+        <p>
+Since then, the couple has been doing other political activism.
+</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Shlomi Fish</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://www.shlomifish.org/humour/fortunes/show.cgi?id=shlomif-how-chun-li-vs-tifa-should-end">Original</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>Atlas Shrugged: interests of the public</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Atlas Shrugged: interests of the public</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#atlas-shrugged--public-interests" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/shlomif-fav.html#atlas-shrugged--public-interests</id>
+    <published>2022-03-24T12:42:28Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="atlas-shrugged--public-interests">Atlas Shrugged: interests of the public</h3>
+      <blockquote>
+        <p>
+"Are we to understand," asked the judge, "that you hold your own interests
+above the interests of the public?"
+</p>
+        <p>
+"I hold that such a question can never arise except in a society of cannibals."
+</p>
+      </blockquote>
+      <table class="info">
+        <tbody>
+          <tr class="author">
+            <td class="field">
+              <b>Author</b>
+            </td>
+            <td class="value">Ayn Rand</td>
+          </tr>
+          <tr class="work">
+            <td class="field">
+              <b>Work</b>
+            </td>
+            <td class="value">
+              <a href="https://en.wikipedia.org/wiki/Atlas_Shrugged">Atlas Shrugged</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+  <entry>
+    <title>"Helping one person at a time"</title>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">"Helping one person at a time"</div>
+    </summary>
+    <link rel="alternate" href="http://www.shlomifish.org/humour/fortunes/sharp-perl.html#sharp-perl-helping-one-person-at-a-time" type="text/html"/>
+    <id>http://www.shlomifish.org/humour/fortunes/sharp-perl.html#sharp-perl-helping-one-person-at-a-time</id>
+    <published>2022-03-25T15:09:52Z</published>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+    <div class="fortune">
+      <h3 id="sharp-perl-helping-one-person-at-a-time">"Helping one person at a time"</h3>
+      <table class="irc-conversation">
+        <tbody>
+          <tr class="saying">
+            <td class="who">mst</td>
+            <td class="text">Grinnz: turns out #hexchat blew him off, he's relatively new to the linux ecosystem, and was just fucking frustrated</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mst</td>
+            <td class="text">I didn't manage to help him but he calmed down a bunch and was grateful for our not helping in the end</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Grinnz</td>
+            <td class="text">understandable</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">mst++ # https://www.shlomifish.org/humour/fortunes/show.cgi?id=mishnah--saving-one-soul</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">Paperbot</td>
+            <td class="text">Link title(s): [ “They who saved one soul has saved the world Entire” - Fortune ]</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">mst</td>
+            <td class="text">rindolf: one at a time is the only way.</td>
+          </tr>
+          <tr class="saying">
+            <td class="who">rindolf</td>
+            <td class="text">mst: well, there are also one-to-many web/etc. resources</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="info">
+        <tbody>
+          <tr class="channel">
+            <td class="field">
+              <b>Channel</b>
+            </td>
+            <td class="value">#perl</td>
+          </tr>
+          <tr class="network">
+            <td class="field">
+              <b>Network</b>
+            </td>
+            <td class="value">Freenode</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    </content>
+  </entry>
+</feed>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?><!-- BEGIN index --><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><title>The Vim Editor for Beginners</title><meta charset="utf-8"/><link rel="icon" href="favicon.png"/><style>a:link{color:#123422;text-decoration:none}a:visited{color:#123333;text-decoration:none}a:hover{text-decoration:underline}p{font-size:24pt;margin:6pt}div p{font-size:18pt;margin-top:12pt;margin-bottom:12pt;margin-left:6pt;margin-right:6pt}small{font-size:9pt;font-style:italic}#topbar{background:#ffeed3;color:#00f;position:absolute;right:5px;left:5px;top:5px;height:50px}#bottombar{background:#ffeed3;color:#00f;position:fixed;right:5px;left:5px;bottom:5px;height:50px;z-index:0}.top_spacer{height:0;margin:0;padding:1px 0 0 0}.spacer{bottom:5px;height:50px}#content{background:#fff;margin-left:20px;margin-right:20px;margin-top:80px}#logo{position:fixed;right:40px;bottom:51px;width:130px;height:150px;z-index:3;background-image:url(/logo.png);background-repeat:no-repeat}</style><script><![CDATA[
+// BEGIN controls.js
+function nextSlide() {
+    window.location = 'start.html';
+}
+
+function prevSlide() {
+    window.location = '';
+}
+
+function indexSlide() {
+    window.location = 'index.html';
+}
+
+function startSlide() {
+    window.location = 'start.html';
+}
+
+function closeSlide() {
+    window.close();
+}
+
+function handleKey(e) {
+    const key = e.code;
+    switch(key) {
+        case 'ArrowLeft': prevSlide(); break;
+        case 'Enter': nextSlide(); break;
+        case 'Space': nextSlide(); break;
+        // case 81: closeSlide(); break;
+        case 'ArrowUp': indexSlide(); break;
+        case 'PageDown': nextSlide(); break;
+        case 'PageUp': prevSlide(); break;
+        case 'Home': startSlide(); break;
+        default: break; //xxx(e.which)
+    }
+}
+
+document.addEventListener('keydown', handleKey);
+// END controls.js
+
+]]></script></head><body><div id="topbar"><table><tr><td style="width:13%">Vim</td><td style="width:73%;text-align:center"><a accesskey="s" href="start.html">The Vim Editor for Beginners</a></td><td style="width:13%;text-align:right"></td></tr></table></div><!-- END top --><div id="content"><div class="top_spacer"></div><ol><li><a href="slide1.html">Vim - Introduction</a></li><li><a href="slide2.html">History of Vi</a></li><li><a href="slide3.html">History of Vim</a></li><li><a href="slide4.html">Where, When and Why to use Vim - Where</a></li><li><a href="slide5.html">Where, When and Why to use Vim - Why</a></li><li><a href="slide6.html">When shouldn't I use this editor?</a></li><li><a href="slide7.html">I want to know more</a></li><li><a href="slide8.html">Demo 1: Basic Text Demo</a></li><li><a href="slide9.html">Normal Mode and Editing Mode</a></li><li><a href="slide10.html">Normal Mode:</a></li><li><a href="slide11.html">Moving around</a></li><li><a href="slide12.html">Demo 2: First Code Demo</a></li><li><a href="slide13.html">Parameterised Movements:</a></li><li><a href="slide14.html">Ranges</a></li><li><a href="slide15.html">ctags</a></li><li><a href="slide16.html">Demo 3: Second Code Demo</a></li><li><a href="slide17.html">Auto-completion</a></li><li><a href="slide18.html">Registers</a></li><li><a href="slide19.html">Operators accepting movements</a></li><li><a href="slide20.html">Visual Mode</a></li><li><a href="slide21.html">Marks</a></li><li><a href="slide22.html">Demo 4: Editing More than One File at Once</a></li><li><a href="slide23.html">Buffers</a></li><li><a href="slide24.html">Demo 5: Quick Code Reading</a></li><li><a href="slide25.html">Folds</a></li><li><a href="slide26.html">Syntax Highlighting into HTML</a></li><li><a href="slide27.html">Scripting and Automation</a></li><li><a href="slide28.html">Register Repeats</a></li><li><a href="slide29.html">Creating a title</a></li><li><a href="slide30.html">Key Mapping</a></li><li><a href="slide31.html">Vim Script</a></li><li><a href="slide32.html">Vim Script with Ranges</a></li><li><a href="slide33.html">Vim Scripts</a></li><li><a href="slide34.html">Demo 6: perl-support.vim</a></li><li><a href="slide35.html">Customising Vim - Modelines</a></li><li><a href="slide36.html">.vimrc</a></li></ol></div><!-- BEGIN bottom --><div id="bottombar"><table style="width:100%"><tr><td style="text-align:left;vertical-align:middle"><div><strong>← Previous</strong> | <strong>Index</strong> | <a accesskey="n" href="start.html">Next →</a></div></td><td style="text-align:right;vertical-align:middle">Copyright © 2005 Shlomi Fish</td></tr></table></div><div id="logo"></div><div id="end" class="spacer"></div><!-- END index --></body></html>

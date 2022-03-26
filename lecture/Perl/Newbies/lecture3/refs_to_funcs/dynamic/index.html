@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../style.css" type="text/css"/><link rel="prev" href="../calling.html"/><link rel="next" href="behaviour.html"/><title>Dynamic References to Functions</title></head><body><main><header><h1>2.3. Dynamic References to Functions</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../" class="nav" accesskey="c">Contents</a></td><td><a href="../" class="nav" accesskey="u">Up</a></td><td><a href="../calling.html" class="nav" accesskey="p">Prev</a></td><td><a href="behaviour.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../">Perl for Newbies - Part 3 - Modules and Objects</a> → <a href="../">References to Functions</a> → <a href="./">Dynamic References to Functions</a></div></nav><p>It is possible to define a dynamic reference to a function. The code of its function is written as part of the assignment expression and can see all the variables in the scope in which it was defined. Here's an example:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+<span class="Statement">my</span> <span class="Identifier">$increment</span>;
+
+&#x7B;
+    <span class="Statement">my</span> <span class="Identifier">$counter</span>;
+    <span class="Comment"># The definition of a dynamic reference to function comes inside</span>
+    <span class="Comment"># a &quot;sub &#x7B;&quot; ... &quot;&#x7D;&quot; closure</span>
+    <span class="Identifier">$increment</span> = <span class="Statement">sub </span>&#x7B;
+        <span class="Statement">print</span> <span class="Identifier">$counter</span>, <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+        <span class="Statement">return</span> <span class="Identifier">$counter</span>++;
+    &#x7D;;
+&#x7D;
+
+<span class="Statement">while</span> (<span class="Identifier">$increment</span>-&gt;() &lt; <span class="Constant">100</span>)
+&#x7B;
+    <span class="Comment"># Do Nothing</span>
+&#x7D;
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../" class="nav">Contents</a></td><td><a href="../" class="nav">Up</a></td><td><a href="../calling.html" class="nav">Prev</a></td><td><a href="behaviour.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

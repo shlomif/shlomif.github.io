@@ -1,0 +1,133 @@
+AddType text/plain .txt
+AddDefaultCharset utf-8
+<Files "bbt">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/bbt.html>; rel=\"canonical\""
+</Files>
+<Files "bbt.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/bbt.html>; rel=\"canonical\""
+</Files>
+<Files "bbt.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/bbt.html>; rel=\"canonical\""
+</Files>
+<Files "friends">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/friends.html>; rel=\"canonical\""
+</Files>
+<Files "friends.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/friends.html>; rel=\"canonical\""
+</Files>
+<Files "friends.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/friends.html>; rel=\"canonical\""
+</Files>
+<Files "joel-on-software">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/joel-on-software.html>; rel=\"canonical\""
+</Files>
+<Files "joel-on-software.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/joel-on-software.html>; rel=\"canonical\""
+</Files>
+<Files "joel-on-software.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/joel-on-software.html>; rel=\"canonical\""
+</Files>
+<Files "nyh-sigs">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/nyh-sigs.html>; rel=\"canonical\""
+</Files>
+<Files "nyh-sigs.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/nyh-sigs.html>; rel=\"canonical\""
+</Files>
+<Files "nyh-sigs.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/nyh-sigs.html>; rel=\"canonical\""
+</Files>
+<Files "osp_rules">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/osp_rules.html>; rel=\"canonical\""
+</Files>
+<Files "osp_rules.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/osp_rules.html>; rel=\"canonical\""
+</Files>
+<Files "osp_rules.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/osp_rules.html>; rel=\"canonical\""
+</Files>
+<Files "paul-graham">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/paul-graham.html>; rel=\"canonical\""
+</Files>
+<Files "paul-graham.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/paul-graham.html>; rel=\"canonical\""
+</Files>
+<Files "paul-graham.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/paul-graham.html>; rel=\"canonical\""
+</Files>
+<Files "sharp-perl">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/sharp-perl.html>; rel=\"canonical\""
+</Files>
+<Files "sharp-perl.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/sharp-perl.html>; rel=\"canonical\""
+</Files>
+<Files "sharp-perl.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/sharp-perl.html>; rel=\"canonical\""
+</Files>
+<Files "sharp-programming">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/sharp-programming.html>; rel=\"canonical\""
+</Files>
+<Files "sharp-programming.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/sharp-programming.html>; rel=\"canonical\""
+</Files>
+<Files "sharp-programming.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/sharp-programming.html>; rel=\"canonical\""
+</Files>
+<Files "shlomif">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/shlomif.html>; rel=\"canonical\""
+</Files>
+<Files "shlomif.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/shlomif.html>; rel=\"canonical\""
+</Files>
+<Files "shlomif.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/shlomif.html>; rel=\"canonical\""
+</Files>
+<Files "shlomif-factoids">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html>; rel=\"canonical\""
+</Files>
+<Files "shlomif-factoids.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html>; rel=\"canonical\""
+</Files>
+<Files "shlomif-factoids.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/shlomif-factoids.html>; rel=\"canonical\""
+</Files>
+<Files "shlomif-fav">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/shlomif-fav.html>; rel=\"canonical\""
+</Files>
+<Files "shlomif-fav.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/shlomif-fav.html>; rel=\"canonical\""
+</Files>
+<Files "shlomif-fav.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/shlomif-fav.html>; rel=\"canonical\""
+</Files>
+<Files "subversion">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/subversion.html>; rel=\"canonical\""
+</Files>
+<Files "subversion.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/subversion.html>; rel=\"canonical\""
+</Files>
+<Files "subversion.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/subversion.html>; rel=\"canonical\""
+</Files>
+<Files "tinic">
+ForceType text/plain
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/tinic.html>; rel=\"canonical\""
+</Files>
+<Files "tinic.xml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/tinic.html>; rel=\"canonical\""
+</Files>
+<Files "tinic.xhtml">
+        Header add Link "<http://www.shlomifish.org/humour/fortunes/tinic.html>; rel=\"canonical\""
+</Files>
+Redirect permanent /humour/fortunes/index.html /humour/fortunes/

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>FOSS Licences Wars (revision 2) - Strong Copyleft and Preventing Threats to FOSS</title>
+<meta charset="utf-8"/>
+<meta name="description" content=
+"FOSS Licences Wars (revision 2) - Strong Copyleft and Preventing Threats to FOSS"/>
+<link rel="stylesheet" href="../../../../../../faq-indiv.css" media="screen"/>
+<link rel="stylesheet" href="../../../../../../screenplay.css" media="screen"
+title="Normal"/>
+<link rel="stylesheet" href="../../../../../../print.css" media="print"/>
+<link rel="shortcut icon" href="../../../../../../favicon.ico" type=
+"image/x-icon"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
+<body class="fancy_sects faq_indiv_entry limit_imgs_width screenplay_indiv_entry">
+<div class="header" id="header">
+<a href="../../../../../../"><img src="../../../../../../images/evilphish-flipped.png"
+alt="EvilPHish site logo"/></a>
+<div class="leading_path"><a href="../../../../../../">Shlomi Fish’s
+Homepage</a> →
+<a href="../" title="FOSS Licences Wars (revision 2)">FOSS Licences Wars (revision 2)</a>
+
+→ <b>Strong Copyleft and Preventing Threats to FOSS</b>
+</div>
+</div>
+<div id="faux">
+<main class="main faq screenplay">
+<section xmlns="http://www.w3.org/1999/xhtml" class="section"><header xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="titlepage"><h4 id="strong-copyleft-and-threats-to-foss" class="title">Strong Copyleft and Preventing Threats to FOSS</h4><h:a class="back_to_faq" href="../#strong-copyleft-and-threats-to-foss">Node Link</h:a></header><p>When I <a class="link" href="http://tech.groups.yahoo.com/group/hackers-il/message/5009">posted an early draft of this essay</a> to the <a class="link" href="http://www.hackers.org.il/">Hackers-IL mailing list</a>, I received <a class="link" href="http://tech.groups.yahoo.com/group/hackers-il/message/5017">a comment</a> about the fact that GPL (or other strong copyleft licences) prevent threats to free and open source software. I&#8217;d like to reply to it here.</p><p>Quoting from the comment:</p><div class="blockquote"><blockquote class="blockquote"><p>In the second half of the 90s, <a class="link" href="http://en.wikipedia.org/wiki/X_Window_System">X-Windows</a> was quite popular - a department (in universities, companies, etc.) would have strong Unix workstations (from Sun, DEC, SGI, HP and other vendors) and people would have cheaper machines showing the output from the strong machine using X-Windows. As MS-Windows grew popular, people wanted to use their PC running Windows to display X-Windows sessions. But unfortunately, the only X server available for Windows was commercial software (Exceed), which could happen because X was BSD-licensed and not GPL. Users (at the time, most had corporate or university funds - they weren&#8217;t home users) bit the bullet and paid. It took literally years before a free X server for Windows became available.</p></blockquote></div><p>My response is that this was indeed a problem and inconvenienced the users of Exceed. However, if X-Windows were GPLed, then the people who made Exceed and wanted to sell it, might not have made it in the first place, because they had to make it GPLed and keep it as FOSS. So either they would have implemented it from scratch or not at all. It is possible that a different group would have created a free X server for Windows, but it is possible that no free X server would have been available at all. And if a different group could have created a free X server for Windows without Exceed, they could have certainly created it with it.</p><p>Furthermore, If X11 had been initiated under a non-BSD-style-licence, then it is possible it would not have become as ubiquitous as it is in the UNIX world, thus making it irrelevant to port it to Windows in the first place. We can&#8217;t tell that for sure, but I think it is a possibility.</p><p>Quoting again:</p><div class="blockquote"><blockquote class="blockquote"><div class="blockquote"><blockquote class="blockquote"><p>For example, someone integrated my <a class="link" href="http://fc-solve.shlomifish.org/">Freecell Solver library</a> in a <a class="link" href="http://www.ambermango.com/php/am/f3d/index.php">shareware (without source) game he wrote titled Freecell 3D</a>.</p><p>He sells the game online. It did not do any damage, because there are plenty of Freecell implementations around. I on my part am pretty happy with the open-source PySolFC.</p></blockquote></div><p>Let&#8217;s imagine that you wrote a great Freecell solver library, but you suck at UI and failed to create a graphical game based on that library, and wish that someone created a UI on top of your library. If your library is BSD, someone could create this UI but make it commercial and not even you can use it. If your library is GPL, this person is forced to either make his code public (so you and your friends can use it) or pay you for a new license. Which of those scenarios will make you happier? I can&#8217;t see how the GPL isn&#8217;t better in this scenario.</p></blockquote></div><p>Well, first of all I should note that that is a lot of &#8220;if&#8221;&#8217;s. When I started working on Freecell Solver, there were already plenty of graphical Freecell games, possibly with support for other variants of Solitaire. And there were also several open-source ones, including some very polished ones.</p><p>As a result, I could have easily integrated my solver into one of them. So his thought experiment is not very realistic, although it may be valid in the general case.</p><p>Back to the thought experiment, a person who would be interested in creating a commercial Freecell UI and still integrate a solving mechanism to it could:</p><div class="orderedlist"><ol class="orderedlist"><li class="listitem"><p>Develop his own Freecell solving library from scratch. That will probably be less work than developing the rest of the graphical Freecell game.</p></li><li class="listitem"><p>Write a command line executable that uses the library, invoke it, and process its output. This strategy was taken by the developers of the open-source <a class="link" href="http://pysolfc.sourceforge.net/">PySolFC</a> out of convenience using my existing &#8220;fc-solve&#8221; executable.</p></li><li class="listitem"><p>Write a GPLed server for solving Freecell that the graphical game would communicate with using TCP/IP or a different IPC mechanism.</p></li><li class="listitem"><p>Decide that developing a graphical game only to later release it as free software won&#8217;t be worth his time, and as a result not develop it at all.</p></li></ol></div><p>In all of these cases, we won&#8217;t have a graphical game as FOSS.</p><p>Finally I&#8217;d rather have a proprietary derived work than no derived program at all, or that instead someone will duplicate my effort in creating a BSD-style or a proprietary replacement for my work.</p></section></main>
+</div>
+<footer>
+<div class="foot_left">
+<ul class="bt_nav">
+<li><a href="../../../../../../">Home</a></li>
+<li><a href="../../../../../../me/">About</a></li>
+<li><a href="../../../../../../me/contact-me/">Contact Us</a></li>
+<li><a href="../../../../../../meta/privacy-policy/">Privacy Policy</a></li>
+<li><a href="../../../../../../meta/anti-spam-policy/">Anti-Spam
+Policy</a></li>
+<li><a href="../../../../../../meta/FAQ/" title=
+"Frequently asked questions list">FAQ</a></li>
+<li><a href="../../../../../../me/blogs/">RSS/Atom Feeds</a></li>
+</ul>
+<p>Written, designed, and maintained by Shlomi Fish, <a href=
+"mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a>.</p>
+</div>
+<a href="../../../../../../"><img src="../../../../../../images/bk2hp-v2.min.svg" class=
+"bk2hp" alt="Back to my Homepage"/></a></footer>
+</body>
+</html>

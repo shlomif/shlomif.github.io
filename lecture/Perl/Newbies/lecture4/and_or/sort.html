@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="english_and_or.html"/><title>For sort()</title></head><body><main><header><h1>5.1. For sort()</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="english_and_or.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 4</a> → <a href="./">More about || and &amp;&amp;</a> → <a href="sort.html">For sort()</a></div></nav><p>The <code>||</code> operator can be used in <code>sort</code>, in conjunction with operators such as <code>cmp</code> or <code>&lt;=&gt;</code> to sort according to several criteria. For example, if you wish to sort according to the last name and if this is equal according to the first name as well, you can write the following:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+
+<span class="Statement">my</span> <span class="Identifier">@array</span> =
+(
+    &#x7B; <span class="Constant">'first'</span> =&gt; <span class="Constant">&quot;Amanda&quot;</span>, <span class="Constant">'last'</span> =&gt; <span class="Constant">&quot;Smith&quot;</span>, &#x7D;,
+    &#x7B; <span class="Constant">'first'</span> =&gt; <span class="Constant">&quot;Jane&quot;</span>, <span class="Constant">'last'</span> =&gt; <span class="Constant">&quot;Arden&quot;</span>,&#x7D;,
+    &#x7B; <span class="Constant">'first'</span> =&gt; <span class="Constant">&quot;Tony&quot;</span>, <span class="Constant">'last'</span> =&gt; <span class="Constant">&quot;Hoffer&quot;</span>, &#x7D;,
+    &#x7B; <span class="Constant">'first'</span> =&gt; <span class="Constant">&quot;Shlomi&quot;</span>, <span class="Constant">'last'</span> =&gt; <span class="Constant">&quot;Fish&quot;</span>, &#x7D;,
+    &#x7B; <span class="Constant">'first'</span> =&gt; <span class="Constant">&quot;Chip&quot;</span>, <span class="Constant">'last'</span> =&gt; <span class="Constant">&quot;Fish&quot;</span>, &#x7D;,
+    &#x7B; <span class="Constant">'first'</span> =&gt; <span class="Constant">&quot;John&quot;</span>, <span class="Constant">'last'</span> =&gt; <span class="Constant">&quot;Smith&quot;</span>, &#x7D;,
+    &#x7B; <span class="Constant">'first'</span> =&gt; <span class="Constant">&quot;Peter&quot;</span>, <span class="Constant">'last'</span> =&gt; <span class="Constant">&quot;Torry&quot;</span>, &#x7D;,
+    &#x7B; <span class="Constant">'first'</span> =&gt; <span class="Constant">&quot;Michael&quot;</span>, <span class="Constant">'last'</span> =&gt; <span class="Constant">&quot;Hoffer&quot;</span>, &#x7D;,
+    &#x7B; <span class="Constant">'first'</span> =&gt; <span class="Constant">&quot;Ben&quot;</span>, <span class="Constant">'last'</span> =&gt; <span class="Constant">&quot;Smith&quot;</span>, &#x7D;,
+);
+
+<span class="Statement">my</span> <span class="Identifier">@sorted_array</span> =
+    (<span class="Statement">sort</span>
+        &#x7B;
+            (<span class="Identifier">$a-&gt;&#x7B;</span><span class="Constant">'last'</span><span class="Identifier">&#x7D;</span> <span class="Statement">cmp</span> <span class="Identifier">$b-&gt;&#x7B;</span><span class="Constant">'last'</span><span class="Identifier">&#x7D;</span>) ||
+            (<span class="Identifier">$a-&gt;&#x7B;</span><span class="Constant">'first'</span><span class="Identifier">&#x7D;</span> <span class="Statement">cmp</span> <span class="Identifier">$b-&gt;&#x7B;</span><span class="Constant">'first'</span><span class="Identifier">&#x7D;</span>)
+        &#x7D;
+        <span class="Identifier">@array</span>
+    );
+
+<span class="Statement">foreach</span> <span class="Statement">my</span> <span class="Identifier">$record</span> (<span class="Identifier">@sorted_array</span>)
+&#x7B;
+    <span class="Statement">print</span> <span class="Identifier">$record-&gt;&#x7B;</span><span class="Constant">'last'</span><span class="Identifier">&#x7D;</span> . <span class="Constant">&quot;, &quot;</span> . <span class="Identifier">$record-&gt;&#x7B;</span><span class="Constant">'first'</span><span class="Identifier">&#x7D;</span> . <span class="Constant">&quot;</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+&#x7D;
+</pre></div><p>Its output is:</p><div class="code_block"><pre>
+Arden, Jane
+Fish, Chip
+Fish, Shlomi
+Hoffer, Michael
+Hoffer, Tony
+Smith, Amanda
+Smith, Ben
+Smith, John
+Torry, Peter
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="english_and_or.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:vrd="http://www.shlomifish.org/open-source/projects/XML-Grammar/Vered/" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="main_doc" xml:lang="en-GB" version="5.0">
+  <info xml:id="main_document_id">
+    <title>C and C++ Elements to Avoid</title>
+    <authorgroup>
+      <author>
+        <personname>
+          <firstname>Shlomi</firstname>
+          <surname>Fish</surname>
+        </personname>
+        <affiliation>
+          <address>
+            <email>shlomif@cpan.org</email>
+            <uri type="homepage" xlink:href="https://www.shlomifish.org/">Shlomi Fish’s Homepage</uri>
+          </address>
+        </affiliation>
+      </author>
+    </authorgroup>
+    <copyright>
+      <year>2010</year>
+      <holder>Shlomi Fish</holder>
+    </copyright>
+    <legalnotice xml:id="main_legal_notice">
+      <para>
+This document is copyrighted by Shlomi Fish under the Creative Commons
+Attribution 4.0 Unported License.
+</para>
+      <para>
+Code excerpts are assumed to be under the
+https://en.wikipedia.org/wiki/MIT_License .
+</para>
+    </legalnotice>
+  </info>
+  <section role="introduction" xml:id="intro">
+    <info>
+      <title>Introduction</title>
+    </info>
+    <para>
+Often when people ask for help with C or C++ code, they show code that
+suffers from many bad or outdated elements. This is expected, as there
+are many bad tutorials out there, and lots of bad code that people
+have learned from, but it is still not desirable. To encourage best
+practices, here is a document of some of the common bad elements that
+people tend to use and some better practices that should be used instead.
+</para>
+    <para>
+A book I read said, that as opposed to most previous idea systems, they
+were trying to <emphasis role="bold">liquidate negatives</emphasis> instead of to instil positives
+in people. So in the spirit of liquidating negatives, this tutorial-in-reverse
+aims to show you what <emphasis role="bold">not to do</emphasis>.
+</para>
+    <para>
+<emphasis role="bold">Note:</emphasis> Please don't think this advice is meant as gospel.
+There are some instances where one can expect to deviate from it, and a lot
+of it can be considered only the opinion of its originators. I tried to filter
+the various pieces of advice I found in the <link xlink:href="#sources_of_advice">sources</link>
+and get rid of things that are either a matter of taste, or not so critical,
+or that have arguments for and against (so-called
+<link xlink:href="http://bikeshed.com/">colour of the bike shed arguments</link>),
+but some of the advice here may still be controversial.
+</para>
+  </section>
+  <section xml:id="bad-elements">
+    <info>
+      <title>The List of Bad Elements</title>
+    </info>
+    <section role="item" xml:id="no-indentation">
+      <info>
+        <title>No Indentation</title>
+      </info>
+      <para>
+<link xlink:href="http://en.wikipedia.org/wiki/Indent_style">Indentation</link> means
+that the contents of every block are promoted from their containing environment
+by using a shift of some space. This makes the code easier to read and follow.
+</para>
+      <para>
+Code without indentation is harder to read and so should be avoided.
+<link xlink:href="http://en.wikipedia.org/wiki/Indent_style">The Wikipedia article</link>
+lists several styles - pick one and follow it.
+</para>
+    </section>
+    <section role="item" xml:id="no-compiler-warning-flags">
+      <info>
+        <title>Compiling without warnings flags</title>
+      </info>
+      <para>
+C and C++ Compilers have flags to toggle on warnings such as
+<code>-Wall</code>, <code>-Wextra</code>, or <code>-Weverything</code>.
+It is a good idea to specify as many of them as possible when compiling the
+code and to fix the warnings where appropriate.
+</para>
+      <para>
+Someone gave me this GCC warnings’ theme:
+</para>
+      <programlisting language="bash">
+#!/bin/bash
+gcc \
+    -std=c99 \
+    -ansi \
+    -pedantic \
+    -W \
+    -Wall \
+    -Wbad-function-cast \
+    -Wcast-align \
+    -Wcast-qual \
+    -Wdeclaration-after-statement \
+    -Wfloat-equal \
+    -Wformat-nonliteral \
+    -Winline \
+    -Wmissing-declarations \
+    -Wmissing-prototypes \
+    -Wnested-externs \
+    -Wold-style-definition \
+    -Wpointer-arith \
+    -Wshadow \
+    -Wstrict-prototypes \
+    -Wundef \
+    -Wunused \
+    -Wwrite-strings
+</programlisting>
+    </section>
+    <section role="item" xml:id="calling-variables-file">
+      <info>
+        <title>Calling variables "file"</title>
+      </info>
+      <para>
+Some people call their variables "file". However, file can mean either
+<link xlink:href="http://en.wikipedia.org/wiki/File_descriptor">file handles</link>,
+file names, or the contents of the file. As a result, this should be avoided
+and one can use the abbreviations "fh" for file handle, or "fn" for filenames
+instead.
+</para>
+    </section>
+    <section role="item" xml:id="identifiers-without-underscores">
+      <info>
+        <title>Identifiers without underscores</title>
+      </info>
+      <para>
+Some people name their identifiers as several words all in lowercase and
+not separated by underscores ("_"). As a result, this makes the code harder
+to read. So instead of:
+</para>
+      <programlisting language="perl">
+char * namesofpresidents[NUM_PRESIDENTS];
+</programlisting>
+      <para>
+Say:
+</para>
+      <programlisting language="perl">
+char * names_of_presidents[NUM_PRESIDENTS];
+</programlisting>
+      <para>
+Or maybe:
+</para>
+      <programlisting language="perl">
+char * presidents_names[NUM_PRESIDENTS];
+</programlisting>
+    </section>
+    <section role="item" xml:id="paragraphs">
+      <info>
+        <title>Write code in Paragraphs using Empty Lines</title>
+      </info>
+      <para>
+If one of your blocks is long, split it into "code paragraphs", with empty
+lines between them and with each paragraph doing one thing. Then, it may be a
+good idea to precede each paragraph with a comment explaining what it does, or
+to extract it into its own function or method.
+</para>
+    </section>
+    <section role="item" xml:id="lowercase_modules_and_pkgs">
+      <info>
+        <title>Don't start Classes with a Lowercase Letter</title>
+      </info>
+      <para>
+In C++, classes should start with an uppercase letter (see
+<link xlink:href="http://en.wikipedia.org/wiki/Letter_case">the Wikipedia
+article about letter case</link>) and starting them with a lowercase letter
+is not recommended.
+</para>
+      <programlisting role="bad_code" language="cpp"># Bad code
+
+
+class my_class
+{
+    .
+    .
+    .
+};
+</programlisting>
+      <programlisting language="cpp">
+class MyClass
+{
+    .
+    .
+    .
+};
+</programlisting>
+    </section>
+    <section role="item" xml:id="non-intrusive-commenting">
+      <info>
+        <title>Avoid Intrusive Commenting</title>
+      </info>
+      <para>
+Some commenting is too intrusive and interrupts the flow of reading the code.
+Examples for that are the <code>/////////////</code> or
+<code>/*****************/</code> hard-rules that
+some people put in their code, the comments using multiple slashes
+like <code>///</code>, or excessively long comment block. Please avoid all those.
+</para>
+      <para>
+Some schools of software engineering argue that if the code's author feels
+that a comment is needed, it usually indicates that the code is not clear
+and should be factored better (like extracting a method or a subroutine with
+a meaningful name.). It probably does not mean that you should avoid writing
+comments altogether, but excessive commenting could prove as a red flag.
+</para>
+      <para>
+If you're interested in documenting the public interface of your modules and
+command-line programs, refer to tools such as
+<link xlink:href="http://en.wikipedia.org/wiki/Doxygen">Doxygen</link>, which may
+prove of use.
+</para>
+    </section>
+    <section role="item" xml:id="accessing_object_slots_directly">
+      <info>
+        <title>Accessing Object Slots Directly</title>
+      </info>
+      <para>
+It is a bad idea to access the slots/properties/members of an object or
+a pointer to it directly. E.g:
+</para>
+      <programlisting role="bad_code" language="cpp"># Bad code
+
+
+obj-&gt;my_slot = 5;
+.
+.
+.
+if (my_obj.my_boolean_slot)
+{
+}
+</programlisting>
+      <para>
+Instead, create accessors, readers and writers - see
+<link xlink:href="http://en.wikipedia.org/wiki/Mutator_method">mutator method</link>
+on the Wikipedia and
+<link xlink:href="http://perl-begin.org/tutorials/perl-for-newbies/part5/#page--accessors--DIR">the class Accessors</link> section of the Perl for Newbies tutorial.
+</para>
+    </section>
+    <section role="item" xml:id="caret_and_dollar_sign_in_regexes">
+      <info>
+        <title>'^' and '$' in Regular Expressions</title>
+      </info>
+      <para>
+Some people use "^" and "$" in regular expressions to mean
+beginning-of-the-string or end-of-the-string. However, they can mean
+beginning-of-a-line and end-of-a-line respectively using the <code>/m</code> flag
+which is confusing. It's a good idea to use <code>\A</code> for start-of-string
+and <code>\z</code> for end-of-string always (assuming they are supported
+by the regex syntax), and to specify the <code>/m</code> flag
+if one needs to use "^" and "$" for start/end of a line.
+</para>
+    </section>
+    <section role="item" xml:id="magic_numbers">
+      <info>
+        <title>Magic Numbers</title>
+      </info>
+      <para>
+Your code should not include <link xlink:href="http://en.wikipedia.org/wiki/Magic_number_%28programming%29#Unnamed_numerical_constants">unnamed
+numerical constants also known as "magic numbers" or "magic constants"</link>.
+For example, there is one in this code to shuffle a deck of cards:
+</para>
+      <programlisting role="bad_code" language="c"># Bad code
+
+
+for (int i = 0; i &lt; 52; i++)
+{
+    const int j = i + rand() % (52-i);
+    swap(cards[i], cards[j]);
+}
+</programlisting>
+      <para>
+This code is bad because the meaning of 52 is not explained and it is
+arbitrary. A better code would be:
+</para>
+      <programlisting language="c">
+const int deck_size = 52;
+
+for (int i = 0; i &lt; deck_size; i++)
+{
+    int j = i + rand() % (deck_size - i);
+    swap(cards[i], cards[j]);
+}
+</programlisting>
+    </section>
+    <section role="item" xml:id="mixing_tabs_and_spaces">
+      <info>
+        <title>Mixing Tabs and Spaces</title>
+      </info>
+      <para>
+Some improperly configured text editors may be used to write code that, while
+indented well at a certain tab size looks terrible on other tab sizes, due
+to a mixture of tabs and spaces. So either use tabs for indentation or make
+sure your tab key expands to a constant number of spaces. You may also wish
+to make use of auto-formatters like <link xlink:href="http://en.wikipedia.org/wiki/Indent_%28Unix%29">GNU indent</link> to properly format your code.
+</para>
+    </section>
+    <section role="item" xml:id="several_synchronised_arrays">
+      <info>
+        <title>Several synchronised arrays.</title>
+      </info>
+      <para>
+Related to “varvarname” is the desire of some beginners to use several
+different arrays with synchronised content, so the same index at every array
+will contain a different piece of data for the same record:
+</para>
+      <programlisting role="bad_code" language="c"># Bad code
+
+
+char * names[ITEMS_COUNT];
+char * addresses[ITEMS_COUNT];
+int ages[ITEMS_COUNT];
+char * phone_numbers[ITEMS_COUNT];
+
+.
+.
+.
+
+names[num] = strdup("Isaac Newton");
+addresses[num] = strdup("10 Downing St.");
+ages[num] = 25;
+phone_numbers[num] = strdup("123456789");
+</programlisting>
+      <para>
+These arrays will become hard to synchronise, and this is error prone. A
+better idea would be to use an array (or a different data structure) of
+structs, classes, or pointers to them:
+</para>
+      <programlisting language="c">
+
+Person * people[ITEMS_COUNT];
+
+num = 0;
+people[num++] = create_person(
+    "Isaac Newton",
+    "10 Downing St.",
+    25,
+    "123456789"
+);
+</programlisting>
+    </section>
+    <section role="item" xml:id="modifying_iterated_data_structures">
+      <info>
+        <title>Modifying data structures while iterating through them.</title>
+      </info>
+      <para>
+Some people ask about how to add or remove elements to an existing array or
+a different container when iterating over them using loops. The
+answer to that is that it likely won't be handled too well, and it expects
+that during loops the keys of a data structure will remain constant.
+</para>
+      <para>
+The best way to achieve something similar is to populate a new container
+during the loop. So do that instead.
+</para>
+    </section>
+    <section role="item" xml:id="code_in_foreign_lang">
+      <info>
+        <title>Comments and Identifiers in a Foreign Language</title>
+      </info>
+      <para>
+Apparently, many non-native English speakers write code with comments and
+even identifiers in their native language. The problem with this is that
+programmers who do not speak that language will have a hard time understanding
+what is going on here, especially after the writers of the foreign language
+code post it in to an Internet forum in order to get help with it.
+</para>
+      <para>
+Consider what Eric Raymond wrote in
+<link xlink:href="http://www.catb.org/~esr/faqs/hacker-howto.html#skills4">his
+"How to Become a Hacker" document</link> (where hacker is a software enthusiast
+and not a computer intruder):
+</para>
+      <blockquote>
+<para>
+4. If you don't have functional English, learn it.
+</para>
+<para>
+As an American and native English-speaker myself, I have previously been
+reluctant to suggest this, lest it be taken as a sort of cultural imperialism.
+But several native speakers of other languages have urged me to point out that
+English is the working language of the hacker culture and the Internet, and
+that you will need to know it to function in the hacker community.
+</para>
+<para>
+Back around 1991 I learned that many hackers who have English as a second
+language use it in technical discussions even when they share a birth tongue;
+it was reported to me at the time that English has a richer technical
+vocabulary than any other language and is therefore simply a better tool for
+the job. For similar reasons, translations of technical books written in
+English are often unsatisfactory (when they get done at all).
+</para>
+<para>
+Linus Torvalds, a Finn, comments his code in English (it apparently never
+occurred to him to do otherwise). His fluency in English has been an important
+factor in his ability to recruit a worldwide community of developers for Linux.
+It's an example worth following.
+</para>
+<para>
+Being a native English-speaker does not guarantee that you have language skills
+good enough to function as a hacker. If your writing is semi-literate,
+ungrammatical, and riddled with misspellings, many hackers (including myself)
+will tend to ignore you. While sloppy writing does not invariably mean sloppy
+thinking, we've generally found the correlation to be strong — and we have no
+use for sloppy thinkers. If you can't yet write competently, learn to.
+</para>
+</blockquote>
+      <para>
+So if you're posting code for public scrutiny, make sure it is written with
+English identifiers and comments.
+</para>
+    </section>
+    <section role="item" xml:id="using-namespace-std">
+      <info>
+        <title>“using namespace std;”</title>
+      </info>
+      <para>
+One can often see C++ code with <code>using namespace std;</code> on top, but that is
+a bad idea. The C++ standard requires that the “std” namespace contain certain
+symbols, but it doesn't prevent it from containing <emphasis role="bold">other</emphasis> symbols
+(presumably, implementation details of the standard library). If you use
+<code>using namespace std;</code>, you never know what else you might also be
+bringing into the global namespace.
+</para>
+      <para>
+One possible alternative is to selectively do
+<code>using std::cout;</code>, <code>using std::string;</code> and so forth,
+for each symbol that you wish to use.
+</para>
+    </section>
+    <section role="item" xml:id="law_of_demeter">
+      <info>
+        <title>The Law of Demeter</title>
+      </info>
+      <para>
+See the <link xlink:href="http://en.wikipedia.org/wiki/Law_of_Demeter">Wikipedia article
+about “The Law of Demeter”</link> for more information. Namely, doing many nested
+method calls like
+<code>obj-&gt;get_employee('sophie')-&gt;get_address()-&gt;get_street()</code>
+is not advisable, and should be avoided.
+</para>
+      <para>
+A better option would be to provide methods in the containing objects to
+access those methods of their contained objects. And an even better way would
+be to structure the code so that each object handles its own domain.
+</para>
+    </section>
+    <section role="item" xml:id="delegating_parameter_passing">
+      <info>
+        <title>Passing parameters in delegation</title>
+      </info>
+      <para>
+Sometimes we encounter a case where subroutines each pass the same parameter
+to one another in delegation, just because the innermost subroutines in the
+call-stack need it.
+</para>
+      <para>
+To avoid it, create a class, and declare methods that operate on the
+fields of the class, where you can assign the delegated arguments.
+</para>
+    </section>
+    <section role="item" xml:id="duplicate_code">
+      <info>
+        <title>Duplicate Code</title>
+      </info>
+      <para>
+As noted in
+<link xlink:href="http://www.shlomifish.org/philosophy/books-recommends/#refactoring">Martin
+Fowler's "Refactoring"</link> book (but held as a fact for a long time
+beforehand),
+<link xlink:href="http://en.wikipedia.org/wiki/Duplicate_code">duplicate code</link> is a
+code smell, and should be avoided. The solution is to extract duplicate
+functionality into subroutines, methods and classes.
+</para>
+    </section>
+    <section role="item" xml:id="long_functions">
+      <info>
+        <title>Long Functions and Methods</title>
+      </info>
+      <para>
+Another common code smell is
+<link xlink:href="http://c2.com/cgi/wiki?LongMethodSmell">long
+subroutines and methods</link>. The solution to these is to extract several
+shorter methods out, with meaningful names.
+</para>
+    </section>
+    <section role="item" xml:id="ternary_operator_instead_of_if_else">
+      <info>
+        <title>Using the ternary operator for side-effects instead of if/else</title>
+      </info>
+      <para>
+People who wish to use the ternary
+inline- conditional operator (<code>? :</code>) for choosing to execute between
+two different statements with side-effects
+instead of using <code>if</code> and <code>else</code>. For example:
+</para>
+      <programlisting role="bad_code" language="cpp"># Bad code
+
+
+cond_var ? (hash["if_true"] += "Cond var is true")
+          : (hash["if_false"] += "Cond var is false")
+</programlisting>
+      <para>
+(This is assuming the ternary operator was indeed written correctly, which
+is not always the case).
+</para>
+      <para>
+However, the ternary operator is meant to be an expression that is a choice
+between two values and should not be used for its side-effects. To do the
+latter, just use <code>if</code> and <code>else</code>:
+</para>
+      <programlisting language="cpp">
+if (cond_var)
+{
+    hash["if_true"] += "Cond var is true";
+}
+else
+{
+    hash["if_false"] += "Cond var is false";
+}
+</programlisting>
+      <para>
+This is safer, and better conveys one’s intentions.
+</para>
+      <para>
+For more information, refer to
+<link xlink:href="http://www.nntp.perl.org/group/perl.beginners/2012/04/msg120480.html">a
+relevant thread on the Perl beginners mailing list</link> (just make sure you read
+it in its entirety).
+</para>
+    </section>
+    <section role="item" xml:id="global_vars_iface">
+      <info>
+        <title>Using Global Variables as an Interface to the Module</title>
+      </info>
+      <para>
+While it is possible to a large extent, one should generally not use global
+variables as an interface to a module, and should prefer having a procedural
+or an object oriented interface instead.
+</para>
+    </section>
+    <section role="item" xml:id="global_or_function_static_vars">
+      <info>
+        <title>Using Global Variables or Function-"static" Variables</title>
+      </info>
+      <para>
+It is a good idea to avoid global variables or static variables inside
+functions; at least those that are not constant. This is because using such
+variables interferes with
+<link xlink:href="http://en.wikipedia.org/wiki/Thread_%28computing%29#Multithreading">multithreading</link>,
+re-entrancy and prohibits instantiation. If you need to use several common
+variables, then define an environment struct or class and pass a pointer to
+it to each of the functions.
+</para>
+    </section>
+    <section role="item" xml:id="declaring_all_vars_at_top">
+      <info>
+        <title>Declaring all variables at the top (Pre-declarations)</title>
+      </info>
+      <para>
+If you are writing C++ or C starting from the C99 standard onwards (which
+isn’t supported by some non-standard-compliant compilers such as Microsoft’s
+Visual C++), then you should avoid declaring all the variables at the top
+of the program or the subroutine (a practice that is referred to as
+“pre-declaration”) and instead declare them when they are needed
+and with an immediate initialisation/definition using the
+<code>=</code> operator.
+</para>
+      <para>
+E.g:
+</para>
+      <programlisting role="bad_code" language="c"># Bad code
+
+
+int main(int argc, char * argv[])
+{
+    const char * name;
+    int i;
+
+    name = "Rupert";
+    for (i=1 ; i&lt;=10 ; i++)
+    {
+        printf ("Hello %s - No. %d!\n", name, i);
+    }
+
+    return 0;
+}
+</programlisting>
+      <para>
+Should be replaced with:
+</para>
+      <programlisting language="c">
+int main(int argc, char * argv[])
+{
+    const char * const name = "Rupert";
+    for (int i=1 ; i&lt;=10 ; i++)
+    {
+        printf ("Hello %s - No. %d!\n", name, i);
+    }
+
+    return 0;
+}
+</programlisting>
+    </section>
+    <section role="item" xml:id="trailing-whitespace">
+      <info>
+        <title>Trailing Whitespace</title>
+      </info>
+      <para>
+With many editors, it can be common to write new code or modify existing
+one, so that some lines will contain trailing whitespace, such as
+spaces (ASCII 32 or 0x20) or tabs characters. These trailing spaces normally
+do not cause much harm, but they are not needed, harm the code’s consistency,
+may undermine analysis by patching/diffing and version control tools.
+Furthermore, they usually can be eliminated easily without harm.
+</para>
+      <para>
+Here is an example of having trailing whitespace demonstrated using the
+<code>--show-ends</code> flag of the GNU <link xlink:href="https://en.wikipedia.org/wiki/Cat_%28Unix%29">cat command</link>:
+</para>
+      <programlisting language="text">
+&gt; cat --show-ends toss-coins.pl
+#!/usr/bin/perl$
+$
+use strict;$
+use warnings;$
+$
+my @sides = (0,0);$
+$
+my ($seed, $num_coins) = @ARGV;$
+$
+srand($seed);  $
+$
+for my $idx (1 .. $num_coins)$
+{$
+    $sides[int(rand(2))]++;$
+    $
+    print "Coin No. $idx\n";$
+}$
+$
+print "You flipped $sides[0] heads and $sides[1] tails.\n";$
+&gt;
+</programlisting>
+      <para>
+While you should not feel bad about having trailing space, it is a good idea
+to sometimes search for them using a command such as <code>ack '[ \t]+$'</code>
+(in version 1.x it should be <code>ack -a '[ \t]+$'</code>, see
+<link xlink:href="http://beyondgrep.com/">ack</link>), and get rid of them.
+</para>
+      <para>
+Some editors also allow you to highlight trailing whitespace when present. See
+for example:
+</para>
+      <itemizedlist>
+<listitem>
+<para>
+<link xlink:href="http://vim.wikia.com/wiki/Highlight_unwanted_spaces">Highlight
+unwanted spaces in Vim</link>. Also see <link xlink:href="http://vim.wikia.com/wiki/Highlight_unwanted_spaces">this post</link>.
+</para>
+</listitem>
+<listitem>
+<para>
+<link xlink:href="http://emacswiki.org/emacs/ShowWhiteSpace">EmacsWiki:
+Show White Space</link>.
+</para>
+</listitem>
+</itemizedlist>
+      <para>
+Finally, one can check and report trailing whitespace using the following
+CPAN modules:
+</para>
+      <itemizedlist>
+<listitem>
+<para>
+<link role="cpan_module" xlink:href="http://metacpan.org/module/Test::EOL">Test::EOL</link>.
+</para>
+</listitem>
+<listitem>
+<para>
+<link role="cpan_module" xlink:href="http://metacpan.org/module/Test::TrailingSpace">Test::TrailingSpace</link>.
+</para>
+</listitem>
+</itemizedlist>
+    </section>
+    <section role="item" xml:id="code_and_markup_injection">
+      <info>
+        <title>Code and Markup Injection</title>
+      </info>
+      <para>
+Care must be taken when constructing statements that are passed to an
+interpreter, when putting arbitrary strings inside (using substring expansion
+or other methods). This is because if the strings are subject to input from
+the outside world (including the users), then one can use specially crafted
+strings for executing arbitrary commands and exploiting the system.
+</para>
+      <para>
+An example of this is outputting HTML using
+<code>fprintf(file_handle, "&lt;p&gt;%s&lt;/p&gt;\n", paragraph_text);</code>
+or <code>my_file_fh &lt;&lt; "&lt;p&gt;" &lt;&lt; paragraph_text &lt;&lt; "&lt;/p&gt;" &lt;&lt; std::endl;</code>
+which may allow
+inserting arbitrary, malicious, markup inside <code>paragraph_text</code>,
+which may include malicious JavaScript, that can steal passwords or alter
+the page’s contents.
+</para>
+      <para>
+For more information, see:
+</para>
+      <orderedlist>
+<listitem>
+<para>
+<link xlink:href="http://perl-begin.org/topics/security/code-markup-injection/">“Code/Markup
+Injection and Its Prevention”</link> resource on the Perl beginners site.
+</para>
+</listitem>
+<listitem>
+<para>
+Wikipedia articles about
+<link xlink:href="http://en.wikipedia.org/wiki/SQL_injection">SQL injection</link>
+and
+<link xlink:href="http://en.wikipedia.org/wiki/Cross-site_scripting">Cross-site
+scripting</link>.
+</para>
+</listitem>
+<listitem>
+<para>
+The site <link xlink:href="http://bobby-tables.com/">Bobby Tables</link> about SQL
+injections.
+</para>
+</listitem>
+</orderedlist>
+    </section>
+    <section role="item" xml:id="using_undeclared_symbols">
+      <info>
+        <title>Using Undeclared Symbols</title>
+      </info>
+      <para>
+Some C or C++ compilers allow one to use functions or variables that have not
+been declared, while automatically inferring their types to be “int” or
+whatever. However, for good measure, all variables and functions should be
+declared with a proper type because they are often not the same as
+the compiler's guess. One can configure GCC and similar compilers to emit
+an error on such cases using the
+<code>-Werror=implicit-function-declaration</code> flag, which is recommended
+to add to one's build system.
+</para>
+    </section>
+    <section role="item" xml:id="decls_not_in_common_headers">
+      <info>
+        <title>Declarations not in common headers</title>
+      </info>
+      <para>
+When declaring external functions, variables, classes, etc. make sure to
+put them in a common header file, which will also be included by the .c or
+.cpp file actually defining the common resource. This way if their type
+is changed, you will get a compiler error in the module that defines it,
+and there will be more certainty that there isn’t a type mismatch.
+</para>
+    </section>
+    <section role="item" xml:id="headers_without_include_guards">
+      <info>
+        <title>Headers without #include guards or #pragma once</title>
+      </info>
+      <para>
+You should add <link xlink:href="http://en.wikipedia.org/wiki/Include_guard">#include
+guards</link>, or the less standard but widely supported
+<link xlink:href="http://en.wikipedia.org/wiki/Pragma_once">#pragma once</link> into
+header files (“*.h” or “*.hpp” or whatever) to prevent them from being included
+times and again by other “#include” directives. Otherwise, it may result in
+compiler warnings or errors.
+</para>
+    </section>
+    <section role="item" xml:id="long_lines">
+      <info>
+        <title>Overly Long Lines in the Source Code</title>
+      </info>
+      <para>
+It is a good idea to avoid overly long lines in the source code, because
+they need to be scrolled to read, and may not fit within the margins of your
+co-developers’ text editors. If the lines are too long, you should break
+them or reformat them (for example, by adding a newline before or after an
+operator), and by breaking long string constants into several lines using
+the string concatenation operator - <code>.</code>.
+</para>
+      <para>
+Many coding standards require lines to fit within 80 characters or
+78 characters or so, and you should standardise on a similar limit for your
+own code.
+</para>
+    </section>
+    <section role="item" xml:id="dot_asterisk">
+      <info>
+        <title>Regular Expressions starting or ending with “.*”</title>
+      </info>
+      <para>
+It is not necessary to put <code>.*</code> or <code>.*?</code> into the
+beginning or end of regular expressions to match something anywhere inside the
+string. So for example <code>regcomp(&amp;regex, ".*ab+c")</code> can be
+replaced with the simpler: <code>regcomp(&amp;regex, "ab+c")</code>. If you
+wish to match and extract the prefix, you should say <code>(.*?)</code> or
+<code>(.*)</code>.
+</para>
+    </section>
+    <section role="item" xml:id="populating_array_with_same_reference">
+      <info>
+        <title>Populating a Data Structure with Multiple Copies of the Same Pointer or Reference</title>
+      </info>
+      <para>
+You can sometimes see code like that:
+</para>
+      <programlisting role="bad_code" language="c"># Bad code
+
+
+int * my_array[NUM];
+
+int * sub_array = malloc(sizeof(sub_array[0]) * SUB_NUM);
+if (! sub_array)
+{
+    /* Handle out-of-memory */
+}
+for (int i = 0 ; i &lt; NUM ; i++)
+{
+    populate_sub_array(i, sub_array);
+    my_array[i] = sub_array;
+}
+</programlisting>
+      <para>
+The problem with code like this is that the same physical memory location
+is being used in all places in the array, and so they will
+always be synchronised to the same contents.
+</para>
+      <para>
+As a result, the code excerpts should be written as such instead:
+</para>
+      <programlisting language="perl">
+int * my_array[NUM];
+
+for (int i = 0 ; i &lt; NUM ; i++)
+{
+    int * sub_array = malloc(sizeof(sub_array[0]) * SUB_NUM);
+    if (! sub_array)
+    {
+        /* Handle out-of-memory */
+    }
+    populate_sub_array(i, sub_array);
+    my_array[i] = sub_array;
+}
+my @array_of_arrays = map { [] } (1 .. $num_rows);
+</programlisting>
+    </section>
+    <section role="item" xml:id="one_var_for_two_purposes">
+      <info>
+        <title>Using One Variable for Two (or More) Different Purposes</title>
+      </info>
+      <para>
+Within the scope of its declaration, a variable should serve one purpose, and
+serve it well. One should not re-use a variable for a completely different
+purpose later on in the scope.
+</para>
+    </section>
+    <section role="item" xml:id="premature_optimization">
+      <info>
+        <title>Premature Optimisation</title>
+      </info>
+      <para>
+On various online forums, we are often getting asked questions like:
+“What is the speediest way to do task X?” or “Which of these pieces of code
+will run faster?”. The answer is that in this day and age of extremely fast
+computers, you should optimise for clarity and modularity first, and worry
+about speed when and if you find it becomes a problem. Professor
+Don Knuth had this to say about it:
+</para>
+      <blockquote>
+<para>
+The improvement in speed from Example 2 to Example 2a is only about 12%, and
+many people would pronounce that insignificant. The conventional wisdom shared
+by many of today's software engineers calls for ignoring efficiency in the
+small; but I believe this is simply an overreaction to the abuses they see
+being practiced by penny-wise-and-pound-foolish programmers, who can't debug or
+maintain their "optimized" programs. In established engineering disciplines a
+12% improvement, easily obtained, is never considered marginal; and I believe
+the same viewpoint should prevail in software engineering. Of course I wouldn't
+bother making such optimizations on a one-shot job, but when it's a question of
+preparing quality programs, I don't want to restrict myself to tools that deny
+me such efficiencies.
+</para>
+
+<para>
+There is no doubt that the grail of efficiency leads to abuse. Programmers
+waste enormous amounts of time thinking about, or worrying about, the speed of
+noncritical parts of their programs, and these attempts at efficiency actually
+have a strong negative impact when debugging and maintenance are considered. We
+should forget about small efficiencies, say about 97% of the time: premature
+optimization is the root of all evil.
+</para>
+</blockquote>
+      <para>
+(Knuth reportedly attributed the exact quote it to C.A.R. Hoare).
+</para>
+      <para>
+While you should be conscious of efficiency, and the performance sanity of
+your code and algorithms when you write programs, excessive and premature
+micro-optimisations are probably not going to yield a major performance
+difference.
+</para>
+      <para>
+If you do find that your program runs too slowly, refer to our
+<link xlink:href="http://c-begin.wikia.com/wiki/Profiling_and_Optimizing">resources
+about Optimising and Profiling code</link>.
+</para>
+    </section>
+    <section role="item" xml:id="version_control">
+      <info>
+        <title>Not Using Version Control</title>
+      </info>
+      <para>
+For everything except for short throwaway scripts, or otherwise incredibly
+short programs, there is no good excuse, not to use a version control system
+(a.k.a: "revision control systems", "source control systems", or more in
+general as part of "software configuration management"). This is especially
+true nowadays given the availability of several powerful, easy to use,
+open-source (and as a result free-of-charge), and cross-platform, version
+control systems, that you should have not a lot of problems to deploy, learn
+and use.
+</para>
+      <para>
+For more information and the motivation behind using version control systems,
+see
+<link xlink:href="http://perl-begin.org/tutorials/perl-for-newbies/part5/#page--version-control--DIR">the
+relevant section out of the fifth part of “Perl for Perl Newbies”</link>
+for more discussion about the motivation behind that, some links and a
+demonstration.
+</para>
+      <para>
+Some links for further discussion:
+</para>
+      <itemizedlist>
+<listitem>
+<para>
+<link xlink:href="http://better-scm.shlomifish.org/">The Better SCM Site</link>
+</para>
+</listitem>
+<listitem>
+<para>
+<link xlink:href="http://producingoss.com/en/vc-systems.html">The Free Version Control
+Systems Appendix of <emphasis>Producing Open Source Software</emphasis></link>.
+</para>
+</listitem>
+<listitem>
+<para>
+The Wikipedia
+<link xlink:href="http://en.wikipedia.org/wiki/List_of_revision_control_software">List
+of revision control software</link>.
+</para>
+</listitem>
+<listitem>
+<para>
+<link xlink:href="http://perlhacks.com/2012/03/you-must-hate-version-control-systems/">“You
+Must Hate Version Control Systems”</link> - a discussion on Dave Cross’ blog
+about best practices in the software development industry.
+</para>
+</listitem>
+</itemizedlist>
+    </section>
+    <section role="item" xml:id="automated_tests">
+      <info>
+        <title>Writing Automated Tests</title>
+      </info>
+      <para>
+Automated tests help verify that the code is working correctly, that bugs
+are not introduced due to refactoring or the addition of new feature, and also
+provide specifications and interface documentation to the code. As a result,
+automated tests have been considered a good practise for a long time.
+</para>
+      <para>
+For more information about how to write automated tests, see
+<link xlink:href="http://c-begin.wikia.com/wiki/Testing_Tools">our page</link> about
+quality assurance in C.
+</para>
+    </section>
+    <section role="item" xml:id="parsing_using_regex">
+      <info>
+        <title>Parsing XML/HTML/JSON/CSV/etc. without a tried-and-tested parser</title>
+      </info>
+      <para>
+You should not try to parse HTML, XML, JSON, CSV, and other complex grammars
+using regular expressions, or worse - using manual character/string
+tokenisation. Instead, use a tried and tested parsing library, which you should
+be able to find using a web search.
+</para>
+    </section>
+    <section role="item" xml:id="generating_non_valid_markup">
+      <info>
+        <title>Generating invalid Markup (of HTML/etc.)</title>
+      </info>
+      <para>
+You should make sure that the HTML markup you generate is
+<link xlink:href="http://en.wikipedia.org/wiki/XHTML#Valid_XHTML_documents">valid
+HTML</link> and that it validates as XHTML 1.0, HTML 4.01, HTML 5.0, or a
+different modern standard. For more information, see
+<link xlink:href="http://www.shlomifish.org/lecture/LAMP/slides/compatibility/">the
+“Designing for Compatibility” section</link> in a previous talk.
+</para>
+    </section>
+    <section role="item" xml:id="capturing_instead_of_clustering_in_regexes">
+      <info>
+        <title>Capturing Instead of Clustering in Regular Expressions</title>
+      </info>
+      <para>
+If you want to group a certain sub-expression in a
+<link xlink:href="http://perl-begin.org/topics/regular-expressions/">regular expression</link>,
+without the need to capture it (into the <code>$1</code>, <code>$2</code>,
+<code>$3</code>, etc. variables and related capture variables), then
+you should cluster them using <code>(?: … )</code> instead of capturing
+them using a plain <code>( … )</code>, or alternatively not grouping them
+at all if it's needed. That is because using a cluster is faster and cleaner
+and better conveys your intentions than using a capture.
+</para>
+    </section>
+    <section role="item" xml:id="buffer_overflows">
+      <info>
+        <title>Buffer Overflows</title>
+      </info>
+      <para>
+Buffer overflows involve reading or writing after one end of the buffer
+and can lead to exploitation, or crashes. More information can be found in
+<link xlink:href="http://en.wikipedia.org/wiki/Buffer_overflow">the Wikipedia
+article</link>.
+</para>
+    </section>
+    <section role="item" xml:id="format_string_vulnerabilities">
+      <info>
+        <title>Format String Vulnerabilities (printf/etc.)</title>
+      </info>
+      <para>
+When passing a non-literal-constant string as the first parameter to
+“printf()”/sprintf()” and friends, one runs the risk of
+<link xlink:href="http://en.wikipedia.org/wiki/Uncontrolled_format_string">format
+string vulnerabilities</link> (more information in the link). As a result, it
+is important to always use a literal constant string to format the string. E.g:
+</para>
+      <programlisting role="bad_code" language="c"># Bad code
+
+
+fgets(str,sizeof(str), stdin);
+str[sizeof(str)-1] = '\0';
+printf(str);
+</programlisting>
+      <para>
+should be replaced with:
+</para>
+      <programlisting language="c">
+fgets(str,sizeof(str), stdin);
+str[sizeof(str)-1] = '\0';
+printf("%s", str);
+</programlisting>
+      <para>
+One can also use the
+<link xlink:href="http://stackoverflow.com/questions/9707569/c-array-warning-format-not-a-string-literal">relevant
+warning flags</link> of GCC and compatible compilers to warn and possibly generate an error for that.
+</para>
+    </section>
+    <section role="item" xml:id="callbacks_that_dont_accept_a_context_variable">
+      <info>
+        <title>Callbacks that do not accept a “void *” context variable</title>
+      </info>
+      <para>
+When writing C (and sometimes C++) code, make sure that whenever you accept
+a function pointer as a callback, that it also accepts a
+<code>void *</code> context variable, which would be passed to the function
+as well. These variables are sometimes called “batons” because they are
+passed around. Without this convention, it will be harder to instantiate
+routines based on this interface, and multi-threading will be harder without
+the use of thread-local-storage.
+</para>
+      <para>
+So don't do that:
+</para>
+      <programlisting role="bad_code" language="c"># Bad code
+
+
+void my_sort(my_type * const array, const size_t count,
+    int (*compare)(my_type *, my_type *));
+</programlisting>
+      <para>
+And instead do that:
+</para>
+      <programlisting language="c">
+void my_sort(my_type * const array, const size_t count,
+    int (*compare)(my_type *, my_type *, void *), void * const context);
+</programlisting>
+    </section>
+    <section role="item" xml:id="not_using_a_proper_build_system">
+      <info>
+        <title>Not Using a Proper Build System</title>
+      </info>
+      <para>
+It is a very good idea for C and C++ code to use a good build and configuration
+system. There’s
+<link xlink:href="http://www.shlomifish.org/open-source/resources/software-tools/">a page listing some prominent alternatives</link>. For simple setups, a make file
+may be suitable, but more complex tasks require a configuration and build
+system such as <link xlink:href="http://en.wikipedia.org/wiki/CMake">CMake</link>.
+</para>
+    </section>
+    <section role="item" xml:id="not_using_a_bug_tracker">
+      <info>
+        <title>Not Using a Bug Tracker/Issue Tracker</title>
+      </info>
+      <para>
+It is important to use a <link xlink:href="http://en.wikipedia.org/wiki/Bug_tracking_system">bug tracking</link>
+system to maintain a list of bugs and issues that need to be fixed in your
+code, and of features that you'd like to work on. Sometimes, a simple file kept
+inside the version control system would be enough, but at other times, you
+should opt for a web-based bug tracker.
+</para>
+      <para>
+For more information, see:
+</para>
+      <itemizedlist>
+
+<listitem>
+<para>
+<link xlink:href="http://www.joelonsoftware.com/articles/fog0000000029.html">Joel
+on Software article about “Painless Bug Tracking”</link>
+</para>
+</listitem>
+
+<listitem>
+<para>
+<link xlink:href="http://www.shlomifish.org/open-source/resources/software-tools/#bug_tracking">“Bug
+Trackers” list</link> on Shlomi Fish’s “Software Construction and Management
+Tools” page.
+</para>
+</listitem>
+
+<listitem>
+<para>
+<link xlink:href="http://www.thegeekstuff.com/2010/08/bug-tracking-system/">“Top
+10 Open Source Bug Tracking Systems”</link>
+</para>
+</listitem>
+
+</itemizedlist>
+    </section>
+  </section>
+  <section xml:id="sources_of_advice">
+    <info>
+      <title>Sources of This Advice</title>
+    </info>
+    <para>
+This is a short list of the sources from which this advice was taken which
+also contains material for further reading:
+</para>
+    <orderedlist>
+
+<listitem>
+<para>
+A large part of this document is derived from
+<link xlink:href="http://perl-begin.org/tutorials/bad-elements/">a similar
+document</link> written earlier for the Perl programming language.
+</para>
+</listitem>
+
+<listitem>
+<para>
+    <link xlink:href="http://perl-begin.org/books/advanced/#pbp">The
+Book "Perl Best Practices"</link> by Damian Conway - contains a lot of good
+advice and food for thought, but sometimes should be deviated from.
+Also see the
+<link xlink:href="https://www.socialtext.net/perl5/index.cgi?pbp_module_recommendation_commentary">"PBP
+Module Recommendation Commentary"</link> on the Perl 5 Wiki.
+</para>
+</listitem>
+
+<listitem>
+<para>
+<link xlink:href="https://www.socialtext.net/perl5/index.cgi?ancient_perl">"Ancient
+Perl"</link> on the Perl 5 Wiki.
+</para>
+</listitem>
+
+<listitem>
+<para>
+<link xlink:href="http://modernperlbooks.com/">chromatic's "Modern Perl" Book and
+Blog</link>
+</para>
+</listitem>
+
+<listitem>
+<para>
+The book <link xlink:href="http://www.refactoring.com/"><emphasis>Refactoring</emphasis> by Martin
+Fowler</link> - not particularly about Perl, but still useful.
+</para>
+</listitem>
+
+<listitem>
+<para>
+The book
+<link xlink:href="http://pragprog.com/book/tpp/the-pragmatic-programmer"><emphasis>The Pragmatic
+Programmer: From Journeyman to Master</emphasis></link> - also not particularly about
+Perl, and I found it somewhat disappointing, but it is an informative book.
+</para>
+</listitem>
+
+<listitem>
+<para>
+The list <link xlink:href="https://www.theopensourceway.org/wiki/How_to_tell_if_a_FLOSS_project_is_doomed_to_FAIL">“How
+to tell if a FLOSS project is doomed to FAIL”</link>.
+</para>
+</listitem>
+
+<listitem>
+<para>
+Advice given by people on
+<link xlink:href="http://perl-begin.org/irc/#freenode">Freenode's #perl
+channel</link>, on the Perl Beginners mailing list, and on other Perl forums.
+</para>
+</listitem>
+
+<listitem>
+<para>
+Advice given by people on Freenode’s ##programming channel and on other forums.
+</para>
+</listitem>
+
+</orderedlist>
+  </section>
+</article>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Thoughts about the Best Introductory Language - The “Teach in C” Approach</title>
+<meta charset="utf-8"/>
+<meta name="description" content=
+"Thoughts about the Best Introductory Language - The “Teach in C” Approach"/>
+<link rel="stylesheet" href="../../../../../faq-indiv.css" media="screen"/>
+<link rel="stylesheet" href="../../../../../screenplay.css" media="screen"
+title="Normal"/>
+<link rel="stylesheet" href="../../../../../print.css" media="print"/>
+<link rel="shortcut icon" href="../../../../../favicon.ico" type=
+"image/x-icon"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
+<body class="fancy_sects faq_indiv_entry limit_imgs_width screenplay_indiv_entry">
+<div class="header" id="header">
+<a href="../../../../../"><img src="../../../../../images/evilphish-flipped.png"
+alt="EvilPHish site logo"/></a>
+<div class="leading_path"><a href="../../../../../">Shlomi Fish’s
+Homepage</a> →
+<a href="../" title="Thoughts about the Best Introductory Language">Thoughts about the Best Introductory Language</a>
+ → <a href="various_approaches.xhtml">The Various (Wrong) Approaches to Introductory Programming Languages</a>
+→ <b>The “Teach in C” Approach</b>
+</div>
+</div>
+<div id="faux">
+<main class="main faq screenplay">
+<section xmlns="http://www.w3.org/1999/xhtml" class="section"><header xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="titlepage"><h4 id="back_to_basics_approach" class="title">The &#8220;Teach in C&#8221; Approach</h4><h:a class="back_to_faq" href="../#back_to_basics_approach">Node Link</h:a></header><p>In his <a class="link" href="http://www.joelonsoftware.com/articles/fog0000000319.html">&#8220;Back to Basics&#8221; essay</a>, Joel Spolsky gave a case for teaching C as an introductory language instead of more high level languages. His argument is that programmers will end up writing sub-optimal code because some low-level elements of dealing with strings and arrays are abstracted away in higher-level language.</p><p>C and C++ have been popular introductory languages for teaching programming for many years now. While some schools have switched to teaching Java or a different language, C and C++ are still very popular.</p><p>However, C has one major deficiency: it&#8217;s too close to the processor to be useful. In order to perform an operation on two objects, one should allocate them first, perform the operation, and then take care of freeing both objects and the result (to say nothing of edge cases where allocating or freeing may fail.).</p><p>All this work to do something that in high level, garbage collected, languages is as simple as <code class="literal">$result = $object1 OP $object2;</code>. From my experience with Technion students, they are often get so bogged up in the technicalities of working with C instead of getting quick, dirty and useful code running.</p><p>A good introductory programming language should allow you to write a lot of useful code quickly, and not slow you down with many low-level constraints. Beginning programmers have a hard enough time learning how to translate their thoughts and intentions into working code, and solving bugs and the last thing they need is to deal with too many idiosyncrasies of the language only because it is too low-level.</p><p>Spolsky&#8217;s argument about the efficiency of some operations is wrong, because programmers who learn such languages won&#8217;t often notice the difference from such inefficient operations, due to the incredible speed of contemporary computers and the fact that their data sets are generally too small. Moreover, many instructors and exercise checkers won&#8217;t penalise for the presence of such issues in their homework.</p><p>While the efficiency of algorithms and the underlying implementation of language primitives should be stressed at a certain point, the first task of an introductory course is to make sure a programmer can learn to write code, not necessarily the most efficient one. (Not even according to asymptotic complexity). Learning how to write quick and dirty code is a mental leap that is large enough as it is.</p></section></main>
+</div>
+<footer>
+<div class="foot_left">
+<ul class="bt_nav">
+<li><a href="../../../../../">Home</a></li>
+<li><a href="../../../../../me/">About</a></li>
+<li><a href="../../../../../me/contact-me/">Contact Us</a></li>
+<li><a href="../../../../../meta/privacy-policy/">Privacy Policy</a></li>
+<li><a href="../../../../../meta/anti-spam-policy/">Anti-Spam
+Policy</a></li>
+<li><a href="../../../../../meta/FAQ/" title=
+"Frequently asked questions list">FAQ</a></li>
+<li><a href="../../../../../me/blogs/">RSS/Atom Feeds</a></li>
+</ul>
+<p>Written, designed, and maintained by Shlomi Fish, <a href=
+"mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a>.</p>
+</div>
+<a href="../../../../../"><img src="../../../../../images/bk2hp-v2.min.svg" class=
+"bk2hp" alt="Back to my Homepage"/></a></footer>
+</body>
+</html>

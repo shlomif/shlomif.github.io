@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="sort.html"/><link rel="next" href="../exceptions/"/><title>The "and" and "or" Operators</title></head><body><main><header><h1>5.2. The "and" and "or" Operators</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="sort.html" class="nav" accesskey="p">Prev</a></td><td><a href="../exceptions/" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 4</a> → <a href="./">More about || and &amp;&amp;</a> → <a href="english_and_or.html">The "and" and "or" Operators</a></div></nav><p>Perl supplies two operators <code>and</code> and <code>or</code> which are equivalent to <code>&amp;&amp;</code> and <code>||</code> except that they have a very low precedence. (lower than any other operator in fact). There's also <code>not</code> which is the ultra-low precedence equivalent of <code>!</code>.</p><p>You can use them after a statement to write error handlers.</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Comment"># Terminate if we cannot open a file.</span>
+<span class="Statement">open</span> <span class="Identifier">O</span>, <span class="Constant">&quot;&gt;&quot;</span>, <span class="Constant">&quot;/hello.txt&quot;</span> <span class="Statement">or</span> <span class="Statement">die</span> <span class="Constant">&quot;Cannot open file!&quot;</span>;
+
+<span class="Statement">print</span> <span class="Identifier">O</span> <span class="Constant">&quot;Hello World!</span><span class="Special">\n</span><span class="Constant">&quot;</span>;
+
+<span class="Statement">close</span>(<span class="Identifier">O</span>);
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="sort.html" class="nav">Prev</a></td><td><a href="../exceptions/" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

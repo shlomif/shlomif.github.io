@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>What Makes Software High-Quality? (Revision 2) - Aesthetics</title>
+<meta charset="utf-8"/>
+<meta name="description" content=
+"What Makes Software High-Quality? (Revision 2) - Aesthetics"/>
+<link rel="stylesheet" href="../../../../../faq-indiv.css" media="screen"/>
+<link rel="stylesheet" href="../../../../../screenplay.css" media="screen"
+title="Normal"/>
+<link rel="stylesheet" href="../../../../../print.css" media="print"/>
+<link rel="shortcut icon" href="../../../../../favicon.ico" type=
+"image/x-icon"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
+<body class="fancy_sects faq_indiv_entry limit_imgs_width screenplay_indiv_entry">
+<div class="header" id="header">
+<a href="../../../../../"><img src="../../../../../images/evilphish-flipped.png"
+alt="EvilPHish site logo"/></a>
+<div class="leading_path"><a href="../../../../../">Shlomi Fish’s
+Homepage</a> →
+<a href="../" title="What Makes Software High-Quality? (Revision 2)">What Makes Software High-Quality? (Revision 2)</a>
+ → <a href="parameters-of-quality.xhtml">Parameters of Quality</a>
+→ <b>Aesthetics</b>
+</div>
+</div>
+<div id="faux">
+<main class="main faq screenplay">
+<section xmlns="http://www.w3.org/1999/xhtml" class="section"><header xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="titlepage"><h4 id="aesthetics" class="title">Aesthetics</h4><h:a class="back_to_faq" href="../#aesthetics">Node Link</h:a></header><p>A good program (or web site) or other resource is aesthetically pleasing. Aesthetics in this context, does not necessarily mean very &#8220;artsy&#8221; or having a breath-taking style. But we may have run into software (usually one for internal use or one of those very costly, bad-quality, niche, software) that seemed very ugly and badly designed, with a horrible user-interface, etc.</p><p>Different types of applications, and those running on different platforms, have different conventions for what is considered aesthetic. In <a class="link" href="http://catb.org/~esr/writings/taoup/">The Art of UNIX Programming</a>, Eric Raymond <a class="link" href="http://catb.org/~esr/writings/taoup/html/ch11s09.html">makes the case for the &#8220;Silence is Golden&#8221; principle of designing UNIX command-line interfaces</a>. Basically, a command line program should output as little as possible. Now observe the behaviour of aptitude (a unified interface for package management) on Ubuntu Gutsy Gibbon, when trying to install a non-existing package name:</p><pre class="programlisting">
+
+root@shlomif-desktop:/home/shlomif# aptitude install this-does-not-exist
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Reading extended state information
+Initializing package states... Done
+Building tag database... Done
+Couldn&#8217;t find any package whose name or description matched "this-does-not-exist"
+The following packages have been kept back:
+  firefox firefox-gnome-support
+0 packages upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Need to get 0B of archives. After unpacking 0B will be used.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Reading extended state information
+Initializing package states... Done
+Building tag database... Done
+
+        </pre><p>15 lines of output, and only one of them in the middle is the informative one. Why is all this information a concern of mine, especially given the fact that they are all given in the same monotonous default colour.</p><p>On the other hand, here&#8217;s what urpmi (a similar package management interface for Mandriva) says on Mandriva Cooker:</p><pre class="programlisting">
+
+[root@telaviv1 ~]# urpmi this-does-not-exist
+No package named this-does-not-exist
+[root@telaviv1 ~]#
+
+        </pre><p>Exactly one line and it&#8217;s informative. While aptitude certainly has its merits, its verbosity still makes it much more painful to use than urpmi, when I have to work on Ubuntu.</p><p>Back to more visual aesthetics, one of the reasons that made me want to use Linux more than Windows 95&#8217; or 98&#8217; was the fact that its desktops were truly themable and could be made to look much better without effort. If I got tired of the same look, I could easily switch. While Windows XP shipped with a more attractive theme, and also had some proprietary and non-gratis theming software, Linux supplied all of that out-of-the-box and with a more attractive theme. The <a class="link" href="http://youtube.com/watch?v=xC5uEe5OzNQ">effects supplied by the Linux 3-D desktops</a>, which have put the 9-milliard Dollar effects of Vista to shame, have convinced some people to install Linux on their computer after seeing them.</p></section></main>
+</div>
+<footer>
+<div class="foot_left">
+<ul class="bt_nav">
+<li><a href="../../../../../">Home</a></li>
+<li><a href="../../../../../me/">About</a></li>
+<li><a href="../../../../../me/contact-me/">Contact Us</a></li>
+<li><a href="../../../../../meta/privacy-policy/">Privacy Policy</a></li>
+<li><a href="../../../../../meta/anti-spam-policy/">Anti-Spam
+Policy</a></li>
+<li><a href="../../../../../meta/FAQ/" title=
+"Frequently asked questions list">FAQ</a></li>
+<li><a href="../../../../../me/blogs/">RSS/Atom Feeds</a></li>
+</ul>
+<p>Written, designed, and maintained by Shlomi Fish, <a href=
+"mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a>.</p>
+</div>
+<a href="../../../../../"><img src="../../../../../images/bk2hp-v2.min.svg" class=
+"bk2hp" alt="Back to my Homepage"/></a></footer>
+</body>
+</html>

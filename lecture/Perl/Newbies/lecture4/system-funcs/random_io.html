@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../style.css" type="text/css"/><link rel="prev" href="dir.html"/><link rel="next" href="file-tests.html"/><title>Random File I/O</title></head><body><main><header><h1>7.2. Random File I/O</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="dir.html" class="nav" accesskey="p">Prev</a></td><td><a href="file-tests.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../">"Perl for Perl Newbies" - Part 4</a> → <a href="./">More System Functions</a> → <a href="random_io.html">Random File I/O</a></div></nav><p>Perl provides mechanisms for moving to certain positions in files, and reading blocks of a certain size.</p><p><code>seek FILEHANDLE, POSITION, WHENCE</code> sets the filehandle position within the file in bytes. If you specify <code>use Fcntl;</code> at the beginning of your program, then WHENCE can be <code>SEEK_SET</code> for start of file, <code>SEEK_CUR</code> for the current position and <code>SEEK_END</code> for the end of file.</p><p><code>tell FILEHANDLE</code> returns the position of the current file cursor in bytes from the beginning of the file.</p><p><code>read FILEHANDLE, SCALAR, LENGTH</code> reads <code>LENGTH</code> characters from <code>FILEHANDLE</code> into the <code>SCALAR</code> variable.</p><p>Here's an example that replaces bytes 64-127 in a file with their rot13 equivalent:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">use </span>Fcntl;
+
+<span class="Statement">my</span> <span class="Identifier">$filename</span> = <span class="Statement">shift</span>;
+
+<span class="Statement">open</span> <span class="Identifier">F</span>, <span class="Constant">&quot;+&lt;</span><span class="Identifier">$filename</span><span class="Constant">&quot;</span>
+    <span class="Statement">or</span> <span class="Statement">die</span> <span class="Constant">&quot;Could not open file&quot;</span>;
+
+<span class="Comment"># Read bytes 64-127 into $text</span>
+<span class="Statement">seek</span>(<span class="Identifier">F</span>, <span class="Constant">64</span>, SEEK_SET);
+
+<span class="Statement">my</span> <span class="Identifier">$text</span>;
+<span class="Statement">read</span>(<span class="Identifier">F</span>,<span class="Identifier">$text</span>,<span class="Constant">64</span>);
+<span class="Comment"># Do the actual rot13'ing with the tr command</span>
+<span class="Identifier">$text</span> =~ <span class="Statement">tr/</span><span class="Constant">A-Za-z</span><span class="Statement">/</span><span class="Constant">N-ZA-Mn-za-m</span><span class="Statement">/</span>;
+<span class="Comment"># Write them at position 64</span>
+<span class="Statement">seek</span>(<span class="Identifier">F</span>, <span class="Constant">64</span>, SEEK_SET);
+<span class="Statement">print</span> <span class="Identifier">F</span> <span class="Identifier">$text</span>
+<span class="Statement">close</span>(<span class="Identifier">F</span>);
+</pre></div><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="dir.html" class="nav">Prev</a></td><td><a href="file-tests.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>

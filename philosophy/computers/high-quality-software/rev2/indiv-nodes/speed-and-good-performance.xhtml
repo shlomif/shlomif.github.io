@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>What Makes Software High-Quality? (Revision 2) - Speed and High Performance</title>
+<meta charset="utf-8"/>
+<meta name="description" content=
+"What Makes Software High-Quality? (Revision 2) - Speed and High Performance"/>
+<link rel="stylesheet" href="../../../../../faq-indiv.css" media="screen"/>
+<link rel="stylesheet" href="../../../../../screenplay.css" media="screen"
+title="Normal"/>
+<link rel="stylesheet" href="../../../../../print.css" media="print"/>
+<link rel="shortcut icon" href="../../../../../favicon.ico" type=
+"image/x-icon"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
+<body class="fancy_sects faq_indiv_entry limit_imgs_width screenplay_indiv_entry">
+<div class="header" id="header">
+<a href="../../../../../"><img src="../../../../../images/evilphish-flipped.png"
+alt="EvilPHish site logo"/></a>
+<div class="leading_path"><a href="../../../../../">Shlomi Fish’s
+Homepage</a> →
+<a href="../" title="What Makes Software High-Quality? (Revision 2)">What Makes Software High-Quality? (Revision 2)</a>
+ → <a href="parameters-of-quality.xhtml">Parameters of Quality</a>
+→ <b>Speed and High Performance</b>
+</div>
+</div>
+<div id="faux">
+<main class="main faq screenplay">
+<section xmlns="http://www.w3.org/1999/xhtml" class="section"><header xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="titlepage"><h4 id="speed-and-good-performance" class="title">Speed and High Performance</h4><h:a class="back_to_faq" href="../#speed-and-good-performance">Node Link</h:a></header><p>The reason I mentioned this quality parameter so late is because it was what Mr. Campbell stressed in his argument about &#8220;Industrial Strength&#8221; Freecell solvers. So I wanted to show that there are other important parameters beside it. However, raw performance is important, too.</p><p>If a program is too slow, or generates sub-optimal results, most people will be reluctant to use it and find using it daunting. They will either give up waiting for it to finish, or get distracted. If the output results of the program are too sub-optimal (assuming there&#8217;s a scale to their optimality), then they will probably look for different alternatives.</p><p>As a result, it is important that your software will run quickly, and will yield good results. There are many ways to make code write faster, and covering them here is out of the scope of this article.</p><p>A good example for how such optimisations can make such a huge difference are the <a class="link" href="http://blog.pavlov.net/2008/03/11/firefox-3-memory-usage/">memory optimisations done to Firefox between Firefox 2 and Firefox 3</a>, which greatly improved its performance, memory consumption, and reduced the number of memory leaks. It should be noted that often, reducing memory consumption can yield better performance because of a smaller number of cache misses, process memory swapping, and other such factors.</p><p>There are several related aspects of performance, that also affect the general quality and usability of a program. One of them is responsiveness, which is often manifested when people complain that the program is &#8220;sluggish&#8221;. Java programs are especially notorious for being such, for some reason, while programs written in <a class="link" href="http://www.perl.org/">Perl</a> and <a class="link" href="http://www.python.org/">Python</a> are more responsive and feel snappy, despite the fact that their backends are generally slower than the Java virtual machine.</p><p>A tangential aspect is that of startup time. Many programs require or have required a long time to start, which also makes using them frustrating, even if they are later responsive and quick.</p></section></main>
+</div>
+<footer>
+<div class="foot_left">
+<ul class="bt_nav">
+<li><a href="../../../../../">Home</a></li>
+<li><a href="../../../../../me/">About</a></li>
+<li><a href="../../../../../me/contact-me/">Contact Us</a></li>
+<li><a href="../../../../../meta/privacy-policy/">Privacy Policy</a></li>
+<li><a href="../../../../../meta/anti-spam-policy/">Anti-Spam
+Policy</a></li>
+<li><a href="../../../../../meta/FAQ/" title=
+"Frequently asked questions list">FAQ</a></li>
+<li><a href="../../../../../me/blogs/">RSS/Atom Feeds</a></li>
+</ul>
+<p>Written, designed, and maintained by Shlomi Fish, <a href=
+"mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a>.</p>
+</div>
+<a href="../../../../../"><img src="../../../../../images/bk2hp-v2.min.svg" class=
+"bk2hp" alt="Back to my Homepage"/></a></footer>
+</body>
+</html>

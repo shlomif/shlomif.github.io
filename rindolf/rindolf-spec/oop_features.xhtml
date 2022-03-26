@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><title>Object Oriented Programming Features</title><link rel="stylesheet" type="text/css" href="docbook.css"/><link rel="stylesheet" type="text/css" href="style.css"/><meta name="generator" content="DocBook XSL Shlomif"/><link rel="prev" href="philosophy.xhtml" title="Philosophy"/><link rel="next" href="new_additions.xhtml" title="New Additions to the language"/></head><body><header><div class="center ads_top"/><div class="navheader"><table style="width:100%"><tr><th style="text-align:center" colspan="3">Object Oriented Programming Features</th></tr><tr><td style="width:20%;text-align:left"><a accesskey="p" href="philosophy.xhtml">Prev</a> </td><th style="width:60%;text-align:center"> </th><td style="width:20%;text-align:right"> <a accesskey="n" href="new_additions.xhtml">Next</a></td></tr></table><hr/></div></header><section class="section"><div class="titlepage"><div><div><h2 id="oop_features" class="title">Object Oriented Programming Features</h2></div></div></div><div class="toc"><ul class="toc"><li><span class="section"><a href="oop_features.xhtml#package_level_namespaces">Package Level Namespace</a></span></li><li><span class="section"><a href="oop_features.xhtml#classes_as_first_order_objects">Classes as First Order Objects</a></span></li><li><span class="section"><a href="oop_features.xhtml#expand_and_extend"><code class="literal">expand</code> and <code class="literal">extend</code></a></span></li><li><span class="section"><a href="oop_features.xhtml#defining_new_operators">Defining New Operators</a></span></li></ul></div><section class="section"><div class="titlepage"><div><div><h3 id="package_level_namespaces" class="title">Package Level Namespace</h3></div></div></div><p>Rindolf will support the <span class="symbol">class MyClass { ... }</span> construct to designate package and file level namespaces. Its advantage over <span class="symbol">package</span> would be that it can be nested:</p><pre class="screen">
+class Hello {
+    class Good {
+        sub my_func
+        {
+            print "my_func is called!\n";
+        }
+    };
+    sub another_func
+    {
+        print "another_func is called!\n";
+    }
+};
+
+Hello::Good::my_func();
+Hello::another_func();
+#
+# prints:
+# my_func is called!
+# another_func is called!
+</pre><p>This should make it more convenient that specifying <code class="literal">package Hello;</code> and <code class="literal">package Hello::Good;</code> and so forth.</p><p>Generally such classes are considered lightweight namespaces. They are visible to an outside package, however, may override other "global" packages. Moreover, an external package will first look for global packages before them.</p></section><section class="section"><div class="titlepage"><div><div><h3 id="classes_as_first_order_objects" class="title">Classes as First Order Objects</h3></div></div></div><p>In similar to the <code class="literal">sub { ... }</code> syntax it would be possible to do a <code class="literal">$myclass = class { ... }</code>, construct and get a reusable class as a scalar. (=first order object). In Perl 5, namespaces are global and cannot be created on the fly without some namespace collision prevention Voodoo. In Rindolf, such classes can simply be assigned to variable. (<code class="literal">bless</code> and similar operators will accept such classes as their second argument):</p><pre class="screen">
+my $myclass = class {
+    sub new {
+        my $class = shift;
+        my $self = {};
+        bless($self, $class);
+        #
+        $self-&gt;{'counter'} = 10;
+        pt_return $self;
+    }
+    sub decrement
+    {
+        my $self = shift;
+        sleep(1);
+        my $val = --$self-&gt;{'counter'};
+        print "$val\n";
+        if ($val == 0)
+        {
+            die "Take off!";
+        }
+    }
+};
+
+my $countdown = $myclass-&gt;new();
+for(;;)
+{
+    $countdown-&gt;decrement();
+}
+            </pre><p>This class references will also be accepted by @ISA and all other operators requiring class names.</p></section><section class="section"><div class="titlepage"><div><div><h3 id="expand_and_extend" class="title"><code class="literal">expand</code> and <code class="literal">extend</code></h3></div></div></div><p>Rindolf will provide two operators named <code class="literal">expand</code> and <code class="literal">extend</code> that would enable manipulating such namespaces efficiently.</p><p><code class="literal">expand</code> takes an entire class and dumps a cope of all of its package-scope symbols into the current namespace. <code class="literal">extend</code> takes a class reference and extends with another class. Together they can be used to manipulate classes.</p><p>Here is a similar example with some <code class="literal">expand</code> and <code class="literal">extend</code> magic:</p><pre class="screen">
+my $class1 = class {
+    sub hello {
+        my $you = shift;
+        print "Hello $you!\n";
+    }
+};
+
+my $class2 = class {
+    sub goodbye {
+        my $you = shift;
+        print "Goodbye!\n";
+    }
+};
+
+class You {
+    expand($class1);
+    expand($class2);
+    sub message
+    {
+        my $you = shift;
+        my $message = shift;
+        hello($you);
+        print "$message\n";
+        goodbye($you);
+    }
+};
+
+my $object_class = class {
+    sub new
+    {
+        my $class = shift;
+        my $name = shift;
+        my $self = {};
+        bless($self, $class);
+        $self-&gt;{'name'} = $name;
+        pt_return $self;
+    }
+    sub msg
+    {
+        my $self = shift;
+        my $message = shift;
+
+        pt_return message($self-&gt;{'name'}, $msg);
+    }
+};
+
+extend $object_class, typeref{CLASS}{YOU};
+
+my $person = $object_class-&gt;new("Muli");
+$person-&gt;msg("Time to track system calls!");
+            </pre><p>Note the <code class="literal">typeref</code> operator which is a generic way of casting references, that is introduced due to the fact that we are running out of special characters in the keyboard (:-)). It will be available for hashes, arrays and others language primitives.</p></section><section class="section"><div class="titlepage"><div><div><h3 id="defining_new_operators" class="title">Defining New Operators</h3></div></div></div><p>In Rindolf it would be possible to define completely new operator and modify the syntax and grammar of the language on the fly. Thus, the PerlDL guys can easily define the more Matlab like <code class="literal">.*</code> and <code class="literal">.*=</code> instead of perl's <code class="literal">*</code> and dump <code class="literal">x</code> in favour of <code class="literal">*</code>.</p><p>At the moment perl5 uses lex and yacc which I am almost certain will not allow to define new operators. However, I believe such change is something that I've always missed in C++ and Perl, and I really like about Haskell. So, it is going to be implemented.</p></section></section><footer><div class="navfooter"><hr/><table style="width:100%"><tr><td style="width:40%;text-align:left"><a accesskey="p" href="philosophy.xhtml">Prev</a> </td><td style="width:20%;text-align:center"> </td><td style="width:40%;text-align:right"> <a accesskey="n" href="new_additions.xhtml">Next</a></td></tr><tr><td style="width:40%;text-align:left;vertical-align:top">Philosophy </td><td style="width:20%;text-align:center"><a accesskey="h" href="index.xhtml">Home</a></td><td style="width:40%;text-align:right;vertical-align:top"> New Additions to the language</td></tr></table></div></footer></body></html>

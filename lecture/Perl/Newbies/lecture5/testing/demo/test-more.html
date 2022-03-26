@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"><head><meta charset="utf-8"/><link rel="stylesheet" href="../../style.css" type="text/css"/><link rel="prev" href="./"/><link rel="next" href="Build-test.html"/><title>Test::More</title></head><body><main><header><h1>2.2.1. Test::More</h1></header><nav><table class="page-nav-bar top"><tr><td><a href="../../" class="nav" accesskey="c">Contents</a></td><td><a href="./" class="nav" accesskey="u">Up</a></td><td><a href="./" class="nav" accesskey="p">Prev</a></td><td><a href="Build-test.html" class="nav" accesskey="n">Next</a></td></tr></table><div class="bread"><a href="../../">"Perl for Perl Newbies" - Part 5 - Good Programming Practices</a> → <a href="../">Automated Testing</a> → <a href="./">Demo</a> → <a href="test-more.html">Test::More</a></div></nav><p>Perl ships with a module called Test::More (which is part of the <a href="http://metacpan.org/release/Test-Simple/">Test-Simple CPAN distribution</a>, which may be more up-to-date there), that allows one to write and run tests using convenient functions. Here's an example for a test script:</p><div class="code_block"><pre>
+<span class="PreProc">#!/usr/bin/env perl</span>
+
+<span class="Statement">use strict</span>;
+<span class="Statement">use warnings</span>;
+
+<span class="Statement">use </span>Test::More <span class="Constant">tests</span> =&gt; <span class="Constant">7</span>;
+
+<span class="Statement">use </span>Add2 (<span class="Constant">qw(add)</span>);
+
+<span class="Comment"># TEST</span>
+is (add(<span class="Constant">0</span>, <span class="Constant">0</span>),
+    <span class="Constant">0</span>,
+    <span class="Constant">&quot;0+0 == 0&quot;</span>,
+);
+
+<span class="Comment"># TEST</span>
+is (add(<span class="Constant">2</span>, <span class="Constant">2</span>),
+    <span class="Constant">4</span>,
+    <span class="Constant">&quot;2+2 == 4&quot;</span>,
+);
+
+<span class="Comment"># TEST</span>
+is (add(<span class="Constant">4</span>, <span class="Constant">20</span>),
+    <span class="Constant">24</span>,
+    <span class="Constant">&quot;4+20 == 24&quot;</span>,
+);
+
+<span class="Comment"># TEST</span>
+is (add(<span class="Constant">20</span>, <span class="Constant">4</span>),
+    <span class="Constant">24</span>,
+    <span class="Constant">&quot;20+4 == 24&quot;</span>,
+);
+
+<span class="Comment"># TEST</span>
+is (add(-<span class="Constant">2</span>, <span class="Constant">8</span>),
+    <span class="Constant">6</span>,
+    <span class="Constant">&quot;(-2)+8 == 6&quot;</span>,
+);
+
+<span class="Comment"># TEST</span>
+is (add(<span class="Constant">4</span>, <span class="Constant">3.5</span>),
+    <span class="Constant">7.5</span>,
+    <span class="Constant">&quot;4+3.5 == 7.5&quot;</span>,
+);
+
+<span class="Comment"># TEST</span>
+is (add(<span class="Constant">3.5</span>, <span class="Constant">3.5</span>),
+    <span class="Constant">7</span>,
+    <span class="Constant">&quot;3.5+3.5 == 7&quot;</span>
+);
+</pre></div><p><code>is()</code> is a Test-More built-in that compares a received result ("have") to an expected result ("want") for exact equivalence. There are also <code>ok()</code>, which just tests for truth-hood, <code>is_deeply()</code> which performs a deep comparison of nested data structures, and others.</p><p>You may also notice the <code># TEST</code> comments - these are <a href="http://metacpan.org/release/Test-Count/">Test::Count</a> annotations that allow us to keep track of the number of test assertions that we have declared and update it.</p><p>Now, the output of this would be:</p><div class="code_block"><pre>
+1..7
+ok 1 - 0+0 == 0
+ok 2 - 2+2 == 4
+ok 3 - 4+20 == 24
+ok 4 - 20+4 == 24
+ok 5 - (-2)+8 == 6
+ok 6 - 4+3.5 == 7.5
+ok 7 - 3.5+3.5 == 7
+</pre></div><p>This is in an output format called <a href="http://testanything.org/">TAP - The Test Anything Protocol</a>. There are several TAP parsers, which analyse the output and present a human-friendly summary. For example, we can run the test script above using the <code>prove</code> command-line utility that ships with perl 5:</p><div class="code_block"><pre>
+$ prove Test-More-1.t
+Test-More-1.t .. ok
+All tests successful.
+Files=1, Tests=7,  0 wallclock secs ( 0.06 usr  0.01 sys +  0.06 cusr  0.01 csys =  0.14 CPU)
+Result: PASS
+</pre></div><p>For more information refer to the following sources:</p><ol><li><a href="http://metacpan.org/pod/Test%3A%3ATutorial">Test::Tutorial on the CPAN</a></li><li><a href="http://szabgab.com/talks/perl_in_testing/">"Testing with Perl" by Gabor Szabo</a> - comprehensive material of a talk about Perl and testing.</li><li><a href="http://metacpan.org/release/Test-Count/">Test::Count</a> - allows one to keep track of the number of assertions in the test file.</li><li><a href="http://web-cpan.shlomifish.org/modules/Test-Run/">Test-Run</a> - an alternative test harness under development (with output in colour and other enhancements).</li><li><a href="http://qa.perl.org/">The Perl Quality Assurance (QA) Project</a>.</li></ol><hr/></main><nav><table class="page-nav-bar bottom"><tr><td><a href="../../" class="nav">Contents</a></td><td><a href="./" class="nav">Up</a></td><td><a href="./" class="nav">Prev</a></td><td><a href="Build-test.html" class="nav">Next</a></td></tr></table></nav><p>Written by <a href="http://www.shlomifish.org/">Shlomi Fish</a></p><footer></footer></body></html>
